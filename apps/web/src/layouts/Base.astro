@@ -46,12 +46,12 @@ const fullTitle = title === 'nanteyomu' ? title : `${title} | nanteyomu`;
   <body>
     {/* ロゴの形状はここで1度だけ定義し、各 <Logo /> は <use> で参照する */}
     <svg class="sprite" aria-hidden="true" focusable="false">
-      <defs><path id={LOGO_SPRITE_ID} d={LOGO_PATH} /></defs>
+      <defs><path id={LOGO_SPRITE_ID} d={LOGO_PATH} fill-rule="evenodd" /></defs>
     </svg>
     <header class="site-header">
       <div class="wrap">
         <a class="logo" href="/">
-          <Logo size={30} />
+          <Logo size={32} />
           <span>nante<span class="ruby">yomu</span></span>
         </a>
         <nav class="site-nav">
@@ -68,7 +68,7 @@ const fullTitle = title === 'nanteyomu' ? title : `${title} | nanteyomu`;
 
     <footer class="site-footer">
       <div class="wrap">
-        <Logo size={50} />
+        <Logo size={56} />
         <p>
           nanteyomu — IT のツール名・サービス名の読み方を、根拠つきで。
           データは <a href={GITHUB_REPO}>GitHub</a> で
