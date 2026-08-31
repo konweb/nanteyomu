@@ -1,0 +1,28 @@
+slug: cloudflared
+term: cloudflared
+category: infra
+summary: 手元のサーバと Cloudflare のネットワークをつなぐトンネルのデーモン。ファイアウォールに穴を開けずに公開できる。
+en:
+  respelling: cloudflare-dee
+  note: 公式 README が "This daemon" と明言しており、末尾の d はデーモンの d。
+ja:
+  - kana: クラウドフレアディー
+    primary: true
+  - kana: クラウドフレアド
+    note: 誤り。末尾の d を過去分詞と読んだもの。
+  - kana: クラウドフレアデー
+divergence: true
+divergenceNote: >-
+  workerd や systemd と同じで、末尾の d はデーモンの d なので「クラウドフレア・ディー」。
+  「クラウドフレアド」と一息に読むのは誤り。
+confidence: medium
+sources:
+  - url: https://github.com/cloudflare/cloudflared
+    title: cloudflare/cloudflared - Cloudflare Tunnel client
+    kind: official
+    quote: >-
+      This daemon sits between Cloudflare network and your origin (e.g. a
+      webserver). Cloudflare attracts client requests and sends them to you via
+      this daemon, without requiring you to poke holes on your firewall.
+tags: [cloudflare, tunnel, daemon]
+updated: 2026-08-31

@@ -1,0 +1,15 @@
+slug: pingora
+term: Pingora
+category: library
+summary: Cloudflare が NGINX の置き換えとして開発した Rust 製の HTTP プロキシフレームワーク。
+en:
+  respelling: pin-GOR-uh
+ja:
+  - kana: ピンゴラ
+    primary: true
+  - kana: ピンゴーラ
+  - kana: パインゴラ
+confidence: disputed
+needsSource: true
+tags: [cloudflare, rust, proxy]
+updated: 2026-08-31

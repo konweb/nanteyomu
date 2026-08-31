@@ -1,0 +1,17 @@
+slug: gzip
+term: gzip
+category: format
+expansion: GNU zip
+summary: 可逆圧縮のフォーマットとコマンド。Web の転送圧縮で広く使われる。
+en:
+  respelling: G-zip
+ja:
+  - kana: ジージップ
+    primary: true
+  - kana: グジップ
+  - kana: ジップ
+    note: zip と混同したもの。別フォーマット。
+confidence: medium
+needsSource: true
+tags: [compression]
+updated: 2026-08-31

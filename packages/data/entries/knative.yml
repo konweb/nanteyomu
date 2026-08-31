@@ -1,0 +1,20 @@
+slug: knative
+term: Knative
+category: infra
+summary: Kubernetes 上でサーバーレスなワークロードを動かすための基盤。
+en:
+  respelling: kay-native
+  note: Kubernetes の K と native を繋げた名前。K は読む。
+ja:
+  - kana: ケイネイティブ
+    primary: true
+  - kana: ネイティブ
+    note: 誤り。英語の knife のように K を黙字扱いしたもの。
+divergence: true
+divergenceNote: >-
+  英語では kn- で始まる語（knife, know）の k は発音しないため
+  「ネイティブ」と読まれがちだが、Kubernetes の K なので「ケイ・ネイティブ」。
+confidence: medium
+needsSource: true
+tags: [kubernetes, serverless]
+updated: 2026-08-31

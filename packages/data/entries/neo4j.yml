@@ -1,0 +1,16 @@
+slug: neo4j
+term: Neo4j
+category: db
+summary: グラフ構造でデータを保持するグラフデータベース。
+en:
+  respelling: NEE-oh-for-jay
+  note: 4j は "for Java" の意味。
+ja:
+  - kana: ネオフォージェイ
+    primary: true
+  - kana: ネオヨンジェイ
+  - kana: ネオフォージャバ
+confidence: medium
+needsSource: true
+tags: [database, graph]
+updated: 2026-08-31

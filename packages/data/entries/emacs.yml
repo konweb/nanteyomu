@@ -1,0 +1,15 @@
+slug: emacs
+term: Emacs
+category: cli
+expansion: Editor MACroS
+summary: 拡張性の高いテキストエディタ。Lisp で動作を書き換えられる。
+en:
+  respelling: EE-macks
+ja:
+  - kana: イーマックス
+    primary: true
+  - kana: イーマクス
+confidence: medium
+needsSource: true
+tags: [editor]
+updated: 2026-08-31

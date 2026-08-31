@@ -1,0 +1,22 @@
+slug: memcached
+term: memcached
+category: infra
+expansion: memory cache daemon
+summary: 分散型のインメモリキャッシュサーバ。
+en:
+  respelling: mem-cash-dee
+  note: 末尾の d は daemon の d。「キャッシュト」ではない。
+ja:
+  - kana: メムキャッシュディー
+    primary: true
+  - kana: メムキャッシュド
+    note: 誤り。過去分詞の -ed と読んでしまったもの。
+  - kana: メモリキャッシュド
+divergence: true
+divergenceNote: >-
+  末尾の d は daemon（デーモン）の d なので「メムキャッシュ・ディー」。
+  英語の過去分詞 -ed と勘違いして「メムキャッシュド」と読まれることが多い。
+confidence: medium
+needsSource: true
+tags: [cache, distributed]
+updated: 2026-08-31

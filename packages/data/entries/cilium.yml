@@ -1,0 +1,15 @@
+slug: cilium
+term: Cilium
+category: infra
+summary: eBPF を使った Kubernetes 向けのネットワーク／セキュリティ基盤。
+en:
+  respelling: SIL-ee-um
+  note: ラテン語で「まつげ」。細胞の繊毛 (cilia) の単数形。
+ja:
+  - kana: シリウム
+    primary: true
+  - kana: キリウム
+confidence: medium
+needsSource: true
+tags: [kubernetes, network, ebpf]
+updated: 2026-08-31

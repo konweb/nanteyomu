@@ -1,0 +1,16 @@
+slug: protobuf
+term: Protocol Buffers
+aliases: [protobuf, proto]
+category: format
+summary: Google が開発したスキーマ付きのバイナリシリアライズ形式。
+en:
+  respelling: PRO-to-buf
+ja:
+  - kana: プロトコルバッファーズ
+    primary: true
+  - kana: プロトバフ
+    note: 略称 protobuf の読み。
+confidence: medium
+needsSource: true
+tags: [serialization, grpc, google]
+updated: 2026-08-31

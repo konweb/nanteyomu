@@ -1,0 +1,14 @@
+slug: figma
+term: Figma
+category: service
+summary: ブラウザ上で共同編集できるデザインツール。
+en:
+  respelling: FIG-muh
+ja:
+  - kana: フィグマ
+    primary: true
+  - kana: フィギュマ
+confidence: medium
+needsSource: true
+tags: [design, collaboration]
+updated: 2026-08-31

@@ -1,0 +1,16 @@
+slug: pnpm
+term: pnpm
+category: cli
+expansion: performant npm
+summary: ディスク効率の良い Node.js のパッケージマネージャ。
+en:
+  respelling: P-N-P-M
+ja:
+  - kana: ピーエヌピーエム
+    primary: true
+  - kana: パフォーマントエヌピーエム
+    note: 略の展開をそのまま読んだもの。まれ。
+confidence: medium
+needsSource: true
+tags: [nodejs, package-manager]
+updated: 2026-08-31

@@ -1,0 +1,19 @@
+slug: svelte
+term: Svelte
+category: framework
+summary: コンパイル時に仮想 DOM を消し去るアプローチの UI フレームワーク。
+en:
+  respelling: svelt
+  note: 英単語 svelte（すらりとした）と同じ1音節。
+ja:
+  - kana: スベルト
+    primary: true
+  - kana: スヴェルト
+divergence: true
+divergenceNote: >-
+  英語では「スベルト」ではなく1音節の svelt（スヴェルト、語尾の e は読まない）。
+  日本では3拍の「スベルト」で定着しており、音の長さが英語圏とかなり違う。
+confidence: medium
+needsSource: true
+tags: [frontend, ui]
+updated: 2026-08-31

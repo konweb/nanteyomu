@@ -1,0 +1,30 @@
+slug: png
+term: PNG
+category: format
+expansion: Portable Network Graphics
+summary: 可逆圧縮のラスタ画像フォーマット。透過に対応する。
+en:
+  respelling: ping
+  note: 仕様書が読みを「ping」と定めている。
+ja:
+  - kana: ピーエヌジー
+    primary: true
+  - kana: ピング
+    note: 仕様書どおりの読み。日本ではまれ。
+divergence: true
+divergenceNote: >-
+  仕様書は読みを「ping（ピング）」と明記しているが、
+  日本ではほぼ全員が「ピーエヌジー」と読む。
+  英語圏で「ピング」と言われて画像の話だと気づけないことがある。
+confidence: high
+sources:
+  - url: https://www.w3.org/TR/png-3/
+    title: Portable Network Graphics (PNG) Specification (Third Edition)
+    kind: docs
+    quote: >-
+      This specification specifies a datastream and an associated file format,
+      Portable Network Graphics (PNG, pronounced "ping"), for a lossless,
+      portable, compressed individual computer graphics image or frame-based
+      animation, transmitted across the Internet.
+tags: [image, graphics]
+updated: 2026-08-31

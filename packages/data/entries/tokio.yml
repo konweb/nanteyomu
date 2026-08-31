@@ -1,0 +1,16 @@
+slug: tokio
+term: Tokio
+category: library
+summary: Rust の非同期ランタイム。
+en:
+  respelling: TOH-kee-oh
+  note: 東京 (Tokyo) にちなむ名前。
+ja:
+  - kana: トキオ
+    primary: true
+  - kana: トーキョー
+    note: 由来は東京だが、名称としては「トキオ」と読む。
+confidence: medium
+needsSource: true
+tags: [rust, async, japanese-origin]
+updated: 2026-08-31

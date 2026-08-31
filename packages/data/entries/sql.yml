@@ -1,0 +1,24 @@
+slug: sql
+term: SQL
+category: language
+expansion: Structured Query Language
+summary: リレーショナルデータベースを操作するための問い合わせ言語。
+en:
+  respelling: sequel / S-Q-L
+  note: >-
+    前身の言語名 SEQUEL の名残で、英語圏では「シークェル」と読む人が多い。
+    規格上の正式な読みは「エス・キュー・エル」。
+ja:
+  - kana: エスキューエル
+    primary: true
+  - kana: シークェル
+    note: 英語圏の読み。日本ではまれ。
+divergence: true
+divergenceNote: >-
+  英語圏では前身の SEQUEL に引きずられて「シークェル」と読む人が多く、
+  製品名（MySQL, PostgreSQL, SQL Server）の読みもそれに揃う。
+  日本ではほぼ一貫して「エスキューエル」で、英語話者との会話で食い違いやすい。
+confidence: medium
+needsSource: true
+tags: [database, query]
+updated: 2026-08-31

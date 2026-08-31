@@ -1,0 +1,16 @@
+slug: rhel
+term: RHEL
+category: infra
+expansion: Red Hat Enterprise Linux
+summary: Red Hat の商用 Linux ディストリビューション。
+en:
+  respelling: rel
+ja:
+  - kana: レル
+    primary: true
+  - kana: アールヘル
+  - kana: アールエイチイーエル
+confidence: medium
+needsSource: true
+tags: [linux, distro, redhat]
+updated: 2026-08-31

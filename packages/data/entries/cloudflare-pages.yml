@@ -1,0 +1,13 @@
+slug: cloudflare-pages
+term: Cloudflare Pages
+aliases: [Pages]
+category: service
+summary: 静的サイトとフロントエンドを配信する Cloudflare のホスティングサービス。
+ja:
+  - kana: ページズ
+    primary: true
+  - kana: ページス
+confidence: medium
+needsSource: true
+tags: [cloudflare, hosting, jamstack]
+updated: 2026-08-31

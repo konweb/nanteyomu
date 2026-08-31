@@ -1,0 +1,14 @@
+slug: nix
+term: Nix
+category: cli
+summary: 再現性を重視したパッケージマネージャと、それに基づく OS（NixOS）。
+en:
+  respelling: nix
+ja:
+  - kana: ニックス
+    primary: true
+  - kana: ニクス
+confidence: medium
+needsSource: true
+tags: [package-manager, reproducibility]
+updated: 2026-08-31

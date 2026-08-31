@@ -1,0 +1,14 @@
+slug: cloudflare-hyperdrive
+term: Cloudflare Hyperdrive
+aliases: [Hyperdrive]
+category: service
+summary: 既存のデータベースへの接続をエッジでプールしてレイテンシを下げるサービス。
+en:
+  respelling: HY-per-drive
+ja:
+  - kana: ハイパードライブ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [cloudflare, database, connection-pool]
+updated: 2026-08-31

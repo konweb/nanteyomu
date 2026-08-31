@@ -1,0 +1,16 @@
+slug: saml
+term: SAML
+category: protocol
+expansion: Security Assertion Markup Language
+summary: 組織間でシングルサインオンを実現するための XML ベースの規格。
+en:
+  respelling: SAM-ul
+ja:
+  - kana: サムル
+    primary: true
+  - kana: サムエル
+  - kana: エスエーエムエル
+confidence: medium
+needsSource: true
+tags: [auth, sso, enterprise]
+updated: 2026-08-31

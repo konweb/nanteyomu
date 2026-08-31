@@ -1,0 +1,18 @@
+slug: numpy
+term: NumPy
+category: library
+expansion: Numerical Python
+summary: Python の数値計算ライブラリ。多次元配列を高速に扱う。
+en:
+  respelling: NUM-pie
+  note: 後半は Python の py と同じく「パイ」。
+ja:
+  - kana: ナンパイ
+    primary: true
+  - kana: ヌンピー
+    note: 誤り。ローマ字読みしたもの。
+  - kana: ナムパイ
+confidence: medium
+needsSource: true
+tags: [python, numeric]
+updated: 2026-08-31

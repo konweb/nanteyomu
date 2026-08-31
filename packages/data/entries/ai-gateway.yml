@@ -1,0 +1,11 @@
+slug: ai-gateway
+term: AI Gateway
+category: service
+summary: LLM API 呼び出しをプロキシしてキャッシュ・レート制限・可視化を行うサービス。
+ja:
+  - kana: エーアイゲートウェイ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [cloudflare, ai, proxy]
+updated: 2026-08-31

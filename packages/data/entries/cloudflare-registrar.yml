@@ -1,0 +1,13 @@
+slug: cloudflare-registrar
+term: Cloudflare Registrar
+aliases: [Registrar]
+category: service
+summary: 原価のままドメインを登録・移管できる Cloudflare のレジストラ事業。
+ja:
+  - kana: レジストラー
+    primary: true
+  - kana: レジストラ
+confidence: medium
+needsSource: true
+tags: [cloudflare, domain, dns]
+updated: 2026-08-31

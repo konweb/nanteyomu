@@ -1,0 +1,16 @@
+slug: qemu
+term: QEMU
+category: infra
+expansion: Quick EMUlator
+summary: CPU をエミュレートして別アーキテクチャの OS を動かせる仮想化ソフト。
+en:
+  respelling: KYOO-em-yoo
+ja:
+  - kana: キューエミュ
+    primary: true
+  - kana: キューイーエムユー
+  - kana: クエミュ
+confidence: disputed
+needsSource: true
+tags: [virtualization, emulator]
+updated: 2026-08-31

@@ -1,0 +1,16 @@
+slug: cloudflare-spectrum
+term: Cloudflare Spectrum
+aliases: [Spectrum]
+category: service
+summary: HTTP 以外の TCP / UDP アプリケーションも Cloudflare 経由で保護・高速化するサービス。
+en:
+  respelling: SPEK-trum
+ja:
+  - kana: スペクトラム
+    primary: true
+  - kana: スペクトル
+    note: 誤り。英語 spectrum の読みは「スペクトラム」。
+confidence: medium
+needsSource: true
+tags: [cloudflare, network, tcp]
+updated: 2026-08-31

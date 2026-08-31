@@ -1,0 +1,21 @@
+slug: perl
+term: Perl
+category: language
+summary: テキスト処理に強いスクリプト言語。正規表現の実用化を広めた。
+en:
+  respelling: pearl
+  note: 言語は Perl、処理系のコマンドは perl と書き分ける慣習がある。
+ja:
+  - kana: パール
+    primary: true
+confidence: high
+sources:
+  - url: https://www.perl.org/about/style-guide.html
+    title: Perl Style Guide - "perl" or "Perl"?
+    kind: official
+    quote: >-
+      Traditionally, the name of the program which runs the Perl script is
+      "perl" with a lowercase "p". Most references to the language should use
+      "Perl".
+tags: [scripting, text]
+updated: 2026-08-31

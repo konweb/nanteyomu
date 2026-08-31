@@ -1,0 +1,26 @@
+slug: workerd
+term: workerd
+category: infra
+summary: Cloudflare Workers と同じコードベースで動くオープンソースの JavaScript / Wasm ランタイム。
+en:
+  respelling: worker-dee
+  note: 公式 README が読みを明記している。末尾の d は systemd などと同じデーモンの d。
+ja:
+  - kana: ワーカーディー
+    primary: true
+  - kana: ワーカード
+    note: 誤り。末尾の d を過去分詞と読んだもの。
+divergence: true
+divergenceNote: >-
+  memcached や containerd と同じ命名で、末尾の d はデーモンの d。
+  公式が「worker-dee」と読みを明記している。「ワーカード」は誤り。
+confidence: high
+sources:
+  - url: https://github.com/cloudflare/workerd
+    title: cloudflare/workerd - The JavaScript / Wasm runtime that powers Cloudflare Workers
+    kind: official
+    quote: >-
+      workerd (pronounced: "worker-dee") is a JavaScript / Wasm server runtime
+      based on the same code that powers Cloudflare Workers.
+tags: [cloudflare, runtime, daemon]
+updated: 2026-08-31

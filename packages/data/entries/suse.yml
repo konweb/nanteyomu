@@ -1,0 +1,21 @@
+slug: suse
+term: SUSE
+category: company
+summary: ドイツ発の Linux ディストリビューションおよびその開発企業。
+en:
+  respelling: SOO-zuh
+  note: ドイツ語読み。語尾の e を読む。
+ja:
+  - kana: スーゼ
+    primary: true
+  - kana: スーサ
+  - kana: サスー
+    note: 誤り。英語風に読んだもの。
+divergence: true
+divergenceNote: >-
+  ドイツ語由来なので語尾の e を読んで「スーゼ」。
+  英語風に「スース」「サスー」と読まれることがあるが、公式は「スーゼ」寄り。
+confidence: medium
+needsSource: true
+tags: [linux, distro, germany]
+updated: 2026-08-31

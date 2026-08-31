@@ -1,0 +1,22 @@
+slug: fluentd
+term: Fluentd
+category: infra
+expansion: fluent daemon
+summary: ログを収集して転送する統合ログ基盤。日本発。
+en:
+  respelling: fluent-dee
+  note: 末尾の d は daemon の d。
+ja:
+  - kana: フルーエントディー
+    primary: true
+  - kana: フルエントディー
+  - kana: フルーエントド
+    note: 誤り。末尾の d を過去分詞と勘違いしたもの。
+divergence: true
+divergenceNote: >-
+  末尾の d は daemon の d なので「フルーエント・ディー」。
+  systemd や containerd と同じ命名パターン。
+confidence: medium
+needsSource: true
+tags: [logging, observability, japanese-origin]
+updated: 2026-08-31

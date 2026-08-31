@@ -1,0 +1,22 @@
+slug: linux
+term: Linux
+category: infra
+summary: Linus Torvalds が開発したカーネル、およびそれを核とする OS 群。
+en:
+  respelling: LIN-uks / LEE-nuks
+  note: 作者本人の発音は「リーヌクス」に近い。英語圏では「リナックス」寄りも一般的。
+ja:
+  - kana: リナックス
+    primary: true
+  - kana: リヌックス
+  - kana: ライナックス
+    note: 誤り。英語の line に引きずられたもの。
+divergence: true
+divergenceNote: >-
+  日本ではほぼ「リナックス」で固定だが、作者 Linus Torvalds 本人の発音は
+  「リーヌクス」に近く、英語圏でも読みが割れている。
+  日本で使う限りは「リナックス」で問題ない。
+confidence: medium
+needsSource: true
+tags: [os, kernel]
+updated: 2026-08-31

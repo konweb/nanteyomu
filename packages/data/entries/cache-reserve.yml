@@ -1,0 +1,11 @@
+slug: cache-reserve
+term: Cache Reserve
+category: service
+summary: R2 を裏側に使って、エッジから追い出されたキャッシュを長期保持する機能。
+ja:
+  - kana: キャッシュリザーブ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [cloudflare, cache, r2]
+updated: 2026-08-31

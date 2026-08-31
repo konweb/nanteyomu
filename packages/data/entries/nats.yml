@@ -1,0 +1,15 @@
+slug: nats
+term: NATS
+category: infra
+summary: 軽量で高速なメッセージングシステム。
+en:
+  respelling: nats
+  note: 英語の gnats（ブヨ）と同じ発音。
+ja:
+  - kana: ナッツ
+    primary: true
+  - kana: エヌエーティーエス
+confidence: medium
+needsSource: true
+tags: [messaging, pubsub]
+updated: 2026-08-31

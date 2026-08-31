@@ -1,0 +1,13 @@
+slug: jq
+term: jq
+category: cli
+summary: JSON を絞り込み・整形するためのコマンドラインプロセッサ。
+en:
+  respelling: jay-cue
+ja:
+  - kana: ジェイキュー
+    primary: true
+confidence: medium
+needsSource: true
+tags: [json, cli]
+updated: 2026-08-31

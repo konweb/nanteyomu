@@ -1,0 +1,15 @@
+slug: matplotlib
+term: Matplotlib
+category: library
+expansion: MATLAB plotting library
+summary: Python のグラフ描画ライブラリ。MATLAB のプロット機能に由来する。
+en:
+  respelling: MAT-plot-lib
+ja:
+  - kana: マットプロットリブ
+    primary: true
+  - kana: マトプロットリブ
+confidence: medium
+needsSource: true
+tags: [python, visualization]
+updated: 2026-08-31

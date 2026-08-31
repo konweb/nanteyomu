@@ -1,0 +1,13 @@
+slug: haskell
+term: Haskell
+category: language
+summary: 純粋関数型プログラミング言語。論理学者 Haskell Curry にちなむ。
+en:
+  respelling: HASS-kell
+ja:
+  - kana: ハスケル
+    primary: true
+confidence: medium
+needsSource: true
+tags: [functional]
+updated: 2026-08-31

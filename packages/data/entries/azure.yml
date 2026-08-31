@@ -1,0 +1,21 @@
+slug: azure
+term: Azure
+aliases: [Microsoft Azure]
+category: service
+summary: Microsoft のクラウドプラットフォーム。
+en:
+  respelling: AZH-er
+  note: 英単語の azure（空色）と同じで、アクセントは前。
+ja:
+  - kana: アジュール
+    primary: true
+  - kana: アズール
+divergence: true
+divergenceNote: >-
+  日本では「アジュール」で完全に定着しているが、
+  英語では「アジャー」に近く、アクセントの位置も違う。
+  英語話者との会話では通じにくい語の代表格。
+confidence: medium
+needsSource: true
+tags: [cloud, microsoft]
+updated: 2026-08-31

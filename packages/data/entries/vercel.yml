@@ -1,0 +1,15 @@
+slug: vercel
+term: Vercel
+category: service
+summary: フロントエンド向けのホスティング／デプロイ基盤。Next.js の開発元。
+en:
+  respelling: ver-SELL
+ja:
+  - kana: ヴァーセル
+    primary: true
+  - kana: バーセル
+  - kana: ベルセル
+confidence: medium
+needsSource: true
+tags: [hosting, frontend]
+updated: 2026-08-31

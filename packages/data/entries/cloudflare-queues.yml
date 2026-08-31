@@ -1,0 +1,15 @@
+slug: cloudflare-queues
+term: Cloudflare Queues
+aliases: [Queues]
+category: service
+summary: Workers 間で非同期にメッセージを受け渡すキューサービス。
+en:
+  respelling: kyooz
+ja:
+  - kana: キューズ
+    primary: true
+  - kana: キュー
+confidence: medium
+needsSource: true
+tags: [cloudflare, messaging, queue]
+updated: 2026-08-31

@@ -1,0 +1,15 @@
+slug: gimp
+term: GIMP
+category: cli
+expansion: GNU Image Manipulation Program
+summary: オープンソースの画像編集ソフト。
+en:
+  respelling: gimp
+ja:
+  - kana: ギンプ
+    primary: true
+  - kana: ジンプ
+confidence: medium
+needsSource: true
+tags: [image, editor, gnu]
+updated: 2026-08-31

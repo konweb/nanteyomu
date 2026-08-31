@@ -1,0 +1,15 @@
+slug: owasp
+term: OWASP
+category: acronym
+expansion: Open Worldwide Application Security Project
+summary: Web アプリケーションのセキュリティに関する情報を公開している非営利団体。
+en:
+  respelling: OH-wasp
+ja:
+  - kana: オワスプ
+    primary: true
+  - kana: オーワスプ
+confidence: medium
+needsSource: true
+tags: [security, organization]
+updated: 2026-08-31

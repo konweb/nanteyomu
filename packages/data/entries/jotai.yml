@@ -1,0 +1,14 @@
+slug: jotai
+term: Jotai
+category: library
+summary: React 向けのアトミックな状態管理ライブラリ。
+en:
+  respelling: JOH-tie
+  note: 日本語の「状態」がそのまま名前になっている。
+ja:
+  - kana: ジョウタイ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [react, state-management, japanese-origin]
+updated: 2026-08-31

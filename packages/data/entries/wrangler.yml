@@ -1,0 +1,21 @@
+slug: wrangler
+term: Wrangler
+category: cli
+summary: Cloudflare Workers や Pages を開発・デプロイするための公式 CLI。
+en:
+  respelling: RANG-glur
+  note: 英語の wr- は r の音だけを読む（write, wrong と同じ）。牧場で家畜を扱う人の意。
+ja:
+  - kana: ラングラー
+    primary: true
+  - kana: ワングラー
+    note: 誤り。w を読んでしまったもの。
+  - kana: レングラー
+divergence: true
+divergenceNote: >-
+  英語で語頭の wr- は w を発音せず r だけを読む（write=ライト、wrong=ロング）。
+  Wrangler も「ラングラー」で、「ワングラー」は誤り。
+confidence: medium
+needsSource: true
+tags: [cloudflare, cli, workers]
+updated: 2026-08-31

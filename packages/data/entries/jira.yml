@@ -1,0 +1,15 @@
+slug: jira
+term: Jira
+category: service
+summary: Atlassian の課題管理・プロジェクト管理ツール。
+en:
+  respelling: JEE-ruh
+  note: 「ゴジラ」を縮めた Gojira が由来。
+ja:
+  - kana: ジラ
+    primary: true
+  - kana: ジーラ
+confidence: medium
+needsSource: true
+tags: [project-management, atlassian]
+updated: 2026-08-31

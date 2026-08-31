@@ -1,0 +1,15 @@
+slug: keycloak
+term: Keycloak
+category: service
+summary: オープンソースの ID・アクセス管理基盤。
+en:
+  respelling: KEY-cloak
+ja:
+  - kana: キークローク
+    primary: true
+  - kana: キーロック
+    note: 誤り。cloak を lock と読み違えたもの。
+confidence: medium
+needsSource: true
+tags: [auth, identity, sso]
+updated: 2026-08-31

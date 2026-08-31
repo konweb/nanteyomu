@@ -1,0 +1,16 @@
+slug: scipy
+term: SciPy
+category: library
+expansion: Scientific Python
+summary: Python の科学技術計算ライブラリ。NumPy の上に構築されている。
+en:
+  respelling: SIGH-pie
+ja:
+  - kana: サイパイ
+    primary: true
+  - kana: サイピー
+    note: 誤り。py は「パイ」。
+confidence: medium
+needsSource: true
+tags: [python, numeric]
+updated: 2026-08-31

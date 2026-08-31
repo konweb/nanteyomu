@@ -1,0 +1,16 @@
+slug: etcd
+term: etcd
+category: infra
+summary: 分散合意を取る キーバリューストア。Kubernetes の状態保存に使われる。
+en:
+  respelling: et-see-dee
+  note: UNIX の /etc ディレクトリを分散させたもの、という意味の名前。
+ja:
+  - kana: エトセディー
+    primary: true
+  - kana: エットシーディー
+  - kana: イーティーシーディー
+confidence: disputed
+needsSource: true
+tags: [kubernetes, kvs, distributed]
+updated: 2026-08-31

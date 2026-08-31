@@ -1,0 +1,16 @@
+slug: ffmpeg
+term: FFmpeg
+category: cli
+expansion: Fast Forward MPEG
+summary: 動画・音声を変換、加工、配信するためのツール群とライブラリ。
+en:
+  respelling: F-F-M-peg
+ja:
+  - kana: エフエフエムペグ
+    primary: true
+  - kana: エフエフエムペジー
+  - kana: エフエフエムペック
+confidence: medium
+needsSource: true
+tags: [video, audio, codec]
+updated: 2026-08-31

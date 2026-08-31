@@ -1,0 +1,16 @@
+slug: gentoo
+term: Gentoo
+category: infra
+summary: すべてをソースからビルドする方針の Linux ディストリビューション。
+en:
+  respelling: JEN-too
+  note: ジェンツーペンギンから。速く泳ぐペンギンにちなむ。
+ja:
+  - kana: ジェンツー
+    primary: true
+  - kana: ゲンツー
+    note: 誤り。ローマ字読みしたもの。
+confidence: medium
+needsSource: true
+tags: [linux, distro]
+updated: 2026-08-31

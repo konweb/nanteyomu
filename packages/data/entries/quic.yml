@@ -1,0 +1,15 @@
+slug: quic
+term: QUIC
+category: protocol
+summary: UDP の上に構築された低遅延のトランスポートプロトコル。HTTP/3 の土台。
+en:
+  respelling: quick
+  note: 英単語 quick と同じ発音。かつては Quick UDP Internet Connections の略とされたが、現在は頭字語ではない。
+ja:
+  - kana: クイック
+    primary: true
+  - kana: キューアイシー
+confidence: medium
+needsSource: true
+tags: [network, http3, transport]
+updated: 2026-08-31

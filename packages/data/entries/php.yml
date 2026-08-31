@@ -1,0 +1,15 @@
+slug: php
+term: PHP
+category: language
+expansion: PHP - Hypertext Preprocessor
+summary: Web に特化したサーバサイドのスクリプト言語。自分自身を含む再帰的な略語。
+en:
+  respelling: P-H-P
+ja:
+  - kana: ピーエイチピー
+    primary: true
+  - kana: ピーエッチピー
+confidence: medium
+needsSource: true
+tags: [web, server-side]
+updated: 2026-08-31

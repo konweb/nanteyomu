@@ -1,0 +1,13 @@
+slug: cloudflare-calls
+term: Cloudflare Realtime
+aliases: [Cloudflare Calls]
+category: service
+summary: WebRTC のリアルタイム音声・映像を中継するサービス。旧称 Cloudflare Calls。
+ja:
+  - kana: リアルタイム
+    primary: true
+  - kana: コールズ
+confidence: medium
+needsSource: true
+tags: [cloudflare, webrtc, media]
+updated: 2026-08-31

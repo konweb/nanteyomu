@@ -1,0 +1,13 @@
+slug: cloudflare-gateway
+term: Cloudflare Gateway
+aliases: [Gateway]
+category: service
+summary: 社員の DNS / HTTP 通信をフィルタして脅威を遮断する Zero Trust の機能。
+ja:
+  - kana: ゲートウェイ
+    primary: true
+  - kana: ゲイトウェイ
+confidence: medium
+needsSource: true
+tags: [cloudflare, zero-trust, security]
+updated: 2026-08-31

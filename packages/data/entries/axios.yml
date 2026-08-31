@@ -1,0 +1,14 @@
+slug: axios
+term: Axios
+category: library
+summary: ブラウザと Node.js の両方で使える HTTP クライアントライブラリ。
+en:
+  respelling: ax-EE-ohs
+ja:
+  - kana: アクシオス
+    primary: true
+  - kana: アキシオス
+confidence: medium
+needsSource: true
+tags: [http, javascript]
+updated: 2026-08-31

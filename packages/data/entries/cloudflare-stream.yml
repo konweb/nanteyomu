@@ -1,0 +1,12 @@
+slug: cloudflare-stream
+term: Cloudflare Stream
+aliases: [Stream]
+category: service
+summary: 動画のエンコード・保存・配信をまとめて行うサービス。
+ja:
+  - kana: ストリーム
+    primary: true
+confidence: medium
+needsSource: true
+tags: [cloudflare, video, media]
+updated: 2026-08-31

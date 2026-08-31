@@ -1,0 +1,15 @@
+slug: rsync
+term: rsync
+category: cli
+expansion: remote sync
+summary: 差分だけを転送してディレクトリを同期するコマンド。
+en:
+  respelling: R-sink
+ja:
+  - kana: アールシンク
+    primary: true
+  - kana: アールシンクロ
+confidence: medium
+needsSource: true
+tags: [sync, backup, network]
+updated: 2026-08-31

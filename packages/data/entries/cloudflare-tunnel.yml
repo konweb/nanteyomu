@@ -1,0 +1,12 @@
+slug: cloudflare-tunnel
+term: Cloudflare Tunnel
+category: service
+summary: 受信ポートを開けずにオリジンを Cloudflare 経由で公開する仕組み。旧称 Argo Tunnel。
+ja:
+  - kana: トンネル
+    primary: true
+  - kana: クラウドフレアトンネル
+confidence: medium
+needsSource: true
+tags: [cloudflare, tunnel, zero-trust]
+updated: 2026-08-31

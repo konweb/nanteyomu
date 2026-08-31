@@ -1,0 +1,16 @@
+slug: chmod
+term: chmod
+category: cli
+expansion: change mode
+summary: ファイルのパーミッション（アクセス権）を変更するコマンド。
+en:
+  respelling: change-mod
+ja:
+  - kana: チェンジモド
+  - kana: シーエイチモッド
+    primary: true
+  - kana: チモッド
+confidence: disputed
+needsSource: true
+tags: [unix, permission]
+updated: 2026-08-31

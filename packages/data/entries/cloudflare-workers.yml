@@ -1,0 +1,16 @@
+slug: cloudflare-workers
+term: Cloudflare Workers
+aliases: [Workers]
+category: service
+summary: Cloudflare のエッジで JavaScript や Wasm を実行するサーバーレス基盤。
+en:
+  respelling: WUR-kurz
+ja:
+  - kana: ワーカーズ
+    primary: true
+  - kana: ワーカー
+    note: 単数で呼ぶ人もいるが、製品名は複数形の Workers。
+confidence: medium
+needsSource: true
+tags: [cloudflare, serverless, edge]
+updated: 2026-08-31

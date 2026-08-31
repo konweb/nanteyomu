@@ -1,0 +1,15 @@
+slug: wysiwyg
+term: WYSIWYG
+category: acronym
+expansion: What You See Is What You Get
+summary: 編集画面の見た目がそのまま出力になる方式のこと。
+en:
+  respelling: WIZ-ee-wig
+ja:
+  - kana: ウィジウィグ
+    primary: true
+  - kana: ウィズィウィグ
+confidence: medium
+needsSource: true
+tags: [editor, ui]
+updated: 2026-08-31

@@ -1,0 +1,17 @@
+slug: neovim
+term: Neovim
+aliases: [nvim]
+category: cli
+summary: Vim をフォークして拡張性と組み込み用途を強化したテキストエディタ。
+en:
+  respelling: NEE-oh-vim
+ja:
+  - kana: ネオヴィム
+    primary: true
+  - kana: ネオビム
+  - kana: エヌヴィム
+    note: コマンド名 nvim の読み。
+confidence: medium
+needsSource: true
+tags: [editor, vim]
+updated: 2026-08-31

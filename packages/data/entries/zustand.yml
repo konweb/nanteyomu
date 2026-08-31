@@ -1,0 +1,22 @@
+slug: zustand
+term: Zustand
+category: library
+summary: React 向けの軽量な状態管理ライブラリ。
+en:
+  respelling: TSOO-shtahnt
+  note: ドイツ語で「状態」の意味。z は「ツ」の音。
+ja:
+  - kana: ツースタンド
+    primary: true
+  - kana: ツーシュタント
+    note: ドイツ語の発音により近い表記。
+  - kana: ズスタンド
+    note: 誤り。英語読みしたもの。
+divergence: true
+divergenceNote: >-
+  ドイツ語の「状態」なので z は「ツ」、stand は「シュタント」。
+  英語風に「ズスタンド」と読むのは誤り。日本では「ツースタンド」が優勢。
+confidence: medium
+needsSource: true
+tags: [react, state-management]
+updated: 2026-08-31

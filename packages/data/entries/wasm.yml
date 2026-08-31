@@ -1,0 +1,24 @@
+slug: wasm
+term: WebAssembly
+aliases: [Wasm, WASM]
+category: format
+summary: ブラウザなどで動く可搬なバイナリ命令形式。
+en:
+  respelling: WAH-zum
+  note: 公式サイトの表記は "abbreviated Wasm"。頭字語ではなく短縮形なので、慣習的に Wasm と書く。
+ja:
+  - kana: ウェブアセンブリ
+    primary: true
+  - kana: ワズム
+    note: 略記 Wasm の読み。
+  - kana: ワスム
+confidence: high
+sources:
+  - url: https://webassembly.org/
+    title: WebAssembly
+    kind: official
+    quote: >-
+      WebAssembly (abbreviated Wasm) is a binary instruction format for a
+      stack-based virtual machine.
+tags: [browser, binary, runtime]
+updated: 2026-08-31

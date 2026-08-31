@@ -1,0 +1,15 @@
+slug: cloudflare-warp
+term: WARP
+aliases: [Cloudflare WARP, 1.1.1.1 with WARP]
+category: service
+summary: 端末の通信を Cloudflare のネットワーク経由にするクライアント。個人向けVPNと Zero Trust の両方で使う。
+en:
+  respelling: warp
+ja:
+  - kana: ワープ
+    primary: true
+  - kana: ワルプ
+confidence: medium
+needsSource: true
+tags: [cloudflare, vpn, zero-trust]
+updated: 2026-08-31

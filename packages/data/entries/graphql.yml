@@ -1,0 +1,16 @@
+slug: graphql
+term: GraphQL
+category: protocol
+summary: クライアントが必要なフィールドだけを指定して取得できる API 用のクエリ言語。
+en:
+  respelling: graph-Q-L
+ja:
+  - kana: グラフキューエル
+    primary: true
+  - kana: グラフクル
+  - kana: グラフシークェル
+    note: 英語圏で SQL を「シークェル」と読む流儀にあわせたもの。日本ではまれ。
+confidence: medium
+needsSource: true
+tags: [api, query]
+updated: 2026-08-31

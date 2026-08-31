@@ -1,0 +1,20 @@
+slug: linkerd
+term: Linkerd
+category: infra
+summary: Kubernetes 向けの軽量なサービスメッシュ。
+en:
+  respelling: linker-dee
+  note: 末尾の d は daemon の d。
+ja:
+  - kana: リンカーディー
+    primary: true
+  - kana: リンカード
+    note: 誤り。末尾の d を過去分詞と勘違いしたもの。
+divergence: true
+divergenceNote: >-
+  「リンカード」と一息に読まれがちだが、末尾の d は daemon の d なので
+  「リンカー・ディー」。
+confidence: medium
+needsSource: true
+tags: [kubernetes, service-mesh]
+updated: 2026-08-31

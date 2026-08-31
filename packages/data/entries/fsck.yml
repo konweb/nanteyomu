@@ -1,0 +1,17 @@
+slug: fsck
+term: fsck
+category: cli
+expansion: file system consistency check
+summary: ファイルシステムの整合性を検査・修復するコマンド。
+en:
+  respelling: F-S-C-K / fisk
+ja:
+  - kana: エフエスシーケー
+    primary: true
+  - kana: フスク
+  - kana: ファイルシステムチェック
+    note: 略の展開を読んだもの。
+confidence: disputed
+needsSource: true
+tags: [filesystem, unix]
+updated: 2026-08-31

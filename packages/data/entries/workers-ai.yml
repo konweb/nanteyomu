@@ -1,0 +1,13 @@
+slug: workers-ai
+term: Workers AI
+category: service
+summary: Cloudflare のネットワーク上の GPU で推論を実行するサービス。
+ja:
+  - kana: ワーカーズエーアイ
+    primary: true
+  - kana: ワーカーズアイ
+    note: 誤り。AI は「エーアイ」。
+confidence: medium
+needsSource: true
+tags: [cloudflare, ai, inference]
+updated: 2026-08-31

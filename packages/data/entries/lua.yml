@@ -1,0 +1,26 @@
+slug: lua
+term: Lua
+category: language
+summary: 組み込み用途で広く使われる軽量なスクリプト言語。ブラジル生まれ。
+en:
+  respelling: LOO-ah
+  note: ポルトガル語で「月」の意味。頭字語ではないので LUA と大文字で書くのは誤り。
+ja:
+  - kana: ルア
+    primary: true
+  - kana: ルーア
+divergence: true
+divergenceNote: >-
+  綴りから英語読みして「エルユーエー」「ルーア」と読まれることがあるが、
+  ポルトガル語の「月」が由来で「ルア」。頭字語ではないため LUA という表記も誤り。
+confidence: high
+sources:
+  - url: https://www.lua.org/about.html
+    title: About Lua
+    kind: official
+    quote: >-
+      "Lua" (pronounced LOO-ah) means "Moon" in Portuguese. Please do not
+      write it as "LUA", which is both ugly and confusing, because then it
+      becomes an acronym with different meanings for different people.
+tags: [scripting, embedded]
+updated: 2026-08-31

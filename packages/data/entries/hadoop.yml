@@ -1,0 +1,16 @@
+slug: hadoop
+term: Hadoop
+aliases: [Apache Hadoop]
+category: infra
+summary: 大規模データを分散処理するためのフレームワーク。
+en:
+  respelling: huh-DOOP
+  note: 作者の子どものぬいぐるみの象の名前がそのまま付いた。
+ja:
+  - kana: ハドゥープ
+    primary: true
+  - kana: ハドープ
+confidence: medium
+needsSource: true
+tags: [bigdata, distributed, apache]
+updated: 2026-08-31

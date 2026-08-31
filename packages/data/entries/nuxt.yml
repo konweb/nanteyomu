@@ -1,0 +1,14 @@
+slug: nuxt
+term: Nuxt
+category: framework
+summary: Vue ベースのメタフレームワーク。SSR や静的生成に対応する。
+en:
+  respelling: nukst
+ja:
+  - kana: ナクスト
+    primary: true
+  - kana: ヌクスト
+confidence: medium
+needsSource: true
+tags: [vue, frontend, ssr]
+updated: 2026-08-31

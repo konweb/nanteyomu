@@ -1,0 +1,22 @@
+slug: quiche
+term: quiche
+category: library
+summary: Cloudflare が開発した QUIC と HTTP/3 の Rust 実装。
+en:
+  respelling: keesh
+  note: フランス語由来の英単語 quiche（キッシュ、卵のタルト）と同じ綴りで、同じく1音節。
+ja:
+  - kana: キッシュ
+    primary: true
+  - kana: クイシェ
+    note: 誤り。綴りをローマ字ふうに読んだもの。
+  - kana: クイチェ
+    note: 誤り。
+divergence: true
+divergenceNote: >-
+  QUIC の実装なので「クイック」系の読みを当てたくなるが、綴りはフランス語由来の
+  英単語 quiche と同じで「キッシュ」。「クイシェ」「クイチェ」は誤り。
+confidence: medium
+needsSource: true
+tags: [cloudflare, rust, quic, http3]
+updated: 2026-08-31

@@ -1,0 +1,20 @@
+slug: clojure
+term: Clojure
+category: language
+summary: JVM 上で動く Lisp 系の関数型言語。
+en:
+  respelling: closure
+  note: 英単語の closure（クロージャ）と同じ発音になるよう名付けられている。
+ja:
+  - kana: クロージャー
+    primary: true
+  - kana: クロージュア
+divergence: true
+divergenceNote: >-
+  綴りに j があるため「クロジュール」「クロージェ」と読まれがちだが、
+  英単語 closure と同じ読み。プログラミング用語のクロージャと同音になるので、
+  文脈で区別する必要がある。
+confidence: medium
+needsSource: true
+tags: [lisp, jvm, functional]
+updated: 2026-08-31

@@ -1,0 +1,12 @@
+slug: speed-brain
+term: Speed Brain
+category: service
+summary: 次に見られるページを予測して先読みし、体感速度を上げる機能。
+ja:
+  - kana: スピードブレイン
+    primary: true
+  - kana: スピードブレーン
+confidence: medium
+needsSource: true
+tags: [cloudflare, performance, prefetch]
+updated: 2026-08-31

@@ -1,0 +1,14 @@
+slug: pandoc
+term: Pandoc
+category: cli
+summary: Markdown、HTML、LaTeX、Word など多数の文書形式を相互変換するツール。
+en:
+  respelling: PAN-dok
+ja:
+  - kana: パンドック
+    primary: true
+  - kana: パンドク
+confidence: medium
+needsSource: true
+tags: [document, converter]
+updated: 2026-08-31

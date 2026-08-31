@@ -1,0 +1,17 @@
+slug: vim
+term: Vim
+category: cli
+expansion: Vi IMproved
+summary: vi を拡張したテキストエディタ。
+en:
+  respelling: vim
+ja:
+  - kana: ヴィム
+    primary: true
+  - kana: ビム
+  - kana: ブイアイエム
+    note: 綴りを読み下したもの。vi との関係を意識した読み。
+confidence: medium
+needsSource: true
+tags: [editor]
+updated: 2026-08-31

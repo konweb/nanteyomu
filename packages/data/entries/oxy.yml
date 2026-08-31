@@ -1,0 +1,14 @@
+slug: oxy
+term: Oxy
+category: library
+summary: Cloudflare が社内のプロキシ実装に使っている Rust 製のフレームワーク。
+en:
+  respelling: OK-see
+ja:
+  - kana: オキシー
+    primary: true
+  - kana: オクシー
+confidence: disputed
+needsSource: true
+tags: [cloudflare, rust, proxy]
+updated: 2026-08-31

@@ -1,0 +1,18 @@
+slug: curl
+term: curl
+aliases: [cURL]
+category: cli
+expansion: Client URL
+summary: URL を指定してデータを送受信するコマンドラインツールとライブラリ。
+en:
+  respelling: curl
+  note: 英語の curl（カールする）と同じ発音。
+ja:
+  - kana: カール
+    primary: true
+  - kana: シーユーアールエル
+    note: 綴りを読み下したもの。
+confidence: medium
+needsSource: true
+tags: [http, network]
+updated: 2026-08-31

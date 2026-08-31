@@ -1,0 +1,22 @@
+slug: parquet
+term: Parquet
+aliases: [Apache Parquet]
+category: format
+summary: 分析用途に向いた列指向のデータ保存フォーマット。
+en:
+  respelling: par-KAY
+  note: フランス語由来の英単語 parquet（寄木張りの床）。語尾の t は読まない。
+ja:
+  - kana: パーケイ
+    primary: true
+  - kana: パーケット
+    note: 誤り。語尾の t を読んでしまったもの。
+  - kana: パルケ
+divergence: true
+divergenceNote: >-
+  フランス語由来なので語尾の t は発音せず「パーケイ」。
+  日本では綴りどおりに「パーケット」と読まれることが非常に多い。
+confidence: medium
+needsSource: true
+tags: [bigdata, columnar, apache]
+updated: 2026-08-31

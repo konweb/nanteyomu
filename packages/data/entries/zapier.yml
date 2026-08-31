@@ -1,0 +1,21 @@
+slug: zapier
+term: Zapier
+category: service
+summary: 複数のSaaSをつないで作業を自動化するサービス。
+en:
+  respelling: ZAY-pee-er
+  note: happier と同じ韻になるよう作られた名前。
+ja:
+  - kana: ザピアー
+    primary: true
+  - kana: ザピエル
+    note: 誤り。フランス語風に読んだもの。
+  - kana: ゼイピアー
+divergence: true
+divergenceNote: >-
+  英語では happier と韻を踏むよう作られた名前で「ゼイピアー」に近い。
+  日本では「ザピアー」「ザピエル」と読まれることが多い。
+confidence: medium
+needsSource: true
+tags: [automation, saas]
+updated: 2026-08-31
