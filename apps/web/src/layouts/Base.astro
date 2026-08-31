@@ -13,6 +13,8 @@ interface Props {
 
 const { title, description, path } = Astro.props;
 const canonical = new URL(path ?? Astro.url.pathname, Astro.site);
+// OGP 画像は絶対 URL でないとクローラが解決できない
+const ogImage = new URL('/ogp.jpg', Astro.site);
 const fullTitle = title === 'nanteyomu' ? title : `${title} | nanteyomu`;
 ---
 
@@ -29,7 +31,13 @@ const fullTitle = title === 'nanteyomu' ? title : `${title} | nanteyomu`;
     <meta property="og:url" content={canonical.href} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="nanteyomu" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={ogImage.href} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
+    <meta property="og:image:alt" content="そのツール、なんて読む？ — IT のツール名・サービス名の読み方を出典つきで引ける辞典" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={ogImage.href} />
     <meta name="theme-color" content="#f6f1ff" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#171334" media="(prefers-color-scheme: dark)" />
     <link rel="sitemap" href="/sitemap-index.xml" />
