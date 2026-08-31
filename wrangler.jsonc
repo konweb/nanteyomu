@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  // ビルドもデプロイもリポジトリのルートから行うため、設定もここに置く。
+  // wrangler はワークスペースのルートに設定ファイルがないと
+  // 「ワークスペースのルートでは実行できない」と言って止まる。
+  "name": "nanteyomu",
+  "compatibility_date": "2026-08-01",
+  "assets": {
+    // ルートからの相対パス。root の `pnpm build` がここに生成する。
+    "directory": "./apps/web/dist",
+    "not_found_handling": "404-page"
+  }
+}
