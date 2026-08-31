@@ -32,6 +32,12 @@ const sourced = entries.filter((e) => (e.sources?.length ?? 0) > 0).length;
     </ul>
 
     <Search client:load />
+
+    <p class="lookup-links">
+      <span class="lead">頭文字から辿る</span>
+      <a href="/kana/">あいうえお順</a>
+      <a href="/all/">アルファベット順</a>
+    </p>
   </section>
 
   <section class="section">
@@ -60,21 +66,6 @@ const sourced = entries.filter((e) => (e.sources?.length ?? 0) > 0).length;
           <div class="note">{count} 語</div>
         </a>
       ))}
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>索引</h2>
-    <p class="section-lead">収録語を頭文字から順に辿れます。</p>
-    <div class="card-grid">
-      <a class="card" href="/kana/">
-        <span class="term">あいうえお順</span>
-        <div class="note">読みの五十音順。カタカナから探すとき</div>
-      </a>
-      <a class="card" href="/all/">
-        <span class="term">アルファベット順</span>
-        <div class="note">綴りの順。つづりが分かっているとき</div>
-      </a>
     </div>
   </section>
 
