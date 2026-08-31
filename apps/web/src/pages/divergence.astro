@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Logo from '../components/Logo.astro';
 import { divergentEntries, primaryKana } from '../lib/entries';
 const list = divergentEntries();
 ---
@@ -8,8 +9,11 @@ const list = divergentEntries();
   description="英語圏での発音と、日本の現場で実際に通っている読みが食い違う用語の一覧。JWT、Kubernetes、PostgreSQL など。"
   path="/divergence/"
 >
-  <section class="hero" style="padding-bottom: 1rem;">
-    <h1>日英で読みがズレる語</h1>
+  <section class="page-head">
+    <div class="hero-top">
+      <Logo size={60} />
+      <h1>日英でズレる語</h1>
+    </div>
     <p>
       日本語話者が本当に困るのは「正しい発音」ではなく、
       <strong>英語圏の読みと日本の現場の通り名が食い違っていて、どちらで喋るべきか分からない</strong>ことです。

@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Logo from '../components/Logo.astro';
 import Search from '../components/Search.tsx';
 import { entries, divergentEntries, categoriesWithCounts, CATEGORY_LABEL, primaryKana } from '../lib/entries';
 import { GITHUB_REPO } from '../lib/site';
@@ -15,17 +16,27 @@ const sourced = entries.filter((e) => (e.sources?.length ?? 0) > 0).length;
   path="/"
 >
   <section class="hero">
-    <h1>そのツール、なんて読む？</h1>
+    <div class="hero-top">
+      <Logo size={76} class="bob" />
+      <h1>そのツール、<br />なんて<span class="mark">読む</span>？</h1>
+    </div>
     <p>
       IT のツール名・サービス名の読み方を、<strong>出典つき</strong>で引ける辞典です。
       英語圏での発音と、日本の現場で実際に通っている読みの<strong>両方</strong>を載せています。
     </p>
+
+    <ul class="stats">
+      <li class="stat"><b>{entries.length}</b> 語収録</li>
+      <li class="stat"><b>{sourced}</b> 語に出典あり</li>
+      <li class="stat"><b>{divergentEntries().length}</b> 語が日英でズレる</li>
+    </ul>
+
     <Search client:load />
   </section>
 
   <section class="section">
     <h2>日英で読みがズレる語</h2>
-    <p style="color: var(--fg-muted); margin-top: -0.25rem;">
+    <p class="section-lead">
       日本語話者が本当に困るのは「正しい発音」より「英語圏の読みと日本の現場の通り名のズレ」です。
     </p>
     <div class="card-grid">
@@ -37,7 +48,7 @@ const sourced = entries.filter((e) => (e.sources?.length ?? 0) > 0).length;
         </a>
       ))}
     </div>
-    <p style="margin-top: 1rem;"><a href="/divergence/">ズレる語をすべて見る →</a></p>
+    <p style="margin-top: 1.25rem;"><a href="/divergence/">ズレる語をすべて見る →</a></p>
   </section>
 
   <section class="section">
@@ -53,8 +64,8 @@ const sourced = entries.filter((e) => (e.sources?.length ?? 0) > 0).length;
   </section>
 
   <div class="contribute">
-    現在 <strong>{entries.length}</strong> 語収録、うち <strong>{sourced}</strong> 語に出典があります。
     出典は作者本人の発言・公式ドキュメント・公式FAQ を優先し、推測で書かない方針です。
+    確認できていない語は「出典なし（暫定値）」と明示しています。
     追加・修正は <a href={GITHUB_REPO}>GitHub</a> から Pull Request でどうぞ。
   </div>
 </Base>

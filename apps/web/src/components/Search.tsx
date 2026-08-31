@@ -98,7 +98,7 @@ export default function Search() {
                 <li role="option" aria-selected={i() === cursor()}>
                   <a
                     href={`/w/${row.s}/`}
-                    style={i() === cursor() ? 'background: var(--accent-soft)' : ''}
+                    classList={{ 'is-cursor': i() === cursor() }}
                   >
                     <span class="term mono">{row.t}</span>
                     <span class="kana">{row.k}</span>

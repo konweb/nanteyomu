@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Logo from '../components/Logo.astro';
+import { LOGO_PATH, LOGO_SPRITE_ID } from '../lib/logo';
 import { GITHUB_REPO } from '../lib/site';
 
 interface Props {
@@ -28,18 +30,32 @@ const fullTitle = title === 'nanteyomu' ? title : `${title} | nanteyomu`;
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="nanteyomu" />
     <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#f6f1ff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#171334" media="(prefers-color-scheme: dark)" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- 見出し・カナ用の丸ゴシック。本文は端末のフォントのまま -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔊</text></svg>"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap"
     />
   </head>
   <body>
+    {/* ロゴの形状はここで1度だけ定義し、各 <Logo /> は <use> で参照する */}
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <defs><path id={LOGO_SPRITE_ID} d={LOGO_PATH} /></defs>
+    </svg>
     <header class="site-header">
       <div class="wrap">
-        <a class="logo" href="/">nante<span class="ruby">yomu</span></a>
+        <a class="logo" href="/">
+          <Logo size={30} />
+          <span>nante<span class="ruby">yomu</span></span>
+        </a>
         <nav class="site-nav">
-          <a href="/divergence/">日英でズレる語</a>
+          <a href="/divergence/"><span class="nav-full">日英でズレる語</span><span class="nav-short">ズレる語</span></a>
           <a href="/all/">すべて</a>
           <a href={GITHUB_REPO}>GitHub</a>
         </nav>
@@ -52,6 +68,7 @@ const fullTitle = title === 'nanteyomu' ? title : `${title} | nanteyomu`;
 
     <footer class="site-footer">
       <div class="wrap">
+        <Logo size={50} />
         <p>
           nanteyomu — IT のツール名・サービス名の読み方を、根拠つきで。
           データは <a href={GITHUB_REPO}>GitHub</a> で
