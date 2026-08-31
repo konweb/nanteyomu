@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import Logo from '../components/Logo.astro';
+import IndexView from '../components/IndexView.astro';
+import { entries, kanaIndex } from '../lib/entries';
+const groups = kanaIndex();
+---
+<Base
+  title="あいうえお順の索引"
+  description={`nanteyomu に収録している ${entries.length} 語を、読みの五十音順に並べた索引。読み方から引けます。`}
+  path="/kana/"
+>
+  <section class="page-head">
+    <div class="hero-top">
+      <Logo size={56} />
+      <h1>索引</h1>
+    </div>
+    <p>{entries.length} 語を読みの五十音順に並べています。</p>
+  </section>
+
+  <nav class="index-tabs" aria-label="並び順">
+    <a href="/all/">アルファベット順</a>
+    <span class="is-current" aria-current="page">あいうえお順</span>
+  </nav>
+
+  <IndexView groups={groups} jumpLabel="行へ移動" />
+</Base>

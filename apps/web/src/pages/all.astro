@@ -1,23 +1,27 @@
 ---
 import Base from '../layouts/Base.astro';
-import { sortedEntries, primaryKana, CATEGORY_LABEL } from '../lib/entries';
-const list = sortedEntries();
+import Logo from '../components/Logo.astro';
+import IndexView from '../components/IndexView.astro';
+import { entries, alphabetIndex } from '../lib/entries';
+const groups = alphabetIndex();
 ---
-<Base title="収録語一覧" description="nanteyomu に収録されているツール名・サービス名の一覧。" path="/all/">
+<Base
+  title="アルファベット順の索引"
+  description={`nanteyomu に収録している ${entries.length} 語を、綴りのアルファベット順に並べた索引。`}
+  path="/all/"
+>
   <section class="page-head">
-    <h1>収録語一覧</h1>
-    <p>{list.length} 語</p>
+    <div class="hero-top">
+      <Logo size={56} />
+      <h1>索引</h1>
+    </div>
+    <p>{entries.length} 語を綴りの順に並べています。</p>
   </section>
-  <ul class="search-results">
-    {list.map((e) => (
-      <li>
-        <a href={`/w/${e.slug}/`}>
-          <span class="term mono">{e.term}</span>
-          <span class="kana">{primaryKana(e)}</span>
-          <span class="badge">{CATEGORY_LABEL[e.category] ?? e.category}</span>
-          {e.divergence && <span class="badge divergence">日英でズレる</span>}
-        </a>
-      </li>
-    ))}
-  </ul>
+
+  <nav class="index-tabs" aria-label="並び順">
+    <span class="is-current" aria-current="page">アルファベット順</span>
+    <a href="/kana/">あいうえお順</a>
+  </nav>
+
+  <IndexView groups={groups} jumpLabel="頭文字へ移動" />
 </Base>
