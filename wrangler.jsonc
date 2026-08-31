@@ -5,6 +5,12 @@
   // 「ワークスペースのルートでは実行できない」と言って止まる。
   "name": "nanteyomu",
   "compatibility_date": "2026-08-01",
+  // カスタムドメイン。deploy 時に wrangler が DNS レコードとルートを作る。
+  // Route パターン（*.nanteyomu.dev/* など）と違い、apex に確実に当たり、
+  // DNS レコードを別途用意する必要もない。
+  "routes": [
+    { "pattern": "nanteyomu.dev", "custom_domain": true }
+  ],
   "assets": {
     // ルートからの相対パス。root の `pnpm build` がここに生成する。
     "directory": "./apps/web/dist",
