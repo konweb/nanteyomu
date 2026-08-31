@@ -2,6 +2,8 @@
 import Base from '../layouts/Base.astro';
 import Logo from '../components/Logo.astro';
 import Search from '../components/Search.tsx';
+import JsonLd from '../components/JsonLd.astro';
+import { homeSchema } from '../lib/schema';
 import { entries, divergentEntries, categoriesWithCounts, CATEGORY_LABEL, primaryKana } from '../lib/entries';
 import { GITHUB_REPO } from '../lib/site';
 
@@ -11,7 +13,7 @@ const sourced = entries.filter((e) => (e.sources?.length ?? 0) > 0).length;
 ---
 
 <Base
-  title="nanteyomu"
+  title="nanteyomu — IT のツール名・サービス名の読み方辞典"
   description="tmux、nginx、Cloudflare Turnstile — IT のツール名・サービス名の読み方を、出典つきで引ける辞典。英語圏の発音と日本の現場での通り名の両方を収録しています。"
   path="/"
 >
@@ -74,4 +76,5 @@ const sourced = entries.filter((e) => (e.sources?.length ?? 0) > 0).length;
     確認できていない語は「出典なし（暫定値）」と明示しています。
     追加・修正は <a href={GITHUB_REPO}>GitHub</a> から Pull Request でどうぞ。
   </div>
+  <JsonLd data={homeSchema(entries.length)} />
 </Base>

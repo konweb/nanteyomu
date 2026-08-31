@@ -1,4 +1,6 @@
 ---
+import JsonLd from '../components/JsonLd.astro';
+import { collectionSchema } from '../lib/schema';
 import Base from '../layouts/Base.astro';
 import Logo from '../components/Logo.astro';
 import { divergentEntries, primaryKana } from '../lib/entries';
@@ -29,4 +31,10 @@ const list = divergentEntries();
       </a>
     ))}
   </div>
+  <JsonLd data={collectionSchema({
+    path: '/divergence/',
+    name: '日英で読みがズレる語',
+    description: '英語圏での発音と、日本の現場で実際に通っている読みが食い違う用語の一覧。JWT、Kubernetes、PostgreSQL など。',
+    count: list.length,
+  })} />
 </Base>

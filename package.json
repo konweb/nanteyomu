@@ -10,7 +10,7 @@
     "wrangler": "^4.0.0"
   },
   "scripts": {
-    "dev": "pnpm --filter @nanteyomu/web dev",
+    "dev": "pnpm run data && pnpm --filter @nanteyomu/web dev",
     "data": "pnpm --filter @nanteyomu/data build && node scripts/sync-data.mjs",
     "build": "pnpm run data && pnpm --filter @nanteyomu/web build",
     "preview": "pnpm --filter @nanteyomu/web preview",

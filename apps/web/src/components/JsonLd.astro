@@ -1,0 +1,6 @@
+---
+/** 構造化データを1つの <script> として出す。 */
+interface Props { data: unknown }
+const { data } = Astro.props;
+---
+<script type="application/ld+json" set:html={JSON.stringify(data)} is:inline />

@@ -1,9 +1,12 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Speak from '../../components/Speak.tsx';
+import JsonLd from '../../components/JsonLd.astro';
 import {
   entries, CATEGORY_LABEL, CONFIDENCE_LABEL, SOURCE_KIND_LABEL, primaryKana,
+  sameCategoryEntries,
 } from '../../lib/entries';
+import { entrySchema } from '../../lib/schema';
 import { EDIT_BASE } from '../../lib/site';
 
 export function getStaticPaths() {
@@ -14,21 +17,23 @@ const { entry } = Astro.props;
 const kana = primaryKana(entry);
 const others = entry.ja.filter((r) => r.kana !== kana);
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'DefinedTerm',
-  name: entry.term,
-  alternateName: entry.ja.map((r) => r.kana),
-  description: entry.summary,
-  inDefinedTermSet: { '@type': 'DefinedTermSet', name: 'nanteyomu', url: 'https://nanteyomu.dev/' },
-};
+const title = `${entry.term} の読み方は「${kana}」`;
+const description = `${entry.term} は「${kana}」と読みます。${entry.summary}`;
+const categoryLabel = CATEGORY_LABEL[entry.category] ?? entry.category;
+const related = sameCategoryEntries(entry);
 ---
 
 <Base
-  title={`${entry.term} の読み方は「${kana}」`}
-  description={`${entry.term} は「${kana}」と読みます。${entry.summary}`}
+  title={title}
+  description={description}
   path={`/w/${entry.slug}/`}
 >
+  <nav class="crumbs" aria-label="パンくずリスト">
+    <a href="/">トップ</a>
+    <a href={`/c/${entry.category}/`}>{categoryLabel}</a>
+    <span aria-current="page">{entry.term}</span>
+  </nav>
+
   <article>
     <header class="entry-head">
       <h1 class="entry-term mono">{entry.term}</h1>
@@ -114,6 +119,24 @@ const jsonLd = {
       )}
     </section>
 
+    {related.length > 0 && (
+      <section class="section">
+        <h2>同じカテゴリの語</h2>
+        <div class="card-grid">
+          {related.map((e) => (
+            <a class="card" href={`/w/${e.slug}/`}>
+              <span class="term mono">{e.term}</span>
+              <span class="kana">{primaryKana(e)}</span>
+            </a>
+          ))}
+        </div>
+        <p style="margin-top: 1.25rem;">
+          <a href={`/c/${entry.category}/`}>{categoryLabel}をすべて見る →</a>
+          ・<a href="/kana/">あいうえお順の索引</a>
+        </p>
+      </section>
+    )}
+
     <div class="contribute">
       最終更新 {entry.updated} ・
       <a href={`${EDIT_BASE}/${entry.slug}.yml`}>
@@ -122,5 +145,5 @@ const jsonLd = {
     </div>
   </article>
 
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+  <JsonLd data={entrySchema(entry, title, description)} />
 </Base>
