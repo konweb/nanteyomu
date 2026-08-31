@@ -2,12 +2,11 @@ packages:
   - apps/*
   - packages/*
 
+# インストール時にビルドスクリプトの実行を許可する依存。
+# pnpm 11 は既定が strictDepBuilds: true なので、ここで明示していない
+# ビルドスクリプトがあるとインストールがエラーで止まる。
+# (v10 までの onlyBuiltDependencies は v11 で廃止され allowBuilds になった)
 allowBuilds:
-  esbuild: set this to true or false
-  sharp: set this to true or false
-  workerd: set this to true or false
-
-onlyBuiltDependencies:
-  - esbuild
-  - sharp
-  - workerd
+  esbuild: true   # Vite / Astro のバンドラ。プラットフォーム別バイナリを配置する
+  sharp: true     # Astro の画像最適化
+  workerd: true   # Wrangler が使う Workers ランタイム
