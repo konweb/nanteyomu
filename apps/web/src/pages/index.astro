@@ -17,7 +17,7 @@ const sourced = entries.filter((e) => (e.sources?.length ?? 0) > 0).length;
 >
   <section class="hero">
     <div class="hero-top">
-      <Logo size={76} class="bob" />
+      <Logo size={88} class="bob" />
       <h1>そのツール、<br />なんて<span class="mark">読む</span>？</h1>
     </div>
     <p>
@@ -32,6 +32,12 @@ const sourced = entries.filter((e) => (e.sources?.length ?? 0) > 0).length;
     </ul>
 
     <Search client:load />
+
+    <p class="lookup-links">
+      <span class="lead">頭文字から辿る</span>
+      <a href="/kana/">あいうえお順</a>
+      <a href="/all/">アルファベット順</a>
+    </p>
   </section>
 
   <section class="section">

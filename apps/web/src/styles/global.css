@@ -399,7 +399,7 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 700; }
 /* ---- 狭い画面 --------------------------------------------------------- */
 @media (max-width: 30rem) {
   .hero-top { gap: 0.75rem; }
-  .hero-top .logomark { height: 50px; width: auto; }
+  .hero-top .logomark { height: 60px; width: auto; }
   .site-footer .wrap { flex-direction: column; align-items: center; text-align: center; }
 
   /* ヘッダーはコンパクトに。常に一段で収める */
@@ -408,7 +408,7 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 700; }
     gap: 0.5rem; padding-inline: 0.9rem;
   }
   .logo { font-size: 1.05rem; gap: 0.35rem; }
-  .logo .logomark { height: 26px; width: auto; }
+  .logo .logomark { height: 28px; width: auto; }
 
   .site-nav { gap: 0.15rem; }
   .site-nav a {
@@ -421,4 +421,86 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 700; }
   /* 詰まった画面では本文の余白も少し詰める */
   .wrap { padding-inline: 1rem; }
   .hero { padding-top: 2rem; }
+}
+
+/* ---- 索引 -------------------------------------------------------------- */
+/* 並び順の切り替え */
+.index-tabs {
+  display: flex; gap: 0.5rem; flex-wrap: wrap;
+  margin: 0 0 1.5rem;
+}
+.index-tabs > * {
+  font-family: var(--font-display); font-weight: 700; font-size: 0.9rem;
+  padding: 0.35rem 1rem; border-radius: 999px;
+  border: 2px solid var(--line-strong);
+  background: var(--card); color: var(--ink); text-decoration: none;
+}
+.index-tabs a:hover { background: var(--tint-violet); color: var(--ink); }
+.index-tabs .is-current {
+  background: var(--tint-pink); border-color: var(--pink-vivid);
+  box-shadow: 3px 3px 0 var(--pink-vivid);
+}
+
+/* 頭文字へのジャンプ */
+.jump {
+  display: flex; flex-wrap: wrap; gap: 0.4rem;
+  padding: 0.9rem 1rem;
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: var(--r);
+  box-shadow: var(--pop) var(--pop) 0 var(--shadow);
+  margin-bottom: 2.5rem;
+}
+.jump > * {
+  font-family: var(--font-display); font-weight: 700; font-size: 0.9rem;
+  min-width: 2.1rem; text-align: center;
+  padding: 0.1rem 0.4rem; border-radius: 9px;
+  border: 2px solid transparent;
+}
+.jump a { color: var(--ink); text-decoration: none; background: var(--tint-violet); }
+.jump a:hover {
+  background: var(--tint-pink); border-color: var(--pink-vivid); color: var(--ink);
+}
+/* 該当なしの頭文字。押せないことが分かるだけの薄い表示 */
+.jump .is-empty { color: var(--ink-faint); opacity: 0.55; }
+
+/* 見出しごとのまとまり */
+.index-group {
+  /* 固定ヘッダーに隠れないよう、アンカー移動時の余白を確保する */
+  scroll-margin-top: 88px;
+  margin-bottom: 2.5rem;
+}
+.index-group h2 {
+  display: flex; align-items: center; gap: 0.6rem;
+  margin: 0 0 0.85rem; font-size: 1rem;
+}
+.index-group h2 .mark {
+  display: inline-block; min-width: 2.4rem; text-align: center;
+  font-size: 1.15rem; line-height: 1.7;
+  background: var(--tint-mint); border: 2px solid var(--mint-vivid);
+  border-radius: 10px; color: var(--ink);
+}
+.index-group h2 .n { color: var(--ink-muted); font-size: 0.8rem; font-weight: 400; }
+
+@media (max-width: 30rem) {
+  .index-group { scroll-margin-top: 66px; }
+  .jump { padding: 0.7rem 0.75rem; gap: 0.3rem; }
+  .jump > * { min-width: 1.9rem; font-size: 0.85rem; }
+}
+
+/* 検索の直下に置く索引への導線 */
+.lookup-links {
+  display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+  margin: 1rem 0 0; font-size: 0.875rem;
+}
+.lookup-links .lead { color: var(--ink-muted); }
+.lookup-links a {
+  font-family: var(--font-display); font-weight: 700;
+  text-decoration: none; color: var(--ink);
+  background: var(--card);
+  border: 2px solid var(--line-strong);
+  border-radius: 999px; padding: 0.15rem 0.85rem;
+}
+.lookup-links a:hover {
+  background: var(--tint-pink); border-color: var(--pink-vivid); color: var(--ink);
 }

@@ -1,0 +1,47 @@
+---
+/**
+ * 索引の本体。頭文字へのジャンプと、見出しごとの一覧を出す。
+ * あいうえお順・アルファベット順のどちらからも同じ形で使う。
+ */
+import { primaryKana, CATEGORY_LABEL, type IndexGroup } from '../lib/entries';
+
+interface Props {
+  groups: IndexGroup[];
+  /** ジャンプ用ナビの読み上げラベル */
+  jumpLabel: string;
+}
+
+const { groups, jumpLabel } = Astro.props;
+const filled = groups.filter((g) => g.entries.length > 0);
+---
+
+<nav class="jump" aria-label={jumpLabel}>
+  {groups.map((g) =>
+    g.entries.length > 0 ? (
+      <a href={`#${g.id}`}>{g.label}</a>
+    ) : (
+      <span class="is-empty" aria-hidden="true">{g.label}</span>
+    ),
+  )}
+</nav>
+
+{filled.map((g) => (
+  <section class="index-group" id={g.id}>
+    <h2>
+      <span class="mark">{g.label}</span>
+      <span class="n">{g.entries.length} 語</span>
+    </h2>
+    <ul class="search-results">
+      {g.entries.map((e) => (
+        <li>
+          <a href={`/w/${e.slug}/`}>
+            <span class="term mono">{e.term}</span>
+            <span class="kana">{primaryKana(e)}</span>
+            <span class="badge">{CATEGORY_LABEL[e.category] ?? e.category}</span>
+            {e.divergence && <span class="badge divergence">日英でズレる</span>}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+))}
