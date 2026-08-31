@@ -1,0 +1,23 @@
+slug: gunicorn
+term: Gunicorn
+category: infra
+expansion: Green Unicorn
+summary: Python の WSGI アプリケーションサーバ。
+en:
+  respelling: G-unicorn
+  note: Green Unicorn の略。「ガニコーン」ではない。
+ja:
+  - kana: ジーユニコーン
+    primary: true
+  - kana: グニコーン
+    note: 誤り。綴りを一息に読んだもの。
+  - kana: ガニコーン
+    note: 誤り。
+divergence: true
+divergenceNote: >-
+  Green Unicorn の略なので「ジー・ユニコーン」。
+  綴りを一息に読んで「グニコーン」「ガニコーン」となりがち。
+confidence: medium
+needsSource: true
+tags: [python, wsgi, server]
+updated: 2026-08-31

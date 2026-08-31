@@ -7,7 +7,6 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "deploy": "wrangler deploy",
     "check": "astro check"
   },
   "dependencies": {
@@ -16,8 +15,5 @@
     "@nanteyomu/data": "workspace:*",
     "astro": "^5.13.0",
     "solid-js": "^1.9.4"
-  },
-  "devDependencies": {
-    "wrangler": "^4.0.0"
   }
 }

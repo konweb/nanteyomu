@@ -1,0 +1,15 @@
+slug: grpc
+term: gRPC
+category: protocol
+expansion: gRPC Remote Procedure Calls
+summary: HTTP/2 と Protocol Buffers を使う高速な RPC フレームワーク。
+en:
+  respelling: G-R-P-C
+  note: 先頭の g はリリースごとに違う語が当てられる遊びがある。
+ja:
+  - kana: ジーアールピーシー
+    primary: true
+confidence: medium
+needsSource: true
+tags: [rpc, protobuf, http2]
+updated: 2026-08-31

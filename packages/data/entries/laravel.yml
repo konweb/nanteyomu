@@ -1,0 +1,14 @@
+slug: laravel
+term: Laravel
+category: framework
+summary: PHP の代表的な Web アプリケーションフレームワーク。
+en:
+  respelling: LAIR-uh-vel
+ja:
+  - kana: ララベル
+    primary: true
+  - kana: ラーラベル
+confidence: medium
+needsSource: true
+tags: [php, web]
+updated: 2026-08-31

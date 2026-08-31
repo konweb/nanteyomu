@@ -1,0 +1,30 @@
+slug: gnu
+term: GNU
+category: acronym
+expansion: GNU's Not Unix
+summary: Unix 互換の自由ソフトウェア群を作るプロジェクト。自分自身を含む再帰的な略語。
+en:
+  respelling: guh-NOO
+  note: プロジェクトは動物のヌー（gnu）と違い、g を発音して「グヌー」と読むよう案内している。
+ja:
+  - kana: グヌー
+    primary: true
+  - kana: ヌー
+    note: 動物の gnu の読み。プロジェクト名としては非推奨。
+  - kana: ジーエヌユー
+divergence: true
+divergenceNote: >-
+  動物のヌー（gnu）は g を発音しないが、プロジェクト名としては
+  g を発音して「グヌー」と読むよう公式に案内されている。
+  日本では「ジーエヌユー」と読み下されることも多い。
+confidence: high
+sources:
+  - url: https://www.gnu.org/gnu/pronunciation.html
+    title: How To Pronounce GNU - GNU Project
+    kind: official
+    quote: >-
+      The name "GNU" is a recursive acronym for "GNU's Not Unix!"; it is
+      pronounced as one syllable with a hard g, like "grew" but with the
+      letter n instead of r.
+tags: [free-software, unix]
+updated: 2026-08-31

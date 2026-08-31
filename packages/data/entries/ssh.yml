@@ -1,0 +1,17 @@
+slug: ssh
+term: ssh
+aliases: [SSH, OpenSSH]
+category: protocol
+expansion: Secure Shell
+summary: 暗号化された通信路でリモートのマシンを操作するプロトコルとコマンド。
+en:
+  respelling: S-S-H
+ja:
+  - kana: エスエスエイチ
+    primary: true
+  - kana: セキュアシェル
+    note: 略の展開を読んだもの。プロトコルの説明時に使う。
+confidence: medium
+needsSource: true
+tags: [network, security, remote]
+updated: 2026-08-31

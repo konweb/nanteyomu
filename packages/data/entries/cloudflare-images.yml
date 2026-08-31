@@ -1,0 +1,13 @@
+slug: cloudflare-images
+term: Cloudflare Images
+aliases: [Images]
+category: service
+summary: 画像の保存・リサイズ・フォーマット変換・配信を行うサービス。
+ja:
+  - kana: イメージズ
+    primary: true
+  - kana: イメージ
+confidence: medium
+needsSource: true
+tags: [cloudflare, image, media]
+updated: 2026-08-31

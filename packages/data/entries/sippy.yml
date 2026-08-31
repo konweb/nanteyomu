@@ -1,0 +1,15 @@
+slug: sippy
+term: Sippy
+category: service
+summary: アクセスされたオブジェクトだけを少しずつ R2 へ移行する仕組み。
+en:
+  respelling: SIP-ee
+  note: sip（少しずつ飲む）から。一括移行の Super Slurper と対になる命名。
+ja:
+  - kana: シッピー
+    primary: true
+  - kana: シピー
+confidence: medium
+needsSource: true
+tags: [cloudflare, r2, migration]
+updated: 2026-08-31

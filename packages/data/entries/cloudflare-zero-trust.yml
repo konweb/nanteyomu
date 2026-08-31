@@ -1,0 +1,11 @@
+slug: cloudflare-zero-trust
+term: Cloudflare Zero Trust
+category: service
+summary: 社内システムへのアクセスを、ネットワークの内外ではなく本人と端末で判断する製品群。
+ja:
+  - kana: ゼロトラスト
+    primary: true
+confidence: medium
+needsSource: true
+tags: [cloudflare, security, zero-trust]
+updated: 2026-08-31

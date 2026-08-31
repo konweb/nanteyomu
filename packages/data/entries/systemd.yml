@@ -1,0 +1,22 @@
+slug: systemd
+term: systemd
+category: infra
+expansion: system daemon
+summary: 多くの Linux ディストリビューションが採用する init システム／サービス管理基盤。
+en:
+  respelling: system-dee
+  note: 末尾の d は daemon の d。「システムド」ではない。
+ja:
+  - kana: システムディー
+    primary: true
+  - kana: システムディーモン
+  - kana: システムド
+    note: 誤り。末尾の d を過去分詞と勘違いしたもの。
+divergence: true
+divergenceNote: >-
+  memcached や containerd と同じく、末尾の d は daemon の d。
+  「システム・ディー」と切って読む。「システムド」は誤り。
+confidence: medium
+needsSource: true
+tags: [linux, init, daemon]
+updated: 2026-08-31

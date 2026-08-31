@@ -1,0 +1,22 @@
+slug: sass
+term: Sass
+aliases: [SCSS]
+category: library
+expansion: Syntactically Awesome Style Sheets
+summary: CSS を拡張して変数やネストを書けるようにするプリプロセッサ。
+en:
+  respelling: sass
+ja:
+  - kana: サス
+    primary: true
+  - kana: サース
+    note: SaaS と混同した読み。Sass は伸ばさない。
+divergence: true
+divergenceNote: >-
+  日本では SaaS を「サース」と伸ばして読むため、Sass も「サース」と読まれがち。
+  Sass は伸ばさず「サス」で、英語圏ではむしろ SaaS のほうが「サス」になる。
+  日本語で話すと両者がぶつかる紛らわしい組み合わせ。
+confidence: medium
+needsSource: true
+tags: [css, frontend]
+updated: 2026-08-31

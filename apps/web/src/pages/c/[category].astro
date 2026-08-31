@@ -14,7 +14,7 @@ const { category, list } = Astro.props;
 const label = CATEGORY_LABEL[category] ?? category;
 ---
 <Base title={`${label} の読み方`} description={`${label} に分類される用語の読み方一覧。`} path={`/c/${category}/`}>
-  <section class="hero" style="padding-bottom: 1rem;">
+  <section class="page-head">
     <h1>{label}</h1>
     <p>{list.length} 語</p>
   </section>

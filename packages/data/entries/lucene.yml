@@ -1,0 +1,17 @@
+slug: lucene
+term: Lucene
+aliases: [Apache Lucene]
+category: library
+summary: 全文検索エンジンのコアライブラリ。Elasticsearch や Solr の土台。
+en:
+  respelling: loo-SEEN
+  note: 作者の妻のミドルネームに由来。
+ja:
+  - kana: ルシーン
+    primary: true
+  - kana: ルセーヌ
+  - kana: ルーシーン
+confidence: medium
+needsSource: true
+tags: [search, apache]
+updated: 2026-08-31

@@ -1,0 +1,15 @@
+slug: cloudflare-d1
+term: Cloudflare D1
+aliases: [D1]
+category: db
+summary: Workers から使える SQLite ベースのサーバーレスデータベース。
+en:
+  respelling: D-one
+ja:
+  - kana: ディーワン
+    primary: true
+  - kana: ディーイチ
+confidence: medium
+needsSource: true
+tags: [cloudflare, database, sqlite, serverless]
+updated: 2026-08-31

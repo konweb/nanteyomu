@@ -1,0 +1,14 @@
+slug: kotlin
+term: Kotlin
+category: language
+summary: JetBrains が開発した JVM 系言語。Android の第一級言語。
+en:
+  respelling: KOT-lin
+  note: サンクトペテルブルク沖のコトリン島に由来。
+ja:
+  - kana: コトリン
+    primary: true
+confidence: medium
+needsSource: true
+tags: [jvm, android]
+updated: 2026-08-31

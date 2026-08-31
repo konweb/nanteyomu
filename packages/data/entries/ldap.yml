@@ -1,0 +1,16 @@
+slug: ldap
+term: LDAP
+category: protocol
+expansion: Lightweight Directory Access Protocol
+summary: ディレクトリサービスにアクセスするためのプロトコル。
+en:
+  respelling: EL-dap
+ja:
+  - kana: エルダップ
+    primary: true
+  - kana: エルダップピー
+  - kana: エルディーエーピー
+confidence: medium
+needsSource: true
+tags: [directory, auth]
+updated: 2026-08-31

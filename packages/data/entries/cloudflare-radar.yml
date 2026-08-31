@@ -1,0 +1,14 @@
+slug: cloudflare-radar
+term: Cloudflare Radar
+aliases: [Radar]
+category: service
+summary: インターネット全体のトラフィック傾向や障害を可視化する公開ダッシュボード。
+ja:
+  - kana: レーダー
+    primary: true
+  - kana: ラダー
+    note: 誤り。radar は「レーダー」。ladder（はしご）と混同しないこと。
+confidence: medium
+needsSource: true
+tags: [cloudflare, analytics, internet]
+updated: 2026-08-31

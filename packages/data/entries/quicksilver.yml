@@ -1,0 +1,15 @@
+slug: quicksilver
+term: Quicksilver
+category: infra
+summary: Cloudflare が設定情報を全世界のエッジへ数秒で配る内部のキーバリューストア。
+en:
+  respelling: KWIK-sil-ver
+  note: 英語で水銀のこと。
+ja:
+  - kana: クイックシルバー
+    primary: true
+  - kana: クイックシルヴァー
+confidence: medium
+needsSource: true
+tags: [cloudflare, kvs, internal]
+updated: 2026-08-31

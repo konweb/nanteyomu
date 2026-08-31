@@ -1,0 +1,15 @@
+slug: durable-objects
+term: Durable Objects
+category: service
+summary: 単一インスタンスで強い整合性と状態を保持できる Workers の実行単位。
+en:
+  respelling: DUR-uh-bul OB-jekts
+ja:
+  - kana: デュラブルオブジェクツ
+    primary: true
+  - kana: デュラブルオブジェクト
+  - kana: ドゥラブルオブジェクツ
+confidence: medium
+needsSource: true
+tags: [cloudflare, workers, state]
+updated: 2026-08-31

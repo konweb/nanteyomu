@@ -1,0 +1,27 @@
+slug: traefik
+term: Traefik
+category: infra
+summary: コンテナ環境向けのリバースプロキシ／ロードバランサ。
+en:
+  respelling: traffic
+  note: 英単語 traffic と同じ発音になるよう名付けられている。
+ja:
+  - kana: トラフィック
+    primary: true
+  - kana: トラエフィック
+    note: 綴りをそのまま読んだもの。
+divergence: true
+divergenceNote: >-
+  綴りが独特なため「トラエフィック」「トレフィック」と読まれがちだが、
+  英単語 traffic と同じ「トラフィック」。
+  日本語で話すと通信量の traffic と紛らわしいのが難点。
+confidence: high
+sources:
+  - url: https://github.com/traefik/traefik
+    title: traefik/traefik - The Cloud Native Application Proxy
+    kind: official
+    quote: >-
+      Traefik (pronounced traffic) is a modern HTTP reverse proxy and load
+      balancer that makes deploying microservices easy.
+tags: [proxy, container]
+updated: 2026-08-31

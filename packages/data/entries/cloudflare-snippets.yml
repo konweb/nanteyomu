@@ -1,0 +1,13 @@
+slug: cloudflare-snippets
+term: Cloudflare Snippets
+aliases: [Snippets]
+category: service
+summary: ルールの延長として短い JavaScript をリクエストに差し込める軽量な仕組み。
+ja:
+  - kana: スニペッツ
+    primary: true
+  - kana: スニペット
+confidence: medium
+needsSource: true
+tags: [cloudflare, edge, rules]
+updated: 2026-08-31

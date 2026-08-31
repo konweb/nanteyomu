@@ -1,0 +1,16 @@
+slug: exif
+term: Exif
+category: format
+expansion: Exchangeable image file format
+summary: 画像に撮影日時やカメラ設定などを埋め込むためのメタデータ規格。
+en:
+  respelling: EK-sif
+ja:
+  - kana: エグジフ
+    primary: true
+  - kana: イグジフ
+  - kana: エクシフ
+confidence: medium
+needsSource: true
+tags: [image, metadata]
+updated: 2026-08-31

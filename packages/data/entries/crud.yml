@@ -1,0 +1,16 @@
+slug: crud
+term: CRUD
+category: acronym
+expansion: Create, Read, Update, Delete
+summary: データ操作の基本4種をまとめた頭字語。
+en:
+  respelling: crud
+ja:
+  - kana: クラッド
+    primary: true
+  - kana: クルド
+  - kana: シーアールユーディー
+confidence: medium
+needsSource: true
+tags: [database, api]
+updated: 2026-08-31

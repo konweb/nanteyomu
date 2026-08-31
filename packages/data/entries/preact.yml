@@ -1,0 +1,14 @@
+slug: preact
+term: Preact
+category: library
+summary: React と互換の API を持つ軽量な UI ライブラリ。
+en:
+  respelling: PREE-act
+ja:
+  - kana: プリアクト
+    primary: true
+  - kana: プレアクト
+confidence: medium
+needsSource: true
+tags: [frontend, react]
+updated: 2026-08-31

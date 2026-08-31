@@ -1,0 +1,24 @@
+slug: vue
+term: Vue.js
+aliases: [Vue]
+category: framework
+summary: 段階的に導入できることを重視した UI フレームワーク。
+en:
+  respelling: view
+  note: 英単語 view と同じ発音になるよう名付けられている。
+ja:
+  - kana: ビュー
+    primary: true
+  - kana: ヴュー
+  - kana: ブイユーイー
+    note: 綴りを読み下したもの。誤り。
+confidence: high
+sources:
+  - url: https://vuejs.org/guide/introduction
+    title: Introduction - Vue.js
+    kind: docs
+    quote: >-
+      Vue (pronounced /vjuː/, like view) is a JavaScript framework for
+      building user interfaces.
+tags: [frontend, ui]
+updated: 2026-08-31

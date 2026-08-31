@@ -1,0 +1,15 @@
+slug: qwik
+term: Qwik
+category: framework
+summary: JavaScript の読み込みを極限まで遅らせる設計の UI フレームワーク。
+en:
+  respelling: quick
+  note: 英単語 quick と同じ発音。
+ja:
+  - kana: クイック
+    primary: true
+  - kana: クウィック
+confidence: medium
+needsSource: true
+tags: [frontend, ui]
+updated: 2026-08-31

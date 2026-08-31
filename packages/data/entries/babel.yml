@@ -1,0 +1,20 @@
+slug: babel
+term: Babel
+category: library
+summary: 新しい構文の JavaScript を古い環境向けに変換するトランスパイラ。
+en:
+  respelling: BAY-bul
+  note: 英語では「ベイブル」。バベルの塔の英語読み。
+ja:
+  - kana: バベル
+    primary: true
+  - kana: ベイブル
+    note: 英語圏の読み。
+divergence: true
+divergenceNote: >-
+  日本では聖書の「バベルの塔」の慣用読みに揃えて「バベル」。
+  英語圏では同じ語を「ベイブル」と読むため、口頭では通じないことがある。
+confidence: medium
+needsSource: true
+tags: [javascript, build-tool]
+updated: 2026-08-31

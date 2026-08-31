@@ -1,0 +1,16 @@
+slug: scala
+term: Scala
+category: language
+expansion: scalable language
+summary: JVM 上で動くオブジェクト指向と関数型を融合した言語。
+en:
+  respelling: SKAH-lah
+  note: イタリア語の scala（階段・音階）に由来。
+ja:
+  - kana: スカラ
+    primary: true
+  - kana: スカーラ
+confidence: medium
+needsSource: true
+tags: [jvm, functional]
+updated: 2026-08-31

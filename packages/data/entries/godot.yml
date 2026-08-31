@@ -1,0 +1,20 @@
+slug: godot
+term: Godot
+category: framework
+summary: オープンソースのゲームエンジン。
+en:
+  respelling: guh-DOH / GOD-oh
+  note: ベケットの戯曲『ゴドーを待ちながら』に由来。英語圏でも読みが割れている。
+ja:
+  - kana: ゴドー
+    primary: true
+  - kana: ゴドット
+    note: 綴りの t を読んでしまったもの。
+divergence: true
+divergenceNote: >-
+  由来はフランス語の人名 Godot（ゴドー）で語尾の t は読まないが、
+  英語圏では「ガドー」「ゴドット」と読む人もおり、公式も読みを1つに定めていない。
+confidence: disputed
+needsSource: true
+tags: [game-engine]
+updated: 2026-08-31

@@ -1,0 +1,17 @@
+slug: sed
+term: sed
+category: cli
+expansion: stream editor
+summary: 入力ストリームを行単位で置換・編集するコマンド。
+en:
+  respelling: sed
+ja:
+  - kana: セド
+    primary: true
+  - kana: セッド
+  - kana: エスイーディー
+    note: 綴りを読み下したもの。
+confidence: medium
+needsSource: true
+tags: [text, unix]
+updated: 2026-08-31

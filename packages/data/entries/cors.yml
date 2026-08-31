@@ -1,0 +1,17 @@
+slug: cors
+term: CORS
+category: acronym
+expansion: Cross-Origin Resource Sharing
+summary: 別オリジンへのリクエストをブラウザが許可するかどうかを決める仕組み。
+en:
+  respelling: corz
+  note: 英語圏では cores と同じく1音節で読む。
+ja:
+  - kana: コルス
+    primary: true
+  - kana: コアーズ
+  - kana: シーオーアールエス
+confidence: disputed
+needsSource: true
+tags: [web, security, browser]
+updated: 2026-08-31

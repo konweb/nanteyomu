@@ -1,0 +1,20 @@
+slug: cloudflare-r2
+term: Cloudflare R2
+aliases: [R2]
+category: service
+summary: エグレス料金がかからない S3 互換のオブジェクトストレージ。
+en:
+  respelling: R-two
+  note: 公式の発表記事は "Really Requestable" などの後付けの展開をいくつも挙げており、正式な語源は示していない。
+ja:
+  - kana: アールツー
+    primary: true
+  - kana: アールニ
+confidence: medium
+sources:
+  - url: https://blog.cloudflare.com/introducing-r2-object-storage/
+    title: Introducing Cloudflare R2 Storage - The Cloudflare Blog
+    kind: official
+    quote: R2 means "Really Requestable"
+tags: [cloudflare, storage, object-storage]
+updated: 2026-08-31

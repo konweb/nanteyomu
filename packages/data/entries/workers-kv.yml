@@ -1,0 +1,15 @@
+slug: workers-kv
+term: Workers KV
+category: db
+expansion: Workers Key-Value
+summary: Cloudflare のエッジに分散配置される結果整合性のキーバリューストア。
+en:
+  respelling: workers K-V
+ja:
+  - kana: ワーカーズケーブイ
+    primary: true
+  - kana: ワーカーズキーバリュー
+confidence: medium
+needsSource: true
+tags: [cloudflare, kvs, edge]
+updated: 2026-08-31

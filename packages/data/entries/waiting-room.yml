@@ -1,0 +1,12 @@
+slug: waiting-room
+term: Cloudflare Waiting Room
+aliases: [Waiting Room]
+category: service
+summary: アクセス集中時に順番待ちの列を作ってオリジンの負荷を抑える機能。
+ja:
+  - kana: ウェイティングルーム
+    primary: true
+confidence: medium
+needsSource: true
+tags: [cloudflare, traffic, queue]
+updated: 2026-08-31

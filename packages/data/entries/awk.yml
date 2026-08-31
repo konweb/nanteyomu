@@ -1,0 +1,18 @@
+slug: awk
+term: awk
+aliases: [AWK, gawk]
+category: cli
+expansion: Aho, Weinberger, Kernighan
+summary: テキストを行と列で処理するためのパターン処理言語／コマンド。
+en:
+  respelling: awk
+  note: 作者3人の頭文字。英語では「auk（ウミガラス）」と同じ発音。
+ja:
+  - kana: オーク
+    primary: true
+  - kana: エーダブリューケー
+    note: 綴りを読み下したもの。英語圏ではまず使われない。
+confidence: medium
+needsSource: true
+tags: [text, unix]
+updated: 2026-08-31

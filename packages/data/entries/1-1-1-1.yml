@@ -1,0 +1,15 @@
+slug: 1-1-1-1
+term: 1.1.1.1
+category: service
+summary: Cloudflare が運営する公開 DNS リゾルバ。覚えやすい数字が名前になっている。
+en:
+  respelling: one one one one
+ja:
+  - kana: ワンワンワンワン
+    primary: true
+  - kana: イチイチイチイチ
+    note: 日本語で数字を読むとこちら。会話ではどちらも使われる。
+confidence: disputed
+needsSource: true
+tags: [cloudflare, dns, resolver]
+updated: 2026-08-31

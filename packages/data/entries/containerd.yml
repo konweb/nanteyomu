@@ -1,0 +1,20 @@
+slug: containerd
+term: containerd
+category: infra
+summary: コンテナのライフサイクルを管理するランタイム。Docker や Kubernetes の下層で動く。
+en:
+  respelling: container-dee
+  note: 末尾の d は daemon の d。
+ja:
+  - kana: コンテナディー
+    primary: true
+  - kana: コンテナード
+    note: 誤り。過去分詞と勘違いしたもの。
+divergence: true
+divergenceNote: >-
+  memcached と同じく末尾の d は daemon の d なので「コンテナ・ディー」。
+  「コンテナード」と一息に読むのは誤り。
+confidence: medium
+needsSource: true
+tags: [container, kubernetes]
+updated: 2026-08-31

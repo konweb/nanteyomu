@@ -1,0 +1,16 @@
+slug: erlang
+term: Erlang
+category: language
+summary: Ericsson が電話交換機向けに作った並行処理・耐障害性に強い関数型言語。
+en:
+  respelling: UR-lang
+  note: 数学者 Agner Krarup Erlang と Ericsson Language の両方を掛けた名前とされる。
+ja:
+  - kana: アーラン
+    primary: true
+  - kana: エルラング
+    note: 誤り。ローマ字読みしたもの。
+confidence: medium
+needsSource: true
+tags: [functional, concurrency, telecom]
+updated: 2026-08-31

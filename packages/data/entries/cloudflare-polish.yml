@@ -1,0 +1,23 @@
+slug: cloudflare-polish
+term: Cloudflare Polish
+aliases: [Polish]
+category: service
+summary: 配信時に画像を再圧縮して軽くする Cloudflare の最適化機能。
+en:
+  respelling: POL-ish
+  note: >-
+    「磨く」の polish は /ˈpɒlɪʃ/ で「ポリッシュ」。
+    「ポーランドの」を意味する Polish は /ˈpoʊlɪʃ/ で別の語。綴りが同じで読みが違う。
+ja:
+  - kana: ポリッシュ
+    primary: true
+  - kana: ポーリッシュ
+    note: 誤り。「ポーランドの」を意味する語の読み。
+divergence: true
+divergenceNote: >-
+  英語の polish は「磨く」なら「ポリッシュ」、「ポーランドの」なら「ポーリッシュ」で、
+  綴りが同じでも読みが違う語（heteronym）。画像を磨く機能なので「ポリッシュ」。
+confidence: medium
+needsSource: true
+tags: [cloudflare, image, optimization]
+updated: 2026-08-31

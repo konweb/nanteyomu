@@ -1,0 +1,21 @@
+slug: webp
+term: WebP
+category: format
+summary: Google が開発した画像フォーマット。JPEG や PNG より小さくなる。
+en:
+  respelling: weppy
+  note: Google は「ウェッピー」と読むとしている。
+ja:
+  - kana: ウェッブピー
+    primary: true
+  - kana: ウェブピー
+  - kana: ウェッピー
+    note: 開発元が示している読み。日本ではまれ。
+divergence: true
+divergenceNote: >-
+  開発元の Google は「ウェッピー」と1語で読むとしているが、
+  日本では Web + P と分解した「ウェッブピー」が優勢。
+confidence: medium
+needsSource: true
+tags: [image, graphics, web]
+updated: 2026-08-31

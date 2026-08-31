@@ -1,0 +1,15 @@
+slug: posix
+term: POSIX
+category: acronym
+expansion: Portable Operating System Interface
+summary: UNIX 系 OS の互換性を保つためのインタフェース規格。
+en:
+  respelling: POZ-iks
+ja:
+  - kana: ポシックス
+    primary: true
+  - kana: ポジックス
+confidence: medium
+needsSource: true
+tags: [unix, standard]
+updated: 2026-08-31

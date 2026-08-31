@@ -1,0 +1,16 @@
+slug: sqlite
+term: SQLite
+category: db
+summary: サーバを立てずにファイル1つで完結する組み込み向けリレーショナルデータベース。
+en:
+  respelling: S-Q-L-ite / SEE-kwul-ite
+  note: 作者は「エス・キュー・エル・アイト」と読むが、どちらでもよいとしている。
+ja:
+  - kana: エスキューライト
+    primary: true
+  - kana: エスキューエライト
+  - kana: シークライト
+confidence: disputed
+needsSource: true
+tags: [database, embedded]
+updated: 2026-08-31

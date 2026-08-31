@@ -98,7 +98,7 @@ const jsonLd = {
             <li>
               <span class="kind">{SOURCE_KIND_LABEL[s.kind] ?? s.kind}</span>
               <a href={s.url} rel="noopener nofollow">{s.title}</a>
-              {s.quote && <blockquote style="margin: 0.4rem 0 0 1rem; color: var(--fg-muted);">「{s.quote}」</blockquote>}
+              {s.quote && <blockquote class="quote">「{s.quote}」</blockquote>}
             </li>
           ))}
         </ul>

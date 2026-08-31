@@ -1,0 +1,14 @@
+slug: elixir
+term: Elixir
+category: language
+summary: Erlang VM 上で動く関数型言語。並行処理と耐障害性に強い。
+en:
+  respelling: ih-LIK-sir
+ja:
+  - kana: エリクサー
+    primary: true
+  - kana: イリクサー
+confidence: medium
+needsSource: true
+tags: [functional, erlang, concurrency]
+updated: 2026-08-31

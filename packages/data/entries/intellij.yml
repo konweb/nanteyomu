@@ -1,0 +1,18 @@
+slug: intellij
+term: IntelliJ IDEA
+aliases: [IntelliJ]
+category: service
+summary: JetBrains の統合開発環境。Java や Kotlin の開発で広く使われる。
+en:
+  respelling: in-TELL-i-jay
+  note: 末尾の J は「ジェイ」。Java の J。
+ja:
+  - kana: インテリジェイ
+    primary: true
+  - kana: インテリジェイアイディーイーエー
+  - kana: インテリジ
+    note: 誤り。末尾の J を読み落としたもの。
+confidence: medium
+needsSource: true
+tags: [ide, jetbrains, java]
+updated: 2026-08-31

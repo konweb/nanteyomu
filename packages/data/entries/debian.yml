@@ -1,0 +1,23 @@
+slug: debian
+term: Debian
+category: infra
+summary: 歴史の長い Linux ディストリビューション。Ubuntu の基盤でもある。
+en:
+  respelling: DEB-ee-un
+  note: 創始者 Ian Murdock と当時の妻 Debra の名前を繋げたもの。
+ja:
+  - kana: デビアン
+    primary: true
+  - kana: デビアーン
+  - kana: ダビアン
+confidence: high
+sources:
+  - url: https://www.debian.org/doc/manuals/debian-faq/basic-defs
+    title: Debian FAQ - Definitions and overview
+    kind: docs
+    quote: >-
+      The project name is pronounced Deb'-ee-en, with a short e in Deb, and
+      emphasis on the first syllable. This word is a contraction of the names
+      of Debra and Ian Murdock, who founded the project.
+tags: [linux, distro]
+updated: 2026-08-31

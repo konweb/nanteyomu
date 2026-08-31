@@ -1,0 +1,18 @@
+slug: json
+term: JSON
+category: format
+expansion: JavaScript Object Notation
+summary: JavaScript のオブジェクト表記をもとにしたデータ交換フォーマット。
+en:
+  respelling: JAY-sun
+  note: 考案者 Douglas Crockford は人名の Jason と同じ読みでよいとしている。
+ja:
+  - kana: ジェイソン
+    primary: true
+  - kana: ジェイエスオーエヌ
+  - kana: ジェイソンヌ
+    note: まれ。
+confidence: medium
+needsSource: true
+tags: [serialization, web]
+updated: 2026-08-31

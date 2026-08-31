@@ -1,0 +1,21 @@
+slug: netlify
+term: Netlify
+category: service
+summary: 静的サイトやフロントエンドのホスティング・デプロイ基盤。
+en:
+  respelling: NET-luh-fy
+  note: amplify と同じ韻。net + lify で切る。
+ja:
+  - kana: ネットリファイ
+    primary: true
+  - kana: ネトリファイ
+  - kana: ネットライフ
+    note: 誤り。
+divergence: true
+divergenceNote: >-
+  英語では amplify と同じ韻で「ネッ・トゥ・ラファイ」に近く、
+  日本の「ネットリファイ」とはアクセントの位置が違う。
+confidence: medium
+needsSource: true
+tags: [hosting, frontend, jamstack]
+updated: 2026-08-31

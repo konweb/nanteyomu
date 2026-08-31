@@ -1,0 +1,24 @@
+slug: zsh
+term: zsh
+aliases: [Z shell]
+category: cli
+expansion: Z shell
+summary: bash 互換の対話シェル。macOS の既定シェル。
+en:
+  respelling: zee-shell
+  note: 英語圏では Z を「ズィー」と読むため「ズィーシェル」。
+ja:
+  - kana: ゼットシェル
+    primary: true
+  - kana: ズィーシェル
+  - kana: ゼッシュ
+    note: 綴りをそのまま読んだもの。少数派。
+divergence: true
+divergenceNote: >-
+  英語圏では Z を「ズィー」と読むので「ズィーシェル」。
+  日本では Z を「ゼット」と読む習慣があるため「ゼットシェル」が定着している。
+  どちらも Z shell の略であることは同じ。
+confidence: medium
+needsSource: true
+tags: [shell]
+updated: 2026-08-31

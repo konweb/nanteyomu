@@ -1,0 +1,19 @@
+slug: gradle
+term: Gradle
+category: framework
+summary: JVM 系プロジェクトで広く使われるビルドツール。Android の標準。
+en:
+  respelling: GRAY-dul
+ja:
+  - kana: グレイドル
+    primary: true
+  - kana: グラドル
+    note: 誤り。英語では a を「エイ」と読む。
+divergence: true
+divergenceNote: >-
+  日本では「グラドル」と読まれることがあるが、英語では「グレイドル」。
+  綴りの a をローマ字読みしてしまうのが原因。
+confidence: medium
+needsSource: true
+tags: [build-tool, jvm, android]
+updated: 2026-08-31

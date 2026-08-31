@@ -1,0 +1,20 @@
+slug: saas
+term: SaaS
+category: acronym
+expansion: Software as a Service
+summary: ソフトウェアをインターネット越しのサービスとして提供する形態。
+en:
+  respelling: sass
+  note: 英語圏では「サス」と1音節で読む。CSS プリプロセッサの Sass と同音。
+ja:
+  - kana: サース
+    primary: true
+  - kana: サーズ
+divergence: true
+divergenceNote: >-
+  英語圏では「サス（sass）」と短く読むが、日本では「サース」と伸ばす。
+  IaaS・PaaS も同様に、日本では「イアース」「パース」と伸ばす読みが定着している。
+confidence: medium
+needsSource: true
+tags: [cloud, business]
+updated: 2026-08-31

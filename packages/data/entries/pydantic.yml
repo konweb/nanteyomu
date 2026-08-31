@@ -1,0 +1,15 @@
+slug: pydantic
+term: Pydantic
+category: library
+summary: Python で型ヒントをもとにデータ検証を行うライブラリ。
+en:
+  respelling: pie-DAN-tik
+  note: Python の py と pedantic（細かい）を掛けた名前。
+ja:
+  - kana: パイダンティック
+    primary: true
+  - kana: ピダンティック
+confidence: medium
+needsSource: true
+tags: [python, validation]
+updated: 2026-08-31

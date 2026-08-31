@@ -1,0 +1,14 @@
+slug: zig
+term: Zig
+category: language
+summary: C の代替を狙うシステムプログラミング言語。
+en:
+  respelling: zig
+ja:
+  - kana: ジグ
+    primary: true
+  - kana: ズィグ
+confidence: medium
+needsSource: true
+tags: [systems]
+updated: 2026-08-31

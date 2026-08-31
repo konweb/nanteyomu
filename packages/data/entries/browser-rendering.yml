@@ -1,0 +1,11 @@
+slug: browser-rendering
+term: Browser Rendering
+category: service
+summary: Workers から Headless Chrome を操作してスクリーンショットや PDF を生成する API。
+ja:
+  - kana: ブラウザレンダリング
+    primary: true
+confidence: medium
+needsSource: true
+tags: [cloudflare, browser, automation]
+updated: 2026-08-31

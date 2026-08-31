@@ -1,0 +1,15 @@
+slug: heroku
+term: Heroku
+category: service
+summary: アプリケーションを手軽にデプロイできる PaaS。
+en:
+  respelling: her-OH-koo
+  note: heroic と haiku を掛け合わせた造語。
+ja:
+  - kana: ヘロク
+    primary: true
+  - kana: ヘロクー
+confidence: medium
+needsSource: true
+tags: [paas, cloud]
+updated: 2026-08-31

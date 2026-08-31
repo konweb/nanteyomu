@@ -1,0 +1,57 @@
+---
+/**
+ * サイトのマスコット枠。
+ *
+ * 現在どのページからも使っていない。ロゴマーク (Logo.astro) に置き換えたが、
+ * 将来キャラクターを載せるときの雛形として残してある。
+ *
+ * 中身の <svg> を差し替えるだけでキャラクターを載せ替えられる。
+ * 呼び出し側は size / class だけを渡すので、絵を変えても各ページの修正は不要。
+ * 装飾なので aria-hidden。意味は必ず隣のテキストで伝えること。
+ *
+ * 頭の「？」を丸ごと見せるため、viewBox は縦長 (64 x 82)。
+ * size は「幅」で、高さは比率から自動計算する。
+ */
+interface Props {
+  /** 幅の px。高さは比率ぶん自動で伸びる。既定 40 */
+  size?: number;
+  /** 追加クラス。ふわっと上下させるなら "bob" */
+  class?: string;
+}
+
+const VIEW_W = 64;
+const VIEW_H = 82;
+
+const { size = 40, class: className = '' } = Astro.props;
+const height = Math.round((size * VIEW_H) / VIEW_W);
+---
+
+<svg
+  class={`mascot ${className}`}
+  width={size}
+  height={height}
+  viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
+  fill="none"
+  aria-hidden="true"
+  focusable="false"
+>
+  {/* 頭の毛＝はてなマーク。点まで頭の上に出しきる */}
+  <path
+    d="M25 11 q0-8 7-8 t7 8 q0 5.2-7 8"
+    stroke="var(--pink-vivid)"
+    stroke-width="4"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <circle cx="32" cy="25" r="2.4" fill="var(--pink-vivid)" />
+  {/* 本体 */}
+  <circle cx="32" cy="54" r="22" fill="var(--card)" stroke="var(--ink)" stroke-width="3" />
+  {/* ほっぺ */}
+  <ellipse cx="19.5" cy="59" rx="4.5" ry="3" fill="var(--pink-vivid)" opacity="0.75" />
+  <ellipse cx="44.5" cy="59" rx="4.5" ry="3" fill="var(--pink-vivid)" opacity="0.75" />
+  {/* め */}
+  <ellipse cx="25.5" cy="51" rx="3" ry="4" fill="var(--ink)" />
+  <ellipse cx="38.5" cy="51" rx="3" ry="4" fill="var(--ink)" />
+  {/* くち（読み上げてる口） */}
+  <path d="M28 60 Q32 65 36 60 Z" fill="var(--ink)" />
+</svg>

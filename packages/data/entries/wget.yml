@@ -1,0 +1,16 @@
+slug: wget
+term: wget
+category: cli
+expansion: World Wide Web + get
+summary: URL を指定してファイルをダウンロードするコマンド。再帰取得に強い。
+en:
+  respelling: W-get / double-you-get
+ja:
+  - kana: ダブリューゲット
+    primary: true
+  - kana: ウェブゲット
+  - kana: ダブルゲット
+confidence: medium
+needsSource: true
+tags: [download, network]
+updated: 2026-08-31

@@ -1,0 +1,14 @@
+slug: cobol
+term: COBOL
+category: language
+expansion: COmmon Business Oriented Language
+summary: 事務処理向けに設計された言語。金融・基幹系で現役。
+en:
+  respelling: KOH-bol
+ja:
+  - kana: コボル
+    primary: true
+confidence: medium
+needsSource: true
+tags: [legacy, business]
+updated: 2026-08-31

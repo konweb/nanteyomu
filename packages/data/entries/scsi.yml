@@ -1,0 +1,16 @@
+slug: scsi
+term: SCSI
+category: protocol
+expansion: Small Computer System Interface
+summary: 周辺機器を接続するためのインタフェース規格。
+en:
+  respelling: SCUZ-ee
+ja:
+  - kana: スカジー
+    primary: true
+  - kana: エスシーエスアイ
+    note: 綴りを読み下したもの。
+confidence: medium
+needsSource: true
+tags: [hardware, storage]
+updated: 2026-08-31

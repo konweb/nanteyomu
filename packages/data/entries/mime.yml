@@ -1,0 +1,18 @@
+slug: mime
+term: MIME
+category: protocol
+expansion: Multipurpose Internet Mail Extensions
+summary: メールやHTTPで扱うデータの種類を示す仕組み。MIMEタイプの形で日常的に使う。
+en:
+  respelling: mime
+  note: 英単語 mime（パントマイム）と同じ発音。
+ja:
+  - kana: マイム
+    primary: true
+  - kana: ミメ
+    note: 誤り。ローマ字読みしたもの。
+  - kana: エムアイエムイー
+confidence: medium
+needsSource: true
+tags: [email, http, content-type]
+updated: 2026-08-31

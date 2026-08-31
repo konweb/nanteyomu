@@ -1,0 +1,28 @@
+slug: golang
+term: Go
+aliases: [Golang, golang]
+category: language
+summary: Google が開発した静的型付けのコンパイル言語。並行処理が書きやすい。
+en:
+  respelling: go
+  note: 言語名は "Go"。golang は検索用のドメイン名 golang.org 由来の通称。
+ja:
+  - kana: ゴー
+    primary: true
+  - kana: ゴーラン
+    note: 通称 Golang の読み。正式名称ではない。
+divergence: true
+divergenceNote: >-
+  正式な言語名は "Go" の一語。golang は検索しやすさのために使われる通称で、
+  日本では「ゴーラン」と口に出す人も多いが、英語圏の正式な場では "Go" と呼ぶ。
+confidence: high
+sources:
+  - url: https://go.dev/doc/faq
+    title: Frequently Asked Questions (FAQ) - The Go Programming Language
+    kind: docs
+    quote: >-
+      The language is called Go. The "golang" moniker arose because the web
+      site was originally golang.org. Many use the golang name, though, and it
+      is handy as a label. The language's name is just plain Go, regardless.
+tags: [google, concurrency]
+updated: 2026-08-31

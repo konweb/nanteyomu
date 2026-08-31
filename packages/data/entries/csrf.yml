@@ -1,0 +1,28 @@
+slug: csrf
+term: CSRF
+category: acronym
+expansion: Cross-Site Request Forgery
+summary: 利用者の意図しないリクエストを第三者のサイトから送らせる攻撃。
+en:
+  respelling: sea-surf
+  note: 英語圏では「シーサーフ」と1語で読む慣習がある。
+ja:
+  - kana: シーエスアールエフ
+    primary: true
+  - kana: シーサーフ
+    note: 英語圏での読み。日本ではまれ。
+divergence: true
+divergenceNote: >-
+  英語圏では「シーサーフ（sea-surf）」と読むことが多いが、
+  日本ではほぼ「シーエスアールエフ」。会話で噛み合わないことがある。
+confidence: high
+sources:
+  - url: https://owasp.org/www-community/attacks/csrf
+    title: Cross Site Request Forgery (CSRF) - OWASP Foundation
+    kind: community
+    quote: >-
+      CSRF attacks are also known by a number of other names, including XSRF,
+      "Sea Surf", Session Riding, Cross-Site Reference Forgery, and Hostile
+      Linking.
+tags: [security, web]
+updated: 2026-08-31

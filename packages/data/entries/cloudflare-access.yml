@@ -1,0 +1,12 @@
+slug: cloudflare-access
+term: Cloudflare Access
+aliases: [Access]
+category: service
+summary: 社内アプリへのアクセスを ID と端末の状態で認可する Zero Trust の中核機能。
+ja:
+  - kana: アクセス
+    primary: true
+confidence: medium
+needsSource: true
+tags: [cloudflare, zero-trust, auth]
+updated: 2026-08-31

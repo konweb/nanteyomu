@@ -1,0 +1,19 @@
+slug: jaeger
+term: Jaeger
+category: infra
+summary: 分散トレーシングのためのオープンソース基盤。
+en:
+  respelling: YAY-gur
+  note: ドイツ語 Jäger（狩人）に由来。J は「ヤ行」で読む。
+ja:
+  - kana: イェーガー
+    primary: true
+  - kana: ジャエガー
+    note: 誤り。英語読みしたもの。
+divergence: true
+divergenceNote: >-
+  ドイツ語由来なので J は「ヤ行」。英語風に「ジェイガー」「ジャエガー」と読むのは誤り。
+confidence: medium
+needsSource: true
+tags: [tracing, observability]
+updated: 2026-08-31

@@ -1,0 +1,15 @@
+slug: mongodb
+term: MongoDB
+category: db
+summary: ドキュメント指向のNoSQLデータベース。
+en:
+  respelling: MON-go-D-B
+  note: humongous（とてつもなく大きい）の一部を取った名前。モンゴル由来ではない。
+ja:
+  - kana: モンゴディービー
+    primary: true
+  - kana: モンゴデービー
+confidence: medium
+needsSource: true
+tags: [database, nosql, document]
+updated: 2026-08-31

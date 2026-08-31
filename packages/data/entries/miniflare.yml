@@ -1,0 +1,14 @@
+slug: miniflare
+term: Miniflare
+category: infra
+summary: Cloudflare Workers をローカルで動かすためのシミュレータ。
+en:
+  respelling: MIN-ee-flair
+ja:
+  - kana: ミニフレア
+    primary: true
+  - kana: ミニフレアー
+confidence: medium
+needsSource: true
+tags: [cloudflare, workers, local-dev]
+updated: 2026-08-31

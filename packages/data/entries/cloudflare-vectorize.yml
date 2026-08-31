@@ -1,0 +1,16 @@
+slug: cloudflare-vectorize
+term: Cloudflare Vectorize
+aliases: [Vectorize]
+category: db
+summary: Workers から使えるベクトルデータベース。埋め込みの類似検索に用いる。
+en:
+  respelling: VEK-tuh-rize
+ja:
+  - kana: ベクタライズ
+    primary: true
+  - kana: ベクトライズ
+  - kana: ベクターライズ
+confidence: medium
+needsSource: true
+tags: [cloudflare, vector-database, ai]
+updated: 2026-08-31

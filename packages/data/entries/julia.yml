@@ -1,0 +1,13 @@
+slug: julia
+term: Julia
+category: language
+summary: 科学技術計算向けの高速な動的言語。
+en:
+  respelling: JOO-lee-uh
+ja:
+  - kana: ジュリア
+    primary: true
+confidence: medium
+needsSource: true
+tags: [numeric, scientific]
+updated: 2026-08-31

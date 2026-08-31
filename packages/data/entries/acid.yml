@@ -1,0 +1,16 @@
+slug: acid
+term: ACID
+category: acronym
+expansion: Atomicity, Consistency, Isolation, Durability
+summary: トランザクションが満たすべき4つの性質をまとめた頭字語。
+en:
+  respelling: ASS-id
+  note: 英単語 acid（酸）と同じ発音。
+ja:
+  - kana: アシッド
+    primary: true
+  - kana: エーシーアイディー
+confidence: medium
+needsSource: true
+tags: [database, transaction]
+updated: 2026-08-31

@@ -1,0 +1,21 @@
+slug: solr
+term: Solr
+aliases: [Apache Solr]
+category: infra
+summary: Lucene をベースにした全文検索サーバ。
+en:
+  respelling: solar
+  note: 英単語 solar と同じ発音。
+ja:
+  - kana: ソーラー
+    primary: true
+  - kana: ソルアール
+    note: 誤り。綴りを読み下したもの。
+divergence: true
+divergenceNote: >-
+  綴りに母音がないため「ソルアール」「エスオーエルアール」と読まれることがあるが、
+  英単語 solar と同じ「ソーラー」。
+confidence: medium
+needsSource: true
+tags: [search, apache]
+updated: 2026-08-31

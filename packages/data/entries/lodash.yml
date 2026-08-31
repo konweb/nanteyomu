@@ -1,0 +1,15 @@
+slug: lodash
+term: Lodash
+category: library
+summary: JavaScript の汎用ユーティリティライブラリ。
+en:
+  respelling: LOH-dash
+  note: 変数名によく使われる低線 _ (low dash) から。
+ja:
+  - kana: ローダッシュ
+    primary: true
+  - kana: ロダッシュ
+confidence: medium
+needsSource: true
+tags: [javascript, utility]
+updated: 2026-08-31

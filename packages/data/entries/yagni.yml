@@ -1,0 +1,15 @@
+slug: yagni
+term: YAGNI
+category: acronym
+expansion: You Aren't Gonna Need It
+summary: 今必要ない機能は作るな、という設計上の戒め。
+en:
+  respelling: YAG-nee
+ja:
+  - kana: ヤグニ
+    primary: true
+  - kana: ヤグニー
+confidence: medium
+needsSource: true
+tags: [design, agile]
+updated: 2026-08-31

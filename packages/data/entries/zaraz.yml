@@ -1,0 +1,16 @@
+slug: zaraz
+term: Cloudflare Zaraz
+aliases: [Zaraz]
+category: service
+summary: サードパーティのタグやスクリプトをエッジ側で実行して、ブラウザの負荷を減らすサービス。
+en:
+  respelling: ZAH-rahz
+ja:
+  - kana: ザラズ
+    primary: true
+  - kana: ザラーズ
+  - kana: ザラス
+confidence: disputed
+needsSource: true
+tags: [cloudflare, tag-manager, performance]
+updated: 2026-08-31

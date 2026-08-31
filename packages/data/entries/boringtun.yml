@@ -1,0 +1,16 @@
+slug: boringtun
+term: BoringTun
+category: library
+summary: Cloudflare による WireGuard プロトコルの Rust 実装。WARP の土台。
+en:
+  respelling: BOR-ing-tun
+  note: 末尾の tun は Unix のトンネルデバイス tun から。
+ja:
+  - kana: ボーリングタン
+    primary: true
+  - kana: ボーリングトゥン
+  - kana: ボアリングタン
+confidence: disputed
+needsSource: true
+tags: [cloudflare, rust, wireguard, vpn]
+updated: 2026-08-31

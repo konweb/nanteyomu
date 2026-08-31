@@ -1,0 +1,36 @@
+---
+/**
+ * サイトのロゴマーク「ハテナ辞典」。開いた本から「？」を抜いた形。
+ *
+ * 形状データは lib/logo.ts にあり、Base.astro が 1 ページに 1 度だけ <defs> に置く。
+ * ここはそれを <use> で参照するだけなので、何度置いてもページは重くならない。
+ *
+ * size は「高さ」の px。マークは横長（比率 1.096）なので幅は自動で決まる。
+ * 色は currentColor。親の color を変えれば追従する。
+ */
+import { LOGO_VIEW_W, LOGO_VIEW_H, LOGO_SPRITE_ID } from '../lib/logo';
+
+interface Props {
+  /** 高さの px。既定 32 */
+  size?: number;
+  /** 追加クラス */
+  class?: string;
+  /** アクセシブルな名前。省略すると装飾扱い（隣にテキストがある場合はこちら） */
+  title?: string;
+}
+
+const { size = 32, class: className = '', title } = Astro.props;
+const width = Math.round((size * LOGO_VIEW_W) / LOGO_VIEW_H);
+---
+
+<svg
+  class={`logomark ${className}`}
+  width={width}
+  height={size}
+  viewBox={`0 0 ${LOGO_VIEW_W} ${LOGO_VIEW_H}`}
+  fill="currentColor"
+  role={title ? 'img' : undefined}
+  aria-label={title}
+  aria-hidden={title ? undefined : 'true'}
+  focusable="false"
+><use href={`#${LOGO_SPRITE_ID}`} /></svg>

@@ -1,0 +1,16 @@
+slug: puppeteer
+term: Puppeteer
+category: library
+summary: Chrome をプログラムから操作するための Node.js ライブラリ。
+en:
+  respelling: pup-uh-TEER
+  note: 英単語の puppeteer（人形遣い）。
+ja:
+  - kana: パペティア
+    primary: true
+  - kana: パペッティア
+  - kana: パペティーア
+confidence: medium
+needsSource: true
+tags: [browser, automation, testing]
+updated: 2026-08-31

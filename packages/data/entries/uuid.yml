@@ -1,0 +1,16 @@
+slug: uuid
+term: UUID
+category: acronym
+expansion: Universally Unique Identifier
+summary: 重複しないことを狙って生成される128ビットの識別子。
+en:
+  respelling: U-U-I-D
+ja:
+  - kana: ユーユーアイディー
+    primary: true
+  - kana: ユーイド
+    note: まれ。
+confidence: medium
+needsSource: true
+tags: [identifier]
+updated: 2026-08-31

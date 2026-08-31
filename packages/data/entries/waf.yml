@@ -1,0 +1,15 @@
+slug: waf
+term: WAF
+category: acronym
+expansion: Web Application Firewall
+summary: Web アプリケーションへの攻撃を通信内容から検知・遮断する仕組み。
+en:
+  respelling: waf
+ja:
+  - kana: ワフ
+    primary: true
+  - kana: ダブリューエーエフ
+confidence: medium
+needsSource: true
+tags: [security, network]
+updated: 2026-08-31

@@ -1,0 +1,21 @@
+slug: hashicorp
+term: HashiCorp
+category: company
+summary: Terraform、Vault、Consul などを開発する企業。
+en:
+  respelling: HASH-ee-corp
+  note: 創業者 Mitchell Hashimoto の姓から。
+ja:
+  - kana: ハシコープ
+    primary: true
+  - kana: ハシコーポ
+  - kana: ハッシュコープ
+    note: hash（ハッシュ）と読み違えたもの。由来は人名の橋本。
+divergence: true
+divergenceNote: >-
+  綴りから「ハッシュコープ」と読まれがちだが、
+  創業者 Mitchell Hashimoto の「ハシモト」が由来なので「ハシコープ」。
+confidence: medium
+needsSource: true
+tags: [company, iac]
+updated: 2026-08-31

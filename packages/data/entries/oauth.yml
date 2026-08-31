@@ -1,0 +1,17 @@
+slug: oauth
+term: OAuth
+category: protocol
+expansion: Open Authorization
+summary: パスワードを渡さずに第三者アプリへ権限を委譲するための認可の仕組み。
+en:
+  respelling: oh-AUTH
+ja:
+  - kana: オーオース
+    primary: true
+  - kana: オース
+  - kana: オーオーストゥー
+    note: バージョン 2.0 を指すときの読み。
+confidence: medium
+needsSource: true
+tags: [auth, security]
+updated: 2026-08-31

@@ -1,0 +1,18 @@
+slug: cloudflare-mirage
+term: Cloudflare Mirage
+aliases: [Mirage]
+category: service
+summary: 回線が細い環境向けに画像の読み込みを最適化する機能。
+en:
+  respelling: mih-RAHZH
+  note: フランス語由来の英単語。語尾は「ジュ」に近い音。
+ja:
+  - kana: ミラージュ
+    primary: true
+  - kana: ミラージ
+  - kana: マイレージ
+    note: 誤り。mileage（マイレージ）と混同したもの。
+confidence: medium
+needsSource: true
+tags: [cloudflare, image, optimization]
+updated: 2026-08-31

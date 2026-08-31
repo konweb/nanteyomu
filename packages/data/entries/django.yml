@@ -1,0 +1,24 @@
+slug: django
+term: Django
+category: framework
+summary: Python の代表的な Web アプリケーションフレームワーク。
+en:
+  respelling: JANG-goh
+  note: 先頭の D は発音しない。ジャズギタリスト Django Reinhardt にちなむ。
+ja:
+  - kana: ジャンゴ
+    primary: true
+  - kana: ディジャンゴ
+    note: 誤り。綴りの D をそのまま読んだもの。
+divergence: true
+divergenceNote: >-
+  綴りの先頭に D があるため「ディジャンゴ」と読まれることがあるが、
+  由来であるギタリスト Django Reinhardt の名前と同じく D は発音しない。
+confidence: high
+sources:
+  - url: https://docs.djangoproject.com/en/stable/faq/general/
+    title: FAQ - General - Django documentation
+    kind: docs
+    quote: Django is pronounced JANG-oh. Rhymes with FANG-oh. The "D" is silent.
+tags: [python, web]
+updated: 2026-08-31

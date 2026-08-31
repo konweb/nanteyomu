@@ -1,0 +1,15 @@
+slug: pulumi
+term: Pulumi
+category: infra
+summary: 汎用のプログラミング言語でインフラを定義する IaC ツール。
+en:
+  respelling: poo-LOO-mee
+ja:
+  - kana: プルーミ
+    primary: true
+  - kana: プルミ
+  - kana: プルーミー
+confidence: medium
+needsSource: true
+tags: [iac, cloud]
+updated: 2026-08-31

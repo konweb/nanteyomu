@@ -1,0 +1,11 @@
+slug: bot-management
+term: Bot Management
+category: service
+summary: アクセスがボットかどうかをスコア付けして制御する機能。
+ja:
+  - kana: ボットマネジメント
+    primary: true
+confidence: medium
+needsSource: true
+tags: [cloudflare, security, bot]
+updated: 2026-08-31

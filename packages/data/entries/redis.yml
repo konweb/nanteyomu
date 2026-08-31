@@ -1,0 +1,17 @@
+slug: redis
+term: Redis
+category: db
+expansion: REmote DIctionary Server
+summary: インメモリのキーバリューストア。キャッシュやセッション管理に使われる。
+en:
+  respelling: RED-iss
+ja:
+  - kana: レディス
+    primary: true
+  - kana: リディス
+  - kana: レディース
+    note: 長音を伸ばすのは日本語での訛り。
+confidence: medium
+needsSource: true
+tags: [cache, kvs]
+updated: 2026-08-31

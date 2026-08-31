@@ -1,0 +1,16 @@
+slug: bazel
+term: Bazel
+category: cli
+summary: Google 発の大規模プロジェクト向けビルドシステム。
+en:
+  respelling: BAY-zul
+  note: basil（バジル）の綴りを並べ替えた名前。
+ja:
+  - kana: バゼル
+    primary: true
+  - kana: ベイゼル
+  - kana: バーゼル
+confidence: disputed
+needsSource: true
+tags: [build-tool, google]
+updated: 2026-08-31

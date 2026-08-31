@@ -1,0 +1,14 @@
+slug: groovy
+term: Groovy
+category: language
+summary: JVM 上で動く動的言語。Gradle のビルドスクリプトなどで使われる。
+en:
+  respelling: GROO-vee
+ja:
+  - kana: グルーヴィー
+    primary: true
+  - kana: グルービー
+confidence: medium
+needsSource: true
+tags: [jvm, scripting]
+updated: 2026-08-31

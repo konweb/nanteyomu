@@ -1,0 +1,29 @@
+slug: mysql
+term: MySQL
+category: db
+summary: 広く使われているオープンソースのリレーショナルデータベース。
+en:
+  respelling: My-S-Q-L
+  note: 公式は「マイ・エス・キュー・エル」。ただし英語圏では「マイシークェル」も多い。
+ja:
+  - kana: マイエスキューエル
+    primary: true
+  - kana: マイシークェル
+    note: 英語圏での読み。日本ではまれ。
+divergence: true
+divergenceNote: >-
+  公式は「マイ・エス・キュー・エル」を正式としつつ、
+  「マイシークェル」と読んでも構わないと明記している。
+  日本ではほぼ「マイエスキューエル」で固定なので、
+  英語圏で「マイシークェル」と言われたときに別物だと思わないよう注意。
+confidence: high
+sources:
+  - url: https://dev.mysql.com/doc/refman/8.4/en/what-is-mysql.html
+    title: What is MySQL? - MySQL Reference Manual
+    kind: docs
+    quote: >-
+      The official way to pronounce "MySQL" is "My Ess Que Ell" (not "my
+      sequel"), but we do not mind if you pronounce it as "my sequel" or in
+      some other localized way.
+tags: [database, rdbms]
+updated: 2026-08-31

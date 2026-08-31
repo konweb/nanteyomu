@@ -1,0 +1,16 @@
+slug: cloudflare-argo
+term: Argo Smart Routing
+aliases: [Argo]
+category: service
+summary: 混雑を避けた経路を選んで通信を速くする Cloudflare のルーティング機能。
+en:
+  respelling: AR-go
+  note: ギリシャ神話でアルゴナウタイが乗った船 Argo から。
+ja:
+  - kana: アルゴ
+    primary: true
+  - kana: アーゴ
+confidence: medium
+needsSource: true
+tags: [cloudflare, network, routing]
+updated: 2026-08-31
