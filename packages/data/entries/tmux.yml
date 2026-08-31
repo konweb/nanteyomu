@@ -1,0 +1,26 @@
+slug: tmux
+term: tmux
+category: cli
+expansion: terminal multiplexer
+summary: 1つの端末で複数のセッション・ウィンドウ・ペインを扱うターミナルマルチプレクサ。
+en:
+  ipa: /ˈtiːmʌks/
+  respelling: TEE-mux
+ja:
+  - kana: ティーマックス
+    primary: true
+  - kana: テーマックス
+    note: 少数派。古い現場でまれに聞く。
+confidence: high
+sources:
+  - url: https://github.com/tmux/tmux
+    title: tmux/tmux — GitHub
+    kind: official
+  - url: https://e-words.jp/w/tmux.html
+    title: tmuxとは — IT用語辞典 e-Words
+    kind: community
+  - url: https://chico-shikaku.com/2023/09/tmux-pronunciation-abbreviation/
+    title: 「tmux」という言葉の読み方(発音)とは？何の略？
+    kind: community
+tags: [terminal, tui]
+updated: 2026-08-31

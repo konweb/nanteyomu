@@ -1,0 +1,22 @@
+{
+  "name": "@nanteyomu/data",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./generated/entries.json": "./generated/entries.json"
+  },
+  "scripts": {
+    "build": "tsx src/build.ts",
+    "lint": "tsx src/lint.ts",
+    "test": "tsx src/lint.ts"
+  },
+  "dependencies": {
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

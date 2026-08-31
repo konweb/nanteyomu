@@ -1,0 +1,20 @@
+slug: gif
+term: GIF
+category: format
+expansion: Graphics Interchange Format
+summary: アニメーションにも使われる画像フォーマット。
+en:
+  ipa: /dʒɪf/
+  respelling: jif
+  note: 作者 Steve Wilhite は「ジフ」であると繰り返し表明したが、英語圏でも論争が続いている。
+ja:
+  - kana: ジフ
+    primary: true
+  - kana: ギフ
+    note: 日本ではこちらが多数派。
+divergence: true
+divergenceNote: 作者は「ジフ」と明言しているが、日本では綴り通りの「ギフ」が定着している。
+confidence: disputed
+needsSource: true
+tags: [image]
+updated: 2026-08-31

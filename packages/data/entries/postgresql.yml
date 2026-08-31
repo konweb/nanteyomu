@@ -1,0 +1,23 @@
+slug: postgresql
+term: PostgreSQL
+aliases: [Postgres]
+category: db
+summary: オープンソースのリレーショナルデータベース。
+en:
+  respelling: POST-gres-Q-L
+ja:
+  - kana: ポストグレスキューエル
+    primary: true
+  - kana: ポスグレ
+    note: 日本独自の略称。会話ではほぼこれ。
+divergence: true
+divergenceNote: >-
+  日本の現場では「ポスグレ」という日本語圏固有の略称が支配的で、
+  英語圏の Postgres（ポストグレス）とは別の縮め方をしている。
+confidence: high
+sources:
+  - url: https://www.postgresql.org/
+    title: PostgreSQL 公式サイト
+    kind: official
+tags: [database, sql]
+updated: 2026-08-31

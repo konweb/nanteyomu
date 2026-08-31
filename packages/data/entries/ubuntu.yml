@@ -1,0 +1,20 @@
+slug: ubuntu
+term: Ubuntu
+category: infra
+summary: Canonical が開発する Linux ディストリビューション。名前はズールー語・コサ語の概念に由来。
+en:
+  ipa: /ʊˈbʊntuː/
+  respelling: oo-BOON-too
+ja:
+  - kana: ウブントゥ
+    primary: true
+  - kana: ウブンツ
+divergence: true
+divergenceNote: 英語圏の oo-BOON-too に対し、日本では「ウブンツ」と短く詰めた読みも広く通る。
+confidence: high
+sources:
+  - url: https://ubuntu.com/
+    title: Ubuntu 公式サイト
+    kind: official
+tags: [linux, distro]
+updated: 2026-08-31

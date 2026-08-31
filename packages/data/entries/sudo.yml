@@ -1,0 +1,18 @@
+slug: sudo
+term: sudo
+category: cli
+expansion: superuser do / substitute user do
+summary: 他ユーザ（通常は root）の権限でコマンドを実行する。
+en:
+  respelling: SOO-doo
+  note: soo-DOO / SOO-doh など英語圏でもゆれる。
+ja:
+  - kana: スードゥー
+    primary: true
+  - kana: スドー
+  - kana: シュードー
+    note: 誤り。pseudo と混同したもの。
+confidence: medium
+needsSource: true
+tags: [unix, security]
+updated: 2026-08-31

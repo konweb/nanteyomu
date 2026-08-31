@@ -1,0 +1,21 @@
+slug: yaml
+term: YAML
+category: format
+expansion: YAML Ain't Markup Language
+summary: 設定ファイルで広く使われるデータ直列化フォーマット。
+en:
+  ipa: /ˈjæməl/
+  respelling: YAM-ul
+ja:
+  - kana: ヤムル
+    primary: true
+  - kana: ヤメル
+  - kana: ワイエーエムエル
+    note: 少数派。
+confidence: high
+sources:
+  - url: https://yaml.org/
+    title: YAML 公式サイト
+    kind: official
+tags: [config, format]
+updated: 2026-08-31

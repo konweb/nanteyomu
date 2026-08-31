@@ -1,0 +1,15 @@
+slug: herdr
+term: herdr
+category: cli
+summary: AIコーディングエージェント向けのターミナル／セッションマネージャ。
+en:
+  respelling: HER-der
+  note: herder から母音を落とした綴りと解釈した場合の読み。未確認。
+ja:
+  - kana: ハーダー
+    primary: true
+divergence: false
+confidence: low
+needsSource: true
+tags: [terminal, ai-agents]
+updated: 2026-08-31

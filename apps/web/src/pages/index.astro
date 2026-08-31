@@ -1,0 +1,60 @@
+---
+import Base from '../layouts/Base.astro';
+import Search from '../components/Search.tsx';
+import { entries, divergentEntries, categoriesWithCounts, CATEGORY_LABEL, primaryKana } from '../lib/entries';
+import { GITHUB_REPO } from '../lib/site';
+
+const divergent = divergentEntries().slice(0, 6);
+const categories = categoriesWithCounts();
+const sourced = entries.filter((e) => (e.sources?.length ?? 0) > 0).length;
+---
+
+<Base
+  title="nanteyomu"
+  description="tmux、nginx、Cloudflare Turnstile — IT のツール名・サービス名の読み方を、出典つきで引ける辞典。英語圏の発音と日本の現場での通り名の両方を収録しています。"
+  path="/"
+>
+  <section class="hero">
+    <h1>そのツール、なんて読む？</h1>
+    <p>
+      IT のツール名・サービス名の読み方を、<strong>出典つき</strong>で引ける辞典です。
+      英語圏での発音と、日本の現場で実際に通っている読みの<strong>両方</strong>を載せています。
+    </p>
+    <Search client:load />
+  </section>
+
+  <section class="section">
+    <h2>日英で読みがズレる語</h2>
+    <p style="color: var(--fg-muted); margin-top: -0.25rem;">
+      日本語話者が本当に困るのは「正しい発音」より「英語圏の読みと日本の現場の通り名のズレ」です。
+    </p>
+    <div class="card-grid">
+      {divergent.map((e) => (
+        <a class="card" href={`/w/${e.slug}/`}>
+          <span class="term mono">{e.term}</span>
+          <span class="kana">{primaryKana(e)}</span>
+          {e.divergenceNote && <div class="note">{e.divergenceNote.slice(0, 70)}…</div>}
+        </a>
+      ))}
+    </div>
+    <p style="margin-top: 1rem;"><a href="/divergence/">ズレる語をすべて見る →</a></p>
+  </section>
+
+  <section class="section">
+    <h2>カテゴリ</h2>
+    <div class="card-grid">
+      {categories.map(({ category, count }) => (
+        <a class="card" href={`/c/${category}/`}>
+          <span class="term">{CATEGORY_LABEL[category] ?? category}</span>
+          <div class="note">{count} 語</div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <div class="contribute">
+    現在 <strong>{entries.length}</strong> 語収録、うち <strong>{sourced}</strong> 語に出典があります。
+    出典は作者本人の発言・公式ドキュメント・公式FAQ を優先し、推測で書かない方針です。
+    追加・修正は <a href={GITHUB_REPO}>GitHub</a> から Pull Request でどうぞ。
+  </div>
+</Base>

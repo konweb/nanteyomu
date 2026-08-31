@@ -1,0 +1,28 @@
+slug: kubernetes
+term: Kubernetes
+aliases: [k8s, K8s]
+category: infra
+expansion: ギリシャ語 κυβερνήτης（操舵手）に由来
+summary: コンテナオーケストレーションの事実上の標準。略記は k8s。
+en:
+  ipa: /ˌkuːbərˈnɛtɪs/
+  respelling: koo-ber-NET-eez
+ja:
+  - kana: クーベルネイテス
+    primary: true
+  - kana: クバネティス
+    note: 日本の現場で最も広く使われる短縮的な読み。
+  - kana: クバネテス
+  - kana: ケーエイツ
+    note: k8s の読み。会話ではこちらが多い。
+divergence: true
+divergenceNote: >-
+  英語圏の koo-ber-NET-eez に対し、日本では「クバネティス」「クバネテス」が定着しており、
+  そもそも会話では k8s（ケーエイツ）で回避されることが多い。
+confidence: disputed
+sources:
+  - url: https://kubernetes.io/
+    title: Kubernetes 公式サイト
+    kind: official
+tags: [kubernetes, container]
+updated: 2026-08-31

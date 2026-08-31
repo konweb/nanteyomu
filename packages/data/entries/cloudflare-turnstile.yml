@@ -1,0 +1,25 @@
+slug: cloudflare-turnstile
+term: Cloudflare Turnstile
+aliases: [Turnstile]
+category: service
+summary: Cloudflare が提供する CAPTCHA 代替のボット判定ウィジェット。reCAPTCHA の置き換えとして使われる。
+en:
+  ipa: /ˈtɜːrnstaɪl/
+  respelling: TURN-style
+  note: turnstile は「改札の回転式ゲート」の意。
+ja:
+  - kana: クラウドフレア・ターンスタイル
+    primary: true
+  - kana: ターンスタイル
+    note: 文脈が明らかなら製品名だけで呼ぶ。
+divergence: true
+divergenceNote: >-
+  英単語として読めば素直だが、日本では「タウンスタイル」「ターンスタイル」の間で
+  ゆれたり、そもそも音読を避けて表記のまま扱われることが多い。
+confidence: high
+sources:
+  - url: https://developers.cloudflare.com/turnstile/
+    title: Cloudflare Turnstile — Cloudflare Docs
+    kind: docs
+tags: [captcha, security, cloudflare]
+updated: 2026-08-31

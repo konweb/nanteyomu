@@ -1,0 +1,126 @@
+---
+import Base from '../../layouts/Base.astro';
+import Speak from '../../components/Speak.tsx';
+import {
+  entries, CATEGORY_LABEL, CONFIDENCE_LABEL, SOURCE_KIND_LABEL, primaryKana,
+} from '../../lib/entries';
+import { EDIT_BASE } from '../../lib/site';
+
+export function getStaticPaths() {
+  return entries.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const kana = primaryKana(entry);
+const others = entry.ja.filter((r) => r.kana !== kana);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'DefinedTerm',
+  name: entry.term,
+  alternateName: entry.ja.map((r) => r.kana),
+  description: entry.summary,
+  inDefinedTermSet: { '@type': 'DefinedTermSet', name: 'nanteyomu', url: 'https://nanteyomu.dev/' },
+};
+---
+
+<Base
+  title={`${entry.term} の読み方は「${kana}」`}
+  description={`${entry.term} は「${kana}」と読みます。${entry.summary}`}
+  path={`/w/${entry.slug}/`}
+>
+  <article>
+    <header class="entry-head">
+      <h1 class="entry-term mono">{entry.term}</h1>
+      <p class="entry-kana">{kana}</p>
+
+      <div class="entry-meta">
+        <span class="badge">{CATEGORY_LABEL[entry.category] ?? entry.category}</span>
+        <span class={`badge ${entry.confidence}`}>{CONFIDENCE_LABEL[entry.confidence]}</span>
+        {entry.divergence && <span class="badge divergence">日英でズレる</span>}
+        {entry.en?.ipa && <span class="badge mono">{entry.en.ipa}</span>}
+        <Speak client:idle text={entry.term} />
+      </div>
+
+      <p class="entry-summary">{entry.summary}</p>
+      {entry.expansion && (
+        <p class="entry-summary">
+          <strong>何の略か:</strong> {entry.expansion}
+        </p>
+      )}
+    </header>
+
+    {entry.divergence && entry.divergenceNote && (
+      <section class="section">
+        <h2>日英のズレ</h2>
+        <div class="callout"><p>{entry.divergenceNote}</p></div>
+      </section>
+    )}
+
+    <section class="section">
+      <h2>日本語での読み</h2>
+      <ul class="readings">
+        <li>
+          <span class="k">{kana}</span>
+          <span class="badge">主</span>
+          {entry.ja.find((r) => r.kana === kana)?.note && (
+            <span class="n">{entry.ja.find((r) => r.kana === kana)!.note}</span>
+          )}
+        </li>
+        {others.map((r) => (
+          <li>
+            <span class="k">{r.kana}</span>
+            {r.note && <span class="n">{r.note}</span>}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    {entry.en && (entry.en.respelling || entry.en.ipa || entry.en.note) && (
+      <section class="section">
+        <h2>英語圏での発音</h2>
+        <ul class="readings">
+          {entry.en.respelling && (
+            <li><span class="k mono">{entry.en.respelling}</span>
+              {entry.en.ipa && <span class="n mono">{entry.en.ipa}</span>}
+            </li>
+          )}
+          {entry.en.note && <li><span class="n">{entry.en.note}</span></li>}
+        </ul>
+      </section>
+    )}
+
+    <section class="section">
+      <h2>出典</h2>
+      {entry.sources && entry.sources.length > 0 ? (
+        <ul class="sources">
+          {entry.sources.map((s) => (
+            <li>
+              <span class="kind">{SOURCE_KIND_LABEL[s.kind] ?? s.kind}</span>
+              <a href={s.url} rel="noopener nofollow">{s.title}</a>
+              {s.quote && <blockquote style="margin: 0.4rem 0 0 1rem; color: var(--fg-muted);">「{s.quote}」</blockquote>}
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <div class="callout">
+          <p>
+            この語はまだ出典を確認できていません（掲載している読みは慣用に基づく暫定値です）。
+            一次情報をご存知の方は
+            <a href={`${EDIT_BASE}/${entry.slug}.yml`}>
+              このエントリを編集</a>して教えてください。
+          </p>
+        </div>
+      )}
+    </section>
+
+    <div class="contribute">
+      最終更新 {entry.updated} ・
+      <a href={`${EDIT_BASE}/${entry.slug}.yml`}>
+        このページを修正する
+      </a>
+    </div>
+  </article>
+
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+</Base>

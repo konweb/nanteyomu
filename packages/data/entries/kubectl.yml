@@ -1,0 +1,28 @@
+slug: kubectl
+term: kubectl
+category: cli
+expansion: kube control
+summary: Kubernetes クラスタを操作するコマンドラインツール。
+en:
+  respelling: KOOB-control
+  note: 英語圏でも cube-cuttle / cube-C-T-L など複数の読みが並立している。
+ja:
+  - kana: キューブコントロール
+    primary: true
+  - kana: キューブシーティーエル
+    note: 日本の現場ではこちらもよく通る。
+  - kana: クーベコントロール
+confidence: disputed
+divergence: true
+divergenceNote: >-
+  公式・コミュニティを通じて読みが一本化されていない有名例。
+  日本では「キューブシーティーエル」と綴り読みする層が英語圏より多い。
+sources:
+  - url: https://opensource.com/article/18/12/kubectl-definitive-pronunciation-guide
+    title: The definitive pronunciation guide for kubectl — Opensource.com
+    kind: community
+  - url: https://kubernetes.io/docs/reference/kubectl/
+    title: kubectl — Kubernetes Documentation
+    kind: docs
+tags: [kubernetes, cli]
+updated: 2026-08-31

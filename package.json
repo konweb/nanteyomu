@@ -1,0 +1,17 @@
+{
+  "name": "nanteyomu-monorepo",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.22.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @nanteyomu/web dev",
+    "build": "pnpm --filter @nanteyomu/data build && node scripts/sync-data.mjs && pnpm --filter @nanteyomu/web build",
+    "preview": "pnpm --filter @nanteyomu/web preview",
+    "deploy": "pnpm build && pnpm --filter @nanteyomu/web deploy",
+    "lint:data": "pnpm --filter @nanteyomu/data lint",
+    "test": "pnpm --filter @nanteyomu/data lint && node scripts/sync-data.mjs && pnpm --filter nanteyomu test && pnpm --filter @nanteyomu/mcp test"
+  }
+}

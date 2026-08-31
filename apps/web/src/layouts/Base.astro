@@ -1,0 +1,63 @@
+---
+import '../styles/global.css';
+import { GITHUB_REPO } from '../lib/site';
+
+interface Props {
+  title: string;
+  description: string;
+  /** ページ固有の canonical パス (例: /w/tmux/) */
+  path?: string;
+}
+
+const { title, description, path } = Astro.props;
+const canonical = new URL(path ?? Astro.url.pathname, Astro.site);
+const fullTitle = title === 'nanteyomu' ? title : `${title} | nanteyomu`;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical.href} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="nanteyomu" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔊</text></svg>"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href="/">nante<span class="ruby">yomu</span></a>
+        <nav class="site-nav">
+          <a href="/divergence/">日英でズレる語</a>
+          <a href="/all/">すべて</a>
+          <a href={GITHUB_REPO}>GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          nanteyomu — IT のツール名・サービス名の読み方を、根拠つきで。
+          データは <a href={GITHUB_REPO}>GitHub</a> で
+          MIT ライセンスのもと公開しています。誤りの指摘・追加は Pull Request で歓迎します。
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

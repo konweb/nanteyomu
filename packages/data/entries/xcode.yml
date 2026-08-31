@@ -1,0 +1,18 @@
+slug: xcode
+term: Xcode
+category: cli
+summary: Apple の統合開発環境。
+en:
+  respelling: EKS-code
+ja:
+  - kana: エックスコード
+    primary: true
+  - kana: ザクセード
+    note: 誤り。まれに聞く。
+confidence: high
+sources:
+  - url: https://developer.apple.com/xcode/
+    title: Xcode — Apple Developer
+    kind: official
+tags: [ide, apple]
+updated: 2026-08-31

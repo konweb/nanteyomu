@@ -1,0 +1,14 @@
+{
+  "name": "nanteyomu",
+  "version": "0.1.0",
+  "description": "IT のツール名・サービス名の読み方を、出典つきでターミナルから引く",
+  "type": "module",
+  "bin": { "nanteyomu": "./src/cli.mjs", "ny": "./src/cli.mjs" },
+  "files": ["src", "data", "README.md"],
+  "keywords": ["pronunciation", "japanese", "katakana", "dictionary", "cli"],
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node src/cli.mjs tmux > /dev/null && node src/cli.mjs --list > /dev/null && echo cli ok"
+  }
+}

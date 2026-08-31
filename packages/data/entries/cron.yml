@@ -1,0 +1,18 @@
+slug: cron
+term: cron
+category: cli
+summary: UNIX 系OSのジョブスケジューラ。
+en:
+  ipa: /krɒn/
+  respelling: kron
+ja:
+  - kana: クロン
+    primary: true
+  - kana: クーロン
+    note: 日本では「クーロン」も非常に広く使われる。
+divergence: true
+divergenceNote: 英語では1音節の kron だが、日本では長音を入れた「クーロン」が定着している。
+confidence: medium
+needsSource: true
+tags: [scheduler, unix]
+updated: 2026-08-31

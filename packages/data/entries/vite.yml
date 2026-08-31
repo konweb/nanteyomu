@@ -1,0 +1,23 @@
+slug: vite
+term: Vite
+category: framework
+summary: フロントエンド向けの高速なビルドツール／開発サーバ。
+en:
+  ipa: /viːt/
+  respelling: veet
+  note: フランス語で「速い」の意。公式が発音を明示している。
+ja:
+  - kana: ヴィート
+    primary: true
+  - kana: ビート
+  - kana: バイト
+    note: 誤り。英語読みに引きずられたもの。
+divergence: true
+divergenceNote: 綴りから英語読みして「バイト」と読む誤りが多いが、公式はフランス語の「ヴィート」。
+confidence: high
+sources:
+  - url: https://vite.dev/
+    title: Vite 公式サイト
+    kind: official
+tags: [build-tool, frontend]
+updated: 2026-08-31

@@ -1,0 +1,13 @@
+slug: ghostty
+term: Ghostty
+category: cli
+summary: GPU アクセラレーションを備えたターミナルエミュレータ。
+en:
+  respelling: GOST-ee
+ja:
+  - kana: ゴースティ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [terminal]
+updated: 2026-08-31

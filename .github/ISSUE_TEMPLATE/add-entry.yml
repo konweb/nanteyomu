@@ -1,0 +1,27 @@
+name: 用語の追加リクエスト
+description: 読み方が分からない・未収録の用語を教えてください
+title: "[追加] "
+labels: [entry]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: 用語
+      placeholder: Cloudflare Turnstile
+    validations:
+      required: true
+  - type: input
+    id: kana
+    attributes:
+      label: 読み方（分かる場合）
+      placeholder: クラウドフレア・ターンスタイル
+  - type: input
+    id: source
+    attributes:
+      label: 出典 URL（分かる場合）
+      description: 作者本人の発言・公式ドキュメント・公式FAQ があると最高です
+  - type: textarea
+    id: context
+    attributes:
+      label: 補足
+      description: 現場でどう読まれているか、どこで迷ったかなど

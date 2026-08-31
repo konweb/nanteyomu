@@ -1,0 +1,26 @@
+slug: nginx
+term: nginx
+aliases: [NGINX]
+category: infra
+expansion: engine x
+summary: 高性能なHTTPサーバ／リバースプロキシ。名前は "engine x" に由来する。
+en:
+  ipa: /ˈɛndʒɪnˌɛks/
+  respelling: EN-jin-EKS
+ja:
+  - kana: エンジンエックス
+    primary: true
+divergence: true
+divergenceNote: >-
+  綴りからは読みが推測できず、日本では「エヌジンクス」「エヌジーアイエヌエックス」と
+  読まれることがあるが、いずれも誤り。"engine x" の略と分かれば一発で解決する。
+confidence: high
+sources:
+  - url: https://nginx.org/
+    title: nginx 公式サイト
+    kind: official
+  - url: https://techtarget.itmedia.co.jp/tt/news/2301/14/news01.html
+    title: 「nginx」を“エヌジーアイエヌエックス”と読んではいけない 正しい読み方は？
+    kind: community
+tags: [web-server, proxy]
+updated: 2026-08-31

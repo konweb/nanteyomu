@@ -1,0 +1,19 @@
+slug: deno
+term: Deno
+category: framework
+summary: TypeScript をそのまま実行できる JavaScript ランタイム。Node.js の作者による再設計。
+en:
+  ipa: /ˈdiːnoʊ/
+  respelling: DEE-no
+ja:
+  - kana: ディーノ
+    primary: true
+  - kana: デノ
+    note: 誤り寄り。日本で散見される。
+confidence: high
+sources:
+  - url: https://deno.com/
+    title: Deno 公式サイト
+    kind: official
+tags: [runtime, javascript]
+updated: 2026-08-31

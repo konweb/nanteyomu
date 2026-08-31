@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+.wrangler/
+.dev.vars
+*.log
+.DS_Store
+packages/data/generated/
+
+# generated: packages/data/generated から同期される
+packages/cli/data/entries.json
+packages/mcp/data/entries.json

@@ -1,0 +1,23 @@
+{
+  "name": "@nanteyomu/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "wrangler deploy",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/solid-js": "^5.0.4",
+    "@nanteyomu/data": "workspace:*",
+    "astro": "^5.13.0",
+    "solid-js": "^1.9.4"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

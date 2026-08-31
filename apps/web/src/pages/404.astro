@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import Search from '../components/Search.tsx';
+---
+<Base title="ページが見つかりません" description="お探しのページは見つかりませんでした。" path="/404/">
+  <section class="hero">
+    <h1>まだ収録されていないかもしれません</h1>
+    <p>検索するか、GitHub で追加をリクエストしてください。</p>
+    <Search client:load />
+  </section>
+</Base>

@@ -1,0 +1,17 @@
+slug: char
+term: char
+category: language
+expansion: character
+summary: C 系言語の文字型。
+en:
+  respelling: char / kar
+  note: 英語圏でも char（チャー）と kar（カー）が並立。
+ja:
+  - kana: チャー
+    primary: true
+  - kana: キャラ
+  - kana: カー
+confidence: disputed
+needsSource: true
+tags: [type, c]
+updated: 2026-08-31

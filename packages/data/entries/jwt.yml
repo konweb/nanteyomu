@@ -1,0 +1,24 @@
+slug: jwt
+term: JWT
+category: acronym
+expansion: JSON Web Token
+summary: 署名付きでクレームを表現するトークン形式。RFC 7519。
+en:
+  respelling: jot
+  note: RFC 7519 が英単語 "jot" と同じ読みであると明記している。
+ja:
+  - kana: ジョット
+    primary: true
+  - kana: ジェイダブリューティー
+    note: 日本ではこちらの綴り読みが多数派。
+divergence: true
+divergenceNote: >-
+  仕様が "jot" と読むと明記しているにもかかわらず、日本では
+  「ジェイダブリューティー」と読まれることが圧倒的に多い、乖離の代表例。
+confidence: high
+sources:
+  - url: https://datatracker.ietf.org/doc/html/rfc7519
+    title: RFC 7519 — JSON Web Token (JWT)
+    kind: official
+tags: [auth, token]
+updated: 2026-08-31

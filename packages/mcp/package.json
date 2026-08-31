@@ -1,0 +1,14 @@
+{
+  "name": "@nanteyomu/mcp",
+  "version": "0.1.0",
+  "description": "nanteyomu の MCP サーバ。エージェントが用語の読み方を出典つきで引ける。",
+  "type": "module",
+  "bin": { "nanteyomu-mcp": "./src/server.mjs" },
+  "files": ["src", "data", "README.md"],
+  "keywords": ["mcp", "model-context-protocol", "pronunciation", "japanese"],
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  }
+}
