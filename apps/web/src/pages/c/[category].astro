@@ -1,5 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
+import JsonLd from '../../components/JsonLd.astro';
+import { collectionSchema } from '../../lib/schema';
 import { entries, CATEGORY_LABEL, primaryKana } from '../../lib/entries';
 
 export function getStaticPaths() {
@@ -14,6 +16,11 @@ const { category, list } = Astro.props;
 const label = CATEGORY_LABEL[category] ?? category;
 ---
 <Base title={`${label} の読み方`} description={`${label} に分類される用語の読み方一覧。`} path={`/c/${category}/`}>
+  <nav class="crumbs" aria-label="パンくずリスト">
+    <a href="/">トップ</a>
+    <span aria-current="page">{label}</span>
+  </nav>
+
   <section class="page-head">
     <h1>{label}</h1>
     <p>{list.length} 語</p>
@@ -29,4 +36,10 @@ const label = CATEGORY_LABEL[category] ?? category;
       </li>
     ))}
   </ul>
+  <JsonLd data={collectionSchema({
+    path: `/c/${category}/`,
+    name: `${label} の読み方`,
+    description: `${label} に分類される用語の読み方一覧。`,
+    count: list.length,
+  })} />
 </Base>

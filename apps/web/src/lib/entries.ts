@@ -112,3 +112,10 @@ export function alphabetIndex(): IndexGroup[] {
   if (sym?.length) groups.push({ label: '記号', id: 'sym', entries: sym });
   return groups;
 }
+
+/** 同じカテゴリの他の語。用語ページから横に辿れるようにするために使う。 */
+export function sameCategoryEntries(entry: Entry, limit = 8): Entry[] {
+  return sortedEntries()
+    .filter((e) => e.category === entry.category && e.slug !== entry.slug)
+    .slice(0, limit);
+}

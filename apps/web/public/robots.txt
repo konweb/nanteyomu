@@ -1,0 +1,17 @@
+# nanteyomu — IT のツール名・サービス名の読み方を、出典つきで引ける辞典
+#
+# このサイトは検索エンジンにも AI にも「引用されること」を目的にしています。
+# 辞書データは MIT ライセンスで、機械可読な形でも取得できます。
+#
+#   全データ (JSON) : https://nanteyomu.dev/api/entries.json
+#   AI 向けの案内    : https://nanteyomu.dev/llms.txt
+#   ソースと出典     : https://github.com/konweb/nanteyomu
+
+User-agent: *
+Allow: /
+
+# 検索・AI への入力（RAG や AI 検索の要約）・AI の学習、いずれも許可する。
+# Cloudflare の managed robots.txt は既定が ai-train=no なので、ここで明示的に上書きしている。
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+Sitemap: https://nanteyomu.dev/sitemap-index.xml

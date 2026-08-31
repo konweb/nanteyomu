@@ -15,7 +15,8 @@ const { title, description, path } = Astro.props;
 const canonical = new URL(path ?? Astro.url.pathname, Astro.site);
 // OGP 画像は絶対 URL でないとクローラが解決できない
 const ogImage = new URL('/ogp.jpg', Astro.site);
-const fullTitle = title === 'nanteyomu' ? title : `${title} | nanteyomu`;
+// サイト名で始まるタイトル（トップ）はそのまま、それ以外は末尾にサイト名を足す
+const fullTitle = title.startsWith('nanteyomu') ? title : `${title} | nanteyomu`;
 ---
 
 <!doctype html>

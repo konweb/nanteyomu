@@ -504,3 +504,18 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 700; }
 .lookup-links a:hover {
   background: var(--tint-pink); border-color: var(--pink-vivid); color: var(--ink);
 }
+
+/* ---- パンくず ---------------------------------------------------------- */
+.crumbs {
+  display: flex; align-items: center; flex-wrap: wrap;
+  gap: 0.15rem 0.5rem;
+  margin: 1.5rem 0 -0.5rem;
+  font-size: 0.85rem; color: var(--ink-muted);
+}
+.crumbs a { color: var(--ink-muted); text-decoration: none; }
+.crumbs a:hover { color: var(--pink); text-decoration: underline; }
+/* 区切りの › は CSS で足す。マークアップに文字を置かないことで読み上げの邪魔をしない */
+.crumbs > * + *::before {
+  content: '›'; color: var(--ink-faint); margin-right: 0.5rem;
+}
+.crumbs [aria-current] { color: var(--ink); font-weight: 700; }

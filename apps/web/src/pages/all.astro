@@ -1,4 +1,6 @@
 ---
+import JsonLd from '../components/JsonLd.astro';
+import { collectionSchema } from '../lib/schema';
 import Base from '../layouts/Base.astro';
 import Logo from '../components/Logo.astro';
 import IndexView from '../components/IndexView.astro';
@@ -24,4 +26,10 @@ const groups = alphabetIndex();
   </nav>
 
   <IndexView groups={groups} jumpLabel="頭文字へ移動" />
+  <JsonLd data={collectionSchema({
+    path: '/all/',
+    name: 'アルファベット順の索引',
+    description: `nanteyomu に収録している ${entries.length} 語を、綴りのアルファベット順に並べた索引。`,
+    count: entries.length,
+  })} />
 </Base>
