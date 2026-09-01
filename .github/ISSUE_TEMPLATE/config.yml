@@ -1,0 +1,10 @@
+# 空の issue を許さず、必ずどちらかのテンプレートを通す。
+# 読みの報告は「用語・読み・出典」が揃っていないと検証できないため。
+blank_issues_enabled: false
+contact_links:
+  - name: 貢献のしかたを読む
+    url: https://github.com/konweb/nanteyomu/blob/main/CONTRIBUTING.md
+    about: 出典の方針・divergence の基準・読みが複数あるときの扱いはここにあります
+  - name: サイトで引く
+    url: https://nanteyomu.dev/
+    about: すでに収録されているか、あいうえお順・アルファベット順の索引で確認できます

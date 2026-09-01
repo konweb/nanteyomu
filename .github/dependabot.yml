@@ -1,0 +1,30 @@
+version: 2
+updates:
+  # npm（pnpm ワークスペース）。関連するものはまとめて 1 つの PR にして
+  # レビューの回数を減らす。
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      astro:
+        patterns:
+          - astro
+          - "@astrojs/*"
+      solid:
+        patterns:
+          - solid-js
+          - "@astrojs/solid-js"
+      dev-dependencies:
+        dependency-type: development
+
+  # GitHub Actions。放置すると runner 側の Node 非推奨警告が溜まるため。
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns:
+          - "*"

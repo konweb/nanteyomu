@@ -1,0 +1,43 @@
+name: 読みの誤りの報告
+description: 収録されている語の読みが違う・出典が見つかった場合
+title: "[修正] "
+labels: [fix]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        この辞典は「推測で断定しない」ことを方針にしています。
+        出典（作者本人の発言・公式ドキュメント・公式FAQ）があれば最優先で反映します。
+        出典が無い場合も歓迎ですが、`confidence` や「出典なし（暫定値）」の扱いは変わりません。
+  - type: input
+    id: term
+    attributes:
+      label: 用語
+      description: サイトに載っている表記そのまま
+      placeholder: Wrangler
+    validations:
+      required: true
+  - type: input
+    id: current
+    attributes:
+      label: 現在の掲載
+      description: いまサイトに出ている読み
+      placeholder: ラングラー
+  - type: input
+    id: correct
+    attributes:
+      label: 正しいと思う読み
+      placeholder: ワングラー
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 出典 URL
+      description: 一次情報があれば必ず。無い場合は空で構いません
+      placeholder: https://github.com/cloudflare/workerd
+  - type: textarea
+    id: context
+    attributes:
+      label: 補足
+      description: 現場でどう呼ばれているか、地域や世代による差など

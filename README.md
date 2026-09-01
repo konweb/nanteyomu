@@ -5,7 +5,7 @@
 `tmux` は？ `nginx` は？ `Cloudflare Turnstile` は？ — 綴りから読みが推測できない名前は、
 検索しても個人ブログの断片的なまとめしか出てきません。nanteyomu はそれを一箇所に集めます。
 
-→ https://nanteyomu.dev （公開準備中）
+→ **https://nanteyomu.dev**
 
 ## 何が違うのか
 
