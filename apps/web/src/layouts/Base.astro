@@ -9,12 +9,16 @@ interface Props {
   description: string;
   /** ページ固有の canonical パス (例: /w/tmux/) */
   path?: string;
+  /** OGP 画像のパス。省略するとサイト共通のものを使う */
+  image?: string;
+  /** OGP 画像の説明。省略するとサイト共通のものを使う */
+  imageAlt?: string;
 }
 
-const { title, description, path } = Astro.props;
+const { title, description, path, image, imageAlt } = Astro.props;
 const canonical = new URL(path ?? Astro.url.pathname, Astro.site);
 // OGP 画像は絶対 URL でないとクローラが解決できない
-const ogImage = new URL('/ogp.jpg', Astro.site);
+const ogImage = new URL(image ?? '/ogp.jpg', Astro.site);
 // サイト名で始まるタイトル（トップ）はそのまま、それ以外は末尾にサイト名を足す
 const fullTitle = title.startsWith('nanteyomu') ? title : `${title} | nanteyomu`;
 ---
@@ -34,8 +38,8 @@ const fullTitle = title.startsWith('nanteyomu') ? title : `${title} | nanteyomu`
     <meta property="og:site_name" content="nanteyomu" />
     <meta property="og:image" content={ogImage.href} />
     <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="628" />
-    <meta property="og:image:alt" content="そのツール、なんて読む？ — IT のツール名・サービス名の読み方を出典つきで引ける辞典" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={imageAlt ?? 'そのツール、なんて読む？ — IT のツール名・サービス名の読み方を出典つきで引ける辞典'} />
     <meta property="og:locale" content="ja_JP" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content={ogImage.href} />
