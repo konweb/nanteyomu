@@ -1,0 +1,145 @@
+---
+import Base from '../layouts/Base.astro';
+import Logo from '../components/Logo.astro';
+import JsonLd from '../components/JsonLd.astro';
+import { collectionSchema } from '../lib/schema';
+import { GITHUB_REPO } from '../lib/site';
+
+const updated = '2026-09-01';
+---
+<Base
+  title="プライバシーと外部送信について"
+  description="nanteyomu が利用者の情報を外部へ送信する範囲と、その目的についての説明。改正電気通信事業法の外部送信規律にもとづく公表を兼ねています。"
+  path="/privacy/"
+>
+  <nav class="crumbs" aria-label="パンくずリスト">
+    <a href="/">トップ</a>
+    <span aria-current="page">プライバシーと外部送信</span>
+  </nav>
+
+  <section class="page-head">
+    <div class="hero-top">
+      <Logo size={56} />
+      <h1>プライバシーと外部送信について</h1>
+    </div>
+    <p>
+      改正電気通信事業法の外部送信規律にもとづく公表を兼ねています。
+      最終更新 {updated}
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>このサイトが集めないもの</h2>
+    <div class="callout">
+      <p>
+        nanteyomu は静的なサイトです。アカウント登録もお問い合わせフォームもなく、
+        サーバー側で動く処理もありません。<strong>サイト自身は Cookie も
+        localStorage も使わず、入力内容を受け取る仕組みもありません。</strong>
+        検索はすべてブラウザ内で完結し、入力した語がどこかへ送られることはありません。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>外部に送信される情報</h2>
+    <p class="section-lead">
+      ページを開いたとき、以下の事業者へ自動的に情報が送信されます。
+    </p>
+
+    <ul class="readings">
+      <li>
+        <span class="k">Google タグマネージャー / Google アナリティクス</span>
+        <span class="n">提供: Google LLC</span>
+      </li>
+    </ul>
+    <p class="privacy-detail">
+      <strong>送信される情報:</strong> IP アドレス、ブラウザの種類とバージョン、
+      閲覧したページの URL、参照元、閲覧日時、Cookie に保存された識別子。<br />
+      <strong>目的:</strong> どの語がよく引かれているかを把握し、収録する語の優先順位を決めるため。<br />
+      <strong>提供元のポリシー:</strong>
+      <a href="https://policies.google.com/privacy" rel="noopener nofollow">Google プライバシーポリシー</a>
+    </p>
+
+    <ul class="readings">
+      <li>
+        <span class="k">Google Fonts</span>
+        <span class="n">提供: Google LLC</span>
+      </li>
+    </ul>
+    <p class="privacy-detail">
+      <strong>送信される情報:</strong> IP アドレス、ブラウザの種類とバージョン、参照元。<br />
+      <strong>目的:</strong> 見出しと読みの表示に使う書体（Zen Maru Gothic）を配信するため。<br />
+      <strong>備考:</strong> 書体ファイルの配信のみで、Cookie は使われません。
+    </p>
+
+    <ul class="readings">
+      <li>
+        <span class="k">Cloudflare</span>
+        <span class="n">提供: Cloudflare, Inc.</span>
+      </li>
+    </ul>
+    <p class="privacy-detail">
+      <strong>送信される情報:</strong> IP アドレス、ブラウザの種類とバージョン、
+      リクエストしたページの URL、閲覧日時。<br />
+      <strong>目的:</strong> このサイトの配信そのもの。Cloudflare 上でホストしているため、
+      アクセスは必ずここを経由します。<br />
+      <strong>提供元のポリシー:</strong>
+      <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener nofollow">Cloudflare プライバシーポリシー</a>
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>クリックしたときだけ送信されるもの</h2>
+    <p class="section-lead">
+      以下は、リンクやボタンを操作したときにはじめて通信が発生します。押さなければ送信されません。
+    </p>
+    <ul class="readings">
+      <li><span class="k">X</span><span class="n">シェアボタン</span></li>
+      <li><span class="k">はてなブックマーク</span><span class="n">シェアボタン</span></li>
+      <li><span class="k">GitHub</span><span class="n">ソースや編集ページへのリンク</span></li>
+      <li><span class="k">各用語の出典サイト</span><span class="n">出典として掲載している外部リンク</span></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>送信を止めたいとき</h2>
+    <ul class="readings">
+      <li>
+        <span class="k">計測を止める</span>
+        <span class="n">
+          <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener nofollow">Google アナリティクス オプトアウト アドオン</a>
+          を入れると、Google アナリティクスへの送信を停止できます
+        </span>
+      </li>
+      <li>
+        <span class="k">Cookie を拒否する</span>
+        <span class="n">ブラウザの設定でサードパーティ Cookie をブロックできます。サイトの表示や検索には影響しません</span>
+      </li>
+      <li>
+        <span class="k">書体の読み込みを止める</span>
+        <span class="n">拡張機能などで遮断できます。その場合は端末にある書体で表示されます</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>お問い合わせ</h2>
+    <p>
+      このページの内容についての質問や指摘は、
+      <a href={`${GITHUB_REPO}/issues`}>GitHub の issue</a> でお願いします。
+      このサイトはソースも辞書データも公開しているので、
+      実際に何を読み込んでいるかはコードで確認できます。
+    </p>
+  </section>
+
+  <div class="contribute">
+    最終更新 {updated}
+  </div>
+
+  <JsonLd data={collectionSchema({
+    path: '/privacy/',
+    name: 'プライバシーと外部送信について',
+    description: 'nanteyomu が利用者の情報を外部へ送信する範囲と、その目的についての説明。',
+    count: 0,
+  })} />
+</Base>
