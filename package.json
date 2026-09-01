@@ -16,6 +16,6 @@
     "preview": "pnpm --filter @nanteyomu/web preview",
     "deploy": "pnpm run build && wrangler deploy",
     "lint:data": "pnpm --filter @nanteyomu/data lint",
-    "test": "pnpm run lint:data && pnpm run data && pnpm --filter nanteyomu test && pnpm --filter @nanteyomu/mcp test"
+    "test": "pnpm run lint:data && pnpm --filter @nanteyomu/data typecheck && pnpm run data && pnpm --filter nanteyomu test && pnpm --filter @nanteyomu/mcp test"
   }
 }
