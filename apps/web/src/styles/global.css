@@ -519,3 +519,34 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 700; }
   content: '›'; color: var(--ink-faint); margin-right: 0.5rem;
 }
 .crumbs [aria-current] { color: var(--ink); font-weight: 700; }
+
+/* ---- 用語ページの答えの一文 ---------------------------------------------- */
+.entry-answer {
+  margin: 1.1rem 0 0;
+  font-size: 1.05rem; line-height: 1.8;
+  color: var(--ink);
+}
+
+/* ---- シェア -------------------------------------------------------------- */
+.share {
+  display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+  margin-top: 2.75rem;
+}
+.share-label { font-size: 0.85rem; color: var(--ink-muted); }
+.share-btn {
+  font-family: var(--font-display); font-weight: 700; font-size: 0.85rem;
+  color: var(--ink); text-decoration: none; cursor: pointer;
+  background: var(--card);
+  border: 2px solid var(--line-strong);
+  border-radius: 999px; padding: 0.2rem 0.9rem;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+}
+.share-btn:hover {
+  color: var(--ink); background: var(--tint-pink);
+  border-color: var(--pink-vivid);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--pink-vivid);
+}
+.share-btn.is-done {
+  background: var(--tint-mint); border-color: var(--mint-vivid);
+}

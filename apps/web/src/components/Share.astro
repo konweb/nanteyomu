@@ -1,0 +1,52 @@
+---
+/**
+ * 用語ページのシェア。
+ *
+ * X とはてなブックマークは素のリンクなので JS 不要。
+ * リンクのコピーだけは Clipboard API が要るので、島を増やさず
+ * 小さなインラインスクリプトで済ませている（未対応環境ではボタンを隠す）。
+ */
+interface Props {
+  /** シェアする文（URL は別に渡すので含めない） */
+  text: string;
+  /** 絶対 URL */
+  url: string;
+}
+
+const { text, url } = Astro.props;
+
+const x = `https://x.com/intent/post?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+const hatena = `https://b.hatena.ne.jp/entry/panel/?url=${encodeURIComponent(url)}&title=${encodeURIComponent(text)}`;
+---
+
+<div class="share" data-share-url={url}>
+  <span class="share-label">シェア</span>
+  <a class="share-btn" href={x} target="_blank" rel="noopener">X</a>
+  <a class="share-btn" href={hatena} target="_blank" rel="noopener">はてブ</a>
+  <button class="share-btn share-copy" type="button" hidden>リンクをコピー</button>
+</div>
+
+<script is:inline>
+  // Clipboard API が使える環境でだけコピーボタンを出す
+  if (navigator.clipboard) {
+    for (const box of document.querySelectorAll('.share')) {
+      const btn = box.querySelector('.share-copy');
+      if (!btn) continue;
+      btn.hidden = false;
+      btn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(box.dataset.shareUrl);
+          const before = btn.textContent;
+          btn.textContent = 'コピーしました';
+          btn.classList.add('is-done');
+          setTimeout(() => {
+            btn.textContent = before;
+            btn.classList.remove('is-done');
+          }, 1600);
+        } catch {
+          /* 拒否された場合は何もしない。リンクは URL バーから取れる */
+        }
+      });
+    }
+  }
+</script>
