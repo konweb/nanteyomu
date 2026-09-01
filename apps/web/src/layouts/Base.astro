@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import Logo from '../components/Logo.astro';
 import { LOGO_PATH, LOGO_SPRITE_ID } from '../lib/logo';
-import { GITHUB_REPO } from '../lib/site';
+import { GITHUB_REPO, GTM_ID } from '../lib/site';
 
 interface Props {
   title: string;
@@ -21,6 +21,8 @@ const canonical = new URL(path ?? Astro.url.pathname, Astro.site);
 const ogImage = new URL(image ?? '/ogp.jpg', Astro.site);
 // サイト名で始まるタイトル（トップ）はそのまま、それ以外は末尾にサイト名を足す
 const fullTitle = title.startsWith('nanteyomu') ? title : `${title} | nanteyomu`;
+// 計測タグは本番ビルドのときだけ。dev サーバーのアクセスを混ぜないため。
+const gtm = import.meta.env.PROD && GTM_ID ? GTM_ID : null;
 ---
 
 <!doctype html>
@@ -28,6 +30,14 @@ const fullTitle = title.startsWith('nanteyomu') ? title : `${title} | nanteyomu`
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {gtm && (
+      <script is:inline set:html={`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${gtm}');`} />
+    )}
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical.href} />
@@ -57,6 +67,11 @@ const fullTitle = title.startsWith('nanteyomu') ? title : `${title} | nanteyomu`
     />
   </head>
   <body>
+    {gtm && (
+      <noscript set:html={`<iframe src="https://www.googletagmanager.com/ns.html?id=${gtm}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>`} />
+    )}
+
     {/* ロゴの形状はここで1度だけ定義し、各 <Logo /> は <use> で参照する */}
     <svg class="sprite" aria-hidden="true" focusable="false">
       <defs><path id={LOGO_SPRITE_ID} d={LOGO_PATH} fill-rule="evenodd" /></defs>
