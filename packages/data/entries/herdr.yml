@@ -2,6 +2,7 @@ slug: herdr
 term: herdr
 category: cli
 summary: AIコーディングエージェント向けのターミナル／セッションマネージャ。
+homepage: https://herdr.dev/
 en:
   respelling: HER-der
   note: herder から母音を落とした綴りと解釈した場合の読み。未確認。
