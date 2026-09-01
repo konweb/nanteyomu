@@ -28,6 +28,13 @@ const answer = entry.en?.respelling
   ? `${entry.term} は日本では「${kana}」と読みます。英語圏での発音は ${entry.en.respelling} です。`
   : `${entry.term} は「${kana}」と読みます。`;
 const shareText = `${entry.term} は「${kana}」と読む`;
+// リンクの見た目。GitHub はホスト名だけだとどのリポジトリか分からないので owner/repo まで出す
+function homeLabel(url: string): string {
+  const u = new URL(url);
+  const host = u.host.replace(/^www\./, '');
+  if (host === 'github.com') return host + u.pathname.replace(/\/$/, '');
+  return host;
+}
 ---
 
 <Base
@@ -59,6 +66,12 @@ const shareText = `${entry.term} は「${kana}」と読む`;
       <p class="entry-answer">{answer}</p>
 
       <p class="entry-summary">{entry.summary}</p>
+      {entry.homepage && (
+        <p class="entry-home">
+          <span class="label">公式サイト</span>
+          <a href={entry.homepage} rel="noopener">{homeLabel(entry.homepage)}</a>
+        </p>
+      )}
       {entry.expansion && (
         <p class="entry-summary">
           <strong>何の略か:</strong> {entry.expansion}

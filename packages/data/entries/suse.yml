@@ -2,6 +2,7 @@ slug: suse
 term: SUSE
 category: infra
 summary: ドイツ発の Linux ディストリビューション。企業向けの SLES と、コミュニティ版の openSUSE がある。
+homepage: https://www.suse.com/
 en:
   respelling: SOO-zuh
   note: ドイツ語読み。語尾の e を読む。

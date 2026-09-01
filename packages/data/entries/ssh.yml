@@ -4,6 +4,7 @@ aliases: [SSH, OpenSSH]
 category: protocol
 expansion: Secure Shell
 summary: 暗号化された通信路でリモートのマシンを操作するプロトコルとコマンド。
+homepage: https://www.openssh.org/
 en:
   respelling: S-S-H
 ja:

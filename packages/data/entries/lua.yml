@@ -2,6 +2,7 @@ slug: lua
 term: Lua
 category: language
 summary: 組み込み用途で広く使われる軽量なスクリプト言語。ブラジル生まれ。
+homepage: https://www.lua.org/
 en:
   respelling: LOO-ah
   note: ポルトガル語で「月」の意味。頭字語ではないので LUA と大文字で書くのは誤り。

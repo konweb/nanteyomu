@@ -2,6 +2,7 @@ slug: svelte
 term: Svelte
 category: framework
 summary: コンパイル時に仮想 DOM を消し去るアプローチの UI フレームワーク。
+homepage: https://svelte.dev/
 en:
   respelling: svelt
   note: 英単語 svelte（すらりとした）と同じ1音節。

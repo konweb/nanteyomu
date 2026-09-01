@@ -2,6 +2,7 @@ slug: sippy
 term: Sippy
 category: service
 summary: アクセスされたオブジェクトだけを少しずつ R2 へ移行する仕組み。
+homepage: https://developers.cloudflare.com/r2/data-migration/sippy/
 en:
   respelling: SIP-ee
   note: sip（少しずつ飲む）から。一括移行の Super Slurper と対になる命名。

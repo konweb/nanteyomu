@@ -2,6 +2,7 @@ slug: mongodb
 term: MongoDB
 category: db
 summary: ドキュメント指向のNoSQLデータベース。
+homepage: https://www.mongodb.com/
 en:
   respelling: MON-go-D-B
   note: humongous（とてつもなく大きい）の一部を取った名前。モンゴル由来ではない。

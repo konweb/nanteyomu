@@ -2,6 +2,7 @@ slug: opentofu
 term: OpenTofu
 category: infra
 summary: Terraform からフォークして生まれた IaC ツール。
+homepage: https://opentofu.org/
 en:
   respelling: open-TOH-foo
   note: 日本語の「豆腐」がそのまま名前に入っている。

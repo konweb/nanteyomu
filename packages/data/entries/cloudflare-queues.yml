@@ -3,6 +3,7 @@ term: Cloudflare Queues
 aliases: [Queues]
 category: service
 summary: Workers 間で非同期にメッセージを受け渡すキューサービス。
+homepage: https://developers.cloudflare.com/queues/
 en:
   respelling: kyooz
 ja:

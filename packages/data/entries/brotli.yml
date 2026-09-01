@@ -2,6 +2,7 @@ slug: brotli
 term: Brotli
 category: format
 summary: Google が開発した圧縮アルゴリズム。gzip より高い圧縮率を狙う。
+homepage: https://github.com/google/brotli
 en:
   respelling: BROT-lee
   note: スイスドイツ語で小さなパンのこと。同社の圧縮アルゴリズム Zopfli と同じ命名系統。

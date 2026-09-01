@@ -2,6 +2,7 @@ slug: quiche
 term: quiche
 category: library
 summary: Cloudflare が開発した QUIC と HTTP/3 の Rust 実装。
+homepage: https://github.com/cloudflare/quiche
 en:
   respelling: keesh
   note: フランス語由来の英単語 quiche（キッシュ、卵のタルト）と同じ綴りで、同じく1音節。

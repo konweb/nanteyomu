@@ -2,6 +2,7 @@ slug: boringtun
 term: BoringTun
 category: library
 summary: Cloudflare による WireGuard プロトコルの Rust 実装。WARP の土台。
+homepage: https://github.com/cloudflare/boringtun
 en:
   respelling: BOR-ing-tun
   note: 末尾の tun は Unix のトンネルデバイス tun から。

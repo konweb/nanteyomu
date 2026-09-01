@@ -3,6 +3,7 @@ term: Cloudflare Mirage
 aliases: [Mirage]
 category: service
 summary: 回線が細い環境向けに画像の読み込みを最適化する機能。
+homepage: https://developers.cloudflare.com/speed/optimization/images/mirage/
 en:
   respelling: mih-RAHZH
   note: フランス語由来の英単語。語尾は「ジュ」に近い音。

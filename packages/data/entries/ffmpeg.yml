@@ -3,6 +3,7 @@ term: FFmpeg
 category: cli
 expansion: Fast Forward MPEG
 summary: 動画・音声を変換、加工、配信するためのツール群とライブラリ。
+homepage: https://ffmpeg.org/
 en:
   respelling: F-F-M-peg
 ja:

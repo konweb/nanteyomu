@@ -2,6 +2,7 @@ slug: puppeteer
 term: Puppeteer
 category: library
 summary: Chrome をプログラムから操作するための Node.js ライブラリ。
+homepage: https://pptr.dev/
 en:
   respelling: pup-uh-TEER
   note: 英単語の puppeteer（人形遣い）。

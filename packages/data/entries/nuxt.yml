@@ -2,6 +2,7 @@ slug: nuxt
 term: Nuxt
 category: framework
 summary: Vue ベースのメタフレームワーク。SSR や静的生成に対応する。
+homepage: https://nuxt.com/
 en:
   respelling: nukst
 ja:

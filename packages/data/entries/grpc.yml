@@ -3,6 +3,7 @@ term: gRPC
 category: protocol
 expansion: gRPC Remote Procedure Calls
 summary: HTTP/2 と Protocol Buffers を使う高速な RPC フレームワーク。
+homepage: https://grpc.io/
 en:
   respelling: G-R-P-C
   note: 先頭の g はリリースごとに違う語が当てられる遊びがある。

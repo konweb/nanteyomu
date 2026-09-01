@@ -2,6 +2,7 @@ slug: speed-brain
 term: Speed Brain
 category: service
 summary: 次に見られるページを予測して先読みし、体感速度を上げる機能。
+homepage: https://developers.cloudflare.com/speed/optimization/content/speed-brain/
 ja:
   - kana: スピードブレイン
     primary: true

@@ -3,6 +3,7 @@ term: Neovim
 aliases: [nvim]
 category: cli
 summary: Vim をフォークして拡張性と組み込み用途を強化したテキストエディタ。
+homepage: https://neovim.io/
 en:
   respelling: NEE-oh-vim
 ja:

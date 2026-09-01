@@ -2,6 +2,7 @@ slug: nix
 term: Nix
 category: cli
 summary: 再現性を重視したパッケージマネージャと、それに基づく OS（NixOS）。
+homepage: https://nixos.org/
 en:
   respelling: nix
 ja:

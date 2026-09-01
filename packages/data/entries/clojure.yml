@@ -2,6 +2,7 @@ slug: clojure
 term: Clojure
 category: language
 summary: JVM 上で動く Lisp 系の関数型言語。
+homepage: https://clojure.org/
 en:
   respelling: closure
   note: 英単語の closure（クロージャ）と同じ発音になるよう名付けられている。

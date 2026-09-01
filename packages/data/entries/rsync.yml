@@ -3,6 +3,7 @@ term: rsync
 category: cli
 expansion: remote sync
 summary: 差分だけを転送してディレクトリを同期するコマンド。
+homepage: https://rsync.samba.org/
 en:
   respelling: R-sink
 ja:

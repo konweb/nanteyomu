@@ -3,6 +3,7 @@ term: WebAssembly
 aliases: [Wasm, WASM]
 category: format
 summary: ブラウザなどで動く可搬なバイナリ命令形式。
+homepage: https://webassembly.org/
 en:
   respelling: WAH-zum
   note: 公式サイトの表記は "abbreviated Wasm"。頭字語ではなく短縮形なので、慣習的に Wasm と書く。

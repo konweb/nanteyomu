@@ -2,6 +2,7 @@ slug: netlify
 term: Netlify
 category: service
 summary: 静的サイトやフロントエンドのホスティング・デプロイ基盤。
+homepage: https://www.netlify.com/
 en:
   respelling: NET-luh-fy
   note: amplify と同じ韻。net + lify で切る。

@@ -2,6 +2,7 @@ slug: neo4j
 term: Neo4j
 category: db
 summary: グラフ構造でデータを保持するグラフデータベース。
+homepage: https://neo4j.com/
 en:
   respelling: NEE-oh-for-jay
   note: 4j は "for Java" の意味。

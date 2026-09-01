@@ -2,6 +2,7 @@ slug: traefik
 term: Traefik
 category: infra
 summary: コンテナ環境向けのリバースプロキシ／ロードバランサ。
+homepage: https://traefik.io/
 en:
   respelling: traffic
   note: 英単語 traffic と同じ発音になるよう名付けられている。

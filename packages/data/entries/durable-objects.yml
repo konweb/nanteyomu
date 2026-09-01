@@ -2,6 +2,7 @@ slug: durable-objects
 term: Durable Objects
 category: service
 summary: 単一インスタンスで強い整合性と状態を保持できる Workers の実行単位。
+homepage: https://developers.cloudflare.com/durable-objects/
 en:
   respelling: DUR-uh-bul OB-jekts
 ja:

@@ -3,6 +3,7 @@ term: Redis
 category: db
 expansion: REmote DIctionary Server
 summary: インメモリのキーバリューストア。キャッシュやセッション管理に使われる。
+homepage: https://redis.io/
 en:
   respelling: RED-iss
 ja:

@@ -2,6 +2,7 @@ slug: graphql
 term: GraphQL
 category: protocol
 summary: クライアントが必要なフィールドだけを指定して取得できる API 用のクエリ言語。
+homepage: https://graphql.org/
 en:
   respelling: graph-Q-L
 ja:

@@ -2,6 +2,7 @@ slug: istio
 term: Istio
 category: infra
 summary: Kubernetes 上で使われるサービスメッシュ。
+homepage: https://istio.io/
 en:
   respelling: iss-TEE-oh
   note: ギリシャ語で「帆」の意味。Kubernetes（操舵手）と同じ航海のモチーフ。

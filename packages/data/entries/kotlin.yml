@@ -2,6 +2,7 @@ slug: kotlin
 term: Kotlin
 category: language
 summary: JetBrains が開発した JVM 系言語。Android の第一級言語。
+homepage: https://kotlinlang.org/
 en:
   respelling: KOT-lin
   note: サンクトペテルブルク沖のコトリン島に由来。

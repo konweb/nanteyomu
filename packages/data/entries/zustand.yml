@@ -2,6 +2,7 @@ slug: zustand
 term: Zustand
 category: library
 summary: React 向けの軽量な状態管理ライブラリ。
+homepage: https://zustand.docs.pmnd.rs/
 en:
   respelling: TSOO-shtahnt
   note: ドイツ語で「状態」の意味。z は「ツ」の音。

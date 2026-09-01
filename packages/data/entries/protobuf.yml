@@ -3,6 +3,7 @@ term: Protocol Buffers
 aliases: [protobuf, proto]
 category: format
 summary: Google が開発したスキーマ付きのバイナリシリアライズ形式。
+homepage: https://protobuf.dev/
 en:
   respelling: PRO-to-buf
 ja:

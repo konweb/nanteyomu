@@ -3,6 +3,7 @@ term: JSON
 category: format
 expansion: JavaScript Object Notation
 summary: JavaScript のオブジェクト表記をもとにしたデータ交換フォーマット。
+homepage: https://www.json.org/
 en:
   respelling: JAY-sun
   note: 考案者 Douglas Crockford は人名の Jason と同じ読みでよいとしている。

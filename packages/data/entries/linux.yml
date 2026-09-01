@@ -2,6 +2,7 @@ slug: linux
 term: Linux
 category: infra
 summary: Linus Torvalds が開発したカーネル、およびそれを核とする OS 群。
+homepage: https://www.kernel.org/
 en:
   respelling: LIN-uks / LEE-nuks
   note: 作者本人の発音は「リーヌクス」に近い。英語圏では「リナックス」寄りも一般的。

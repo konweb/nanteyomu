@@ -2,6 +2,7 @@ slug: haskell
 term: Haskell
 category: language
 summary: 純粋関数型プログラミング言語。論理学者 Haskell Curry にちなむ。
+homepage: https://www.haskell.org/
 en:
   respelling: HASS-kell
 ja:

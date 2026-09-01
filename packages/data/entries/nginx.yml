@@ -4,6 +4,7 @@ aliases: [NGINX]
 category: infra
 expansion: engine x
 summary: 高性能なHTTPサーバ／リバースプロキシ。名前は "engine x" に由来する。
+homepage: https://nginx.org/
 en:
   ipa: /ˈɛndʒɪnˌɛks/
   respelling: EN-jin-EKS

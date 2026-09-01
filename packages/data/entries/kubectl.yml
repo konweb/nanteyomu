@@ -3,6 +3,7 @@ term: kubectl
 category: cli
 expansion: kube control
 summary: Kubernetes クラスタを操作するコマンドラインツール。
+homepage: https://kubernetes.io/docs/reference/kubectl/
 en:
   respelling: KOOB-control
   note: 英語圏でも cube-cuttle / cube-C-T-L など複数の読みが並立している。

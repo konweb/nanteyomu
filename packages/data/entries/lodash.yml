@@ -2,6 +2,7 @@ slug: lodash
 term: Lodash
 category: library
 summary: JavaScript の汎用ユーティリティライブラリ。
+homepage: https://lodash.com/
 en:
   respelling: LOH-dash
   note: 変数名によく使われる低線 _ (low dash) から。

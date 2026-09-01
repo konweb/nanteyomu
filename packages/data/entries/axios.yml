@@ -2,6 +2,7 @@ slug: axios
 term: Axios
 category: library
 summary: ブラウザと Node.js の両方で使える HTTP クライアントライブラリ。
+homepage: https://axios.rest/
 en:
   respelling: ax-EE-ohs
 ja:

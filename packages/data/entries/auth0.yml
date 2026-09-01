@@ -2,6 +2,7 @@ slug: auth0
 term: Auth0
 category: service
 summary: 認証・認可の機能を提供する ID 基盤サービス。
+homepage: https://auth0.com/
 en:
   respelling: auth-zero
   note: 末尾は数字のゼロ。アルファベットの O ではない。

@@ -2,6 +2,7 @@ slug: ghostty
 term: Ghostty
 category: cli
 summary: GPU アクセラレーションを備えたターミナルエミュレータ。
+homepage: https://ghostty.org/
 en:
   respelling: GOST-ee
 ja:

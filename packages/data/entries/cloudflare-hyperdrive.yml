@@ -3,6 +3,7 @@ term: Cloudflare Hyperdrive
 aliases: [Hyperdrive]
 category: service
 summary: 既存のデータベースへの接続をエッジでプールしてレイテンシを下げるサービス。
+homepage: https://developers.cloudflare.com/hyperdrive/
 en:
   respelling: HY-per-drive
 ja:

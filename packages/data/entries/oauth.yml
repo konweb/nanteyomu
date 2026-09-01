@@ -3,6 +3,7 @@ term: OAuth
 category: protocol
 expansion: Open Authorization
 summary: パスワードを渡さずに第三者アプリへ権限を委譲するための認可の仕組み。
+homepage: https://oauth.net/
 en:
   respelling: oh-AUTH
 ja:

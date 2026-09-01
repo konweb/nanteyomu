@@ -2,6 +2,7 @@ slug: jira
 term: Jira
 category: service
 summary: Atlassian の課題管理・プロジェクト管理ツール。
+homepage: https://www.atlassian.com/software/jira
 en:
   respelling: JEE-ruh
   note: 「ゴジラ」を縮めた Gojira が由来。

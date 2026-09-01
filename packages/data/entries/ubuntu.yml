@@ -2,6 +2,7 @@ slug: ubuntu
 term: Ubuntu
 category: infra
 summary: Canonical が開発する Linux ディストリビューション。名前はズールー語・コサ語の概念に由来。
+homepage: https://ubuntu.com/
 en:
   ipa: /ʊˈbʊntuː/
   respelling: oo-BOON-too

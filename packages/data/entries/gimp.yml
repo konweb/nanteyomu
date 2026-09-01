@@ -3,6 +3,7 @@ term: GIMP
 category: cli
 expansion: GNU Image Manipulation Program
 summary: オープンソースの画像編集ソフト。
+homepage: https://www.gimp.org/
 en:
   respelling: gimp
 ja:

@@ -2,6 +2,7 @@ slug: laravel
 term: Laravel
 category: framework
 summary: PHP の代表的な Web アプリケーションフレームワーク。
+homepage: https://laravel.com/
 en:
   respelling: LAIR-uh-vel
 ja:

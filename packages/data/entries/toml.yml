@@ -3,6 +3,7 @@ term: TOML
 category: format
 expansion: Tom's Obvious Minimal Language
 summary: 設定ファイル向けのフォーマット。YAML より曖昧さが少ないことを狙っている。
+homepage: https://toml.io/en/
 en:
   respelling: TOM-ul
   note: 考案者 Tom Preston-Werner の名前が入っている。

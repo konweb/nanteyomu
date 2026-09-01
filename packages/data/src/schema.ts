@@ -50,6 +50,12 @@ export interface Entry {
   expansion?: string;
   /** 1〜2文の説明 */
   summary: string;
+  /**
+   * 公式サイト / 公式リポジトリの URL。
+   * 「読みの根拠」である sources とは別物で、こちらは「その物自体の入口」。
+   * 出典が RFC や解説記事でも、公式サイトは別に示せるようにするため分けている。
+   */
+  homepage?: string;
   en?: EnReading;
   /** 日本語の読み。先頭が primary 相当だが明示もできる。 */
   ja: JaReading[];
@@ -119,6 +125,10 @@ export function validateEntry(raw: unknown, file: string): Issue[] {
     if (e.ja.filter((r) => r.primary).length > 1) {
       err('ja[].primary は1つまでです');
     }
+  }
+
+  if (e.homepage !== undefined && (typeof e.homepage !== 'string' || !/^https?:\/\//.test(e.homepage))) {
+    err(`homepage は http(s) の URL で指定してください: ${JSON.stringify(e.homepage)}`);
   }
 
   if (e.sources !== undefined) {

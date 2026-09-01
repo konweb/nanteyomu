@@ -2,6 +2,7 @@ slug: perl
 term: Perl
 category: language
 summary: テキスト処理に強いスクリプト言語。正規表現の実用化を広めた。
+homepage: https://www.perl.org/
 en:
   respelling: pearl
   note: 言語は Perl、処理系のコマンドは perl と書き分ける慣習がある。

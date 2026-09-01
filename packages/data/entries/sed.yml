@@ -3,6 +3,7 @@ term: sed
 category: cli
 expansion: stream editor
 summary: 入力ストリームを行単位で置換・編集するコマンド。
+homepage: https://www.gnu.org/software/sed/
 en:
   respelling: sed
 ja:

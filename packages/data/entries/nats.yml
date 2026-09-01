@@ -2,6 +2,7 @@ slug: nats
 term: NATS
 category: infra
 summary: 軽量で高速なメッセージングシステム。
+homepage: https://nats.io/
 en:
   respelling: nats
   note: 英語の gnats（ブヨ）と同じ発音。

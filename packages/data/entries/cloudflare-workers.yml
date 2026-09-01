@@ -3,6 +3,7 @@ term: Cloudflare Workers
 aliases: [Workers]
 category: service
 summary: Cloudflare のエッジで JavaScript や Wasm を実行するサーバーレス基盤。
+homepage: https://developers.cloudflare.com/workers/
 en:
   respelling: WUR-kurz
 ja:

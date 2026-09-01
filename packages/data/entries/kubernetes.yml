@@ -4,6 +4,7 @@ aliases: [k8s, K8s]
 category: infra
 expansion: ギリシャ語 κυβερνήτης（操舵手）に由来
 summary: コンテナオーケストレーションの事実上の標準。略記は k8s。
+homepage: https://kubernetes.io/
 en:
   ipa: /ˌkuːbərˈnɛtɪs/
   respelling: koo-ber-NET-eez

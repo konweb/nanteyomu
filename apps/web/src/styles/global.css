@@ -562,3 +562,14 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 700; }
 /* フッターは「ロゴ」と「文章」の2列。文章側は縦に積む */
 .footer-text p { margin: 0; }
 .footer-links { margin-top: 0.75rem !important; }
+
+/* ---- 用語ページの公式サイト --------------------------------------------- */
+.entry-home {
+  display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;
+  margin: 0.85rem 0 0; font-size: 0.9rem;
+}
+.entry-home .label {
+  font-family: var(--font-display); font-weight: 700; font-size: 0.75rem;
+  background: var(--tint-mint); border: 2px solid var(--mint-vivid);
+  color: var(--ink); border-radius: 999px; padding: 0 0.6rem; line-height: 1.7;
+}

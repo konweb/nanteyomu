@@ -3,6 +3,7 @@ term: gzip
 category: format
 expansion: GNU zip
 summary: 可逆圧縮のフォーマットとコマンド。Web の転送圧縮で広く使われる。
+homepage: https://www.gzip.org/
 en:
   respelling: G-zip
 ja:

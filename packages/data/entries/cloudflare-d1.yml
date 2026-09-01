@@ -3,6 +3,7 @@ term: Cloudflare D1
 aliases: [D1]
 category: db
 summary: Workers から使える SQLite ベースのサーバーレスデータベース。
+homepage: https://developers.cloudflare.com/d1/
 en:
   respelling: D-one
 ja:

@@ -2,6 +2,7 @@ slug: 1-1-1-1
 term: 1.1.1.1
 category: service
 summary: Cloudflare が運営する公開 DNS リゾルバ。覚えやすい数字が名前になっている。
+homepage: https://one.one.one.one/
 en:
   respelling: one one one one
 ja:

@@ -106,6 +106,7 @@ export function entrySchema(entry: Entry, title: string, description: string) {
         description: `${entry.term} は「${primaryKana(entry)}」と読みます。${entry.summary}`,
         inDefinedTermSet: { '@id': DICTIONARY_ID },
         inLanguage: 'ja',
+        ...(entry.homepage ? { sameAs: entry.homepage } : {}),
       },
     ],
   };

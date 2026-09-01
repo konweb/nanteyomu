@@ -3,6 +3,7 @@ term: OCaml
 category: language
 expansion: Objective Caml
 summary: ML 系の関数型言語。型推論が強力。
+homepage: https://ocaml.org/
 en:
   respelling: oh-CAM-ul
 ja:

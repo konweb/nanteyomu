@@ -2,6 +2,7 @@ slug: pingora
 term: Pingora
 category: library
 summary: Cloudflare が NGINX の置き換えとして開発した Rust 製の HTTP プロキシフレームワーク。
+homepage: https://github.com/cloudflare/pingora
 en:
   respelling: pin-GOR-uh
 ja:

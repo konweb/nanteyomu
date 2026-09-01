@@ -2,6 +2,7 @@ slug: etcd
 term: etcd
 category: infra
 summary: 分散合意を取る キーバリューストア。Kubernetes の状態保存に使われる。
+homepage: https://etcd.io/
 en:
   respelling: et-see-dee
   note: UNIX の /etc ディレクトリを分散させたもの、という意味の名前。

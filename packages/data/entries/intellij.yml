@@ -3,6 +3,7 @@ term: IntelliJ IDEA
 aliases: [IntelliJ]
 category: service
 summary: JetBrains の統合開発環境。Java や Kotlin の開発で広く使われる。
+homepage: https://www.jetbrains.com/idea/
 en:
   respelling: in-TELL-i-jay
   note: 末尾の J は「ジェイ」。Java の J。

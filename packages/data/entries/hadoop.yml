@@ -3,6 +3,7 @@ term: Hadoop
 aliases: [Apache Hadoop]
 category: infra
 summary: 大規模データを分散処理するためのフレームワーク。
+homepage: https://hadoop.apache.org/
 en:
   respelling: huh-DOOP
   note: 作者の子どものぬいぐるみの象の名前がそのまま付いた。
