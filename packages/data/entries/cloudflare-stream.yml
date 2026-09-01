@@ -3,6 +3,7 @@ term: Cloudflare Stream
 aliases: [Stream]
 category: service
 summary: 動画のエンコード・保存・配信をまとめて行うサービス。
+homepage: https://developers.cloudflare.com/stream/
 ja:
   - kana: ストリーム
     primary: true

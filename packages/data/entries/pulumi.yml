@@ -2,6 +2,7 @@ slug: pulumi
 term: Pulumi
 category: infra
 summary: 汎用のプログラミング言語でインフラを定義する IaC ツール。
+homepage: https://www.pulumi.com/
 en:
   respelling: poo-LOO-mee
 ja:

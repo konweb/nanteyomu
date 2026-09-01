@@ -3,6 +3,7 @@ term: SciPy
 category: library
 expansion: Scientific Python
 summary: Python の科学技術計算ライブラリ。NumPy の上に構築されている。
+homepage: https://scipy.org/
 en:
   respelling: SIGH-pie
 ja:

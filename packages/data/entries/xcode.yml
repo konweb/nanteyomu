@@ -2,6 +2,7 @@ slug: xcode
 term: Xcode
 category: cli
 summary: Apple の統合開発環境。
+homepage: https://developer.apple.com/xcode/
 en:
   respelling: EKS-code
 ja:

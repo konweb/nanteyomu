@@ -2,6 +2,7 @@ slug: preact
 term: Preact
 category: library
 summary: React と互換の API を持つ軽量な UI ライブラリ。
+homepage: https://preactjs.com/
 en:
   respelling: PREE-act
 ja:

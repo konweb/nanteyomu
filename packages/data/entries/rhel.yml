@@ -3,6 +3,7 @@ term: RHEL
 category: infra
 expansion: Red Hat Enterprise Linux
 summary: Red Hat の商用 Linux ディストリビューション。
+homepage: https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux
 en:
   respelling: rel
 ja:

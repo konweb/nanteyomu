@@ -3,6 +3,7 @@ term: systemd
 category: infra
 expansion: system daemon
 summary: 多くの Linux ディストリビューションが採用する init システム／サービス管理基盤。
+homepage: https://systemd.io/
 en:
   respelling: system-dee
   note: 末尾の d は daemon の d。「システムド」ではない。

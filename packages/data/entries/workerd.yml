@@ -2,6 +2,7 @@ slug: workerd
 term: workerd
 category: infra
 summary: Cloudflare Workers と同じコードベースで動くオープンソースの JavaScript / Wasm ランタイム。
+homepage: https://github.com/cloudflare/workerd
 en:
   respelling: worker-dee
   note: 公式 README が読みを明記している。末尾の d は systemd などと同じデーモンの d。

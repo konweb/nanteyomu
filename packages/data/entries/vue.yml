@@ -3,6 +3,7 @@ term: Vue.js
 aliases: [Vue]
 category: framework
 summary: 段階的に導入できることを重視した UI フレームワーク。
+homepage: https://vuejs.org/
 en:
   respelling: view
   note: 英単語 view と同じ発音になるよう名付けられている。

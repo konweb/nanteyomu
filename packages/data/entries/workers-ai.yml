@@ -2,6 +2,7 @@ slug: workers-ai
 term: Workers AI
 category: service
 summary: Cloudflare のネットワーク上の GPU で推論を実行するサービス。
+homepage: https://developers.cloudflare.com/workers-ai/
 ja:
   - kana: ワーカーズエーアイ
     primary: true

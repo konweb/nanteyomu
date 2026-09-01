@@ -2,6 +2,7 @@ slug: rocket-loader
 term: Rocket Loader
 category: service
 summary: JavaScript の読み込みを遅延させて初回表示を速くする Cloudflare の機能。
+homepage: https://developers.cloudflare.com/speed/optimization/content/rocket-loader/
 ja:
   - kana: ロケットローダー
     primary: true

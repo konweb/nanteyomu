@@ -2,6 +2,7 @@ slug: webp
 term: WebP
 category: format
 summary: Google が開発した画像フォーマット。JPEG や PNG より小さくなる。
+homepage: https://developers.google.com/speed/webp
 en:
   respelling: weppy
   note: Google は「ウェッピー」と読むとしている。

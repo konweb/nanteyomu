@@ -3,6 +3,7 @@ term: Gunicorn
 category: infra
 expansion: Green Unicorn
 summary: Python の WSGI アプリケーションサーバ。
+homepage: https://gunicorn.org/
 en:
   respelling: G-unicorn
   note: Green Unicorn の略。「ガニコーン」ではない。

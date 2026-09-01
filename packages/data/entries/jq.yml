@@ -2,6 +2,7 @@ slug: jq
 term: jq
 category: cli
 summary: JSON を絞り込み・整形するためのコマンドラインプロセッサ。
+homepage: https://jqlang.org/
 en:
   respelling: jay-cue
 ja:

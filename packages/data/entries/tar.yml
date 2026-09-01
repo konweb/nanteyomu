@@ -3,6 +3,7 @@ term: tar
 category: cli
 expansion: tape archive
 summary: 複数のファイルを1つにまとめるアーカイブ形式とコマンド。名前は磁気テープ時代の名残。
+homepage: https://www.gnu.org/software/tar/
 en:
   respelling: tar
 ja:

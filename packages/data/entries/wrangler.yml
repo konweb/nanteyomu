@@ -2,6 +2,7 @@ slug: wrangler
 term: Wrangler
 category: cli
 summary: Cloudflare Workers や Pages を開発・デプロイするための公式 CLI。
+homepage: https://developers.cloudflare.com/workers/wrangler/
 en:
   respelling: RANG-glur
   note: 英語の wr- は r の音だけを読む（write, wrong と同じ）。牧場で家畜を扱う人の意。

@@ -3,6 +3,7 @@ term: tmux
 category: cli
 expansion: terminal multiplexer
 summary: 1つの端末で複数のセッション・ウィンドウ・ペインを扱うターミナルマルチプレクサ。
+homepage: https://github.com/tmux/tmux
 en:
   ipa: /ˈtiːmʌks/
   respelling: TEE-mux

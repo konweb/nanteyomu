@@ -4,6 +4,7 @@ aliases: [Z shell]
 category: cli
 expansion: Z shell
 summary: bash 互換の対話シェル。macOS の既定シェル。
+homepage: https://www.zsh.org/
 en:
   respelling: zee-shell
   note: 英語圏では Z を「ズィー」と読むため「ズィーシェル」。

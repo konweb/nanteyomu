@@ -3,6 +3,7 @@ term: Matplotlib
 category: library
 expansion: MATLAB plotting library
 summary: Python のグラフ描画ライブラリ。MATLAB のプロット機能に由来する。
+homepage: https://matplotlib.org/
 en:
   respelling: MAT-plot-lib
 ja:

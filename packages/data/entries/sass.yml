@@ -4,6 +4,7 @@ aliases: [SCSS]
 category: library
 expansion: Syntactically Awesome Style Sheets
 summary: CSS を拡張して変数やネストを書けるようにするプリプロセッサ。
+homepage: https://sass-lang.com/
 en:
   respelling: sass
 ja:

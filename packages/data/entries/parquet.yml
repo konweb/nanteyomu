@@ -3,6 +3,7 @@ term: Parquet
 aliases: [Apache Parquet]
 category: format
 summary: 分析用途に向いた列指向のデータ保存フォーマット。
+homepage: https://parquet.apache.org/
 en:
   respelling: par-KAY
   note: フランス語由来の英単語 parquet（寄木張りの床）。語尾の t は読まない。

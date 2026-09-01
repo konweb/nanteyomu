@@ -3,6 +3,7 @@ term: Workers KV
 category: db
 expansion: Workers Key-Value
 summary: Cloudflare のエッジに分散配置される結果整合性のキーバリューストア。
+homepage: https://developers.cloudflare.com/kv/
 en:
   respelling: workers K-V
 ja:

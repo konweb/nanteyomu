@@ -2,6 +2,7 @@ slug: super-slurper
 term: Super Slurper
 category: service
 summary: 他のクラウドストレージから R2 へデータを一括移行するツール。
+homepage: https://developers.cloudflare.com/r2/data-migration/super-slurper/
 en:
   respelling: SOO-per SLUR-per
   note: slurp（音を立てて吸い込む）から。

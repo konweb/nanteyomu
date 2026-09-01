@@ -2,6 +2,7 @@ slug: debian
 term: Debian
 category: infra
 summary: 歴史の長い Linux ディストリビューション。Ubuntu の基盤でもある。
+homepage: https://www.debian.org/
 en:
   respelling: DEB-ee-un
   note: 創始者 Ian Murdock と当時の妻 Debra の名前を繋げたもの。

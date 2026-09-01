@@ -3,6 +3,7 @@ term: grep
 category: cli
 expansion: g/re/p (globally search a regular expression and print)
 summary: ファイルやストリームから正規表現にマッチする行を抜き出すコマンド。
+homepage: https://www.gnu.org/software/grep/
 en:
   respelling: grep
   note: ed エディタの `g/re/p` というコマンド列がそのまま名前になった。

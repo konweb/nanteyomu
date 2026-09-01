@@ -3,6 +3,7 @@ term: WARP
 aliases: [Cloudflare WARP, 1.1.1.1 with WARP]
 category: service
 summary: 端末の通信を Cloudflare のネットワーク経由にするクライアント。個人向けVPNと Zero Trust の両方で使う。
+homepage: https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/
 en:
   respelling: warp
 ja:

@@ -2,6 +2,7 @@ slug: deno
 term: Deno
 category: framework
 summary: TypeScript をそのまま実行できる JavaScript ランタイム。Node.js の作者による再設計。
+homepage: https://deno.com/
 en:
   ipa: /ˈdiːnoʊ/
   respelling: DEE-no

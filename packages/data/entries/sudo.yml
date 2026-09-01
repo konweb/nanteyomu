@@ -3,6 +3,7 @@ term: sudo
 category: cli
 expansion: superuser do / substitute user do
 summary: 他ユーザ（通常は root）の権限でコマンドを実行する。
+homepage: https://www.sudo.ws/
 en:
   respelling: SOO-doo
   note: soo-DOO / SOO-doh など英語圏でもゆれる。

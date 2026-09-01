@@ -3,6 +3,7 @@ term: Cloudflare Workflows
 aliases: [Workflows]
 category: service
 summary: 途中で失敗しても再開できる永続的な多段処理を Workers 上で書くための仕組み。
+homepage: https://developers.cloudflare.com/workflows/
 ja:
   - kana: ワークフローズ
     primary: true

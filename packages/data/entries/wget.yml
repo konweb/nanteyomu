@@ -3,6 +3,7 @@ term: wget
 category: cli
 expansion: World Wide Web + get
 summary: URL を指定してファイルをダウンロードするコマンド。再帰取得に強い。
+homepage: https://www.gnu.org/software/wget/
 en:
   respelling: W-get / double-you-get
 ja:

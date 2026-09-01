@@ -2,6 +2,7 @@ slug: groovy
 term: Groovy
 category: language
 summary: JVM 上で動く動的言語。Gradle のビルドスクリプトなどで使われる。
+homepage: https://groovy-lang.org/
 en:
   respelling: GROO-vee
 ja:

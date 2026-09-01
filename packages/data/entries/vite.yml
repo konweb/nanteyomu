@@ -2,6 +2,7 @@ slug: vite
 term: Vite
 category: framework
 summary: フロントエンド向けの高速なビルドツール／開発サーバ。
+homepage: https://vite.dev/
 en:
   ipa: /viːt/
   respelling: veet

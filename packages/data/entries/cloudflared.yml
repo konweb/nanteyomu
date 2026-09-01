@@ -2,6 +2,7 @@ slug: cloudflared
 term: cloudflared
 category: infra
 summary: 手元のサーバと Cloudflare のネットワークをつなぐトンネルのデーモン。ファイアウォールに穴を開けずに公開できる。
+homepage: https://github.com/cloudflare/cloudflared
 en:
   respelling: cloudflare-dee
   note: 公式 README が "This daemon" と明言しており、末尾の d はデーモンの d。

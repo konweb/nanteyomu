@@ -2,6 +2,7 @@ slug: jaeger
 term: Jaeger
 category: infra
 summary: 分散トレーシングのためのオープンソース基盤。
+homepage: https://www.jaegertracing.io/
 en:
   respelling: YAY-gur
   note: ドイツ語 Jäger（狩人）に由来。J は「ヤ行」で読む。

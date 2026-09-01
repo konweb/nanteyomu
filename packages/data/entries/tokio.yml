@@ -2,6 +2,7 @@ slug: tokio
 term: Tokio
 category: library
 summary: Rust の非同期ランタイム。
+homepage: https://tokio.rs/
 en:
   respelling: TOH-kee-oh
   note: 東京 (Tokyo) にちなむ名前。

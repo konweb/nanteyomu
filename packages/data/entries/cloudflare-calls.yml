@@ -3,6 +3,7 @@ term: Cloudflare Realtime
 aliases: [Cloudflare Calls]
 category: service
 summary: WebRTC のリアルタイム音声・映像を中継するサービス。旧称 Cloudflare Calls。
+homepage: https://developers.cloudflare.com/realtime/
 ja:
   - kana: リアルタイム
     primary: true

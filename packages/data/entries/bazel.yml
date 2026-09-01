@@ -2,6 +2,7 @@ slug: bazel
 term: Bazel
 category: cli
 summary: Google 発の大規模プロジェクト向けビルドシステム。
+homepage: https://bazel.build/
 en:
   respelling: BAY-zul
   note: basil（バジル）の綴りを並べ替えた名前。

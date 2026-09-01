@@ -3,6 +3,7 @@ term: GNU
 category: acronym
 expansion: GNU's Not Unix
 summary: Unix 互換の自由ソフトウェア群を作るプロジェクト。自分自身を含む再帰的な略語。
+homepage: https://www.gnu.org/
 en:
   respelling: guh-NOO
   note: プロジェクトは動物のヌー（gnu）と違い、g を発音して「グヌー」と読むよう案内している。

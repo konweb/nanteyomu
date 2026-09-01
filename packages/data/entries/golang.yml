@@ -3,6 +3,7 @@ term: Go
 aliases: [Golang, golang]
 category: language
 summary: Google が開発した静的型付けのコンパイル言語。並行処理が書きやすい。
+homepage: https://go.dev/
 en:
   respelling: go
   note: 言語名は "Go"。golang は検索用のドメイン名 golang.org 由来の通称。

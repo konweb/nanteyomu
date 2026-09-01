@@ -3,6 +3,7 @@ term: pnpm
 category: cli
 expansion: performant npm
 summary: ディスク効率の良い Node.js のパッケージマネージャ。
+homepage: https://pnpm.io/
 en:
   respelling: P-N-P-M
 ja:

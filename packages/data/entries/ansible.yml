@@ -2,6 +2,7 @@ slug: ansible
 term: Ansible
 category: infra
 summary: エージェントレスの構成管理・自動化ツール。
+homepage: https://www.redhat.com/en/ansible-collaborative?intcmp=7015Y000003t7aWQAQ
 en:
   respelling: AN-sih-bul
   note: SF に登場する超光速通信機 ansible に由来する。

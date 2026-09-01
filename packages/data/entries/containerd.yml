@@ -2,6 +2,7 @@ slug: containerd
 term: containerd
 category: infra
 summary: コンテナのライフサイクルを管理するランタイム。Docker や Kubernetes の下層で動く。
+homepage: https://containerd.io/
 en:
   respelling: container-dee
   note: 末尾の d は daemon の d。

@@ -3,6 +3,7 @@ term: Cloudflare Images
 aliases: [Images]
 category: service
 summary: 画像の保存・リサイズ・フォーマット変換・配信を行うサービス。
+homepage: https://developers.cloudflare.com/images/
 ja:
   - kana: イメージズ
     primary: true

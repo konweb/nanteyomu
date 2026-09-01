@@ -3,6 +3,7 @@ term: Cloudflare Polish
 aliases: [Polish]
 category: service
 summary: 配信時に画像を再圧縮して軽くする Cloudflare の最適化機能。
+homepage: https://developers.cloudflare.com/images/polish/
 en:
   respelling: POL-ish
   note: >-

@@ -3,6 +3,7 @@ term: Emacs
 category: cli
 expansion: Editor MACroS
 summary: 拡張性の高いテキストエディタ。Lisp で動作を書き換えられる。
+homepage: https://www.gnu.org/software/emacs/
 en:
   respelling: EE-macks
 ja:

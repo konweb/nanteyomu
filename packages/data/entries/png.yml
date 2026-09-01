@@ -3,6 +3,7 @@ term: PNG
 category: format
 expansion: Portable Network Graphics
 summary: 可逆圧縮のラスタ画像フォーマット。透過に対応する。
+homepage: https://www.w3.org/TR/png-3/
 en:
   respelling: ping
   note: 仕様書が読みを「ping」と定めている。

@@ -3,6 +3,7 @@ term: Cloudflare Spectrum
 aliases: [Spectrum]
 category: service
 summary: HTTP 以外の TCP / UDP アプリケーションも Cloudflare 経由で保護・高速化するサービス。
+homepage: https://developers.cloudflare.com/spectrum/
 en:
   respelling: SPEK-trum
 ja:

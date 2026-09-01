@@ -3,6 +3,7 @@ term: Cloudflare Pages
 aliases: [Pages]
 category: service
 summary: 静的サイトとフロントエンドを配信する Cloudflare のホスティングサービス。
+homepage: https://developers.cloudflare.com/pages/
 ja:
   - kana: ページズ
     primary: true

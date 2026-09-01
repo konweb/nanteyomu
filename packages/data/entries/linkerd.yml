@@ -2,6 +2,7 @@ slug: linkerd
 term: Linkerd
 category: infra
 summary: Kubernetes 向けの軽量なサービスメッシュ。
+homepage: https://linkerd.io/
 en:
   respelling: linker-dee
   note: 末尾の d は daemon の d。

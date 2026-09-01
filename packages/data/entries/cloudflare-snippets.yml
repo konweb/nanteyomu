@@ -3,6 +3,7 @@ term: Cloudflare Snippets
 aliases: [Snippets]
 category: service
 summary: ルールの延長として短い JavaScript をリクエストに差し込める軽量な仕組み。
+homepage: https://developers.cloudflare.com/rules/snippets/
 ja:
   - kana: スニペッツ
     primary: true

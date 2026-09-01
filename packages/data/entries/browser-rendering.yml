@@ -2,6 +2,7 @@ slug: browser-rendering
 term: Browser Rendering
 category: service
 summary: Workers から Headless Chrome を操作してスクリーンショットや PDF を生成する API。
+homepage: https://developers.cloudflare.com/browser-rendering/
 ja:
   - kana: ブラウザレンダリング
     primary: true

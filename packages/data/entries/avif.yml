@@ -3,6 +3,7 @@ term: AVIF
 category: format
 expansion: AV1 Image File Format
 summary: AV1 の動画圧縮技術を静止画に応用した画像フォーマット。
+homepage: https://aomediacodec.github.io/av1-avif/
 en:
   respelling: AV-if
 ja:

@@ -2,6 +2,7 @@ slug: cloudflare-zero-trust
 term: Cloudflare Zero Trust
 category: service
 summary: 社内システムへのアクセスを、ネットワークの内外ではなく本人と端末で判断する製品群。
+homepage: https://developers.cloudflare.com/cloudflare-one/
 ja:
   - kana: ゼロトラスト
     primary: true

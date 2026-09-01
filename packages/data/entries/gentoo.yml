@@ -2,6 +2,7 @@ slug: gentoo
 term: Gentoo
 category: infra
 summary: すべてをソースからビルドする方針の Linux ディストリビューション。
+homepage: https://www.gentoo.org/
 en:
   respelling: JEN-too
   note: ジェンツーペンギンから。速く泳ぐペンギンにちなむ。

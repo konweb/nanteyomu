@@ -2,6 +2,7 @@ slug: analytics-engine
 term: Workers Analytics Engine
 category: service
 summary: Workers から時系列のイベントを大量に書き込み、SQL で集計できるサービス。
+homepage: https://developers.cloudflare.com/analytics/analytics-engine/
 ja:
   - kana: アナリティクスエンジン
     primary: true

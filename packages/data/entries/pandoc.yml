@@ -2,6 +2,7 @@ slug: pandoc
 term: Pandoc
 category: cli
 summary: Markdown、HTML、LaTeX、Word など多数の文書形式を相互変換するツール。
+homepage: https://pandoc.org/
 en:
   respelling: PAN-dok
 ja:

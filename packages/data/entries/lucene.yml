@@ -3,6 +3,7 @@ term: Lucene
 aliases: [Apache Lucene]
 category: library
 summary: 全文検索エンジンのコアライブラリ。Elasticsearch や Solr の土台。
+homepage: https://lucene.apache.org/
 en:
   respelling: loo-SEEN
   note: 作者の妻のミドルネームに由来。

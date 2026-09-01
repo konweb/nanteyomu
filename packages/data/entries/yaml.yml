@@ -3,6 +3,7 @@ term: YAML
 category: format
 expansion: YAML Ain't Markup Language
 summary: 設定ファイルで広く使われるデータ直列化フォーマット。
+homepage: https://yaml.org/
 en:
   ipa: /ˈjæməl/
   respelling: YAM-ul

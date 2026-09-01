@@ -3,6 +3,7 @@ term: Azure
 aliases: [Microsoft Azure]
 category: service
 summary: Microsoft のクラウドプラットフォーム。
+homepage: https://azure.microsoft.com/
 en:
   respelling: AZH-er
   note: 英単語の azure（空色）と同じで、アクセントは前。

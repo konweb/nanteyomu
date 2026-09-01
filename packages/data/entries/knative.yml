@@ -2,6 +2,7 @@ slug: knative
 term: Knative
 category: infra
 summary: Kubernetes 上でサーバーレスなワークロードを動かすための基盤。
+homepage: https://knative.dev/
 en:
   respelling: kay-native
   note: Kubernetes の K と native を繋げた名前。K は読む。

@@ -3,6 +3,7 @@ term: memcached
 category: infra
 expansion: memory cache daemon
 summary: 分散型のインメモリキャッシュサーバ。
+homepage: https://memcached.org/
 en:
   respelling: mem-cash-dee
   note: 末尾の d は daemon の d。「キャッシュト」ではない。

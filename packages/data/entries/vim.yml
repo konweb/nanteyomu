@@ -3,6 +3,7 @@ term: Vim
 category: cli
 expansion: Vi IMproved
 summary: vi を拡張したテキストエディタ。
+homepage: https://www.vim.org/
 en:
   respelling: vim
 ja:

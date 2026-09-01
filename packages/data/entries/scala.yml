@@ -3,6 +3,7 @@ term: Scala
 category: language
 expansion: scalable language
 summary: JVM 上で動くオブジェクト指向と関数型を融合した言語。
+homepage: https://www.scala-lang.org/
 en:
   respelling: SKAH-lah
   note: イタリア語の scala（階段・音階）に由来。

@@ -2,6 +2,7 @@ slug: logpush
 term: Logpush
 category: service
 summary: Cloudflare のログを外部のストレージや SIEM へ自動で送り出す機能。
+homepage: https://developers.cloudflare.com/logs/logpush/
 ja:
   - kana: ログプッシュ
     primary: true

@@ -3,6 +3,7 @@ term: NumPy
 category: library
 expansion: Numerical Python
 summary: Python の数値計算ライブラリ。多次元配列を高速に扱う。
+homepage: https://numpy.org/
 en:
   respelling: NUM-pie
   note: 後半は Python の py と同じく「パイ」。

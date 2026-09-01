@@ -3,6 +3,7 @@ term: Cloudflare R2
 aliases: [R2]
 category: service
 summary: エグレス料金がかからない S3 互換のオブジェクトストレージ。
+homepage: https://developers.cloudflare.com/r2/
 en:
   respelling: R-two
   note: 公式の発表記事は "Really Requestable" などの後付けの展開をいくつも挙げており、正式な語源は示していない。

@@ -3,6 +3,7 @@ term: QEMU
 category: infra
 expansion: Quick EMUlator
 summary: CPU をエミュレートして別アーキテクチャの OS を動かせる仮想化ソフト。
+homepage: https://www.qemu.org/
 en:
   respelling: KYOO-em-yoo
 ja:

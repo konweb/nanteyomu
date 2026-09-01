@@ -2,6 +2,7 @@ slug: magic-transit
 term: Magic Transit
 category: service
 summary: 自社のIPアドレス帯ごと Cloudflare を経由させ、DDoS 防御とルーティングを行うサービス。
+homepage: https://developers.cloudflare.com/magic-transit/
 ja:
   - kana: マジックトランジット
     primary: true

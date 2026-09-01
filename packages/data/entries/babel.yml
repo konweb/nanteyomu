@@ -2,6 +2,7 @@ slug: babel
 term: Babel
 category: library
 summary: 新しい構文の JavaScript を古い環境向けに変換するトランスパイラ。
+homepage: https://babeljs.io/
 en:
   respelling: BAY-bul
   note: 英語では「ベイブル」。バベルの塔の英語読み。

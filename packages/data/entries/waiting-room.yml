@@ -3,6 +3,7 @@ term: Cloudflare Waiting Room
 aliases: [Waiting Room]
 category: service
 summary: アクセス集中時に順番待ちの列を作ってオリジンの負荷を抑える機能。
+homepage: https://developers.cloudflare.com/waiting-room/
 ja:
   - kana: ウェイティングルーム
     primary: true

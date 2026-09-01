@@ -3,6 +3,7 @@ term: Cloudflare Registrar
 aliases: [Registrar]
 category: service
 summary: 原価のままドメインを登録・移管できる Cloudflare のレジストラ事業。
+homepage: https://developers.cloudflare.com/registrar/
 ja:
   - kana: レジストラー
     primary: true

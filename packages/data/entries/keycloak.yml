@@ -2,6 +2,7 @@ slug: keycloak
 term: Keycloak
 category: service
 summary: オープンソースの ID・アクセス管理基盤。
+homepage: https://www.keycloak.org/
 en:
   respelling: KEY-cloak
 ja:

@@ -2,6 +2,7 @@ slug: cilium
 term: Cilium
 category: infra
 summary: eBPF を使った Kubernetes 向けのネットワーク／セキュリティ基盤。
+homepage: https://cilium.io/
 en:
   respelling: SIL-ee-um
   note: ラテン語で「まつげ」。細胞の繊毛 (cilia) の単数形。

@@ -3,6 +3,7 @@ term: Solr
 aliases: [Apache Solr]
 category: infra
 summary: Lucene をベースにした全文検索サーバ。
+homepage: https://solr.apache.org/
 en:
   respelling: solar
   note: 英単語 solar と同じ発音。

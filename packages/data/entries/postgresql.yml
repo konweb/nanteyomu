@@ -3,6 +3,7 @@ term: PostgreSQL
 aliases: [Postgres]
 category: db
 summary: オープンソースのリレーショナルデータベース。
+homepage: https://www.postgresql.org/
 en:
   respelling: POST-gres-Q-L
 ja:

@@ -2,6 +2,7 @@ slug: bun
 term: Bun
 category: framework
 summary: 高速な JavaScript ランタイム兼パッケージマネージャ兼バンドラ。
+homepage: https://bun.com/
 en:
   respelling: bun
   note: 英語のパン（bun）と同じ発音。

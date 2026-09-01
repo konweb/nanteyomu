@@ -2,6 +2,7 @@ slug: miniflare
 term: Miniflare
 category: infra
 summary: Cloudflare Workers をローカルで動かすためのシミュレータ。
+homepage: https://developers.cloudflare.com/workers/testing/miniflare/
 en:
   respelling: MIN-ee-flair
 ja:

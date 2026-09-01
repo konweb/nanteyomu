@@ -3,6 +3,7 @@ term: Cloudflare Turnstile
 aliases: [Turnstile]
 category: service
 summary: Cloudflare が提供する CAPTCHA 代替のボット判定ウィジェット。reCAPTCHA の置き換えとして使われる。
+homepage: https://developers.cloudflare.com/turnstile/
 en:
   ipa: /ˈtɜːrnstaɪl/
   respelling: TURN-style

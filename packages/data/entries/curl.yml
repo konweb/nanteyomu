@@ -4,6 +4,7 @@ aliases: [cURL]
 category: cli
 expansion: Client URL
 summary: URL を指定してデータを送受信するコマンドラインツールとライブラリ。
+homepage: https://curl.se/
 en:
   respelling: curl
   note: 英語の curl（カールする）と同じ発音。

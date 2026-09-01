@@ -3,6 +3,7 @@ term: Cloudflare Zaraz
 aliases: [Zaraz]
 category: service
 summary: サードパーティのタグやスクリプトをエッジ側で実行して、ブラウザの負荷を減らすサービス。
+homepage: https://developers.cloudflare.com/zaraz/
 en:
   respelling: ZAH-rahz
 ja:

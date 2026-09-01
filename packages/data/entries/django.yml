@@ -2,6 +2,7 @@ slug: django
 term: Django
 category: framework
 summary: Python の代表的な Web アプリケーションフレームワーク。
+homepage: https://www.djangoproject.com/
 en:
   respelling: JANG-goh
   note: 先頭の D は発音しない。ジャズギタリスト Django Reinhardt にちなむ。

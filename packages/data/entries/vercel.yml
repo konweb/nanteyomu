@@ -2,6 +2,7 @@ slug: vercel
 term: Vercel
 category: service
 summary: フロントエンド向けのホスティング／デプロイ基盤。Next.js の開発元。
+homepage: https://vercel.com/
 en:
   respelling: ver-SELL
 ja:

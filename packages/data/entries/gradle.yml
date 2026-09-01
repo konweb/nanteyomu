@@ -2,6 +2,7 @@ slug: gradle
 term: Gradle
 category: framework
 summary: JVM 系プロジェクトで広く使われるビルドツール。Android の標準。
+homepage: https://gradle.org/
 en:
   respelling: GRAY-dul
 ja:

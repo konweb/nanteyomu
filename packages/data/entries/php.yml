@@ -3,6 +3,7 @@ term: PHP
 category: language
 expansion: PHP - Hypertext Preprocessor
 summary: Web に特化したサーバサイドのスクリプト言語。自分自身を含む再帰的な略語。
+homepage: https://www.php.net/
 en:
   respelling: P-H-P
 ja:
