@@ -5,6 +5,11 @@ on:
     branches: [main]
   pull_request:
 
+# GITHUB_TOKEN の権限を明示する。このワークフローは checkout とビルドしかせず
+# 書き込みは要らない。リポジトリ既定の設定に依存させないため個別に絞る。
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest

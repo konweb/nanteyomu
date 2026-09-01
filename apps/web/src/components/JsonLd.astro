@@ -1,6 +1,22 @@
 ---
-/** 構造化データを1つの <script> として出す。 */
+/**
+ * 構造化データを1つの <script> として出す。
+ *
+ * JSON.stringify は "<" をエスケープしないため、そのまま set:html に渡すと
+ * データ側に "</script>" が入っていた時点で HTML パーサが script を閉じてしまい、
+ * 続きが素の HTML として解釈される（＝ XSS）。
+ * 辞書データは外部からの Pull Request で増えるので、ここは必ずエスケープする。
+ *
+ * "<" を \\u003c にするだけで JSON としては同じ文字列に復元されるので、
+ * 構造化データの内容自体は変わらない。
+ */
 interface Props { data: unknown }
 const { data } = Astro.props;
+
+const json = JSON.stringify(data)
+  .replace(/</g, '\\u003c')
+  // 行区切り文字は JS の文字列リテラルを壊すことがあるため合わせて潰す
+  .replace(/\u2028/g, '\\u2028')
+  .replace(/\u2029/g, '\\u2029');
 ---
-<script type="application/ld+json" set:html={JSON.stringify(data)} is:inline />
+<script type="application/ld+json" set:html={json} is:inline />
