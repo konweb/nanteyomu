@@ -1,13 +1,14 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Speak from '../../components/Speak.tsx';
+import Share from '../../components/Share.astro';
 import JsonLd from '../../components/JsonLd.astro';
 import {
   entries, CATEGORY_LABEL, CONFIDENCE_LABEL, SOURCE_KIND_LABEL, primaryKana,
   sameCategoryEntries,
 } from '../../lib/entries';
 import { entrySchema } from '../../lib/schema';
-import { EDIT_BASE } from '../../lib/site';
+import { EDIT_BASE, SITE_URL } from '../../lib/site';
 
 export function getStaticPaths() {
   return entries.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
@@ -21,6 +22,12 @@ const title = `${entry.term} の読み方は「${kana}」`;
 const description = `${entry.term} は「${kana}」と読みます。${entry.summary}`;
 const categoryLabel = CATEGORY_LABEL[entry.category] ?? entry.category;
 const related = sameCategoryEntries(entry);
+// 本文に答えそのものを一文で置く。title と meta にしか無いと
+// 「◯◯ 読み方」で来た読者にも、引用する AI にも答えが見えない。
+const answer = entry.en?.respelling
+  ? `${entry.term} は日本では「${kana}」と読みます。英語圏での発音は ${entry.en.respelling} です。`
+  : `${entry.term} は「${kana}」と読みます。`;
+const shareText = `${entry.term} は「${kana}」と読む`;
 ---
 
 <Base
@@ -46,6 +53,8 @@ const related = sameCategoryEntries(entry);
         {entry.en?.ipa && <span class="badge mono">{entry.en.ipa}</span>}
         <Speak client:idle text={entry.term} />
       </div>
+
+      <p class="entry-answer">{answer}</p>
 
       <p class="entry-summary">{entry.summary}</p>
       {entry.expansion && (
@@ -136,6 +145,8 @@ const related = sameCategoryEntries(entry);
         </p>
       </section>
     )}
+
+    <Share text={shareText} url={`${SITE_URL}/w/${entry.slug}/`} />
 
     <div class="contribute">
       最終更新 {entry.updated} ・
