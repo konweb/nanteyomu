@@ -1,0 +1,18 @@
+slug: cline
+term: Cline
+aliases: [Claude Dev]
+category: ai
+summary: VS Code 上で動くオープンソースのコーディングエージェント。旧称 Claude Dev。
+homepage: https://cline.bot/
+en:
+  respelling: kline
+ja:
+  - kana: クライン
+    primary: true
+  - kana: シーライン
+    note: 誤り。CLI と読み違えたもの。
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, vscode]
+added: 2026-09-02
+updated: 2026-09-02

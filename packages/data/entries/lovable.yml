@@ -1,0 +1,17 @@
+slug: lovable
+term: Lovable
+category: ai
+summary: 自然言語から Web アプリを生成するサービス。
+en:
+  respelling: LUV-uh-bul
+  note: 英語の lovable（愛らしい）。love の o は「ラ」に近い音。
+ja:
+  - kana: ラバブル
+    primary: true
+  - kana: ラブアブル
+    note: 誤り。love + able と分けて読んだもの。
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, web]
+added: 2026-09-02
+updated: 2026-09-02

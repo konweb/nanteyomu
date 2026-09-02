@@ -1,0 +1,18 @@
+slug: zed
+term: Zed
+category: ai
+summary: Rust で書かれた高速なコードエディタ。AI による編集を組み込んでいる。
+homepage: https://zed.dev/
+en:
+  respelling: zed
+  note: 英国式のアルファベット Z の読み。米国式の zee ではない。
+ja:
+  - kana: ゼッド
+    primary: true
+  - kana: ゼット
+    note: 日本語で Z を読むとこちら。
+confidence: medium
+needsSource: true
+tags: [ai, editor, rust]
+added: 2026-09-02
+updated: 2026-09-02

@@ -1,0 +1,18 @@
+slug: aider
+term: Aider
+category: ai
+summary: ターミナルで動くオープンソースのペアプログラミング用エージェント。
+homepage: https://aider.chat/
+en:
+  respelling: AY-der
+  note: aid（助ける）+ -er。
+ja:
+  - kana: エイダー
+    primary: true
+  - kana: アイダー
+    note: 誤り。ai を「アイ」と読んだもの。
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, cli]
+added: 2026-09-02
+updated: 2026-09-02

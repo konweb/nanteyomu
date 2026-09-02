@@ -1,0 +1,15 @@
+slug: cursor
+term: Cursor
+category: ai
+summary: AI によるコード生成と編集を前提に作られたエディタ。
+homepage: https://cursor.com/
+en:
+  respelling: KUR-ser
+ja:
+  - kana: カーソル
+    primary: true
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, editor]
+added: 2026-09-02
+updated: 2026-09-02

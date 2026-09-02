@@ -1,0 +1,20 @@
+slug: openai-codex
+term: Codex
+aliases: [OpenAI Codex, Codex CLI]
+category: ai
+summary: OpenAI のコーディングエージェント。同名のコード生成モデルの系譜を継ぐ。
+homepage: https://github.com/openai/codex
+en:
+  respelling: KOH-decks
+  note: ラテン語由来で「写本」の意。動画や音声の codec（コーデック）とは別の語。
+ja:
+  - kana: コーデックス
+    primary: true
+  - kana: コデックス
+  - kana: コーデック
+    note: 誤り。codec と混同したもの。
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, cli, openai]
+added: 2026-09-02
+updated: 2026-09-02

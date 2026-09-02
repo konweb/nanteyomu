@@ -1,0 +1,17 @@
+slug: devstral
+term: Devstral
+category: ai
+summary: Mistral のソフトウェア開発エージェント向け言語モデル。
+homepage: https://mistral.ai/news/devstral
+en:
+  respelling: DEV-stral
+  note: dev と mistral を掛け合わせた造語。Codestral と同じ命名。
+ja:
+  - kana: デブストラル
+    primary: true
+  - kana: デヴストラル
+confidence: medium
+needsSource: true
+tags: [ai, llm, code-model]
+added: 2026-09-02
+updated: 2026-09-02

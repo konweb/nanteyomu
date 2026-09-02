@@ -1,0 +1,17 @@
+slug: code-llama
+term: Code Llama
+aliases: [CodeLlama]
+category: ai
+summary: Meta のコード生成向け言語モデル。Llama を土台にしている。
+homepage: https://github.com/meta-llama/codellama
+en:
+  respelling: code LAH-mah
+ja:
+  - kana: コードラマ
+    primary: true
+  - kana: コードリャマ
+confidence: medium
+needsSource: true
+tags: [ai, llm, code-model, meta]
+added: 2026-09-02
+updated: 2026-09-02

@@ -1,0 +1,16 @@
+slug: roo-code
+term: Roo Code
+category: ai
+summary: Cline から分岐した VS Code 向けのコーディングエージェント。
+homepage: https://github.com/RooCodeInc/Roo-Code
+en:
+  respelling: ROO code
+  note: roo はカンガルー（kangaroo）の略称。
+ja:
+  - kana: ルーコード
+    primary: true
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, vscode]
+added: 2026-09-02
+updated: 2026-09-02

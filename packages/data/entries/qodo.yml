@@ -1,0 +1,19 @@
+slug: qodo
+term: Qodo
+aliases: [Codium, CodiumAI]
+category: ai
+summary: テストとコードレビューに重心を置いた AI 支援サービス。旧称 CodiumAI。
+homepage: https://www.qodo.ai/
+en:
+  respelling: KOH-doh
+  note: 公式が読みを明示していないため未確認。
+ja:
+  - kana: コド
+    primary: true
+  - kana: コード
+  - kana: クオド
+confidence: low
+needsSource: true
+tags: [ai, code-review, testing]
+added: 2026-09-02
+updated: 2026-09-02

@@ -1,6 +1,6 @@
 slug: ollama
 term: Ollama
-category: cli
+category: ai
 summary: 言語モデルを手元の PC で動かすためのツール。
 homepage: https://ollama.com/
 en:

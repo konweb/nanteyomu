@@ -1,0 +1,16 @@
+slug: openhands
+term: OpenHands
+aliases: [OpenDevin]
+category: ai
+summary: オープンソースの自律型コーディングエージェント。旧称 OpenDevin。
+homepage: https://github.com/OpenHands/OpenHands
+en:
+  respelling: OH-pen hands
+ja:
+  - kana: オープンハンズ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, open-source]
+added: 2026-09-02
+updated: 2026-09-02

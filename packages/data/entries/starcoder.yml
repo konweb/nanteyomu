@@ -1,0 +1,15 @@
+slug: starcoder
+term: StarCoder
+category: ai
+summary: BigCode プロジェクトによるオープンなコード生成モデル。
+homepage: https://github.com/bigcode-project/starcoder2
+en:
+  respelling: STAR-coh-der
+ja:
+  - kana: スターコーダー
+    primary: true
+confidence: medium
+needsSource: true
+tags: [ai, llm, code-model, open-model]
+added: 2026-09-02
+updated: 2026-09-02
