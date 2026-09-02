@@ -1,0 +1,22 @@
+slug: dall-e
+term: DALL-E
+aliases: [DALL·E]
+category: service
+summary: OpenAI のテキストから画像を生成するモデル。
+en:
+  respelling: DAH-lee
+  note: 画家サルバドール・ダリ（Dalí）とアニメ映画の WALL-E を掛け合わせた造語。
+ja:
+  - kana: ダリ
+    primary: true
+  - kana: ダリー
+  - kana: ダルイー
+    note: 誤り。綴りをそのまま読んだもの。
+divergence: true
+divergenceNote: >-
+  ダリと WALL-E を掛けた名前なので「ダリ」と読むが、綴りから
+  「ダルイー」「ダーレ」と読まれることが多い。
+confidence: disputed
+needsSource: true
+tags: [ai, image-generation, openai]
+updated: 2026-09-01

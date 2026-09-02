@@ -1,0 +1,19 @@
+slug: llama
+term: Llama
+aliases: [LLaMA]
+category: library
+expansion: 初出時は Large Language Model Meta AI の頭字語だった
+summary: Meta が公開しているオープンな大規模言語モデル群。
+homepage: https://github.com/meta-llama/llama-models
+en:
+  respelling: LAH-mah
+  note: 動物のラマと同じ読み。初出の LLaMA は頭字語だったが、現在は Llama と普通名詞のように書く。
+ja:
+  - kana: ラマ
+    primary: true
+  - kana: リャマ
+    note: 動物名としてはこちらの表記も使われる。
+confidence: medium
+needsSource: true
+tags: [ai, llm, meta, open-model]
+updated: 2026-09-01

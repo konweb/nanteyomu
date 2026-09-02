@@ -1,0 +1,17 @@
+slug: mcp
+term: MCP
+category: protocol
+expansion: Model Context Protocol
+summary: AI エージェントに外部のツールやデータを接続するための共通プロトコル。
+homepage: https://modelcontextprotocol.io/
+en:
+  respelling: M-C-P
+ja:
+  - kana: エムシーピー
+    primary: true
+  - kana: モデルコンテキストプロトコル
+    note: 略の展開を読んだもの。
+confidence: medium
+needsSource: true
+tags: [ai, protocol, agents]
+updated: 2026-09-01

@@ -1,0 +1,17 @@
+slug: ollama
+term: Ollama
+category: cli
+summary: 言語モデルを手元の PC で動かすためのツール。
+homepage: https://ollama.com/
+en:
+  respelling: oh-LAH-mah
+ja:
+  - kana: オラマ
+    primary: true
+  - kana: オーラマ
+  - kana: オヤマ
+    note: 誤り。
+confidence: disputed
+needsSource: true
+tags: [ai, llm, local]
+updated: 2026-09-01

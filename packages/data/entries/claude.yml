@@ -1,0 +1,16 @@
+slug: claude
+term: Claude
+category: service
+summary: Anthropic の生成 AI アシスタントおよびモデル群。
+homepage: https://claude.com/
+en:
+  ipa: /klɔːd/
+  respelling: clawd
+  note: フランス語圏の人名に由来。英語では1音節で「クロード」より短く発音される。
+ja:
+  - kana: クロード
+    primary: true
+confidence: medium
+needsSource: true
+tags: [ai, llm, anthropic]
+updated: 2026-09-01

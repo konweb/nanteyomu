@@ -1,0 +1,23 @@
+slug: gemini
+term: Gemini
+aliases: [Google Gemini]
+category: service
+summary: Google の生成 AI アシスタントおよびモデル群。
+homepage: https://deepmind.google/models/gemini/
+en:
+  ipa: /ˈdʒɛmɪnaɪ/
+  respelling: JEM-in-eye
+  note: 英語では星座・黄道十二宮の Gemini と同じく語尾を「ナイ」と読む。
+ja:
+  - kana: ジェミニ
+    primary: true
+  - kana: ジェミナイ
+    note: 英語圏での読み。日本ではまれ。
+divergence: true
+divergenceNote: >-
+  英語圏では「ジェミナイ」と語尾を伸ばして読むが、日本ではラテン語読みに近い
+  「ジェミニ」が定着している。英語話者との会話で噛み合わない典型例。
+confidence: medium
+needsSource: true
+tags: [ai, llm, google]
+updated: 2026-09-01

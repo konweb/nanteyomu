@@ -1,0 +1,17 @@
+slug: whisper
+term: Whisper
+category: library
+summary: OpenAI の音声認識モデル。多言語の文字起こしと翻訳に対応する。
+homepage: https://github.com/openai/whisper
+en:
+  respelling: WIS-per
+  note: 英語では wh- の h は発音しない。
+ja:
+  - kana: ウィスパー
+    primary: true
+  - kana: ホイスパー
+    note: 誤り。wh- を「ホ」と読んだもの。
+confidence: medium
+needsSource: true
+tags: [ai, speech, openai]
+updated: 2026-09-01

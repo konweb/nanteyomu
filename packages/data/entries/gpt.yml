@@ -1,0 +1,15 @@
+slug: gpt
+term: GPT
+category: acronym
+expansion: Generative Pre-trained Transformer
+summary: OpenAI が用いる大規模言語モデルの系列名。
+en:
+  respelling: G-P-T
+ja:
+  - kana: ジーピーティー
+    primary: true
+  - kana: ジーピーテー
+confidence: medium
+needsSource: true
+tags: [ai, llm, openai]
+updated: 2026-09-01

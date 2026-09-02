@@ -1,0 +1,16 @@
+slug: llm
+term: LLM
+category: acronym
+expansion: Large Language Model
+summary: 大量のテキストで学習した大規模な言語モデルの総称。
+en:
+  respelling: L-L-M
+ja:
+  - kana: エルエルエム
+    primary: true
+  - kana: ダイキボゲンゴモデル
+    note: 訳語「大規模言語モデル」の読み。
+confidence: medium
+needsSource: true
+tags: [ai, llm]
+updated: 2026-09-01

@@ -1,0 +1,17 @@
+slug: hugging-face
+term: Hugging Face
+category: service
+summary: 機械学習モデルとデータセットを共有するプラットフォーム。
+homepage: https://huggingface.co/
+en:
+  respelling: HUG-ing face
+  note: 顔文字の「ハグする顔」がそのままロゴと名前になっている。
+ja:
+  - kana: ハギングフェイス
+    primary: true
+  - kana: ハグフェイス
+    note: 縮めた言い方。
+confidence: medium
+needsSource: true
+tags: [ai, platform, ml]
+updated: 2026-09-01

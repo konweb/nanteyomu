@@ -1,0 +1,18 @@
+slug: gemma
+term: Gemma
+category: library
+summary: Google が公開しているオープンな軽量言語モデル群。Gemini と同じ技術を基にしている。
+homepage: https://deepmind.google/models/gemma/
+en:
+  respelling: JEM-uh
+  note: ラテン語で「宝石」。英語では G を「ジェ」と読む。
+ja:
+  - kana: ジェンマ
+    primary: true
+  - kana: ジェマ
+  - kana: ゲンマ
+    note: 誤り。ローマ字読みしたもの。
+confidence: medium
+needsSource: true
+tags: [ai, llm, google, open-model]
+updated: 2026-09-01

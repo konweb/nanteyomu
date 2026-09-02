@@ -1,0 +1,14 @@
+slug: chatgpt
+term: ChatGPT
+category: service
+summary: OpenAI の対話型 AI アシスタント。
+en:
+  respelling: chat-G-P-T
+ja:
+  - kana: チャットジーピーティー
+    primary: true
+  - kana: チャットジーピーテー
+confidence: medium
+needsSource: true
+tags: [ai, llm, openai]
+updated: 2026-09-01
