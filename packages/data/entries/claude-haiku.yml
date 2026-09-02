@@ -1,0 +1,20 @@
+slug: claude-haiku
+term: Claude Haiku
+aliases: [Haiku]
+category: ai
+summary: Anthropic の言語モデルの系統のひとつ。最も速く、軽い処理に向く。
+homepage: https://platform.claude.com/docs/en/models/overview
+en:
+  ipa: /ˈhaɪkuː/
+  respelling: HYE-koo
+  note: 日本語の俳句がそのまま英語に入った語。英語では語尾を伸ばして読む。
+ja:
+  - kana: ハイク
+    primary: true
+  - kana: ハイクー
+    note: 英語圏での読みに寄せた表記。
+confidence: medium
+needsSource: true
+tags: [ai, llm, anthropic, claude-model, japanese-origin]
+added: 2026-09-02
+updated: 2026-09-02

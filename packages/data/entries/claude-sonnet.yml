@@ -1,0 +1,22 @@
+slug: claude-sonnet
+term: Claude Sonnet
+aliases: [Sonnet]
+category: ai
+summary: Anthropic の言語モデルの系統のひとつ。速さと賢さの釣り合いを狙った中位帯。
+homepage: https://platform.claude.com/docs/en/models/overview
+en:
+  ipa: /ˈsɒnɪt/
+  respelling: SON-it
+  note: 14 行から成る定型詩。英語では第1音節に強勢が来る。
+ja:
+  - kana: ソネット
+    primary: true
+divergence: true
+divergenceNote: >-
+  日本語では「ソネット」がプロバイダの So-net と同音になり、
+  音だけでは区別できない。英語では強勢の位置が違うため紛れない。
+confidence: medium
+needsSource: true
+tags: [ai, llm, anthropic, claude-model]
+added: 2026-09-02
+updated: 2026-09-02

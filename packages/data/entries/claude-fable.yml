@@ -1,0 +1,25 @@
+slug: claude-fable
+term: Claude Fable
+aliases: [Fable]
+category: ai
+summary: Anthropic の言語モデルの系統のひとつ。込み入った推論と、長く続くエージェント作業に向く。
+homepage: https://platform.claude.com/docs/en/models/overview
+en:
+  ipa: /ˈfeɪbəl/
+  respelling: FAY-bul
+  note: 英語の fable（寓話）。a は「エイ」と読む。
+ja:
+  - kana: フェイブル
+    primary: true
+  - kana: フェーブル
+  - kana: ファブル
+    note: 誤り。漫画『ザ・ファブル』の表記に引きずられたもの。
+divergence: true
+divergenceNote: >-
+  英語では「フェイブル」だが、日本では漫画『ザ・ファブル』の邦題表記が浸透しているため
+  「ファブル」と読まれやすい。同じ綴りでも英語の読みとは食い違う。
+confidence: medium
+needsSource: true
+tags: [ai, llm, anthropic, claude-model]
+added: 2026-09-02
+updated: 2026-09-02
