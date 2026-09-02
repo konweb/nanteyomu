@@ -1,6 +1,6 @@
 slug: rag
 term: RAG
-category: acronym
+category: ai
 expansion: Retrieval-Augmented Generation
 summary: 外部の情報を検索して、その結果を踏まえて生成させる手法。
 en:
@@ -14,4 +14,5 @@ ja:
 confidence: medium
 needsSource: true
 tags: [ai, llm, retrieval]
+added: 2026-09-02
 updated: 2026-09-01

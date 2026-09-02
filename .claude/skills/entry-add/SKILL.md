@@ -45,11 +45,16 @@ sources:
       原文のまま。要約や翻訳を入れない。
 needsSource: true               # sources が無いときは必須
 tags: [captcha, security]
+added: 2026-09-01               # 収録した日。トップの「最近追加した語」に使う
 updated: 2026-09-01             # 今日の日付
 ```
 
 `category` は `cli` `language` `framework` `library` `service` `infra` `db`
-`protocol` `acronym` `format` `company` `person` から選ぶ。
+`protocol` `acronym` `format` `ai` `company` `person` から選ぶ。
+
+`ai` は「AI そのもの」に使う。モデル（Llama, Gemma）、AI アシスタント（Gemini, Claude）、
+AI 固有の概念（RAG, LoRA）など。**構造で分類できるものは従来どおり**にする
+（ONNX はフォーマット、MCP はプロトコル、Keras はライブラリ、Ollama は CLI）。
 
 **方針上、`company` と `person` は収録しない。** ツール名・サービス名の辞典であり、
 実在の人物の読みを出典なしで断定するのは方針と合わないため、過去に削除している。
@@ -72,6 +77,10 @@ lint やビルドで弾かれる、または黙って壊れるもの。
 **`divergence: true` なら `divergenceNote` を書く。** 無いと警告が出る。
 
 **`primary: true` は1つだけ。** 複数あるとエラー。
+
+**`added` を忘れない。** 新規追加のときは必ず入れる。無いとトップの
+「最近追加した語」に出てこない。`updated` は編集でも動くので追加日には使えない。
+既存エントリの修正では `added` は変えず、`updated` だけ今日の日付にする。
 
 **OGP 画像のフォントに注意。** 用語と読みは 1200x630 の画像に描かれるが、
 フォントは ASCII・ひらがな・カタカナだけのサブセット。**漢字や珍しい記号を含む用語は

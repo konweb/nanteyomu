@@ -1,7 +1,7 @@
 slug: dall-e
 term: DALL-E
 aliases: [DALL·E]
-category: service
+category: ai
 summary: OpenAI のテキストから画像を生成するモデル。
 en:
   respelling: DAH-lee
@@ -19,4 +19,5 @@ divergenceNote: >-
 confidence: disputed
 needsSource: true
 tags: [ai, image-generation, openai]
+added: 2026-09-02
 updated: 2026-09-01

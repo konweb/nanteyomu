@@ -21,4 +21,5 @@ sources:
     title: PostgreSQL 公式サイト
     kind: official
 tags: [database, sql]
+added: 2026-08-31
 updated: 2026-08-31

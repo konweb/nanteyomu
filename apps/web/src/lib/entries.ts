@@ -17,6 +17,7 @@ export const CATEGORY_LABEL: Record<string, string> = {
   protocol: 'プロトコル',
   acronym: '略語',
   format: 'フォーマット',
+  ai: 'AI・機械学習',
   company: '企業',
   person: '人名',
 };
@@ -118,4 +119,22 @@ export function sameCategoryEntries(entry: Entry, limit = 8): Entry[] {
   return sortedEntries()
     .filter((e) => e.category === entry.category && e.slug !== entry.slug)
     .slice(0, limit);
+}
+
+/**
+ * 最近追加した語。
+ * 日付で絞ると、しばらくデプロイしない間に空のセクションになってしまうので、
+ * 新しい順に件数で切る。日付は addedWithin() で別に見せる。
+ */
+export function recentlyAdded(limit = 8): Entry[] {
+  return [...entries]
+    .filter((e) => e.added)
+    .sort((a, b) => b.added!.localeCompare(a.added!) || a.term.localeCompare(b.term, 'en'))
+    .slice(0, limit);
+}
+
+/** 直近 days 日以内に追加された語の数。ビルド時点で数えるので、デプロイのたびに更新される。 */
+export function addedWithin(days: number): number {
+  const cutoff = new Date(Date.now() - days * 86400000).toISOString().slice(0, 10);
+  return entries.filter((e) => e.added && e.added >= cutoff).length;
 }

@@ -1,6 +1,6 @@
 slug: deepseek
 term: DeepSeek
-category: service
+category: ai
 summary: 中国発の大規模言語モデルおよびその開発元。
 homepage: https://www.deepseek.com/
 en:
@@ -11,4 +11,5 @@ ja:
 confidence: medium
 needsSource: true
 tags: [ai, llm]
+added: 2026-09-02
 updated: 2026-09-01

@@ -26,4 +26,5 @@ sources:
       site was originally golang.org. Many use the golang name, though, and it
       is handy as a label. The language's name is just plain Go, regardless.
 tags: [google, concurrency]
+added: 2026-08-31
 updated: 2026-08-31

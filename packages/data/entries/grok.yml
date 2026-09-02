@@ -1,6 +1,6 @@
 slug: grok
 term: Grok
-category: service
+category: ai
 summary: xAI の生成 AI アシスタントおよびモデル群。
 homepage: https://docs.x.ai/
 en:
@@ -16,4 +16,5 @@ divergenceNote: >-
 confidence: medium
 needsSource: true
 tags: [ai, llm, xai]
+added: 2026-09-02
 updated: 2026-09-01

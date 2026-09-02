@@ -1,6 +1,6 @@
 slug: lora
 term: LoRA
-category: acronym
+category: ai
 expansion: Low-Rank Adaptation
 summary: 大規模モデルの一部だけを少ないパラメータで追加学習する手法。
 homepage: https://arxiv.org/abs/2106.09685
@@ -15,4 +15,5 @@ ja:
 confidence: medium
 needsSource: true
 tags: [ai, fine-tuning, llm]
+added: 2026-09-02
 updated: 2026-09-01

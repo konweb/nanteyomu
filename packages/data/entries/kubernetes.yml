@@ -26,4 +26,5 @@ sources:
     title: Kubernetes 公式サイト
     kind: official
 tags: [kubernetes, container]
+added: 2026-08-31
 updated: 2026-08-31

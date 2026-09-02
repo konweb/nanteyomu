@@ -26,4 +26,5 @@ sources:
     title: kubectl — Kubernetes Documentation
     kind: docs
 tags: [kubernetes, cli]
+added: 2026-08-31
 updated: 2026-08-31

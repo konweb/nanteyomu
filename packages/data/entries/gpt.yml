@@ -1,6 +1,6 @@
 slug: gpt
 term: GPT
-category: acronym
+category: ai
 expansion: Generative Pre-trained Transformer
 summary: OpenAI が用いる大規模言語モデルの系列名。
 en:
@@ -12,4 +12,5 @@ ja:
 confidence: medium
 needsSource: true
 tags: [ai, llm, openai]
+added: 2026-09-02
 updated: 2026-09-01

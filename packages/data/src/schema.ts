@@ -2,7 +2,7 @@
 
 export const CATEGORIES = [
   'cli', 'language', 'framework', 'library', 'service',
-  'infra', 'db', 'protocol', 'acronym', 'format', 'company', 'person',
+  'infra', 'db', 'protocol', 'acronym', 'format', 'ai', 'company', 'person',
 ] as const;
 export type Category = (typeof CATEGORIES)[number];
 
@@ -73,6 +73,11 @@ export interface Entry {
   /** 出典未取得。lint がカバレッジとして報告する。 */
   needsSource?: boolean;
   tags?: string[];
+  /**
+   * 収録した日 (YYYY-MM-DD)。トップの「最近追加した語」に使う。
+   * updated は編集でも動くので、追加日の信号としては使えない。
+   */
+  added?: string;
   /** YYYY-MM-DD */
   updated: string;
 }
@@ -109,6 +114,9 @@ export function validateEntry(raw: unknown, file: string): Issue[] {
   }
   if (!CONFIDENCE.includes(e.confidence as Confidence)) {
     err(`confidence が不正です: ${JSON.stringify(e.confidence)}`);
+  }
+  if (e.added !== undefined && (typeof e.added !== 'string' || !DATE_RE.test(e.added))) {
+    err(`added は YYYY-MM-DD 形式で指定してください: ${JSON.stringify(e.added)}`);
   }
   if (typeof e.updated !== 'string' || !DATE_RE.test(e.updated)) {
     err(`updated は YYYY-MM-DD 形式で指定してください: ${JSON.stringify(e.updated)}`);

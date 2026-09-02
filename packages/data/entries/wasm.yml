@@ -22,4 +22,5 @@ sources:
       WebAssembly (abbreviated Wasm) is a binary instruction format for a
       stack-based virtual machine.
 tags: [browser, binary, runtime]
+added: 2026-08-31
 updated: 2026-08-31
