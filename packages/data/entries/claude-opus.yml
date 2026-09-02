@@ -1,0 +1,20 @@
+slug: claude-opus
+term: Claude Opus
+aliases: [Opus]
+category: ai
+summary: Anthropic の言語モデルの系統のひとつ。込み入ったコーディングや業務向けの最上位帯。
+homepage: https://platform.claude.com/docs/en/models/overview
+en:
+  ipa: /ˈoʊpəs/
+  respelling: OH-pus
+  note: ラテン語で「作品」。音楽の作品番号（Op.）と同じ語。
+ja:
+  - kana: オーパス
+    primary: true
+  - kana: オプス
+    note: まれ。
+confidence: medium
+needsSource: true
+tags: [ai, llm, anthropic, claude-model]
+added: 2026-09-02
+updated: 2026-09-02
