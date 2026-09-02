@@ -1,0 +1,15 @@
+slug: tabnine
+term: Tabnine
+category: ai
+summary: コード補完を中心とした AI 支援サービス。
+homepage: https://www.tabnine.com/
+en:
+  respelling: TAB-nine
+ja:
+  - kana: タブナイン
+    primary: true
+confidence: medium
+needsSource: true
+tags: [ai, completion]
+added: 2026-09-02
+updated: 2026-09-02

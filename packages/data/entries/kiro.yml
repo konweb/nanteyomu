@@ -1,0 +1,19 @@
+slug: kiro
+term: Kiro
+category: ai
+summary: AWS のコーディングエージェント。仕様書を起点に実装を進める。
+homepage: https://kiro.dev/
+en:
+  respelling: KEE-roh
+ja:
+  - kana: キロ
+    primary: true
+divergence: true
+divergenceNote: >-
+  日本語では接頭辞のキロ（kilo）と同音になり、音だけでは区別できない。
+  英語では Kiro と kilo で母音が違うため紛れない。
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, aws]
+added: 2026-09-02
+updated: 2026-09-02

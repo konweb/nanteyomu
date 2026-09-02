@@ -1,0 +1,15 @@
+slug: continue-dev
+term: Continue
+category: ai
+summary: VS Code と JetBrains 向けのオープンソースのコーディング支援。
+homepage: https://continue.dev/
+en:
+  respelling: kon-TIN-yoo
+ja:
+  - kana: コンティニュー
+    primary: true
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, vscode]
+added: 2026-09-02
+updated: 2026-09-02

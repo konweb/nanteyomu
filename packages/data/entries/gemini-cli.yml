@@ -1,0 +1,21 @@
+slug: gemini-cli
+term: Gemini CLI
+category: ai
+summary: Google の Gemini をターミナルから使うオープンソースのコーディングエージェント。
+homepage: https://github.com/google-gemini/gemini-cli
+en:
+  respelling: JEM-in-eye C-L-I
+ja:
+  - kana: ジェミニシーエルアイ
+    primary: true
+  - kana: ジェミニクライ
+    note: まれ。
+divergence: true
+divergenceNote: >-
+  Gemini 部分の読みが英語圏の「ジェミナイ」と日本の「ジェミニ」でズレる。
+  詳しくは Gemini の項を参照。
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, cli, google]
+added: 2026-09-02
+updated: 2026-09-02

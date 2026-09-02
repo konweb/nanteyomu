@@ -1,0 +1,17 @@
+slug: codestral
+term: Codestral
+category: ai
+summary: Mistral のコード生成向け言語モデル。
+homepage: https://mistral.ai/news/codestral/
+en:
+  respelling: koh-DES-tral
+  note: code と mistral を掛け合わせた造語。
+ja:
+  - kana: コデストラル
+    primary: true
+  - kana: コードストラル
+confidence: medium
+needsSource: true
+tags: [ai, llm, code-model]
+added: 2026-09-02
+updated: 2026-09-02

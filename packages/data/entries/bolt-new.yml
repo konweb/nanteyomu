@@ -1,0 +1,18 @@
+slug: bolt-new
+term: Bolt
+aliases: [bolt.new]
+category: ai
+summary: ブラウザ上で Web アプリを生成・実行できる StackBlitz の AI サービス。
+homepage: https://bolt.new/
+en:
+  respelling: bohlt
+ja:
+  - kana: ボルト
+    primary: true
+  - kana: ボルトドットニュー
+    note: ドメイン名まで含めた呼び方。
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, web]
+added: 2026-09-02
+updated: 2026-09-02

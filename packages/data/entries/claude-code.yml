@@ -1,0 +1,15 @@
+slug: claude-code
+term: Claude Code
+category: ai
+summary: Anthropic のターミナル上で動くコーディングエージェント。
+homepage: https://github.com/anthropics/claude-code
+en:
+  respelling: clawd code
+ja:
+  - kana: クロードコード
+    primary: true
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, cli, anthropic]
+added: 2026-09-02
+updated: 2026-09-02

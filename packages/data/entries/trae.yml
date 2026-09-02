@@ -1,0 +1,19 @@
+slug: trae
+term: Trae
+category: ai
+summary: ByteDance の AI コーディング用エディタ。
+homepage: https://www.trae.ai/
+en:
+  respelling: tray
+  note: 公式が読みを明示していないため未確認。
+ja:
+  - kana: トレイ
+    primary: true
+  - kana: トレー
+  - kana: トラエ
+    note: 綴りをローマ字読みしたもの。
+confidence: low
+needsSource: true
+tags: [ai, coding-agent, editor]
+added: 2026-09-02
+updated: 2026-09-02

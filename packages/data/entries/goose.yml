@@ -1,0 +1,18 @@
+slug: goose
+term: goose
+category: ai
+summary: Block 発のオープンソースのコーディングエージェント。小文字表記が公式。
+homepage: https://github.com/aaif-goose/goose
+en:
+  respelling: goos
+  note: 英語のガチョウ（goose）と同じ発音。
+ja:
+  - kana: グース
+    primary: true
+  - kana: ゴース
+    note: 誤り。
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, cli, open-source]
+added: 2026-09-02
+updated: 2026-09-02

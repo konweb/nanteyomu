@@ -1,0 +1,16 @@
+slug: junie
+term: Junie
+category: ai
+summary: JetBrains の IDE に組み込まれたコーディングエージェント。
+homepage: https://www.jetbrains.com/junie/
+en:
+  respelling: JOO-nee
+ja:
+  - kana: ジュニー
+    primary: true
+  - kana: ジューニー
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, jetbrains]
+added: 2026-09-02
+updated: 2026-09-02

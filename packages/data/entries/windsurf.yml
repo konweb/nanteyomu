@@ -1,0 +1,15 @@
+slug: windsurf
+term: Windsurf
+category: ai
+summary: AI 前提のコーディング用エディタ。旧称 Codeium。現在は Cognition の傘下。
+en:
+  respelling: WIND-surf
+ja:
+  - kana: ウィンドサーフ
+    primary: true
+  - kana: ウインドサーフ
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, editor]
+added: 2026-09-02
+updated: 2026-09-02

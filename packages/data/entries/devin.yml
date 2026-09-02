@@ -1,0 +1,15 @@
+slug: devin
+term: Devin
+category: ai
+summary: Cognition が開発した自律型のソフトウェアエンジニアリングエージェント。
+en:
+  respelling: DEV-in
+ja:
+  - kana: デビン
+    primary: true
+  - kana: デヴィン
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent]
+added: 2026-09-02
+updated: 2026-09-02

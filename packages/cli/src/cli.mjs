@@ -9,6 +9,7 @@ const CATEGORY_LABEL = {
   cli: 'CLI・ツール', language: 'プログラミング言語', framework: 'フレームワーク・ランタイム',
   library: 'ライブラリ', service: 'サービス・SaaS', infra: 'インフラ・ミドルウェア',
   db: 'データベース', protocol: 'プロトコル', acronym: '略語', format: 'フォーマット',
+  ai: 'AI・機械学習',
   company: '企業', person: '人名',
 };
 const CONFIDENCE_LABEL = {

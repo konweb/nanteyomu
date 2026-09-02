@@ -1,0 +1,17 @@
+slug: v0
+term: v0
+category: ai
+summary: Vercel の UI・アプリ生成サービス。自然言語から画面を作る。
+homepage: https://v0.app/
+en:
+  respelling: V-zero
+ja:
+  - kana: ブイゼロ
+    primary: true
+  - kana: ブイオー
+    note: 誤り。末尾は数字のゼロで、アルファベットの O ではない。
+confidence: medium
+needsSource: true
+tags: [ai, coding-agent, vercel]
+added: 2026-09-02
+updated: 2026-09-02
