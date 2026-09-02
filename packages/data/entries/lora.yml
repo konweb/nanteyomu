@@ -1,0 +1,18 @@
+slug: lora
+term: LoRA
+category: acronym
+expansion: Low-Rank Adaptation
+summary: 大規模モデルの一部だけを少ないパラメータで追加学習する手法。
+homepage: https://arxiv.org/abs/2106.09685
+en:
+  respelling: LOR-ah
+ja:
+  - kana: ローラ
+    primary: true
+  - kana: ロラ
+  - kana: エルオーアールエー
+    note: 綴りを読み下したもの。まれ。
+confidence: medium
+needsSource: true
+tags: [ai, fine-tuning, llm]
+updated: 2026-09-01

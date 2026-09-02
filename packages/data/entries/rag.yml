@@ -1,0 +1,17 @@
+slug: rag
+term: RAG
+category: acronym
+expansion: Retrieval-Augmented Generation
+summary: 外部の情報を検索して、その結果を踏まえて生成させる手法。
+en:
+  respelling: rag
+  note: 英単語 rag（ぼろ布）と同じ発音。
+ja:
+  - kana: ラグ
+    primary: true
+  - kana: アールエージー
+    note: 綴りを読み下したもの。
+confidence: medium
+needsSource: true
+tags: [ai, llm, retrieval]
+updated: 2026-09-01

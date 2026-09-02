@@ -1,0 +1,19 @@
+slug: grok
+term: Grok
+category: service
+summary: xAI の生成 AI アシスタントおよびモデル群。
+homepage: https://docs.x.ai/
+en:
+  respelling: grok
+  note: SF 作家ハインラインの造語で「深く理解する」の意。技術者の俗語としても使われる。
+ja:
+  - kana: グロック
+    primary: true
+divergence: true
+divergenceNote: >-
+  日本語では拳銃の Glock と同じ「グロック」になってしまい、音だけでは区別できない。
+  英語では Grok と Glock で子音が違うため紛れない。
+confidence: medium
+needsSource: true
+tags: [ai, llm, xai]
+updated: 2026-09-01

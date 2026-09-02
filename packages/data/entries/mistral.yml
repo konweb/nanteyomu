@@ -1,0 +1,15 @@
+slug: mistral
+term: Mistral
+category: library
+summary: フランス発の大規模言語モデル群およびその開発元。
+homepage: https://mistral.ai/
+en:
+  respelling: mis-TRAL
+  note: 南フランスに吹く季節風 mistral に由来。
+ja:
+  - kana: ミストラル
+    primary: true
+confidence: medium
+needsSource: true
+tags: [ai, llm, open-model]
+updated: 2026-09-01

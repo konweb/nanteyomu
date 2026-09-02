@@ -1,0 +1,18 @@
+slug: cuda
+term: CUDA
+category: framework
+expansion: Compute Unified Device Architecture
+summary: NVIDIA の GPU で汎用計算を行うための開発環境。深層学習の土台になっている。
+homepage: https://developer.nvidia.com/cuda-toolkit
+en:
+  respelling: KOO-duh
+ja:
+  - kana: クーダ
+    primary: true
+  - kana: キューダ
+  - kana: シーユーディーエー
+    note: 綴りを読み下したもの。まれ。
+confidence: medium
+needsSource: true
+tags: [gpu, nvidia, compute]
+updated: 2026-09-01

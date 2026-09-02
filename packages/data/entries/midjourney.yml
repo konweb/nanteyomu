@@ -1,0 +1,14 @@
+slug: midjourney
+term: Midjourney
+category: service
+summary: テキストから画像を生成する AI サービス。
+en:
+  respelling: MID-jur-nee
+ja:
+  - kana: ミッドジャーニー
+    primary: true
+  - kana: ミドジャーニー
+confidence: medium
+needsSource: true
+tags: [ai, image-generation]
+updated: 2026-09-01

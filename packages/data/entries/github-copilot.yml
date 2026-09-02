@@ -1,0 +1,17 @@
+slug: github-copilot
+term: GitHub Copilot
+aliases: [Copilot]
+category: service
+summary: GitHub の AI コーディング補完・支援サービス。
+homepage: https://github.com/features/copilot
+en:
+  respelling: CO-pilot
+  note: 英単語 copilot（副操縦士）。
+ja:
+  - kana: コパイロット
+    primary: true
+  - kana: コーパイロット
+confidence: medium
+needsSource: true
+tags: [ai, coding, github]
+updated: 2026-09-01

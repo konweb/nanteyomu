@@ -1,0 +1,22 @@
+slug: onnx
+term: ONNX
+category: format
+expansion: Open Neural Network Exchange
+summary: 機械学習モデルを異なるフレームワーク間でやりとりするための共通フォーマット。
+homepage: https://onnx.ai/
+en:
+  respelling: ON-iks
+  note: 宝石の onyx と同じ読みとされる。綴りは違うが音は同じ。
+ja:
+  - kana: オニキス
+    primary: true
+  - kana: オーエヌエヌエックス
+    note: 綴りを読み下したもの。日本ではこちらも多い。
+divergence: true
+divergenceNote: >-
+  英語圏では宝石の onyx と同じ「オニキス」と読む。日本では綴りをそのまま
+  読み下した「オーエヌエヌエックス」も広く使われており、会話で食い違う。
+confidence: medium
+needsSource: true
+tags: [ai, ml, format, interop]
+updated: 2026-09-01

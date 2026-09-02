@@ -1,0 +1,16 @@
+slug: perplexity
+term: Perplexity
+category: service
+summary: 出典を示しながら回答する AI 検索サービス。
+homepage: https://docs.perplexity.ai/
+en:
+  respelling: per-PLEX-i-tee
+  note: 英単語 perplexity（当惑）。言語モデルの評価指標としての perplexity と同じ綴り。
+ja:
+  - kana: パープレキシティ
+    primary: true
+  - kana: パープレクシティ
+confidence: medium
+needsSource: true
+tags: [ai, search]
+updated: 2026-09-01

@@ -1,0 +1,17 @@
+slug: keras
+term: Keras
+category: library
+summary: 深層学習モデルを簡潔に書くための Python API。
+homepage: https://keras.io/
+en:
+  respelling: KER-as
+  note: ギリシャ語で「角（つの）」を意味する κέρας に由来。
+ja:
+  - kana: ケラス
+    primary: true
+  - kana: ケラース
+  - kana: ケーラス
+confidence: disputed
+needsSource: true
+tags: [ai, deep-learning, python]
+updated: 2026-09-01

@@ -1,0 +1,14 @@
+slug: deepseek
+term: DeepSeek
+category: service
+summary: 中国発の大規模言語モデルおよびその開発元。
+homepage: https://www.deepseek.com/
+en:
+  respelling: deep-SEEK
+ja:
+  - kana: ディープシーク
+    primary: true
+confidence: medium
+needsSource: true
+tags: [ai, llm]
+updated: 2026-09-01

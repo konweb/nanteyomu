@@ -1,0 +1,18 @@
+slug: stable-diffusion
+term: Stable Diffusion
+aliases: [SD]
+category: library
+summary: テキストから画像を生成する拡散モデル。重みが公開されている。
+homepage: https://github.com/CompVis/stable-diffusion
+en:
+  respelling: STAY-bul dif-YOO-zhun
+ja:
+  - kana: ステイブルディフュージョン
+    primary: true
+  - kana: ステーブルディフュージョン
+  - kana: スタブルディフュージョン
+    note: 誤り。stable を「スタブル」と読んだもの。
+confidence: medium
+needsSource: true
+tags: [ai, image-generation, diffusion]
+updated: 2026-09-01
