@@ -1,6 +1,6 @@
 slug: midjourney
 term: Midjourney
-category: service
+category: ai
 summary: テキストから画像を生成する AI サービス。
 en:
   respelling: MID-jur-nee
@@ -11,4 +11,5 @@ ja:
 confidence: medium
 needsSource: true
 tags: [ai, image-generation]
+added: 2026-09-02
 updated: 2026-09-01

@@ -1,6 +1,6 @@
 slug: llm
 term: LLM
-category: acronym
+category: ai
 expansion: Large Language Model
 summary: 大量のテキストで学習した大規模な言語モデルの総称。
 en:
@@ -13,4 +13,5 @@ ja:
 confidence: medium
 needsSource: true
 tags: [ai, llm]
+added: 2026-09-02
 updated: 2026-09-01

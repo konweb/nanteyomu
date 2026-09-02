@@ -1,6 +1,6 @@
 slug: whisper
 term: Whisper
-category: library
+category: ai
 summary: OpenAI の音声認識モデル。多言語の文字起こしと翻訳に対応する。
 homepage: https://github.com/openai/whisper
 en:
@@ -14,4 +14,5 @@ ja:
 confidence: medium
 needsSource: true
 tags: [ai, speech, openai]
+added: 2026-09-02
 updated: 2026-09-01

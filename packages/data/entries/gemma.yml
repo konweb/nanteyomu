@@ -1,6 +1,6 @@
 slug: gemma
 term: Gemma
-category: library
+category: ai
 summary: Google が公開しているオープンな軽量言語モデル群。Gemini と同じ技術を基にしている。
 homepage: https://deepmind.google/models/gemma/
 en:
@@ -15,4 +15,5 @@ ja:
 confidence: medium
 needsSource: true
 tags: [ai, llm, google, open-model]
+added: 2026-09-02
 updated: 2026-09-01

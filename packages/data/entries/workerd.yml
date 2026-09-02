@@ -24,4 +24,5 @@ sources:
       workerd (pronounced: "worker-dee") is a JavaScript / Wasm server runtime
       based on the same code that powers Cloudflare Workers.
 tags: [cloudflare, runtime, daemon]
+added: 2026-08-31
 updated: 2026-08-31

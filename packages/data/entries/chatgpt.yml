@@ -1,6 +1,6 @@
 slug: chatgpt
 term: ChatGPT
-category: service
+category: ai
 summary: OpenAI の対話型 AI アシスタント。
 en:
   respelling: chat-G-P-T
@@ -11,4 +11,5 @@ ja:
 confidence: medium
 needsSource: true
 tags: [ai, llm, openai]
+added: 2026-09-02
 updated: 2026-09-01

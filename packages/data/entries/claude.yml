@@ -1,6 +1,6 @@
 slug: claude
 term: Claude
-category: service
+category: ai
 summary: Anthropic の生成 AI アシスタントおよびモデル群。
 homepage: https://claude.com/
 en:
@@ -13,4 +13,5 @@ ja:
 confidence: medium
 needsSource: true
 tags: [ai, llm, anthropic]
+added: 2026-09-02
 updated: 2026-09-01

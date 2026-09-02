@@ -1,7 +1,7 @@
 slug: github-copilot
 term: GitHub Copilot
 aliases: [Copilot]
-category: service
+category: ai
 summary: GitHub の AI コーディング補完・支援サービス。
 homepage: https://github.com/features/copilot
 en:
@@ -14,4 +14,5 @@ ja:
 confidence: medium
 needsSource: true
 tags: [ai, coding, github]
+added: 2026-09-02
 updated: 2026-09-01

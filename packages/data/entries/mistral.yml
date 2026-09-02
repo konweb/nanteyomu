@@ -1,6 +1,6 @@
 slug: mistral
 term: Mistral
-category: library
+category: ai
 summary: フランス発の大規模言語モデル群およびその開発元。
 homepage: https://mistral.ai/
 en:
@@ -12,4 +12,5 @@ ja:
 confidence: medium
 needsSource: true
 tags: [ai, llm, open-model]
+added: 2026-09-02
 updated: 2026-09-01

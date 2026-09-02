@@ -1,7 +1,7 @@
 slug: stable-diffusion
 term: Stable Diffusion
 aliases: [SD]
-category: library
+category: ai
 summary: テキストから画像を生成する拡散モデル。重みが公開されている。
 homepage: https://github.com/CompVis/stable-diffusion
 en:
@@ -15,4 +15,5 @@ ja:
 confidence: medium
 needsSource: true
 tags: [ai, image-generation, diffusion]
+added: 2026-09-02
 updated: 2026-09-01

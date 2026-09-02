@@ -17,4 +17,5 @@ divergenceNote: >-
 confidence: medium
 needsSource: true
 tags: [build-tool, jvm, android]
+added: 2026-08-31
 updated: 2026-08-31

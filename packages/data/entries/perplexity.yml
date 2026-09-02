@@ -1,6 +1,6 @@
 slug: perplexity
 term: Perplexity
-category: service
+category: ai
 summary: 出典を示しながら回答する AI 検索サービス。
 homepage: https://docs.perplexity.ai/
 en:
@@ -13,4 +13,5 @@ ja:
 confidence: medium
 needsSource: true
 tags: [ai, search]
+added: 2026-09-02
 updated: 2026-09-01
