@@ -144,6 +144,10 @@ function homeLabel(url: string): string {
       )}
     </section>
 
+    <Tame client:visible slug={entry.slug} />
+
+    <Share text={shareText} url={`${SITE_URL}/w/${entry.slug}/`} />
+
     {related.length > 0 && (
       <section class="section">
         <h2>同じカテゴリの語</h2>
@@ -161,10 +165,6 @@ function homeLabel(url: string): string {
         </p>
       </section>
     )}
-
-    <Tame client:visible slug={entry.slug} />
-
-    <Share text={shareText} url={`${SITE_URL}/w/${entry.slug}/`} />
 
     <div class="contribute">
       最終更新 {entry.updated} ・

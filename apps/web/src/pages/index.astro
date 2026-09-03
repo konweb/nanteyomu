@@ -46,6 +46,18 @@ const newCount = addedWithin(RECENT_DAYS);
   </section>
 
   <section class="section">
+    <h2>カテゴリ</h2>
+    <div class="card-grid">
+      {categories.map(({ category, count }) => (
+        <a class="card" href={`/c/${category}/`}>
+          <span class="term">{CATEGORY_LABEL[category] ?? category}</span>
+          <div class="note">{count} 語</div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
     <h2>日英で読みがズレる語</h2>
     <p class="section-lead">
       日本語話者が本当に困るのは「正しい発音」より「英語圏の読みと日本の現場の通り名のズレ」です。
@@ -81,18 +93,6 @@ const newCount = addedWithin(RECENT_DAYS);
       </div>
     </section>
   )}
-
-  <section class="section">
-    <h2>カテゴリ</h2>
-    <div class="card-grid">
-      {categories.map(({ category, count }) => (
-        <a class="card" href={`/c/${category}/`}>
-          <span class="term">{CATEGORY_LABEL[category] ?? category}</span>
-          <div class="note">{count} 語</div>
-        </a>
-      ))}
-    </div>
-  </section>
 
   <div class="contribute">
     出典は作者本人の発言・公式ドキュメント・公式FAQ を優先し、推測で書かない方針です。
