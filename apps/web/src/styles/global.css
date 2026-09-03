@@ -607,13 +607,19 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 700; }
 }
 .tame-icon { font-size: 1.15rem; line-height: 1; }
 .tame-count {
+  /* ラベルより出しゃばらないよう、塗りつぶしではなく淡いチップにする。
+     桁が増えても幅が跳ねないよう等幅数字を使う。 */
   font-variant-numeric: tabular-nums;
-  min-width: 1.5em;
-  padding: 0.05rem 0.45rem;
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 0.28rem 0.5rem;
+  margin-left: 0.1rem;
   border-radius: 999px;
-  background: var(--ink); color: var(--card);
-  font-size: 0.85rem;
+  color: var(--ink-muted);
+  background: var(--line);
+  background: color-mix(in oklab, var(--ink) 8%, transparent);
 }
+.tame-btn.is-voted .tame-count { color: var(--ink); }
 .tame-note { margin: 0.6rem 0 0; font-size: 0.8rem; color: var(--ink-muted); }
 @media (prefers-reduced-motion: reduce) {
   .tame-btn { transition: none; }
