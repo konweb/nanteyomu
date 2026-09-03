@@ -31,10 +31,5 @@
       "migrations_dir": "./migrations"
     }
   ],
-  // IP ごとの連打を弾く。カウンタは Cloudflare 側で一時的に持たれるだけで、
-  // こちらには何も保存されない。実利用に困らない緩さにしてある。
-  "ratelimits": [
-    { "name": "TAME_LIMIT", "namespace_id": "1001", "simple": { "limit": 10, "period": 60 } }
-  ],
   "observability": { "enabled": true }
 }
