@@ -1,0 +1,18 @@
+slug: cypress
+term: Cypress
+category: cli
+summary: ブラウザ上で動作する E2E テストツール。
+homepage: https://www.cypress.io/
+en:
+  ipa: /ˈsaɪprəs/
+  note: 英語で「糸杉」の意。
+ja:
+  - kana: サイプレス
+    primary: true
+  - kana: シプレス
+    note: 綴りからの類推
+confidence: medium
+needsSource: true
+tags: [testing, e2e, frontend, javascript]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,13 @@
+slug: turbopack
+term: Turbopack
+category: framework
+summary: Vercel が開発する Rust 製バンドラー。
+homepage: https://nextjs.org/docs/app/api-reference/turbopack
+ja:
+  - kana: ターボパック
+    primary: true
+confidence: medium
+needsSource: true
+tags: [rust, javascript, bundler, frontend, nextjs]
+added: 2026-09-03
+updated: 2026-09-03

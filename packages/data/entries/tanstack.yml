@@ -1,0 +1,15 @@
+slug: tanstack
+term: TanStack
+category: library
+summary: TanStack Query や TanStack Table などフレームワーク非依存のライブラリ群。
+homepage: https://tanstack.com/
+en:
+  note: 作者 Tanner Linsley の名前と stack の合成。
+ja:
+  - kana: タンスタック
+    primary: true
+confidence: medium
+needsSource: true
+tags: [typescript, frontend, react]
+added: 2026-09-03
+updated: 2026-09-03

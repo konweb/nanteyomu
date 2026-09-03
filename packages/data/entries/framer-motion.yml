@@ -1,0 +1,14 @@
+slug: framer-motion
+term: Framer Motion
+aliases: [Motion]
+category: library
+summary: React 向けのアニメーションライブラリ。現在は Motion として公開されている。
+homepage: https://motion.dev/
+ja:
+  - kana: フレーマーモーション
+    primary: true
+confidence: medium
+needsSource: true
+tags: [react, animation, frontend]
+added: 2026-09-03
+updated: 2026-09-03

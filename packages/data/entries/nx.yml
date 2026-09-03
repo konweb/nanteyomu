@@ -1,0 +1,13 @@
+slug: nx
+term: Nx
+category: cli
+summary: モノレポ向けのビルドシステム。
+homepage: https://nx.dev/
+ja:
+  - kana: エヌエックス
+    primary: true
+confidence: medium
+needsSource: true
+tags: [javascript, typescript, monorepo, frontend]
+added: 2026-09-03
+updated: 2026-09-03

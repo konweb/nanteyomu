@@ -1,0 +1,15 @@
+slug: valibot
+term: Valibot
+category: library
+summary: バンドルサイズの小ささを重視した TypeScript のスキーマバリデーションライブラリ。
+homepage: https://valibot.dev/
+en:
+  respelling: VAL-i-bot
+ja:
+  - kana: バリボット
+    primary: true
+confidence: medium
+needsSource: true
+tags: [typescript, validation, frontend]
+added: 2026-09-03
+updated: 2026-09-03

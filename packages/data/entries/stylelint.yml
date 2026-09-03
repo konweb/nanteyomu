@@ -1,0 +1,13 @@
+slug: stylelint
+term: Stylelint
+category: cli
+summary: CSS のリンター。
+homepage: https://stylelint.io/
+ja:
+  - kana: スタイルリント
+    primary: true
+confidence: medium
+needsSource: true
+tags: [css, linter, frontend]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,13 @@
+slug: storybook
+term: Storybook
+category: cli
+summary: UI コンポーネントを個別に開発・確認するためのツール。
+homepage: https://storybook.js.org/
+ja:
+  - kana: ストーリーブック
+    primary: true
+confidence: medium
+needsSource: true
+tags: [frontend, ui, testing, javascript]
+added: 2026-09-03
+updated: 2026-09-03

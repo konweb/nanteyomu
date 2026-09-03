@@ -1,0 +1,20 @@
+slug: radix-ui
+term: Radix UI
+aliases: [Radix]
+category: library
+summary: スタイルを持たないアクセシブルな React コンポーネント集。
+homepage: https://www.radix-ui.com/
+en:
+  ipa: /ˈreɪdɪks/
+  respelling: RAY-diks
+  note: ラテン語で「根」の意。英語では「レイディクス」に近い。
+ja:
+  - kana: ラディックス
+    primary: true
+  - kana: レイディクス
+    note: 英語の発音に近い読み
+confidence: medium
+needsSource: true
+tags: [react, ui, frontend, accessibility]
+added: 2026-09-03
+updated: 2026-09-03

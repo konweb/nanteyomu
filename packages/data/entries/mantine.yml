@@ -1,0 +1,15 @@
+slug: mantine
+term: Mantine
+category: library
+summary: React 向けのコンポーネントライブラリ。
+homepage: https://mantine.dev/
+ja:
+  - kana: マンティーン
+    primary: true
+  - kana: マンタイン
+    note: 綴りからの類推
+confidence: disputed
+needsSource: true
+tags: [react, ui, frontend]
+added: 2026-09-03
+updated: 2026-09-03

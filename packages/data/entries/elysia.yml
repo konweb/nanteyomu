@@ -1,0 +1,19 @@
+slug: elysia
+term: Elysia
+category: framework
+summary: Bun 向けの高速な Web フレームワーク。
+homepage: https://elysiajs.com/
+en:
+  note: ギリシャ神話の楽園 Elysium に連なる語。
+ja:
+  - kana: エリシア
+    primary: true
+  - kana: エリュシア
+    note: None
+  - kana: イリシア
+    note: 英語読みに近い読み
+confidence: disputed
+needsSource: true
+tags: [framework, typescript, bun, frontend]
+added: 2026-09-03
+updated: 2026-09-03

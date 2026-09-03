@@ -1,0 +1,13 @@
+slug: rollup
+term: Rollup
+category: framework
+summary: ES モジュール向けの JavaScript バンドラー。
+homepage: https://rollupjs.org/
+ja:
+  - kana: ロールアップ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [javascript, bundler, frontend]
+added: 2026-09-03
+updated: 2026-09-03

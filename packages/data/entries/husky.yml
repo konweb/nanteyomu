@@ -1,0 +1,15 @@
+slug: husky
+term: Husky
+category: cli
+summary: Git フックを管理する Node.js 製ツール。
+homepage: https://typicode.github.io/husky/
+en:
+  note: 英語で犬のハスキー。
+ja:
+  - kana: ハスキー
+    primary: true
+confidence: medium
+needsSource: true
+tags: [git, javascript, frontend]
+added: 2026-09-03
+updated: 2026-09-03

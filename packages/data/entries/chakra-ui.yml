@@ -1,0 +1,16 @@
+slug: chakra-ui
+term: Chakra UI
+aliases: [Chakra]
+category: library
+summary: React 向けのコンポーネントライブラリ。
+homepage: https://chakra-ui.com/
+en:
+  note: サンスクリット語由来で「輪」の意。
+ja:
+  - kana: チャクラ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [react, ui, frontend]
+added: 2026-09-03
+updated: 2026-09-03

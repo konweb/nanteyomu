@@ -1,0 +1,17 @@
+slug: playwright
+term: Playwright
+category: cli
+summary: Microsoft 製のブラウザ自動化・E2E テストツール。
+homepage: https://playwright.dev/
+en:
+  note: 英語で「劇作家」の意。write（書く）と同じ綴りだが -wright は職人を表す接尾辞。
+ja:
+  - kana: プレイライト
+    primary: true
+  - kana: プレイライト
+    note: None
+confidence: medium
+needsSource: true
+tags: [testing, e2e, frontend, typescript]
+added: 2026-09-03
+updated: 2026-09-03

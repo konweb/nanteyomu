@@ -1,0 +1,13 @@
+slug: xstate
+term: XState
+category: library
+summary: ステートマシンとステートチャートによる状態管理ライブラリ。
+homepage: https://stately.ai/docs/xstate
+ja:
+  - kana: エックスステート
+    primary: true
+confidence: medium
+needsSource: true
+tags: [typescript, state-management, frontend]
+added: 2026-09-03
+updated: 2026-09-03

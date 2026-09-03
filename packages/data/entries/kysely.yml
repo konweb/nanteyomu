@@ -1,0 +1,30 @@
+slug: kysely
+term: Kysely
+category: library
+summary: 型安全な TypeScript の SQL クエリビルダー。
+homepage: https://github.com/kysely-org/kysely
+en:
+  respelling: Key-Seh-Lee
+  note: 公式 README が発音を明記している数少ないライブラリ。
+ja:
+  - kana: キーセリー
+    primary: true
+  - kana: カイセリー
+    note: 英語読みからの類推。公式表記とは異なる
+  - kana: キセリー
+    note: 日本で見られる読み。公式表記とは異なる
+divergence: true
+divergenceNote: >-
+  公式 README が「Key-Seh-Lee」と明記しており、英語圏では「キーセリー」。
+  日本では綴りから「カイセリー」「キセリー」と読まれることがあるが、公式の表記は「キーセリー」。
+confidence: high
+sources:
+  - url: https://github.com/kysely-org/kysely
+    title: kysely-org/kysely - GitHub
+    kind: official
+    quote: >-
+      Kysely (pronounce “Key-Seh-Lee”) is a type-safe and
+      autocompletion-friendly TypeScript SQL query builder.
+tags: [typescript, database, sql]
+added: 2026-09-03
+updated: 2026-09-03

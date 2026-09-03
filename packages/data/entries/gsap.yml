@@ -1,0 +1,16 @@
+slug: gsap
+term: GSAP
+category: library
+expansion: GreenSock Animation Platform
+summary: 高機能な JavaScript アニメーションライブラリ。
+homepage: https://gsap.com/
+ja:
+  - kana: ジーサップ
+    primary: true
+  - kana: ジーエスエーピー
+    note: 頭字語として読む場合
+confidence: medium
+needsSource: true
+tags: [javascript, animation, frontend]
+added: 2026-09-03
+updated: 2026-09-03

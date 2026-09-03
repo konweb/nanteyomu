@@ -1,0 +1,13 @@
+slug: remix
+term: Remix
+category: framework
+summary: Web 標準に沿った React のフルスタックフレームワーク。
+homepage: https://remix.run/
+ja:
+  - kana: リミックス
+    primary: true
+confidence: medium
+needsSource: true
+tags: [react, framework, frontend, javascript]
+added: 2026-09-03
+updated: 2026-09-03

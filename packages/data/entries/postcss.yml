@@ -1,0 +1,13 @@
+slug: postcss
+term: PostCSS
+category: library
+summary: プラグインで CSS を変換するツール。
+homepage: https://postcss.org/
+ja:
+  - kana: ポストシーエスエス
+    primary: true
+confidence: medium
+needsSource: true
+tags: [css, frontend, styling]
+added: 2026-09-03
+updated: 2026-09-03

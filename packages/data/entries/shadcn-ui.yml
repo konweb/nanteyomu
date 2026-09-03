@@ -1,0 +1,20 @@
+slug: shadcn-ui
+term: shadcn/ui
+aliases: [shadcn]
+category: library
+summary: Radix UI と Tailwind CSS を組み合わせたコピーして使うコンポーネント集。
+homepage: https://ui.shadcn.com/
+en:
+  note: 作者のハンドルネーム shadcn に由来。
+ja:
+  - kana: シャドシーエヌ
+    primary: true
+  - kana: シャドセーエヌ
+    note: None
+  - kana: シャドシーエン
+    note: None
+confidence: disputed
+needsSource: true
+tags: [react, ui, frontend, tailwind]
+added: 2026-09-03
+updated: 2026-09-03

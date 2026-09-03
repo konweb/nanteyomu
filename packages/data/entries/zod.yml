@@ -1,0 +1,18 @@
+slug: zod
+term: Zod
+category: library
+summary: TypeScript 向けのスキーマ宣言・バリデーションライブラリ。
+homepage: https://zod.dev/
+en:
+  ipa: /zɒd/
+  respelling: ZOD
+ja:
+  - kana: ゾッド
+    primary: true
+  - kana: ゾド
+    note: 短く読む場合
+confidence: medium
+needsSource: true
+tags: [typescript, validation, frontend]
+added: 2026-09-03
+updated: 2026-09-03

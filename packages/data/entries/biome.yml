@@ -1,0 +1,25 @@
+slug: biome
+term: Biome
+category: cli
+summary: Rust 製の JavaScript／TypeScript 向けリンター・フォーマッター。
+homepage: https://biomejs.dev/
+en:
+  ipa: /ˈbaɪoʊm/
+  respelling: BY-ohm
+  note: 英語で「生物群系」の意。bio- を「ビオ」と読まないのが要点。
+ja:
+  - kana: バイオーム
+    primary: true
+  - kana: ビオーム
+    note: 綴りからの類推。英語読みとは異なる
+  - kana: ビオメ
+    note: 日本で見られる誤読
+divergence: true
+divergenceNote: >-
+  英語では bi- を「バイ」と読むため「バイオーム」。
+  日本ではドイツ語風に「ビオーム」、あるいは「ビオメ」と読まれることがあるが、英語の生物学用語としての読みは「バイオーム」。
+confidence: medium
+needsSource: true
+tags: [rust, linter, formatter, javascript, typescript, frontend]
+added: 2026-09-03
+updated: 2026-09-03

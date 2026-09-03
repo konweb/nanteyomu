@@ -1,0 +1,13 @@
+slug: panda-css
+term: Panda CSS
+category: library
+summary: ビルド時に CSS を生成する型安全なスタイリングライブラリ。
+homepage: https://panda-css.com/
+ja:
+  - kana: パンダシーエスエス
+    primary: true
+confidence: medium
+needsSource: true
+tags: [css, frontend, styling, typescript]
+added: 2026-09-03
+updated: 2026-09-03

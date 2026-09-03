@@ -1,0 +1,17 @@
+slug: unocss
+term: UnoCSS
+category: library
+summary: オンデマンドでユーティリティ CSS を生成するエンジン。
+homepage: https://unocss.dev/
+en:
+  note: uno はスペイン語・イタリア語で「1」。
+ja:
+  - kana: ウノシーエスエス
+    primary: true
+  - kana: ユーノシーエスエス
+    note: 英語読みからの類推
+confidence: medium
+needsSource: true
+tags: [css, frontend, styling]
+added: 2026-09-03
+updated: 2026-09-03

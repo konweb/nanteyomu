@@ -1,0 +1,16 @@
+slug: swr
+term: SWR
+category: library
+expansion: stale-while-revalidate
+summary: React 向けのデータ取得ライブラリ。
+homepage: https://github.com/vercel/swr
+ja:
+  - kana: エスダブリューアール
+    primary: true
+  - kana: スワー
+    note: 英語圏で見られる一語読み
+confidence: disputed
+needsSource: true
+tags: [react, frontend, javascript]
+added: 2026-09-03
+updated: 2026-09-03

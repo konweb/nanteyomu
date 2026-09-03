@@ -1,0 +1,17 @@
+slug: valtio
+term: Valtio
+category: library
+summary: プロキシを使った React 向けの状態管理ライブラリ。
+homepage: https://github.com/pmndrs/valtio
+en:
+  note: pmndrs の状態管理ライブラリは各国語の「状態」が名前になっており、Jotai（状態）、Zustand（ドイツ語）と同系列。valtio はフィンランド語で「国家・状態」を指す語と同じ綴り。
+ja:
+  - kana: バルティオ
+    primary: true
+  - kana: ヴァルティオ
+    note: None
+confidence: medium
+needsSource: true
+tags: [react, state-management, frontend, javascript]
+added: 2026-09-03
+updated: 2026-09-03

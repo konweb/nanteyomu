@@ -1,0 +1,17 @@
+slug: volta
+term: Volta
+category: cli
+summary: Node.js のツールチェーンをプロジェクト単位で固定するバージョン管理ツール。
+homepage: https://volta.sh/
+en:
+  note: イタリア語由来で「回転」の意。
+ja:
+  - kana: ボルタ
+    primary: true
+  - kana: ヴォルタ
+    note: None
+confidence: medium
+needsSource: true
+tags: [nodejs, cli, frontend]
+added: 2026-09-03
+updated: 2026-09-03

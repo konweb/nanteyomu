@@ -1,0 +1,18 @@
+slug: redux
+term: Redux
+category: library
+summary: JavaScript アプリ向けの状態管理ライブラリ。
+homepage: https://redux.js.org/
+en:
+  ipa: /ˈriːdʌks/
+  respelling: REE-duks
+ja:
+  - kana: リダックス
+    primary: true
+  - kana: リダクス
+    note: None
+confidence: medium
+needsSource: true
+tags: [javascript, react, state-management, frontend]
+added: 2026-09-03
+updated: 2026-09-03

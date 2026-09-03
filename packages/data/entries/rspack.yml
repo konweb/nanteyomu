@@ -1,0 +1,17 @@
+slug: rspack
+term: Rspack
+category: framework
+summary: webpack 互換を目指す Rust 製バンドラー。
+homepage: https://rspack.dev/
+en:
+  note: Rust と webpack の合成。
+ja:
+  - kana: アールエスパック
+    primary: true
+  - kana: ラスパック
+    note: Rust の頭を残して読む場合
+confidence: medium
+needsSource: true
+tags: [rust, javascript, bundler, frontend]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,17 @@
+slug: fastify
+term: Fastify
+category: framework
+summary: Node.js 向けの高速な Web フレームワーク。
+homepage: https://fastify.dev/
+en:
+  note: fast に動詞化の -ify を付けた造語。
+ja:
+  - kana: ファスティファイ
+    primary: true
+  - kana: ファストファイ
+    note: None
+confidence: medium
+needsSource: true
+tags: [framework, nodejs, javascript]
+added: 2026-09-03
+updated: 2026-09-03

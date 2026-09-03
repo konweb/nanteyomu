@@ -1,0 +1,17 @@
+slug: styled-components
+term: styled-components
+category: library
+summary: React 向けの CSS-in-JS ライブラリ。
+homepage: https://styled-components.com/
+en:
+  note: 公式表記は小文字ハイフンつなぎ。
+ja:
+  - kana: スタイルドコンポーネンツ
+    primary: true
+  - kana: スタイルドコンポーネント
+    note: 単数で読む場合
+confidence: medium
+needsSource: true
+tags: [css, frontend, styling, react]
+added: 2026-09-03
+updated: 2026-09-03

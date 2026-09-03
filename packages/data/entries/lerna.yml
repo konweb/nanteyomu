@@ -1,0 +1,17 @@
+slug: lerna
+term: Lerna
+category: cli
+summary: JavaScript のモノレポでパッケージ公開を管理するツール。
+homepage: https://lerna.js.org/
+en:
+  note: ギリシャ神話でヒュドラが棲む土地レルネー（Lerna）に由来する命名。ロゴも多頭の蛇。
+ja:
+  - kana: ラーナ
+    primary: true
+  - kana: レルナ
+    note: ギリシャ語寄りの読み
+confidence: medium
+needsSource: true
+tags: [javascript, monorepo, frontend]
+added: 2026-09-03
+updated: 2026-09-03

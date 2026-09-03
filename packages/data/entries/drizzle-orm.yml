@@ -1,0 +1,18 @@
+slug: drizzle-orm
+term: Drizzle ORM
+aliases: [Drizzle]
+category: library
+summary: TypeScript 向けの軽量な ORM。
+homepage: https://orm.drizzle.team/
+en:
+  ipa: /ˈdrɪzəl/
+  respelling: DRIZ-uhl
+  note: 英語で「霧雨」の意。
+ja:
+  - kana: ドリズル
+    primary: true
+confidence: medium
+needsSource: true
+tags: [typescript, database, orm]
+added: 2026-09-03
+updated: 2026-09-03
