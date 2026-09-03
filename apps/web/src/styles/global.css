@@ -573,3 +573,49 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 700; }
   background: var(--tint-mint); border: 2px solid var(--mint-vivid);
   color: var(--ink); border-radius: 999px; padding: 0 0.6rem; line-height: 1.7;
 }
+
+/* 「タメになった」ボタン */
+.tame {
+  margin-top: 2.75rem;
+  padding-top: 1.5rem;
+  border-top: 2px dashed var(--line);
+  text-align: center;
+}
+.tame-btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: var(--font-display); font-weight: 700; font-size: 1rem;
+  color: var(--ink); cursor: pointer;
+  background: var(--card);
+  border: 2px solid var(--line-strong);
+  border-radius: 999px; padding: 0.5rem 1.4rem;
+  box-shadow: 0 3px 0 var(--line-strong);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+}
+.tame-btn:hover:not(:disabled) {
+  background: var(--tint-amber);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 var(--line-strong);
+}
+.tame-btn:active:not(:disabled) {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--line-strong);
+}
+.tame-btn:disabled { cursor: default; }
+.tame-btn.is-voted {
+  background: var(--tint-amber);
+  box-shadow: 0 3px 0 var(--line-strong);
+}
+.tame-icon { font-size: 1.15rem; line-height: 1; }
+.tame-count {
+  font-variant-numeric: tabular-nums;
+  min-width: 1.5em;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  background: var(--ink); color: var(--card);
+  font-size: 0.85rem;
+}
+.tame-note { margin: 0.6rem 0 0; font-size: 0.8rem; color: var(--ink-muted); }
+@media (prefers-reduced-motion: reduce) {
+  .tame-btn { transition: none; }
+  .tame-btn:hover:not(:disabled) { transform: none; }
+}

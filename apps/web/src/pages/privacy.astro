@@ -32,10 +32,14 @@ const updated = '2026-09-01';
     <h2>このサイトが集めないもの</h2>
     <div class="callout">
       <p>
-        nanteyomu は静的なサイトです。アカウント登録もお問い合わせフォームもなく、
-        サーバー側で動く処理もありません。<strong>サイト自身は Cookie も
-        localStorage も使わず、入力内容を受け取る仕組みもありません。</strong>
+        nanteyomu はほぼ静的なサイトです。アカウント登録もお問い合わせフォームもなく、
+        <strong>サイト自身は Cookie を使いません。</strong>
         検索はすべてブラウザ内で完結し、入力した語がどこかへ送られることはありません。
+      </p>
+      <p>
+        サーバー側で動く処理は「タメになった」ボタンの集計だけです。
+        押した記録を残すために localStorage を 1 項目だけ使います
+        （詳しくは<a href="#tame">下の節</a>）。
       </p>
     </div>
   </section>
@@ -98,6 +102,40 @@ const updated = '2026-09-01';
       <li><span class="k">はてなブックマーク</span><span class="n">シェアボタン</span></li>
       <li><span class="k">GitHub</span><span class="n">ソースや編集ページへのリンク</span></li>
       <li><span class="k">各用語の出典サイト</span><span class="n">出典として掲載している外部リンク</span></li>
+    </ul>
+  </section>
+
+  <section class="section" id="tame">
+    <h2>「タメになった」ボタンについて</h2>
+    <p class="section-lead">
+      用語ページのボタンを押したときだけ、nanteyomu 自身のサーバー
+      （Cloudflare Workers）に送信が発生します。外部の事業者には渡しません。
+    </p>
+    <ul class="readings">
+      <li>
+        <span class="k">送信されるもの</span>
+        <span class="n">押した語のスラッグと、接続元の IP アドレス。IP アドレスは通信に必ず伴うもので、こちらから追加で取得しているものではありません</span>
+      </li>
+      <li>
+        <span class="k">目的</span>
+        <span class="n">語ごとの件数を数えること。および、同じ人が同じ語を何度も押した分を除くこと</span>
+      </li>
+      <li>
+        <span class="k">保存のしかた</span>
+        <span class="n">IP アドレスはそのままでは保存しません。日付とスラッグとあわせてハッシュ化した値だけを記録し、元の IP アドレスは復元できません</span>
+      </li>
+      <li>
+        <span class="k">保存期間</span>
+        <span class="n">重複判定用のハッシュは 7 日で削除します。残るのは語ごとの合計件数だけで、個人にはたどれません</span>
+      </li>
+      <li>
+        <span class="k">ブラウザ内の保存</span>
+        <span class="n">押済みの表示に使うため <code>tame:&lt;スラッグ&gt;</code> という項目を localStorage に保存します。サイト外へは送られません</span>
+      </li>
+      <li>
+        <span class="k">押さない場合</span>
+        <span class="n">ボタンを押さないかぎり、この送信も localStorage への保存も発生しません。件数の表示（読み取り）だけは行われます</span>
+      </li>
     </ul>
   </section>
 

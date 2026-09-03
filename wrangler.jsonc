@@ -11,9 +11,25 @@
   "routes": [
     { "pattern": "nanteyomu.dev", "custom_domain": true }
   ],
+  // 「タメになった」ボタンの API。サイト本体は静的アセットのままで、
+  // run_worker_first に挙げたパスだけがこの Worker に届く。
+  "main": "./worker/index.ts",
   "assets": {
     // ルートからの相対パス。root の `pnpm build` がここに生成する。
     "directory": "./apps/web/dist",
-    "not_found_handling": "404-page"
-  }
+    "not_found_handling": "404-page",
+    // Worker から静的アセットを読むための binding。slug の実在確認に使う。
+    "binding": "ASSETS",
+    // ここに挙げたパスだけ Worker を先に通す。他は今までどおりアセット配信。
+    "run_worker_first": ["/api/tame/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "REACTIONS",
+      "database_name": "nanteyomu-reactions",
+      "database_id": "24aeae79-4d72-4021-9c27-85489ac1ddf2",
+      "migrations_dir": "./migrations"
+    }
+  ],
+  "observability": { "enabled": true }
 }

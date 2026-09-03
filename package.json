@@ -7,6 +7,8 @@
     "node": ">=22"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260902.1",
+    "typescript": "^7.0.2",
     "wrangler": "^4.0.0"
   },
   "scripts": {
@@ -16,6 +18,7 @@
     "preview": "pnpm --filter @nanteyomu/web preview",
     "deploy": "pnpm run build && wrangler deploy",
     "lint:data": "pnpm --filter @nanteyomu/data lint",
-    "test": "pnpm run lint:data && pnpm --filter @nanteyomu/data typecheck && pnpm run data && pnpm --filter nanteyomu test && pnpm --filter @nanteyomu/mcp test"
+    "test": "pnpm run lint:data && pnpm --filter @nanteyomu/data typecheck && pnpm run typecheck:worker && pnpm run data && pnpm --filter nanteyomu test && pnpm --filter @nanteyomu/mcp test",
+    "typecheck:worker": "tsc -p worker/tsconfig.json"
   }
 }

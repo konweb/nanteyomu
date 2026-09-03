@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Speak from '../../components/Speak.tsx';
 import Share from '../../components/Share.astro';
+import Tame from '../../components/Tame.tsx';
 import JsonLd from '../../components/JsonLd.astro';
 import {
   entries, CATEGORY_LABEL, CONFIDENCE_LABEL, SOURCE_KIND_LABEL, primaryKana,
@@ -160,6 +161,8 @@ function homeLabel(url: string): string {
         </p>
       </section>
     )}
+
+    <Tame client:visible slug={entry.slug} />
 
     <Share text={shareText} url={`${SITE_URL}/w/${entry.slug}/`} />
 
