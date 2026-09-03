@@ -1,0 +1,16 @@
+slug: trpc
+term: tRPC
+category: framework
+expansion: TypeScript Remote Procedure Call
+summary: TypeScript の型をそのまま共有するリモートプロシージャコールのフレームワーク。
+homepage: https://trpc.io/
+en:
+  note: 公式表記は先頭が小文字の tRPC。
+ja:
+  - kana: ティーアールピーシー
+    primary: true
+confidence: medium
+needsSource: true
+tags: [typescript, api, frontend, rpc]
+added: 2026-09-03
+updated: 2026-09-03

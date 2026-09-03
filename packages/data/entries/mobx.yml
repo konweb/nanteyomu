@@ -1,0 +1,13 @@
+slug: mobx
+term: MobX
+category: library
+summary: 監視可能な状態による JavaScript の状態管理ライブラリ。
+homepage: https://mobx.js.org/
+ja:
+  - kana: モブエックス
+    primary: true
+confidence: medium
+needsSource: true
+tags: [javascript, react, state-management, frontend]
+added: 2026-09-03
+updated: 2026-09-03

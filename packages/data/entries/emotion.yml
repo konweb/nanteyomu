@@ -1,0 +1,15 @@
+slug: emotion
+term: Emotion
+category: library
+summary: CSS-in-JS のスタイリングライブラリ。
+homepage: https://emotion.sh/
+en:
+  ipa: /ɪˈmoʊʃən/
+ja:
+  - kana: エモーション
+    primary: true
+confidence: medium
+needsSource: true
+tags: [css, frontend, styling, react]
+added: 2026-09-03
+updated: 2026-09-03

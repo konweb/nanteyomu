@@ -1,0 +1,16 @@
+slug: prisma
+term: Prisma
+category: library
+summary: スキーマ定義から型安全なクライアントを生成する Node.js／TypeScript の ORM。
+homepage: https://www.prisma.io/
+en:
+  ipa: /ˈprɪzmə/
+  note: 英語 prism（プリズム）の派生形。
+ja:
+  - kana: プリズマ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [typescript, database, orm]
+added: 2026-09-03
+updated: 2026-09-03

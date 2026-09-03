@@ -1,0 +1,14 @@
+slug: swc
+term: SWC
+category: cli
+expansion: Speedy Web Compiler
+summary: Rust 製の JavaScript／TypeScript コンパイラ。
+homepage: https://swc.rs/
+ja:
+  - kana: エスダブリューシー
+    primary: true
+confidence: medium
+needsSource: true
+tags: [rust, javascript, typescript, compiler, frontend]
+added: 2026-09-03
+updated: 2026-09-03

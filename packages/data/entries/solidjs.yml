@@ -1,0 +1,14 @@
+slug: solidjs
+term: SolidJS
+aliases: [Solid]
+category: framework
+summary: 細粒度のリアクティビティを持つ UI ライブラリ。
+homepage: https://github.com/solidjs/solid
+ja:
+  - kana: ソリッドジェイエス
+    primary: true
+confidence: medium
+needsSource: true
+tags: [framework, frontend, javascript, typescript]
+added: 2026-09-03
+updated: 2026-09-03

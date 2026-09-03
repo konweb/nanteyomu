@@ -1,0 +1,15 @@
+slug: tsup
+term: tsup
+category: cli
+summary: esbuild をベースにした TypeScript ライブラリ向けバンドラー。
+homepage: https://tsup.egoist.dev/
+en:
+  note: TypeScript の ts と up の合成。公式表記は小文字。
+ja:
+  - kana: ティーエスアップ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [typescript, bundler, frontend]
+added: 2026-09-03
+updated: 2026-09-03

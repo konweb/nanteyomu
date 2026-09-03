@@ -1,0 +1,15 @@
+slug: nextjs
+term: Next.js
+category: framework
+summary: React ベースのフルスタックフレームワーク。
+homepage: https://nextjs.org/
+ja:
+  - kana: ネクストジェイエス
+    primary: true
+  - kana: ネクスト
+    note: 短く呼ぶ場合
+confidence: medium
+needsSource: true
+tags: [react, framework, frontend, javascript]
+added: 2026-09-03
+updated: 2026-09-03

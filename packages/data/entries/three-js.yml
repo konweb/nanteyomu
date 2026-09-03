@@ -1,0 +1,16 @@
+slug: three-js
+term: three.js
+aliases: [Three.js]
+category: library
+summary: WebGL を扱う 3D グラフィックスライブラリ。
+homepage: https://threejs.org/
+en:
+  note: 公式表記は小文字の three.js。
+ja:
+  - kana: スリージェイエス
+    primary: true
+confidence: medium
+needsSource: true
+tags: [javascript, 3d, webgl, frontend]
+added: 2026-09-03
+updated: 2026-09-03

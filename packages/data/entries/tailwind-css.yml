@@ -1,0 +1,22 @@
+slug: tailwind-css
+term: Tailwind CSS
+aliases: [Tailwind]
+category: library
+summary: ユーティリティクラスを組み合わせてスタイルを当てる CSS フレームワーク。
+homepage: https://tailwindcss.com/
+en:
+  ipa: /ˈteɪlwɪnd/
+  respelling: TAYL-wind
+  note: 英語で「追い風」の意。tail は「テイル」で、tile（タイル）ではない。
+ja:
+  - kana: テイルウィンド
+    primary: true
+  - kana: テールウィンド
+    note: None
+  - kana: タイルウィンド
+    note: 綴りの見間違いによる誤読
+confidence: medium
+needsSource: true
+tags: [css, frontend, styling]
+added: 2026-09-03
+updated: 2026-09-03

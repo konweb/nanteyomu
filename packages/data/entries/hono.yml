@@ -1,0 +1,17 @@
+slug: hono
+term: Hono
+category: framework
+summary: Web 標準 API 上で動く軽量な Web フレームワーク。
+homepage: https://hono.dev/
+en:
+  note: 日本語の「炎」に由来する命名で、ロゴも炎。
+ja:
+  - kana: ホノ
+    primary: true
+  - kana: ホーノ
+    note: 英語話者に見られる読み
+confidence: medium
+needsSource: true
+tags: [framework, javascript, typescript, edge, frontend]
+added: 2026-09-03
+updated: 2026-09-03

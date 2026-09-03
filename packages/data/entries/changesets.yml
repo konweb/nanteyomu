@@ -1,0 +1,13 @@
+slug: changesets
+term: Changesets
+category: cli
+summary: モノレポのバージョン更新と変更履歴を管理するツール。
+homepage: https://github.com/changesets/changesets
+ja:
+  - kana: チェンジセッツ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [javascript, monorepo, frontend]
+added: 2026-09-03
+updated: 2026-09-03

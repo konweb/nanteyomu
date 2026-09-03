@@ -1,0 +1,15 @@
+slug: rolldown
+term: Rolldown
+category: framework
+summary: Rollup 互換を目指す Rust 製バンドラー。
+homepage: https://rolldown.rs/
+en:
+  note: Rollup の対になる命名。
+ja:
+  - kana: ロールダウン
+    primary: true
+confidence: medium
+needsSource: true
+tags: [rust, javascript, bundler, frontend]
+added: 2026-09-03
+updated: 2026-09-03

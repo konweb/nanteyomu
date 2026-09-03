@@ -1,0 +1,17 @@
+slug: sveltekit
+term: SvelteKit
+category: framework
+summary: Svelte 向けのアプリケーションフレームワーク。
+homepage: https://svelte.dev/docs/kit
+en:
+  note: Svelte（スベルト）に kit を付けた名前。
+ja:
+  - kana: スベルトキット
+    primary: true
+  - kana: スヴェルトキット
+    note: None
+confidence: medium
+needsSource: true
+tags: [framework, frontend, javascript, svelte]
+added: 2026-09-03
+updated: 2026-09-03

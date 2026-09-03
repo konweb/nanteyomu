@@ -1,0 +1,15 @@
+slug: eslint
+term: ESLint
+category: cli
+summary: JavaScript／TypeScript のリンター。
+homepage: https://eslint.org/
+en:
+  note: ECMAScript の ES と lint の合成。
+ja:
+  - kana: イーエスリント
+    primary: true
+confidence: medium
+needsSource: true
+tags: [javascript, typescript, linter, frontend]
+added: 2026-09-03
+updated: 2026-09-03

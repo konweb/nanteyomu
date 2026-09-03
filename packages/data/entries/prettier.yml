@@ -1,0 +1,21 @@
+slug: prettier
+term: Prettier
+category: cli
+summary: コードを機械的に整形するフォーマッター。
+homepage: https://prettier.io/
+en:
+  ipa: /ˈprɪtiər/
+  respelling: PRIT-ee-er
+  note: 英語 pretty の比較級。「プリッティア」に近い。
+ja:
+  - kana: プリティア
+    primary: true
+  - kana: プリティアー
+    note: None
+  - kana: プレティア
+    note: 綴りからの類推
+confidence: medium
+needsSource: true
+tags: [javascript, formatter, frontend]
+added: 2026-09-03
+updated: 2026-09-03

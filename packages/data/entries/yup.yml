@@ -1,0 +1,16 @@
+slug: yup
+term: Yup
+category: library
+summary: JavaScript 向けのスキーマバリデーションライブラリ。
+homepage: https://github.com/jquense/yup
+en:
+  ipa: /jʌp/
+  note: 英語の相づち yup（うん）と同じ読み。
+ja:
+  - kana: ヤップ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [javascript, validation, frontend]
+added: 2026-09-03
+updated: 2026-09-03

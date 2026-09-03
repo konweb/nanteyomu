@@ -1,0 +1,15 @@
+slug: oxlint
+term: Oxlint
+category: cli
+summary: Oxc プロジェクトの Rust 製リンター。
+homepage: https://oxc.rs/docs/guide/usage/linter.html
+en:
+  note: Oxc（Oxidation Compiler）の ox と lint の合成。
+ja:
+  - kana: オックスリント
+    primary: true
+confidence: medium
+needsSource: true
+tags: [rust, linter, javascript, frontend]
+added: 2026-09-03
+updated: 2026-09-03

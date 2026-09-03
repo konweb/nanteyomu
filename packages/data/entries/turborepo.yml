@@ -1,0 +1,15 @@
+slug: turborepo
+term: Turborepo
+category: cli
+summary: JavaScript／TypeScript のモノレポ向けビルドシステム。
+homepage: https://turborepo.dev/
+en:
+  note: turbo と monorepo の合成。
+ja:
+  - kana: ターボレポ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [javascript, typescript, monorepo, frontend]
+added: 2026-09-03
+updated: 2026-09-03

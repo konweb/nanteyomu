@@ -1,0 +1,16 @@
+slug: parcel
+term: Parcel
+category: framework
+summary: 設定不要を掲げる JavaScript のバンドラー。
+homepage: https://parceljs.org/
+en:
+  ipa: /ˈpɑːrsəl/
+  note: 英語で「小包」の意。
+ja:
+  - kana: パーセル
+    primary: true
+confidence: medium
+needsSource: true
+tags: [javascript, bundler, frontend]
+added: 2026-09-03
+updated: 2026-09-03

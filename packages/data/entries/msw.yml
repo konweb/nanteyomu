@@ -1,0 +1,16 @@
+slug: msw
+term: MSW
+category: library
+expansion: Mock Service Worker
+summary: Service Worker で HTTP リクエストをモックするライブラリ。
+homepage: https://mswjs.io/
+ja:
+  - kana: エムエスダブリュー
+    primary: true
+  - kana: モックサービスワーカー
+    note: 展開して読む場合
+confidence: medium
+needsSource: true
+tags: [testing, javascript, frontend]
+added: 2026-09-03
+updated: 2026-09-03

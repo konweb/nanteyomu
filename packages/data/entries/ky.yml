@@ -1,0 +1,17 @@
+slug: ky
+term: Ky
+category: library
+summary: Fetch API をベースにした軽量な HTTP クライアント。
+homepage: https://github.com/sindresorhus/ky
+ja:
+  - kana: カイ
+    primary: true
+  - kana: ケーワイ
+    note: 頭字語として読む場合
+  - kana: キー
+    note: None
+confidence: disputed
+needsSource: true
+tags: [javascript, http, frontend]
+added: 2026-09-03
+updated: 2026-09-03

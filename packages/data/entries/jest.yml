@@ -1,0 +1,16 @@
+slug: jest
+term: Jest
+category: cli
+summary: Meta 発の JavaScript テストフレームワーク。
+homepage: https://jestjs.io/
+en:
+  ipa: /dʒɛst/
+  note: 英語で「冗談」の意。
+ja:
+  - kana: ジェスト
+    primary: true
+confidence: medium
+needsSource: true
+tags: [javascript, testing, frontend]
+added: 2026-09-03
+updated: 2026-09-03

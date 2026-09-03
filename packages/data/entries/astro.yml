@@ -1,0 +1,16 @@
+slug: astro
+term: Astro
+category: framework
+summary: コンテンツ中心のサイト向け Web フレームワーク。
+homepage: https://astro.build/
+en:
+  ipa: /ˈæstroʊ/
+  note: ギリシャ語由来の接頭辞 astro-（星）。
+ja:
+  - kana: アストロ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [framework, frontend, javascript, ssg]
+added: 2026-09-03
+updated: 2026-09-03

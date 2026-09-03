@@ -1,0 +1,15 @@
+slug: pinia
+term: Pinia
+category: library
+summary: Vue 向けの状態管理ライブラリ。
+homepage: https://pinia.vuejs.org/
+en:
+  respelling: PEE-nya
+ja:
+  - kana: ピニア
+    primary: true
+confidence: medium
+needsSource: true
+tags: [vue, state-management, frontend]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,17 @@
+slug: d3
+term: D3.js
+aliases: [D3]
+category: library
+expansion: Data-Driven Documents
+summary: データを DOM に結びつけて可視化するライブラリ。
+homepage: https://d3js.org/
+en:
+  note: Data-Driven Documents の 3 つの D。
+ja:
+  - kana: ディースリー
+    primary: true
+confidence: medium
+needsSource: true
+tags: [javascript, visualization, frontend]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,19 @@
+slug: vitest
+term: Vitest
+category: cli
+summary: Vite ベースのテストフレームワーク。
+homepage: https://vitest.dev/
+en:
+  note: Vite と test の合成。Vite と同じく「ヴィ」で始まる。
+ja:
+  - kana: ヴィテスト
+    primary: true
+  - kana: ビテスト
+    note: None
+  - kana: バイテスト
+    note: Vite を「バイト」と読む誤読からの類推
+confidence: medium
+needsSource: true
+tags: [javascript, typescript, testing, frontend]
+added: 2026-09-03
+updated: 2026-09-03
