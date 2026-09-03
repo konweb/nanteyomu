@@ -1,0 +1,29 @@
+slug: httpie
+term: HTTPie
+category: cli
+summary: 人が読みやすい出力を持つコマンドラインの HTTP クライアント。
+homepage: https://httpie.io/
+en:
+  respelling: aitch-tee-tee-pie
+  note: 公式 README が発音を明記している。末尾の -ie を pie（パイ）と読む。
+ja:
+  - kana: エイチティーティーパイ
+    primary: true
+  - kana: エイチティーティーアイイー
+    note: 綴りをそのまま読む場合。公式表記とは異なる
+  - kana: ヒッピー
+    note: 一語として読む誤読
+divergence: true
+divergenceNote: >-
+  公式 README が「aitch-tee-tee-pie」と明記しており、HTTP を一字ずつ読んだうえで末尾を「パイ」と読む。
+  日本では「エイチティーティーアイイー」や「ヒッピー」と読まれることがあるが、公式の表記は「エイチティーティーパイ」。
+confidence: high
+sources:
+  - url: https://github.com/httpie/cli
+    title: httpie/cli - GitHub
+    kind: official
+    quote: >-
+      HTTPie (pronounced aitch-tee-tee-pie) is a command-line HTTP client.
+tags: [network, http, cli, api]
+added: 2026-09-03
+updated: 2026-09-03

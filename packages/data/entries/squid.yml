@@ -1,0 +1,16 @@
+slug: squid
+term: Squid
+category: infra
+summary: 古くから使われるキャッシュプロキシサーバー。
+homepage: http://www.squid-cache.org/
+en:
+  ipa: /skwɪd/
+  note: 英語で「イカ」。
+ja:
+  - kana: スクイッド
+    primary: true
+confidence: medium
+needsSource: true
+tags: [network, proxy, cache, infra]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,13 @@
+slug: subfinder
+term: Subfinder
+category: cli
+summary: サブドメインを列挙するツール。
+homepage: https://github.com/projectdiscovery/subfinder
+ja:
+  - kana: サブファインダー
+    primary: true
+confidence: medium
+needsSource: true
+tags: [security, scanner, dns, go]
+added: 2026-09-03
+updated: 2026-09-03

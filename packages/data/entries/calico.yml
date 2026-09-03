@@ -1,0 +1,19 @@
+slug: calico
+term: Calico
+aliases: [Project Calico]
+category: infra
+summary: Kubernetes 向けのネットワークとネットワークポリシーの実装。
+homepage: https://www.tigera.io/project-calico/
+en:
+  ipa: /ˈkælɪkoʊ/
+  note: 英語で「更紗（キャラコ）」、米語では三毛猫も指す。
+ja:
+  - kana: キャリコ
+    primary: true
+  - kana: カリコ
+    note: 綴りからの類推
+confidence: medium
+needsSource: true
+tags: [network, kubernetes, infra, cni]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,18 @@
+slug: consul
+term: Consul
+category: infra
+summary: HashiCorp のサービスディスカバリとサービスメッシュ。
+homepage: https://developer.hashicorp.com/consul
+en:
+  ipa: /ˈkɒnsəl/
+  note: 英語で「領事」の意。console（コンソール）とは別語。
+ja:
+  - kana: コンサル
+    primary: true
+  - kana: コンスル
+    note: ラテン語風の読み
+confidence: medium
+needsSource: true
+tags: [network, service-mesh, infra, hashicorp]
+added: 2026-09-03
+updated: 2026-09-03

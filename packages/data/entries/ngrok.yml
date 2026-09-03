@@ -1,0 +1,29 @@
+slug: ngrok
+term: ngrok
+category: service
+summary: ローカルのポートを公開 URL に転送するトンネリングサービス。
+homepage: https://ngrok.com/
+en:
+  respelling: en-grok
+  note: 公式 FAQ が「How do you pronounce ngrok?」に対して en-grok と回答している。
+ja:
+  - kana: エングロック
+    primary: true
+  - kana: エヌグロック
+    note: n を一字読みする場合。公式の回答とは異なる
+  - kana: ングロック
+    note: 綴りをそのまま読む場合
+divergence: true
+divergenceNote: >-
+  公式 FAQ が「en-grok」と明記しており、先頭の n は英語のアルファベット名 en として読む。
+  日本では「エヌグロック」「ングロック」と読まれることが多いが、公式の回答は「エングロック」。
+confidence: high
+sources:
+  - url: https://ngrok.com/docs/faq/
+    title: FAQ - ngrok Documentation
+    kind: official
+    quote: >-
+      How do you pronounce ngrok? — en-grok
+tags: [network, tunnel, service, http]
+added: 2026-09-03
+updated: 2026-09-03

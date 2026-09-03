@@ -1,0 +1,15 @@
+slug: scapy
+term: Scapy
+category: library
+summary: パケットを組み立てて送受信できる Python のライブラリ。
+homepage: https://scapy.net/
+ja:
+  - kana: スケイピー
+    primary: true
+  - kana: スカピー
+    note: 綴りからの類推
+confidence: disputed
+needsSource: true
+tags: [network, python, packet-capture]
+added: 2026-09-03
+updated: 2026-09-03

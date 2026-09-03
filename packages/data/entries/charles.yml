@@ -1,0 +1,17 @@
+slug: charles
+term: Charles
+aliases: [Charles Proxy]
+category: cli
+summary: HTTP/HTTPS 通信を傍受して中身を確認する GUI のプロキシデバッガ。
+homepage: https://www.charlesproxy.com/
+en:
+  ipa: /tʃɑːrlz/
+  note: 英語の人名 Charles。
+ja:
+  - kana: チャールズ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [network, proxy, debugging, http]
+added: 2026-09-03
+updated: 2026-09-03

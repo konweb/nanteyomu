@@ -1,0 +1,15 @@
+slug: sqlmap
+term: sqlmap
+category: cli
+summary: SQL インジェクションの検出と実証を自動化するツール。
+homepage: https://sqlmap.org/
+ja:
+  - kana: エスキューエルマップ
+    primary: true
+  - kana: シークェルマップ
+    note: SQL を「シークェル」と読む場合
+confidence: medium
+needsSource: true
+tags: [security, pentest, sql, scanner]
+added: 2026-09-03
+updated: 2026-09-03

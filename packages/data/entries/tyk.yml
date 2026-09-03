@@ -1,0 +1,17 @@
+slug: tyk
+term: Tyk
+category: infra
+summary: Go 製のオープンソース API ゲートウェイ。
+homepage: https://tyk.io/
+ja:
+  - kana: タイク
+    primary: true
+  - kana: ティク
+    note: None
+  - kana: ティック
+    note: None
+confidence: disputed
+needsSource: true
+tags: [network, api-gateway, go, infra]
+added: 2026-09-03
+updated: 2026-09-03

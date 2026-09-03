@@ -1,0 +1,19 @@
+slug: burp-suite
+term: Burp Suite
+aliases: [Burp]
+category: cli
+summary: Web アプリケーションの脆弱性診断に使うプロキシ型のセキュリティツール。
+homepage: https://portswigger.net/burp
+en:
+  ipa: /bɜːrp/
+  note: burp は英語で「げっぷ」。suite は「一そろい」で、sweet（スイート＝甘い）とは別語だが日本語表記は同じ「スイート」になる。
+ja:
+  - kana: バープスイート
+    primary: true
+  - kana: バープ
+    note: 短く呼ぶ場合
+confidence: medium
+needsSource: true
+tags: [network, proxy, security, web]
+added: 2026-09-03
+updated: 2026-09-03

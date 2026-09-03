@@ -1,0 +1,18 @@
+slug: iperf
+term: iPerf
+aliases: [iperf3]
+category: cli
+summary: ネットワークの帯域を測定するツール。
+homepage: https://iperf.fr/
+en:
+  note: Internet Performance の短縮と解釈される。
+ja:
+  - kana: アイパーフ
+    primary: true
+  - kana: アイパーフォーム
+    note: None
+confidence: medium
+needsSource: true
+tags: [network, benchmark, cli]
+added: 2026-09-03
+updated: 2026-09-03

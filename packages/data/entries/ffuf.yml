@@ -1,0 +1,16 @@
+slug: ffuf
+term: ffuf
+category: cli
+expansion: Fuzz Faster U Fool
+summary: 高速な Web ファジング（総当たり探索）ツール。
+homepage: https://github.com/ffuf/ffuf
+ja:
+  - kana: エフエフユーエフ
+    primary: true
+  - kana: ファフ
+    note: 一語として読む場合
+confidence: disputed
+needsSource: true
+tags: [security, scanner, web, go]
+added: 2026-09-03
+updated: 2026-09-03

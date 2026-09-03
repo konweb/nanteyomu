@@ -1,0 +1,15 @@
+slug: postman
+term: Postman
+category: cli
+summary: API のリクエストを作成・テストする GUI クライアント。
+homepage: https://www.postman.com/
+en:
+  note: 英語で「郵便配達員」。
+ja:
+  - kana: ポストマン
+    primary: true
+confidence: medium
+needsSource: true
+tags: [api, http, testing, network]
+added: 2026-09-03
+updated: 2026-09-03

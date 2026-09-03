@@ -1,0 +1,16 @@
+slug: amass
+term: Amass
+category: cli
+summary: 攻撃対象領域の調査とサブドメイン列挙を行うツール。
+homepage: https://github.com/owasp-amass/amass
+en:
+  ipa: /əˈmæs/
+  note: 英語で「かき集める」の意。
+ja:
+  - kana: アマス
+    primary: true
+confidence: medium
+needsSource: true
+tags: [security, scanner, dns, go]
+added: 2026-09-03
+updated: 2026-09-03

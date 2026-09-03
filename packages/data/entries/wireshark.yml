@@ -1,0 +1,15 @@
+slug: wireshark
+term: Wireshark
+category: cli
+summary: パケットをキャプチャして解析するネットワークアナライザ。
+homepage: https://www.wireshark.org/
+en:
+  note: wire（線）と shark（サメ）の合成。旧称は Ethereal。
+ja:
+  - kana: ワイヤーシャーク
+    primary: true
+confidence: medium
+needsSource: true
+tags: [network, packet-capture, analysis]
+added: 2026-09-03
+updated: 2026-09-03

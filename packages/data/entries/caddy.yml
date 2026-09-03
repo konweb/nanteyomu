@@ -1,0 +1,16 @@
+slug: caddy
+term: Caddy
+category: infra
+summary: TLS 証明書を自動取得する Go 製の Web サーバー。
+homepage: https://caddyserver.com/
+en:
+  ipa: /ˈkædi/
+  note: ゴルフのキャディと同じ語。
+ja:
+  - kana: キャディ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [network, web-server, go, infra, tls]
+added: 2026-09-03
+updated: 2026-09-03

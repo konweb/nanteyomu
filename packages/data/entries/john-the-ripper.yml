@@ -1,0 +1,16 @@
+slug: john-the-ripper
+term: John the Ripper
+aliases: [John]
+category: cli
+summary: パスワードハッシュの解析ツール。
+homepage: https://www.openwall.com/john/
+en:
+  note: 連続殺人犯 Jack the Ripper（切り裂きジャック）のもじり。
+ja:
+  - kana: ジョンザリッパー
+    primary: true
+confidence: medium
+needsSource: true
+tags: [security, pentest, password]
+added: 2026-09-03
+updated: 2026-09-03

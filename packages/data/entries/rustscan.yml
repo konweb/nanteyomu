@@ -1,0 +1,13 @@
+slug: rustscan
+term: RustScan
+category: cli
+summary: Rust 製の高速ポートスキャナ。
+homepage: https://github.com/bee-san/RustScan
+ja:
+  - kana: ラストスキャン
+    primary: true
+confidence: medium
+needsSource: true
+tags: [network, security, scanner, rust]
+added: 2026-09-03
+updated: 2026-09-03

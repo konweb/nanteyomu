@@ -1,0 +1,15 @@
+slug: aircrack-ng
+term: Aircrack-ng
+category: cli
+summary: 無線 LAN の暗号を検証するツール群。
+homepage: https://www.aircrack-ng.org/
+en:
+  note: -ng は new generation の略として使われる接尾辞。
+ja:
+  - kana: エアクラックエヌジー
+    primary: true
+confidence: medium
+needsSource: true
+tags: [security, wireless, network]
+added: 2026-09-03
+updated: 2026-09-03

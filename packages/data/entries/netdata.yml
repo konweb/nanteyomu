@@ -1,0 +1,13 @@
+slug: netdata
+term: Netdata
+category: infra
+summary: 秒単位で指標を可視化するリアルタイム監視ツール。
+homepage: https://www.netdata.cloud/
+ja:
+  - kana: ネットデータ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [monitoring, network, infra]
+added: 2026-09-03
+updated: 2026-09-03

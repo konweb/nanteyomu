@@ -1,0 +1,15 @@
+slug: zabbix
+term: Zabbix
+category: infra
+summary: サーバーとネットワークの統合監視ソフトウェア。
+homepage: https://www.zabbix.com/
+ja:
+  - kana: ザビックス
+    primary: true
+  - kana: ザビクス
+    note: None
+confidence: medium
+needsSource: true
+tags: [monitoring, network, infra]
+added: 2026-09-03
+updated: 2026-09-03

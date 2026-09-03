@@ -1,0 +1,18 @@
+slug: envoy
+term: Envoy
+category: infra
+summary: サービスメッシュなどで使われる L7 プロキシ。
+homepage: https://www.envoyproxy.io/
+en:
+  ipa: /ˈɛnvɔɪ/
+  note: 英語で「使節・特使」の意。
+ja:
+  - kana: エンボイ
+    primary: true
+  - kana: エンヴォイ
+    note: None
+confidence: medium
+needsSource: true
+tags: [network, proxy, service-mesh, infra]
+added: 2026-09-03
+updated: 2026-09-03

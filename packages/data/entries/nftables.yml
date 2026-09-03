@@ -1,0 +1,14 @@
+slug: nftables
+term: nftables
+aliases: [nft]
+category: cli
+summary: Linux のパケットフィルタリング機構。iptables の後継。
+homepage: https://www.netfilter.org/projects/nftables/
+ja:
+  - kana: エヌエフテーブルズ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [network, linux, firewall, cli]
+added: 2026-09-03
+updated: 2026-09-03

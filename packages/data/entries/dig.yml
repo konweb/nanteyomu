@@ -1,0 +1,16 @@
+slug: dig
+term: dig
+category: cli
+summary: DNS レコードを問い合わせるコマンド。
+en:
+  note: 英語 dig（掘る）と同じ読み。BIND に同梱される。
+ja:
+  - kana: ディグ
+    primary: true
+  - kana: ディーアイジー
+    note: 一字ずつ読む場合
+confidence: medium
+needsSource: true
+tags: [dns, network, cli]
+added: 2026-09-03
+updated: 2026-09-03

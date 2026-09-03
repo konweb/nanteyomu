@@ -1,0 +1,15 @@
+slug: unbound
+term: Unbound
+category: infra
+summary: 検証機能を持つキャッシュ DNS リゾルバ。
+homepage: https://nlnetlabs.nl/projects/unbound/about/
+en:
+  note: 英語で「束縛されない」の意。
+ja:
+  - kana: アンバウンド
+    primary: true
+confidence: medium
+needsSource: true
+tags: [dns, network, infra, server]
+added: 2026-09-03
+updated: 2026-09-03

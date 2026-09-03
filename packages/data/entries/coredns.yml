@@ -1,0 +1,13 @@
+slug: coredns
+term: CoreDNS
+category: infra
+summary: プラグイン構成の DNS サーバー。Kubernetes の標準 DNS。
+homepage: https://coredns.io/
+ja:
+  - kana: コアディーエヌエス
+    primary: true
+confidence: medium
+needsSource: true
+tags: [dns, network, infra, kubernetes]
+added: 2026-09-03
+updated: 2026-09-03

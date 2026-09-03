@@ -1,0 +1,19 @@
+slug: stunnel
+term: stunnel
+category: infra
+summary: 任意の TCP 通信を TLS でくるむトンネリングツール。
+homepage: https://www.stunnel.org/
+en:
+  note: SSL と tunnel の合成。
+ja:
+  - kana: エスタンネル
+    primary: true
+  - kana: スタンネル
+    note: 一語として読む場合
+  - kana: エスチューネル
+    note: None
+confidence: disputed
+needsSource: true
+tags: [network, tls, infra, tunnel]
+added: 2026-09-03
+updated: 2026-09-03

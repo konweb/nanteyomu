@@ -1,0 +1,15 @@
+slug: masscan
+term: Masscan
+category: cli
+summary: インターネット規模の高速ポートスキャナ。
+homepage: https://github.com/robertdavidgraham/masscan
+en:
+  note: mass（大量）と scan の合成。
+ja:
+  - kana: マススキャン
+    primary: true
+confidence: medium
+needsSource: true
+tags: [network, security, scanner]
+added: 2026-09-03
+updated: 2026-09-03

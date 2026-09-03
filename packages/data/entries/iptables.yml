@@ -1,0 +1,13 @@
+slug: iptables
+term: iptables
+category: cli
+summary: Linux の従来からのパケットフィルタリング機構。
+homepage: https://www.netfilter.org/projects/iptables/index.html
+ja:
+  - kana: アイピーテーブルズ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [network, linux, firewall, cli]
+added: 2026-09-03
+updated: 2026-09-03

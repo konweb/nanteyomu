@@ -1,0 +1,15 @@
+slug: zmap
+term: ZMap
+category: cli
+summary: インターネット全体を対象にできる高速ネットワークスキャナ。
+homepage: https://zmap.io/
+ja:
+  - kana: ゼットマップ
+    primary: true
+  - kana: ジーマップ
+    note: Z を英語読みする場合
+confidence: medium
+needsSource: true
+tags: [network, security, scanner]
+added: 2026-09-03
+updated: 2026-09-03

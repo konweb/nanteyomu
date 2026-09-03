@@ -1,0 +1,17 @@
+slug: mitmproxy
+term: mitmproxy
+category: cli
+summary: 中間者として HTTP 通信を傍受・改変できるプロキシツール。
+homepage: https://mitmproxy.org/
+en:
+  note: mitm は man-in-the-middle（中間者）の略。
+ja:
+  - kana: ミットエムプロキシ
+    primary: true
+  - kana: エムアイティーエムプロキシ
+    note: mitm を一字ずつ読む場合
+confidence: disputed
+needsSource: true
+tags: [network, proxy, security, http]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,13 @@
+slug: nikto
+term: Nikto
+category: cli
+summary: Web サーバーの既知の問題を洗い出すスキャナ。
+homepage: https://github.com/sullo/nikto
+ja:
+  - kana: ニクト
+    primary: true
+confidence: medium
+needsSource: true
+tags: [security, scanner, web]
+added: 2026-09-03
+updated: 2026-09-03
