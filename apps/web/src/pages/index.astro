@@ -45,6 +45,26 @@ const newCount = addedWithin(RECENT_DAYS);
     </p>
   </section>
 
+  {recent.length > 0 && (
+    <section class="section">
+      <h2>最近追加した語</h2>
+      <p class="section-lead">
+        {newCount > 0 && newCount < entries.length
+          ? `この ${RECENT_DAYS} 日間で ${newCount} 語を追加しました。`
+          : '新しく収録した語です。'}
+      </p>
+      <div class="card-grid">
+        {recent.map((e) => (
+          <a class="card" href={`/w/${e.slug}/`}>
+            <span class="term mono">{e.term}</span>
+            <span class="kana">{primaryKana(e)}</span>
+            <div class="note">{e.added}</div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
   <section class="section">
     <h2>カテゴリ</h2>
     <div class="card-grid">
@@ -73,26 +93,6 @@ const newCount = addedWithin(RECENT_DAYS);
     </div>
     <p style="margin-top: 1.25rem;"><a href="/divergence/">ズレる語をすべて見る →</a></p>
   </section>
-
-  {recent.length > 0 && (
-    <section class="section">
-      <h2>最近追加した語</h2>
-      <p class="section-lead">
-        {newCount > 0 && newCount < entries.length
-          ? `この ${RECENT_DAYS} 日間で ${newCount} 語を追加しました。`
-          : '新しく収録した語です。'}
-      </p>
-      <div class="card-grid">
-        {recent.map((e) => (
-          <a class="card" href={`/w/${e.slug}/`}>
-            <span class="term mono">{e.term}</span>
-            <span class="kana">{primaryKana(e)}</span>
-            <div class="note">{e.added}</div>
-          </a>
-        ))}
-      </div>
-    </section>
-  )}
 
   <div class="contribute">
     出典は作者本人の発言・公式ドキュメント・公式FAQ を優先し、推測で書かない方針です。
