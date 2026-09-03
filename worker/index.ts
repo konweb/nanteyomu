@@ -9,15 +9,30 @@
  *   POST /api/tame/<slug>  -> { slug, count }
  *
  * 「同じ人が何度も押す」を防ぐのはブラウザ側の localStorage だけで、
- * サーバー側に投票者の記録は一切残さない。かわりにレートリミッタを
- * 挟んで、スクリプトで連打されても D1 の書き込み枠を食い潰さないようにする。
+ * サーバー側に投票者の記録は一切残さない。かわりに POST は自サイトからの
+ * fetch だけ受け付け、素の curl で書き込み枠を食われないようにする。
  */
 
 export interface Env {
   REACTIONS: D1Database;
   ASSETS: Fetcher;
-  /** IP ごとの連打を弾く。Cloudflare 側の一時的な判定で、保存はされない */
-  TAME_LIMIT: RateLimit;
+}
+
+/**
+ * 加算はこのサイトのページ上の操作だけ受け付ける。
+ *
+ * ブラウザは同一オリジンでも POST には Origin を付ける。付かない古い環境の
+ * ために Referer も見る。決意のある相手は偽装できるが、素の curl を弾ければ
+ * 書き込み枠を守る目的には足りる。
+ *
+ * 比較先はリクエスト自身のオリジンにしてある。本番のドメインを直に書くと
+ * wrangler dev の localhost で弾かれてしまうため。
+ */
+function fromOwnSite(request: Request, self: string): boolean {
+  const origin = request.headers.get('origin');
+  if (origin) return origin === self;
+  const referer = request.headers.get('referer');
+  return referer ? referer.startsWith(`${self}/`) : false;
 }
 
 /** 存在しない slug で行を作られないよう、実データの slug だけを受け付ける。 */
@@ -95,10 +110,8 @@ export default {
       return json({ error: 'method not allowed' }, { status: 405, headers: { allow: 'GET, POST' } });
     }
 
-    const ip = request.headers.get('cf-connecting-ip') ?? 'unknown';
-    const { success } = await env.TAME_LIMIT.limit({ key: ip });
-    if (!success) {
-      return json({ error: 'too many requests' }, { status: 429, headers: { 'retry-after': '60' } });
+    if (!fromOwnSite(request, url.origin)) {
+      return json({ error: 'forbidden' }, { status: 403 });
     }
 
     const row = await env.REACTIONS.prepare(
