@@ -21,6 +21,32 @@ export interface Env {
 /** 存在しない slug で行を作られないよう、実データの slug だけを受け付ける。 */
 let slugCache: Set<string> | null = null;
 
+/**
+ * テーブルがまだ無ければ作る。migrations/0001_reactions.sql と同じ内容。
+ *
+ * 管理画面で D1 を作っただけでもボタンが動くようにしておくため、
+ * アイソレートごとに一度だけ流す。IF NOT EXISTS なので何度流しても同じ。
+ * スキーマを変えるときは migrations 側とここの両方を直す。
+ */
+let ready: Promise<unknown> | null = null;
+
+function ensureSchema(env: Env): Promise<unknown> {
+  ready ??= env.REACTIONS.batch([
+    env.REACTIONS.prepare(
+      'CREATE TABLE IF NOT EXISTS reactions (slug TEXT PRIMARY KEY, count INTEGER NOT NULL DEFAULT 0)',
+    ),
+    env.REACTIONS.prepare(
+      'CREATE TABLE IF NOT EXISTS votes (id TEXT NOT NULL PRIMARY KEY, day TEXT NOT NULL)',
+    ),
+    env.REACTIONS.prepare('CREATE INDEX IF NOT EXISTS votes_day ON votes (day)'),
+  ]).catch((e) => {
+    // 失敗を握ったままにすると以後ずっと同じ失敗を返すので、次回やり直せるようにする
+    ready = null;
+    throw e;
+  });
+  return ready;
+}
+
 async function knownSlugs(env: Env): Promise<Set<string>> {
   if (slugCache) return slugCache;
   // アセットとして配信している全データをそのまま流用する
@@ -63,6 +89,8 @@ export default {
 
     // run_worker_first の対象外が届いた場合はアセットに戻す
     if (!m) return env.ASSETS.fetch(request);
+
+    await ensureSchema(env);
 
     const slug = decodeURIComponent(m[1]);
     if (!(await knownSlugs(env)).has(slug)) {
