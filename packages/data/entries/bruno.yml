@@ -1,0 +1,13 @@
+slug: bruno
+term: Bruno
+category: cli
+summary: リクエストをファイルとして Git 管理できる API クライアント。
+homepage: https://www.usebruno.com/
+ja:
+  - kana: ブルーノ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [api, http, testing, network]
+added: 2026-09-03
+updated: 2026-09-03

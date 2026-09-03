@@ -1,0 +1,16 @@
+slug: haproxy
+term: HAProxy
+category: infra
+expansion: High Availability Proxy
+summary: 高可用性を重視した TCP/HTTP のロードバランサー。
+homepage: https://www.haproxy.org/
+ja:
+  - kana: エイチエープロキシ
+    primary: true
+  - kana: ハプロキシ
+    note: 一語として読む場合
+confidence: medium
+needsSource: true
+tags: [network, proxy, load-balancer, infra]
+added: 2026-09-03
+updated: 2026-09-03

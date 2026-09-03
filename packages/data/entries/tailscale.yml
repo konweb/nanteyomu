@@ -1,0 +1,19 @@
+slug: tailscale
+term: Tailscale
+category: service
+summary: WireGuard をベースにしたメッシュ VPN サービス。
+homepage: https://tailscale.com/
+en:
+  note: tail（尾）と scale（規模）の合成。
+ja:
+  - kana: テイルスケール
+    primary: true
+  - kana: テールスケール
+    note: None
+  - kana: タイルスケール
+    note: tail の読み違いによる誤読
+confidence: medium
+needsSource: true
+tags: [vpn, network, service, wireguard]
+added: 2026-09-03
+updated: 2026-09-03

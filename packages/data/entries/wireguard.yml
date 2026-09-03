@@ -1,0 +1,13 @@
+slug: wireguard
+term: WireGuard
+category: infra
+summary: 設定が簡潔で高速な VPN プロトコルおよび実装。
+homepage: https://www.wireguard.com/
+ja:
+  - kana: ワイヤーガード
+    primary: true
+confidence: medium
+needsSource: true
+tags: [vpn, network, infra, protocol]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,19 @@
+slug: socat
+term: socat
+category: cli
+summary: 任意のソケット間を双方向に中継する多目的ツール。
+homepage: http://www.dest-unreach.org/socat/
+en:
+  note: socket と cat の合成。
+ja:
+  - kana: ソーキャット
+    primary: true
+  - kana: ソキャット
+    note: None
+  - kana: エスオーキャット
+    note: None
+confidence: disputed
+needsSource: true
+tags: [network, cli, socket]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,17 @@
+slug: netcat
+term: Netcat
+aliases: [nc]
+category: cli
+summary: TCP/UDP の読み書きを行う汎用ネットワークユーティリティ。
+en:
+  note: net と cat（連結表示コマンド）の合成。Nmap プロジェクトによる再実装 Ncat もある。
+ja:
+  - kana: ネットキャット
+    primary: true
+  - kana: エヌシー
+    note: コマンド名 nc として読む場合
+confidence: medium
+needsSource: true
+tags: [network, cli, tcp]
+added: 2026-09-03
+updated: 2026-09-03

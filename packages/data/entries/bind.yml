@@ -1,0 +1,17 @@
+slug: bind
+term: BIND
+aliases: [BIND 9]
+category: infra
+expansion: Berkeley Internet Name Domain
+summary: 広く使われている DNS サーバーの実装。
+homepage: https://www.isc.org/bind/
+en:
+  note: 英語 bind（結びつける）と同じ読み。
+ja:
+  - kana: バインド
+    primary: true
+confidence: medium
+needsSource: true
+tags: [dns, network, infra, server]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,13 @@
+slug: tcpdump
+term: tcpdump
+category: cli
+summary: コマンドラインでパケットをキャプチャする定番ツール。
+homepage: https://www.tcpdump.org/
+ja:
+  - kana: ティーシーピーダンプ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [network, packet-capture, cli]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,16 @@
+slug: zeek
+term: Zeek
+aliases: [Bro]
+category: infra
+summary: ネットワークトラフィックを解析するセキュリティ監視基盤。
+homepage: https://zeek.org/
+en:
+  note: 旧称は Bro。2018 年に Zeek へ改称。
+ja:
+  - kana: ジーク
+    primary: true
+confidence: medium
+needsSource: true
+tags: [network, security, monitoring, ids]
+added: 2026-09-03
+updated: 2026-09-03

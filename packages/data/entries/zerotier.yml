@@ -1,0 +1,15 @@
+slug: zerotier
+term: ZeroTier
+category: service
+summary: 仮想イーサネットを構築するオーバーレイネットワークサービス。
+homepage: https://www.zerotier.com/
+ja:
+  - kana: ゼロティア
+    primary: true
+  - kana: ゼロタイヤー
+    note: None
+confidence: medium
+needsSource: true
+tags: [vpn, network, service, overlay]
+added: 2026-09-03
+updated: 2026-09-03

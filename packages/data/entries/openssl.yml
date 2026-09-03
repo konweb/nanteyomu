@@ -1,0 +1,13 @@
+slug: openssl
+term: OpenSSL
+category: library
+summary: TLS/SSL と暗号処理を提供するライブラリおよびコマンド。
+homepage: https://www.openssl.org/
+ja:
+  - kana: オープンエスエスエル
+    primary: true
+confidence: medium
+needsSource: true
+tags: [tls, security, network, library, crypto]
+added: 2026-09-03
+updated: 2026-09-03

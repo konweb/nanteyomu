@@ -1,0 +1,13 @@
+slug: mtr
+term: mtr
+category: cli
+summary: ping と traceroute を組み合わせた経路診断ツール。
+homepage: https://github.com/traviscross/mtr
+ja:
+  - kana: エムティーアール
+    primary: true
+confidence: medium
+needsSource: true
+tags: [network, diagnostics, cli]
+added: 2026-09-03
+updated: 2026-09-03

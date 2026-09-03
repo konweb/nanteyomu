@@ -1,0 +1,17 @@
+slug: owasp-zap
+term: OWASP ZAP
+aliases: [ZAP, Zed Attack Proxy]
+category: cli
+expansion: Zed Attack Proxy
+summary: OWASP が提供する Web アプリケーションの脆弱性スキャナ。
+homepage: https://www.zaproxy.org/
+ja:
+  - kana: ザップ
+    primary: true
+  - kana: ゼットエーピー
+    note: 頭字語として読む場合
+confidence: medium
+needsSource: true
+tags: [security, scanner, web, proxy]
+added: 2026-09-03
+updated: 2026-09-03

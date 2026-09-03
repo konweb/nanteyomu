@@ -1,0 +1,18 @@
+slug: apache-apisix
+term: Apache APISIX
+aliases: [APISIX]
+category: infra
+summary: クラウドネイティブ向けの API ゲートウェイ。
+homepage: https://apisix.apache.org/
+en:
+  note: API と six の組み合わせと解釈されることが多い。
+ja:
+  - kana: エーピーアイシックス
+    primary: true
+  - kana: アピシックス
+    note: 一語として読む場合
+confidence: disputed
+needsSource: true
+tags: [network, api-gateway, infra, apache]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,16 @@
+slug: insomnia
+term: Insomnia
+category: cli
+summary: オープンソースの API クライアント。
+homepage: https://insomnia.rest/
+en:
+  ipa: /ɪnˈsɒmniə/
+  note: 英語で「不眠症」。
+ja:
+  - kana: インソムニア
+    primary: true
+confidence: medium
+needsSource: true
+tags: [api, http, testing, network]
+added: 2026-09-03
+updated: 2026-09-03

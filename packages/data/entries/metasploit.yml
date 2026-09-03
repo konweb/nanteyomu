@@ -1,0 +1,15 @@
+slug: metasploit
+term: Metasploit
+category: cli
+summary: 脆弱性の検証に使うペネトレーションテストフレームワーク。
+homepage: https://www.metasploit.com/
+en:
+  note: meta と exploit の合成。
+ja:
+  - kana: メタスプロイト
+    primary: true
+confidence: medium
+needsSource: true
+tags: [security, pentest, network]
+added: 2026-09-03
+updated: 2026-09-03

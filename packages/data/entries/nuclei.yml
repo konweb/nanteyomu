@@ -1,0 +1,21 @@
+slug: nuclei
+term: Nuclei
+category: cli
+summary: テンプレートで脆弱性を検出するスキャナ。
+homepage: https://github.com/projectdiscovery/nuclei
+en:
+  ipa: /ˈnuːkliaɪ/
+  respelling: NOO-klee-eye
+  note: nucleus（核）の複数形。英語では語尾を「アイ」と読む。
+ja:
+  - kana: ニュークリアイ
+    primary: true
+  - kana: ヌクレイ
+    note: ラテン語風の読み
+  - kana: ニュークレイ
+    note: 綴りからの類推
+confidence: disputed
+needsSource: true
+tags: [security, scanner, web, go]
+added: 2026-09-03
+updated: 2026-09-03

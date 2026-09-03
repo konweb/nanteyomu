@@ -1,0 +1,16 @@
+slug: snort
+term: Snort
+category: infra
+summary: シグネチャベースの侵入検知システム。
+homepage: https://www.snort.org/
+en:
+  ipa: /snɔːrt/
+  note: 英語で「鼻を鳴らす」の意。ロゴは豚。
+ja:
+  - kana: スノート
+    primary: true
+confidence: medium
+needsSource: true
+tags: [network, security, monitoring, ids]
+added: 2026-09-03
+updated: 2026-09-03

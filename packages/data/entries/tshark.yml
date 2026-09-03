@@ -1,0 +1,15 @@
+slug: tshark
+term: TShark
+category: cli
+summary: Wireshark のコマンドライン版パケット解析ツール。
+homepage: https://www.wireshark.org/docs/man-pages/tshark.html
+en:
+  note: terminal と Wireshark の shark から。
+ja:
+  - kana: ティーシャーク
+    primary: true
+confidence: medium
+needsSource: true
+tags: [network, packet-capture, cli]
+added: 2026-09-03
+updated: 2026-09-03

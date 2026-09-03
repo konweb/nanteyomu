@@ -1,0 +1,13 @@
+slug: openvpn
+term: OpenVPN
+category: infra
+summary: TLS を用いた定番のオープンソース VPN。
+homepage: https://openvpn.net/
+ja:
+  - kana: オープンブイピーエヌ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [vpn, network, infra]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,17 @@
+slug: nagios
+term: Nagios
+category: infra
+summary: 古くから使われる監視ソフトウェア。
+homepage: https://www.nagios.org/
+ja:
+  - kana: ナギオス
+    primary: true
+  - kana: ナジオス
+    note: None
+  - kana: ネイジオス
+    note: 英語読みに近い読み
+confidence: disputed
+needsSource: true
+tags: [monitoring, network, infra]
+added: 2026-09-03
+updated: 2026-09-03

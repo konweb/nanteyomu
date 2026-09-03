@@ -1,0 +1,13 @@
+slug: kong
+term: Kong
+category: infra
+summary: Nginx をベースにした API ゲートウェイ。
+homepage: https://konghq.com/
+ja:
+  - kana: コング
+    primary: true
+confidence: medium
+needsSource: true
+tags: [network, api-gateway, proxy, infra]
+added: 2026-09-03
+updated: 2026-09-03

@@ -1,0 +1,19 @@
+slug: suricata
+term: Suricata
+category: infra
+summary: 侵入検知・防御を行うネットワーク監視エンジン。
+homepage: https://suricata.io/
+en:
+  note: ミーアキャットの学名 Suricata suricatta に由来。
+ja:
+  - kana: スリカータ
+    primary: true
+  - kana: スリカタ
+    note: None
+  - kana: スリカーター
+    note: None
+confidence: disputed
+needsSource: true
+tags: [network, security, monitoring, ids]
+added: 2026-09-03
+updated: 2026-09-03

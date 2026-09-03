@@ -1,0 +1,19 @@
+slug: thc-hydra
+term: Hydra
+aliases: [THC-Hydra]
+category: cli
+summary: ネットワークサービスに対する総当たりログイン試行ツール。
+homepage: https://github.com/vanhauser-thc/thc-hydra
+en:
+  ipa: /ˈhaɪdrə/
+  note: ギリシャ神話の多頭の water snake ヒュドラ。英語では「ハイドラ」に近い。
+ja:
+  - kana: ヒドラ
+    primary: true
+  - kana: ハイドラ
+    note: 英語の発音に近い読み
+confidence: medium
+needsSource: true
+tags: [security, pentest, network]
+added: 2026-09-03
+updated: 2026-09-03
