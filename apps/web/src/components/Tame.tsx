@@ -3,9 +3,8 @@ import { createSignal, onMount, Show } from 'solid-js';
 /**
  * 「タメになった」ボタン。
  *
- * 件数は /api/tame/<slug> から取る。押した記録は localStorage にも残して
- * おき、再訪時は押済みの見た目にする（サーバー側は IP と日付で二重投票を
- * 弾いているので、記録が消えていても数が増えることはない）。
+ * 件数は /api/tame/<slug> から取る。何度も押せないようにするのは
+ * localStorage だけで、サーバー側に押した人の記録は残さない。
  */
 export default function Tame(props: { slug: string }) {
   const [count, setCount] = createSignal<number | null>(null);
@@ -49,7 +48,7 @@ export default function Tame(props: { slug: string }) {
       try {
         localStorage.setItem(key, '1');
       } catch {
-        /* 保存できなくても投票自体は済んでいる */
+        /* 保存できなくても加算自体は済んでいる */
       }
     } catch {
       setVoted(false);
@@ -76,7 +75,7 @@ export default function Tame(props: { slug: string }) {
         </Show>
       </button>
       <p class="tame-note" aria-live="polite">
-        {voted() ? 'ありがとう。1 日 1 回まで数えています' : '読みが役に立ったら押してください'}
+        {voted() ? 'ありがとう！' : '読みが役に立ったら押してください'}
       </p>
     </div>
   );
