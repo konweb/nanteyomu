@@ -27,10 +27,7 @@
     {
       "binding": "REACTIONS",
       "database_name": "nanteyomu-reactions",
-      // TODO: 本番アカウント (907a9019...) で
-      //   wrangler d1 create nanteyomu-reactions
-      // を実行し、出力された ID に差し替える。
-      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "database_id": "24aeae79-4d72-4021-9c27-85489ac1ddf2",
       "migrations_dir": "./migrations"
     }
   ],
