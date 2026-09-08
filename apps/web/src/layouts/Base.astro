@@ -17,8 +17,11 @@ interface Props {
 
 const { title, description, path, image, imageAlt } = Astro.props;
 const canonical = new URL(path ?? Astro.url.pathname, Astro.site);
-// OGP 画像は絶対 URL でないとクローラが解決できない
-const ogImage = new URL(image ?? '/ogp.jpg', Astro.site);
+// OGP 画像は絶対 URL でないとクローラが解決できない。
+// 末尾の ?v= は差し替え時のキャッシュ外し。X はカードバリデーターが
+// 廃止されて再取得を強制できないため、URL 自体を変えて新しい画像を拾わせる。
+// ファイル名は変えないので、既に共有された /ogp.jpg も新しい画像で応答する。
+const ogImage = new URL(image ?? '/ogp.jpg?v=2', Astro.site);
 // サイト名で始まるタイトル（トップ）はそのまま、それ以外は末尾にサイト名を足す
 const fullTitle = title.startsWith('nanteyomu') ? title : `${title} | nanteyomu`;
 // 計測タグは本番ビルドのときだけ。dev サーバーのアクセスを混ぜないため。
