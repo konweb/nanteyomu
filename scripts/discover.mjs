@@ -80,8 +80,16 @@ const cell = (s) =>
     .replace(/\\/g, '\\\\')
     .replace(/\|/g, '\\|')
     .replace(/[<>[\]]/g, '')
-    .trim()
-    .slice(0, 80);
+    .trim();
+
+/** 説明は上流が書いた文をそのまま使う。長いときだけ語の切れ目で丸める。 */
+const summarize = (s) => {
+  const t = cell(s);
+  if (t.length <= 120) return t;
+  const cut = t.slice(0, 120);
+  const sp = cut.lastIndexOf(' ');
+  return (sp > 80 ? cut.slice(0, sp) : cut) + '…';
+};
 
 /** URL も他人の入力。http(s) 以外と、表を壊す文字を通さない。 */
 const safeUrl = (u) => {
@@ -180,6 +188,51 @@ async function fromHackerNews(sinceTs) {
   return out;
 }
 
+/**
+ * 公式サイトが生きているか見る。
+ *
+ * GitHub の homepage は放置されて死んでいることがあるので、繋がらないものは
+ * 落としてリポジトリだけ載せる。ここで確かめるのは到達性だけで、
+ * その製品のサイトかどうかの判断は entry-verify の担当。
+ */
+async function liveUrl(u) {
+  if (!u) return null;
+  let url;
+  try {
+    url = new URL(u);
+  } catch {
+    return null;
+  }
+  if (url.protocol !== 'https:' && url.protocol !== 'http:') return null;
+  // リポジトリ自身を指しているだけなら公式サイトとは呼べない
+  if (/(^|\.)github\.com$/.test(url.hostname)) return null;
+  try {
+    const res = await fetch(url, {
+      redirect: 'follow',
+      signal: AbortSignal.timeout(8000),
+      headers: { 'user-agent': 'nanteyomu-discovery' },
+    });
+    return res.ok ? res.url.replace(/\/$/, '') : null;
+  } catch {
+    return null;
+  }
+}
+
+/** 数件ずつ並行で回す。相手に負荷をかけない程度に留める。 */
+async function mapLimit(items, limit, fn) {
+  const out = new Array(items.length);
+  let i = 0;
+  await Promise.all(
+    Array.from({ length: Math.min(limit, items.length) }, async () => {
+      while (i < items.length) {
+        const n = i++;
+        out[n] = await fn(items[n]);
+      }
+    }),
+  );
+  return out;
+}
+
 function loadRegistered() {
   const p = join(ROOT, 'packages/data/generated/entries.json');
   if (!existsSync(p)) {
@@ -235,7 +288,10 @@ async function main() {
     picked.push(c);
   }
 
-  console.error(`候補 ${picked.length} 件`);
+  console.error(`候補 ${picked.length} 件。公式サイトの到達性を確認します`);
+  const homes = await mapLimit(picked, 6, (c) => liveUrl(c.homepage));
+  picked.forEach((c, i) => (c.site = homes[i]));
+  console.error(`公式サイトあり ${homes.filter(Boolean).length} 件`);
 
   const week = iso(now);
   const lines = [
@@ -244,6 +300,7 @@ async function main() {
     `最終更新: ${week}（scripts/discover.mjs が自動生成）`,
     '',
     '新しく出たツールを機械的に集めたものです。**読みはまだ調べていません。**',
+    '説明は各プロジェクト自身が書いたものをそのまま載せています（訳していません）。',
     '追加するときは entry-verify で重複と公式サイトと読みの出典を確かめてから、',
     'entry-add で登録してください。載せる価値がないものはそのまま無視して構いません',
     '（一度出した名前は seen.json に記録され、翌週以降は並びません）。',
@@ -253,11 +310,13 @@ async function main() {
   if (picked.length === 0) {
     lines.push('今回は新しい候補がありませんでした。', '');
   } else {
-    lines.push('| 名前 | 説明 | 星 / points | 公開 | 出どころ | URL |');
+    lines.push('| 名前 | 何のツールか | 公式サイト | リポジトリ | 星 / points | 公開 |');
     lines.push('|---|---|---|---|---|---|');
     for (const c of picked) {
       const n = c.stars != null ? `${c.stars}★` : `${c.points}pt`;
-      lines.push(`| \`${c.name}\` | ${cell(c.desc)} | ${n} | ${c.created} | ${c.source} | ${safeUrl(c.url)} |`);
+      const site = c.site ? `[${new URL(c.site).hostname}](${safeUrl(c.site)})` : '—';
+      const repo = /github\.com/.test(c.url) ? `[${c.url.split('/').slice(-2).join('/')}](${safeUrl(c.url)})` : '—';
+      lines.push(`| \`${c.name}\` | ${summarize(c.desc)} | ${site} | ${repo} | ${n} | ${c.created} |`);
     }
     lines.push('');
   }
