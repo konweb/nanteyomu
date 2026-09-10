@@ -66,6 +66,34 @@ const isTool = (name) => {
 const usableName = (name) =>
   name.length >= 2 && name.length <= 28 && /^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(name);
 
+/**
+ * 説明文を表の 1 セルに収める。
+ *
+ * 説明は GitHub と Hacker News から来る他人の書いた文字列なので、
+ * 表を壊したりリンクとして描画されたりしないよう落としてから入れる。
+ * バックスラッシュを先に処理しないと、\\| のような入力で
+ * エスケープ自体をすり抜けられる。
+ */
+const cell = (s) =>
+  (s ?? '')
+    .replace(/[\r\n\t]+/g, ' ')
+    .replace(/\\/g, '\\\\')
+    .replace(/\|/g, '\\|')
+    .replace(/[<>[\]]/g, '')
+    .trim()
+    .slice(0, 80);
+
+/** URL も他人の入力。http(s) 以外と、表を壊す文字を通さない。 */
+const safeUrl = (u) => {
+  try {
+    const url = new URL(u);
+    if (url.protocol !== 'https:' && url.protocol !== 'http:') return '';
+    return url.href.replace(/[|\s<>()[\]]/g, encodeURIComponent);
+  } catch {
+    return '';
+  }
+};
+
 async function getJSON(url, headers = {}) {
   const res = await fetch(url, {
     headers: { 'user-agent': 'nanteyomu-discovery', accept: 'application/json', ...headers },
@@ -228,9 +256,8 @@ async function main() {
     lines.push('| 名前 | 説明 | 星 / points | 公開 | 出どころ | URL |');
     lines.push('|---|---|---|---|---|---|');
     for (const c of picked) {
-      const d = (c.desc || '').replace(/\|/g, '\\|').slice(0, 80);
       const n = c.stars != null ? `${c.stars}★` : `${c.points}pt`;
-      lines.push(`| \`${c.name}\` | ${d} | ${n} | ${c.created} | ${c.source} | ${c.url} |`);
+      lines.push(`| \`${c.name}\` | ${cell(c.desc)} | ${n} | ${c.created} | ${c.source} | ${safeUrl(c.url)} |`);
     }
     lines.push('');
   }
