@@ -21,11 +21,14 @@ const SEEN_PATH = join(ROOT, 'discovery/seen.json');
 const OUT_PATH = join(ROOT, 'discovery/candidates.md');
 
 /** 1 回の PR で並べる上限。多すぎると誰も見ないので絞る。 */
-const MAX = 25;
+const MAX = 10;
 /** トピックごとの採用上限。星の数だけで並べると AI 系が全部埋めてしまう。 */
 const PER_TOPIC = 3;
-/** AI 系トピックの合計上限。同じ理由で、辞典としての偏りを避ける。 */
-const AI_CAP = 8;
+/**
+ * AI 系トピックの合計上限。同じ理由で、辞典としての偏りを避ける。
+ * MAX を変えても偏り方が変わらないよう、割合で決める。
+ */
+const AI_CAP = Math.max(1, Math.round(MAX * 0.3));
 const AI_TOPICS = new Set(['llm', 'ai-agents', 'agent']);
 /** GitHub 側の足切り。新しくてこの数を超えていれば話題になったとみなす。 */
 const MIN_STARS = 400;
