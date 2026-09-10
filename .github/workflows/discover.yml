@@ -92,10 +92,38 @@ jobs:
             echo "🤖 \`.github/workflows/discover.yml\` が自動生成"
           } > "$body"
 
+          # 実行ページに一覧を残す。PR が作れなかったときはここが受け皿になる
+          cat "$body" >> "$GITHUB_STEP_SUMMARY"
+
+          title="chore(discovery): 語の候補 ${COUNT} 件"
           if gh pr view discovery/candidates --json state --jq .state 2>/dev/null | grep -q OPEN; then
-            gh pr edit discovery/candidates --title "chore(discovery): 語の候補 ${COUNT} 件" --body-file "$body"
+            gh pr edit discovery/candidates --title "$title" --body-file "$body"
             echo "既存の PR を更新しました"
-          else
-            gh pr create --base main --head discovery/candidates \
-              --title "chore(discovery): 語の候補 ${COUNT} 件" --body-file "$body"
+            exit 0
           fi
+
+          # PR の新規作成には「Allow GitHub Actions to create and approve pull
+          # requests」が要る。既定では無効なので、作れなくてもブランチは残して
+          # 実行そのものは成功扱いにする。候補は上のサマリーに出ている。
+          if gh pr create --base main --head discovery/candidates \
+               --title "$title" --body-file "$body" 2>"$RUNNER_TEMP/err"; then
+            exit 0
+          fi
+
+          cat "$RUNNER_TEMP/err"
+          if grep -q 'not permitted to create' "$RUNNER_TEMP/err"; then
+            {
+              echo
+              echo "> [!WARNING]"
+              echo "> PR を作れませんでした。ブランチ \`discovery/candidates\` は push 済みです。"
+              echo "> 次のどちらかで自動化されます。"
+              echo ">"
+              echo "> 1. \`DISCOVERY_TOKEN\`（fine-grained PAT / Contents: RW, Pull requests: RW）を Secrets に登録する。CI も走るようになるので推奨"
+              echo "> 2. Settings → Actions → General → Workflow permissions で Allow GitHub Actions to create and approve pull requests を有効にする"
+              echo ">"
+              echo "> 手動で開く場合: ${{ github.server_url }}/${{ github.repository }}/compare/main...discovery/candidates?expand=1"
+            } >> "$GITHUB_STEP_SUMMARY"
+            echo "::warning::PR を作成できませんでした。ブランチは push 済みです。詳細はサマリーを参照"
+            exit 0
+          fi
+          exit 1
