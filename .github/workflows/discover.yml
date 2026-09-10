@@ -1,0 +1,101 @@
+name: 語の候補を集める
+
+# 新しく出たツールを週に一度ひろって、候補一覧の PR にする。
+# 読みを決めるのは人の担当なので、このワークフローは候補を並べるだけで
+# 語の追加はしない。追加は entry-verify / entry-add で行う。
+on:
+  schedule:
+    # 毎時ちょうどは Actions の混雑で遅延しやすいと公式に明記されているため
+    # 意図的にずらしている。月曜の朝に見られるよう日曜 22:17 UTC = 月曜 7:17 JST。
+    - cron: "17 22 * * 0"
+  workflow_dispatch:
+
+# 前の実行が終わっていなければ待つ。同じブランチを触るので重ねない。
+concurrency:
+  group: discovery
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # 収録済みの語と突き合わせるために generated/entries.json が要る
+      - name: データ生成
+        run: pnpm run data
+
+      # 候補一覧は毎回同じブランチに載せ替える。開いている PR を 1 本に保ち、
+      # 中身を常に最新にするため。main から切り直すので、マージ済みの分は
+      # seen.json 経由で自動的に除かれる。
+      - name: ブランチを用意
+        run: git checkout -B discovery/candidates origin/main
+
+      - name: 候補を収集
+        id: run
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: echo "count=$(node scripts/discover.mjs)" >> "$GITHUB_OUTPUT"
+
+      - name: 差分を確認
+        id: diff
+        run: |
+          if git diff --quiet -- discovery/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "候補に変化がないので PR は作りません"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: コミットして PR を出す
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          # DISCOVERY_TOKEN を登録しておくと、その PR で CI が走る。
+          # GITHUB_TOKEN が作った PR では他のワークフローが起動しないという
+          # Actions の仕様があり、必須チェックが埋まらずマージできないため。
+          GH_TOKEN: ${{ secrets.DISCOVERY_TOKEN || secrets.GITHUB_TOKEN }}
+          COUNT: ${{ steps.run.outputs.count }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add discovery/
+          git commit -m "chore(discovery): 語の候補を ${COUNT} 件更新"
+          git push --force-with-lease origin discovery/candidates
+
+          body=$(mktemp)
+          {
+            echo "新しく出たツールを機械的に集めた候補です。**読みはまだ調べていません。**"
+            echo
+            echo "追加するときは \`entry-verify\` で重複・公式サイト・読みの出典を確かめてから \`entry-add\` で登録してください。載せる価値がないものは無視して構いません（一度出した名前は \`discovery/seen.json\` に記録され、翌週以降は並びません）。"
+            echo
+            sed -n '/^| 名前/,$p' discovery/candidates.md
+            echo
+            echo "---"
+            echo
+            echo "このブランチは毎週まるごと載せ替えられます。手で加えた変更は次回の実行で消えるので、採用するものは別ブランチに移してください。"
+            echo
+            echo "🤖 \`.github/workflows/discover.yml\` が自動生成"
+          } > "$body"
+
+          if gh pr view discovery/candidates --json state --jq .state 2>/dev/null | grep -q OPEN; then
+            gh pr edit discovery/candidates --title "chore(discovery): 語の候補 ${COUNT} 件" --body-file "$body"
+            echo "既存の PR を更新しました"
+          else
+            gh pr create --base main --head discovery/candidates \
+              --title "chore(discovery): 語の候補 ${COUNT} 件" --body-file "$body"
+          fi

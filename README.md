@@ -95,6 +95,17 @@ pnpm deploy       # Cloudflare Workers へデプロイ
 読みの追加・修正はいつでも歓迎します。[CONTRIBUTING.md](./CONTRIBUTING.md) を読んでください。
 とくに**出典の追加**（`needsSource: true` になっている語）が一番ありがたい貢献です。
 
+### 語の候補
+
+週に一度、新しく出たツールを機械的に集めて
+[`discovery/candidates.md`](./discovery/candidates.md) に並べています
+（`.github/workflows/discover.yml`）。**読みは調べていない候補の一覧**なので、
+ここから拾って出典を確かめて登録してもらえると助かります。
+
+```bash
+GITHUB_TOKEN=$(gh auth token) node scripts/discover.mjs   # 手元で回す場合
+```
+
 ## ライセンス
 
 MIT。辞書データも含めて自由に使えます。
