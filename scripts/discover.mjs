@@ -30,6 +30,12 @@ const PER_TOPIC = 3;
  */
 const AI_CAP = Math.max(1, Math.round(MAX * 0.3));
 const AI_TOPICS = new Set(['llm', 'ai-agents', 'agent']);
+/**
+ * 出どころごとの枠。GitHub の星は桁が大きいので、素直に並べると
+ * npm と Cloudflare が一件も入らない。先に席を取っておく。
+ * 埋まらなかった席は他の出どころが使う。
+ */
+const SOURCE_CAP = { github: 5, hn: 2, npm: 2, cloudflare: 2 };
 /** GitHub 側の足切り。新しくてこの数を超えていれば話題になったとみなす。 */
 const MIN_STARS = 400;
 /** 「新しく出た」の範囲。これより古い作成日は拾わない。 */
@@ -150,8 +156,11 @@ async function fromGitHub(since) {
         stars: r.stargazers_count,
         desc: (r.description ?? '').trim(),
         created: r.created_at.slice(0, 10),
+        metric: `${r.stargazers_count}★`,
+        rank: r.stargazers_count,
         source: `GitHub topic:${topic}`,
         topic,
+        family: 'github',
       });
     }
     // 検索 API は認証ありで毎分 30 回。余裕をもって間隔を空ける
@@ -159,6 +168,132 @@ async function fromGitHub(since) {
   }
   return out;
 }
+
+/**
+ * npm。こちらは「新しい」ではなく「人気があるのに未収録」を埋める。
+ *
+ * time.created は名前の予約時点になっていることが多く（rolldown が 2017 年）
+ * 新しさの判定に使えない。かわりに検索スコアの高いものを見て、
+ * 収録済みと突き合わせて抜けを拾う。
+ */
+async function fromNpm() {
+  const keywords = [
+    'bundler', 'linter', 'formatter', 'test-runner', 'orm', 'state-management',
+    'css-in-js', 'router', 'validation', 'monorepo', 'ui-components', 'build-tool',
+  ];
+  // プラットフォーム別バイナリやプラグインは製品名ではない
+  const NOISE = [
+    /^@/, /-(binding|linux|darwin|win32|android|wasm32)-/, /^(eslint|babel|postcss|vite|rollup|webpack)-(plugin|config|preset)/,
+    /-(plugin|preset|config|loader|polyfill|shim|types|cli)$/, /^types-/, /^is-/, /^node-/,
+  ];
+  const out = [];
+  for (const kw of keywords) {
+    const url = `https://registry.npmjs.org/-/v1/search?text=${encodeURIComponent(`keywords:${kw}`)}&size=10&popularity=1.0`;
+    let data;
+    try {
+      data = await getJSON(url);
+    } catch (e) {
+      console.error(`  npm (${kw}) 取得失敗: ${e.message}`);
+      continue;
+    }
+    let taken = 0;
+    for (const o of data.objects ?? []) {
+      if (taken >= 3) break;
+      const name = o.package?.name ?? '';
+      if (NOISE.some((re) => re.test(name))) continue;
+      if (!usableName(name) || !isTool(name) || !shortName(name)) continue;
+      taken++;
+      // git+https://github.com/o/r.git -> https://github.com/o/r
+      const repo = (o.package.links?.repository ?? '')
+        .replace(/^git\+/, '')
+        .replace(/\.git$/, '');
+      out.push({
+        name,
+        url: repo || o.package.links?.npm || '',
+        homepage: o.package.links?.homepage ?? null,
+        metric: `npm ${o.score?.final != null ? o.score.final.toFixed(1) : '?'}`,
+        rank: (o.score?.final ?? 0) * 1000,
+        desc: (o.package.description ?? '').trim(),
+        created: (o.package.date ?? '').slice(0, 10),
+        source: `npm keywords:${kw}`,
+        family: 'npm',
+      });
+    }
+    await new Promise((r) => setTimeout(r, 700));
+  }
+  return out;
+}
+
+/**
+ * Cloudflare の changelog。製品名は他所から拾いにくいので専用に見る。
+ *
+ * タイトルが「製品名 - 内容」の形なので、頭を取って製品名にする。
+ * フィードに初めて出た日が新しいものほど、新しく出た製品とみなす。
+ */
+async function fromCloudflare(since) {
+  // 製品名の位置に来るが、語として登録する対象ではない一般語
+  const GENERIC = new Set([
+    'logs', 'rules', 'cache', 'dns', 'analytics', 'billing', 'api', 'dashboard',
+    'account', 'ssl/tls', 'ssl', 'tls', 'network', 'security', 'settings',
+    'documentation', 'docs', 'pricing', 'terraform', 'changelog',
+  ]);
+  let xml;
+  try {
+    const res = await fetch('https://developers.cloudflare.com/changelog/rss/index.xml', {
+      redirect: 'follow',
+      signal: AbortSignal.timeout(30000),
+      headers: { 'user-agent': 'nanteyomu-discovery' },
+    });
+    if (!res.ok) throw new Error(`${res.status}`);
+    xml = await res.text();
+  } catch (e) {
+    console.error(`  Cloudflare changelog 取得失敗: ${e.message}`);
+    return [];
+  }
+
+  // 製品ごとに、フィードに出た最も古い日を覚える
+  const first = new Map();
+  for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
+    const item = m[1];
+    const title = item.match(/<title>([^<]*)<\/title>/)?.[1] ?? '';
+    const link = item.match(/<link>([^<]*)<\/link>/)?.[1] ?? '';
+    const date = item.match(/<pubDate>([^<]*)<\/pubDate>/)?.[1] ?? '';
+    const day = date ? new Date(date).toISOString().slice(0, 10) : '';
+    if (!title || !day) continue;
+    for (const raw of title.split(' - ')[0].split(/,\s*/)) {
+      const name = raw.trim();
+      if (!name || name.length > 40 || GENERIC.has(name.toLowerCase())) continue;
+      const prev = first.get(name);
+      // 説明は題から製品名の部分を落とす。表で二重に出るのを避ける
+      const desc = title.split(' - ').slice(1).join(' - ') || title;
+      if (!prev || day < prev.day) first.set(name, { day, desc, link });
+    }
+  }
+
+  return [...first.entries()]
+    // 初出が新しいものだけ。古くからある製品は既に収録されているか、対象外
+    .filter(([, v]) => v.day >= since)
+    .map(([name, v]) => ({
+      name,
+      url: v.link || 'https://developers.cloudflare.com/changelog/',
+      homepage: null,
+      metric: `初出 ${v.day}`,
+      // 新しいものほど上に来るように、日付を順位に使う
+      rank: new Date(v.day).getTime() / 1e6,
+      desc: v.desc,
+      created: v.day,
+      source: 'Cloudflare changelog',
+      family: 'cloudflare',
+    }));
+}
+
+/** 題の先頭に来ても製品名ではない語。 */
+const STOPWORDS = new Set([
+  'the', 'a', 'an', 'my', 'our', 'we', 'i', 'how', 'why', 'what', 'this', 'that',
+  'introducing', 'open', 'free', 'building', 'built', 'made', 'making', 'using',
+  'from', 'to', 'for', 'with', 'after', 'yet', 'another', 'simple', 'tiny', 'fast',
+  'new', 'better', 'best', 'first', 'local', 'self', 'you', 'your', 'it', 'is',
+]);
 
 /** Show HN。GitHub の星より早く話題が出るので、新しさの補完に使う。 */
 async function fromHackerNews(sinceTs) {
@@ -176,16 +311,19 @@ async function fromHackerNews(sinceTs) {
     const m = (h.title ?? '').match(/^Show HN:\s*([^–—\-:(]{2,40})/i);
     if (!m) continue;
     const name = m[1].trim().split(/\s+/)[0].replace(/[,.]$/, '');
-    if (!usableName(name)) continue;
+    // 「Show HN: The load-bearing vocabulary of Claude」のように
+    // 製品名から始まらない題もある。冠詞や一般語で始まったら諦める
+    if (!usableName(name) || STOPWORDS.has(name.toLowerCase())) continue;
     out.push({
       name,
       url: h.url || `https://news.ycombinator.com/item?id=${h.objectID}`,
       homepage: h.url || null,
-      stars: null,
-      points: h.points,
+      metric: `${h.points}pt`,
+      rank: h.points,
       desc: (h.title ?? '').replace(/^Show HN:\s*/i, '').trim(),
       created: (h.created_at ?? '').slice(0, 10),
       source: 'Show HN',
+      family: 'hn',
     });
   }
   return out;
@@ -263,7 +401,12 @@ async function main() {
 
   console.error(`収録済み ${registered.size} 件 / 既出 ${seen.size} 件 と照合します`);
 
-  const found = [...(await fromGitHub(since)), ...(await fromHackerNews(hnSince))];
+  const found = [
+    ...(await fromGitHub(since)),
+    ...(await fromHackerNews(hnSince)),
+    ...(await fromNpm()),
+    ...(await fromCloudflare(since)),
+  ];
   console.error(`取得 ${found.length} 件`);
 
   // 名寄せして、収録済み・既出・ツールでないものを落とす
@@ -274,22 +417,32 @@ async function main() {
     if (!usableName(c.name) || !isTool(c.name) || !shortName(c.name)) continue;
     // 同じ名前が複数ソースで来たら、星の多い方を残す
     const prev = byName.get(k);
-    if (!prev || (c.stars ?? 0) > (prev.stars ?? 0)) byName.set(k, c);
+    if (!prev || (c.rank ?? 0) > (prev.rank ?? 0)) byName.set(k, c);
   }
 
-  const ranked = [...byName.values()].sort(
-    (a, b) => (b.stars ?? b.points ?? 0) - (a.stars ?? a.points ?? 0),
-  );
+  const ranked = [...byName.values()].sort((a, b) => (b.rank ?? 0) - (a.rank ?? 0));
   const picked = [];
+  const used = {};
   let ai = 0;
-  for (const c of ranked) {
-    if (picked.length >= MAX) break;
-    if (AI_TOPICS.has(c.topic)) {
-      if (ai >= AI_CAP) continue;
-      ai++;
+
+  /** 枠を見ながら詰める。ignoreCap のときは余った席を埋めるだけ。 */
+  const fill = (ignoreCap) => {
+    for (const c of ranked) {
+      if (picked.length >= MAX) return;
+      if (picked.includes(c)) continue;
+      const cap = SOURCE_CAP[c.family] ?? MAX;
+      if (!ignoreCap && (used[c.family] ?? 0) >= cap) continue;
+      if (AI_TOPICS.has(c.topic)) {
+        if (ai >= AI_CAP) continue;
+        ai++;
+      }
+      used[c.family] = (used[c.family] ?? 0) + 1;
+      picked.push(c);
     }
-    picked.push(c);
-  }
+  };
+  fill(false);
+  // 出どころによっては候補が無いこともある。空いた席は他から埋める
+  fill(true);
 
   console.error(`候補 ${picked.length} 件。公式サイトの到達性を確認します`);
   const homes = await mapLimit(picked, 6, (c) => liveUrl(c.homepage));
@@ -313,13 +466,15 @@ async function main() {
   if (picked.length === 0) {
     lines.push('今回は新しい候補がありませんでした。', '');
   } else {
-    lines.push('| 名前 | 何のツールか | 公式サイト | リポジトリ | 星 / points | 公開 |');
+    lines.push('| 名前 | 何のツールか | 公式サイト | リポジトリ | 目安 | 出どころ |');
     lines.push('|---|---|---|---|---|---|');
     for (const c of picked) {
-      const n = c.stars != null ? `${c.stars}★` : `${c.points}pt`;
+      const n = c.metric ?? '—';
       const site = c.site ? `[${new URL(c.site).hostname}](${safeUrl(c.site)})` : '—';
-      const repo = /github\.com/.test(c.url) ? `[${c.url.split('/').slice(-2).join('/')}](${safeUrl(c.url)})` : '—';
-      lines.push(`| \`${c.name}\` | ${summarize(c.desc)} | ${site} | ${repo} | ${n} | ${c.created} |`);
+      const repo = c.url
+        ? `[${/github\.com/.test(c.url) ? c.url.split('/').slice(-2).join('/') : new URL(c.url).hostname}](${safeUrl(c.url)})`
+        : '—';
+      lines.push(`| \`${c.name}\` | ${summarize(c.desc)} | ${site} | ${repo} | ${n} | ${c.source} |`);
     }
     lines.push('');
   }
