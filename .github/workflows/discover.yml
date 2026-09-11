@@ -107,11 +107,6 @@ jobs:
           # 実行そのものは成功扱いにする。候補は上のサマリーに出ている。
           if gh pr create --base main --head discovery/candidates \
                --title "$title" --body-file "$body" 2>"$RUNNER_TEMP/err"; then
-            # 候補一覧は discovery/ しか触らずサイトには影響しないので、
-            # チェックが通ったら勝手に入れてよい。リポジトリ側で
-            # Allow auto-merge が無効なら、ここは黙って諦める。
-            gh pr merge discovery/candidates --auto --merge \
-              || echo "::notice::auto-merge は使えませんでした（Settings の Allow auto-merge が無効）"
             exit 0
           fi
 
