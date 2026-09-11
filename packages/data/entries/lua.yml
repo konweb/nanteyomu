@@ -20,9 +20,7 @@ sources:
     title: About Lua
     kind: official
     quote: >-
-      "Lua" (pronounced LOO-ah) means "Moon" in Portuguese. Please do not
-      write it as "LUA", which is both ugly and confusing, because then it
-      becomes an acronym with different meanings for different people.
+      "Lua" (pronounced LOO-ah) means "Moon" in Portuguese.
 tags: [scripting, embedded]
 added: 2026-08-31
 updated: 2026-08-31
