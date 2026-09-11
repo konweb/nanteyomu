@@ -27,3 +27,26 @@ jobs:
         run: pnpm test
       - name: サイトビルド
         run: pnpm build
+
+  # 語の中身を実際に取りに行って確かめる。lint.ts は URL の形しか見ないので、
+  # 存在しないページや、そこに書かれていない文言を quote にしても通ってしまう。
+  # 落ちるのは「書かれていない文言を引用している」場合だけで、
+  # 繋がらないのは相手側の事情なので警告に留まる。
+  verify:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # 変更された語を知るために履歴が要る
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run data
+      - name: 出典と公式サイトの裏取り
+        run: pnpm run verify:entries

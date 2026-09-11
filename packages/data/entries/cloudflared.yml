@@ -24,7 +24,8 @@ sources:
     quote: >-
       This daemon sits between Cloudflare network and your origin (e.g. a
       webserver). Cloudflare attracts client requests and sends them to you via
-      this daemon, without requiring you to poke holes on your firewall.
+      this daemon, without requiring you to poke holes on your firewall --- your origin can
+      remain as closed as possible.
 tags: [cloudflare, tunnel, daemon]
 added: 2026-08-31
 updated: 2026-08-31
