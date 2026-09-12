@@ -1,8 +1,12 @@
 name: 語の候補を集める
 
-# 新しく出たツールを週に一度ひろって、候補一覧の PR にする。
+# 新しく出たツールを週に一度ひろって、候補一覧の Issue にする。
 # 読みを決めるのは人の担当なので、このワークフローは候補を並べるだけで
 # 語の追加はしない。追加は entry-verify / entry-add で行う。
+#
+# PR ではなく Issue にしているのは、GITHUB_TOKEN では PR を作れない
+# （Actions は既定で PR の作成を禁じられている）のに対し、Issue は作れるため。
+# 候補一覧はコードの変更ではなくやることリストなので、Issue の方が素直でもある。
 on:
   schedule:
     # 毎時ちょうどは Actions の混雑で遅延しやすいと公式に明記されているため
@@ -10,14 +14,19 @@ on:
     - cron: "17 22 * * 0"
   workflow_dispatch:
 
-# 前の実行が終わっていなければ待つ。同じブランチを触るので重ねない。
+# 前の実行が終わっていなければ待つ。状態ブランチを触るので重ねない。
 concurrency:
   group: discovery
   cancel-in-progress: false
 
 permissions:
   contents: write
-  pull-requests: write
+  issues: write
+
+env:
+  # 既出の記録を置くブランチ。main は ruleset で保護されていて
+  # Actions から push できないため、状態だけを別ブランチに逃がしている。
+  STATE_BRANCH: discovery-state
 
 jobs:
   discover:
@@ -40,90 +49,66 @@ jobs:
       - name: データ生成
         run: pnpm run data
 
-      # 候補一覧は毎回同じブランチに載せ替える。開いている PR を 1 本に保ち、
-      # 中身を常に最新にするため。main から切り直すので、マージ済みの分は
-      # seen.json 経由で自動的に除かれる。
-      - name: ブランチを用意
-        run: git checkout -B discovery/candidates origin/main
+      - name: 既出の記録を取り出す
+        run: |
+          if git show "origin/$STATE_BRANCH:discovery/seen.json" > "$RUNNER_TEMP/seen.json" 2>/dev/null; then
+            echo "既出 $(node -p "require('$RUNNER_TEMP/seen.json').seen.length") 件を引き継ぎます"
+          else
+            echo '{"seen": []}' > "$RUNNER_TEMP/seen.json"
+            echo "$STATE_BRANCH がまだ無いので空から始めます"
+          fi
 
       - name: 候補を収集
         id: run
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SEEN_PATH: ${{ runner.temp }}/seen.json
+          OUT_PATH: ${{ runner.temp }}/candidates.md
         run: echo "count=$(node scripts/discover.mjs)" >> "$GITHUB_OUTPUT"
 
-      - name: 差分を確認
-        id: diff
-        run: |
-          if git diff --quiet -- discovery/; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "候補に変化がないので PR は作りません"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: コミットして PR を出す
-        if: steps.diff.outputs.changed == 'true'
+      - name: Issue を出す
+        if: steps.run.outputs.count != '0'
         env:
-          # DISCOVERY_TOKEN を登録しておくと、その PR で CI が走る。
-          # GITHUB_TOKEN が作った PR では他のワークフローが起動しないという
-          # Actions の仕様があり、必須チェックが埋まらずマージできないため。
-          GH_TOKEN: ${{ secrets.DISCOVERY_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COUNT: ${{ steps.run.outputs.count }}
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add discovery/
-          git commit -m "chore(discovery): 語の候補を ${COUNT} 件更新"
-          git push --force-with-lease origin discovery/candidates
-
-          body=$(mktemp)
+          body="$RUNNER_TEMP/candidates.md"
           {
-            echo "新しく出たツールを機械的に集めた候補です。**読みはまだ調べていません。**"
-            echo
-            echo "追加するときは \`entry-verify\` で重複・公式サイト・読みの出典を確かめてから \`entry-add\` で登録してください。載せる価値がないものは無視して構いません（一度出した名前は \`discovery/seen.json\` に記録され、翌週以降は並びません）。"
-            echo
-            sed -n '/^| 名前/,$p' discovery/candidates.md
             echo
             echo "---"
             echo
-            echo "このブランチは毎週まるごと載せ替えられます。手で加えた変更は次回の実行で消えるので、採用するものは別ブランチに移してください。"
-            echo
-            echo "🤖 \`.github/workflows/discover.yml\` が自動生成"
-          } > "$body"
+            echo "🤖 \`.github/workflows/discover.yml\` が毎週更新します。対応が済んだら閉じてください。"
+          } >> "$body"
 
-          # 実行ページに一覧を残す。PR が作れなかったときはここが受け皿になる
+          # 実行ページにも残しておく。Issue を消しても後から辿れる
           cat "$body" >> "$GITHUB_STEP_SUMMARY"
 
-          title="chore(discovery): 語の候補 ${COUNT} 件"
-          if gh pr view discovery/candidates --json state --jq .state 2>/dev/null | grep -q OPEN; then
-            gh pr edit discovery/candidates --title "$title" --body-file "$body"
-            echo "既存の PR を更新しました"
-            exit 0
+          gh label create discovery --color BFD4F2 --description "語の候補" --force >/dev/null 2>&1 || true
+
+          title="語の候補 ${COUNT} 件"
+          num=$(gh issue list --label discovery --state open --limit 1 --json number --jq '.[0].number // empty')
+          if [ -n "$num" ]; then
+            gh issue edit "$num" --title "$title" --body-file "$body"
+            echo "Issue #$num を更新しました"
+          else
+            gh issue create --label discovery --title "$title" --body-file "$body"
           fi
 
-          # PR の新規作成には「Allow GitHub Actions to create and approve pull
-          # requests」が要る。既定では無効なので、作れなくてもブランチは残して
-          # 実行そのものは成功扱いにする。候補は上のサマリーに出ている。
-          if gh pr create --base main --head discovery/candidates \
-               --title "$title" --body-file "$body" 2>"$RUNNER_TEMP/err"; then
+      # 次回に同じものを並べないよう、出した名前を記録して残す。
+      # 候補が無かった週は seen.json も変わらないので、この手順ごと空振りする。
+      - name: 既出の記録を保存する
+        run: |
+          cp "$RUNNER_TEMP/seen.json" "$RUNNER_TEMP/seen-new.json"
+          git checkout -B "$STATE_BRANCH" "origin/$STATE_BRANCH" 2>/dev/null \
+            || git checkout -B "$STATE_BRANCH" origin/main
+          mkdir -p discovery
+          cp "$RUNNER_TEMP/seen-new.json" discovery/seen.json
+          if git diff --quiet -- discovery/seen.json; then
+            echo "既出の記録に変化はありません"
             exit 0
           fi
-
-          cat "$RUNNER_TEMP/err"
-          if grep -q 'not permitted to create' "$RUNNER_TEMP/err"; then
-            {
-              echo
-              echo "> [!WARNING]"
-              echo "> PR を作れませんでした。ブランチ \`discovery/candidates\` は push 済みです。"
-              echo "> 次のどちらかで自動化されます。"
-              echo ">"
-              echo "> 1. \`DISCOVERY_TOKEN\`（fine-grained PAT / Contents: RW, Pull requests: RW）を Secrets に登録する。CI も走るようになるので推奨"
-              echo "> 2. Settings → Actions → General → Workflow permissions で Allow GitHub Actions to create and approve pull requests を有効にする"
-              echo ">"
-              echo "> 手動で開く場合: ${{ github.server_url }}/${{ github.repository }}/compare/main...discovery/candidates?expand=1"
-            } >> "$GITHUB_STEP_SUMMARY"
-            echo "::warning::PR を作成できませんでした。ブランチは push 済みです。詳細はサマリーを参照"
-            exit 0
-          fi
-          exit 1
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add discovery/seen.json
+          git commit -m "chore(discovery): 既出の記録を更新"
+          git push origin "$STATE_BRANCH"
