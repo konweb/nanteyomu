@@ -8,17 +8,19 @@
  *
  *   node scripts/discover.mjs
  *
- * 出力:
- *   discovery/candidates.md  今回の候補一覧（PR 本文にもそのまま使う）
- *   discovery/seen.json      一度出した名前。翌週も同じものを並べないための記録
+ * 出力（環境変数で差し替えられる）:
+ *   OUT_PATH   今回の候補一覧。Issue 本文にそのまま使う
+ *   SEEN_PATH  一度出した名前。翌週も同じものを並べないための記録
  */
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const SEEN_PATH = join(ROOT, 'discovery/seen.json');
-const OUT_PATH = join(ROOT, 'discovery/candidates.md');
+// 既出の記録と出力先。ワークフローからは discovery-state ブランチの
+// seen.json と、Issue 本文にするための一時ファイルを指す。
+const SEEN_PATH = process.env.SEEN_PATH ?? join(ROOT, 'discovery/seen.json');
+const OUT_PATH = process.env.OUT_PATH ?? join(ROOT, 'discovery/candidates.md');
 
 /** 1 回の PR で並べる上限。多すぎると誰も見ないので絞る。 */
 const MAX = 10;
@@ -451,15 +453,12 @@ async function main() {
 
   const week = iso(now);
   const lines = [
-    '# 語の候補',
-    '',
-    `最終更新: ${week}（scripts/discover.mjs が自動生成）`,
-    '',
-    '新しく出たツールを機械的に集めたものです。**読みはまだ調べていません。**',
+    `新しく出たツールを機械的に集めた候補です（${week} 時点）。**読みはまだ調べていません。**`,
     '説明は各プロジェクト自身が書いたものをそのまま載せています（訳していません）。',
-    '追加するときは entry-verify で重複と公式サイトと読みの出典を確かめてから、',
-    'entry-add で登録してください。載せる価値がないものはそのまま無視して構いません',
-    '（一度出した名前は seen.json に記録され、翌週以降は並びません）。',
+    '',
+    '追加するときは `entry-verify` で重複・公式サイト・読みの出典を確かめてから',
+    '`entry-add` で登録してください。載せる価値がないものは無視して構いません',
+    '（一度出した名前は記録され、翌週以降は並びません）。',
     '',
   ];
 
@@ -479,9 +478,11 @@ async function main() {
     lines.push('');
   }
 
+  mkdirSync(dirname(OUT_PATH), { recursive: true });
   writeFileSync(OUT_PATH, lines.join('\n'), 'utf8');
   // 今回出したものは既出に回す。拾わなかったものは翌週また候補になり得る
   for (const c of picked) seen.add(norm(c.name));
+  mkdirSync(dirname(SEEN_PATH), { recursive: true });
   writeFileSync(SEEN_PATH, JSON.stringify({ seen: [...seen].sort() }, null, 2) + '\n', 'utf8');
 
   // ワークフローが件数で分岐できるよう標準出力に出す

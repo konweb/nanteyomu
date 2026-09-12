@@ -98,9 +98,14 @@ pnpm deploy       # Cloudflare Workers へデプロイ
 ### 語の候補
 
 週に一度、新しく出たツールを機械的に集めて
-[`discovery/candidates.md`](./discovery/candidates.md) に並べています
-（`.github/workflows/discover.yml`）。**読みは調べていない候補の一覧**なので、
-ここから拾って出典を確かめて登録してもらえると助かります。
+[`discovery` ラベルの Issue](https://github.com/konweb/nanteyomu/issues?q=is%3Aissue+label%3Adiscovery)
+に並べています（`.github/workflows/discover.yml`）。
+**読みは調べていない候補の一覧**なので、ここから拾って出典を確かめて
+登録してもらえると助かります。
+
+一度出した名前は `discovery-state` ブランチの `discovery/seen.json` に
+記録され、翌週以降は並びません。main は保護されていて Actions から
+push できないため、状態だけを別ブランチに置いています。
 
 ```bash
 GITHUB_TOKEN=$(gh auth token) node scripts/discover.mjs   # 手元で回す場合
