@@ -1,0 +1,19 @@
+slug: cloudflare-artifacts
+term: Cloudflare Artifacts
+aliases: [Artifacts]
+category: service
+summary: Git でアクセスできるバージョン管理されたファイルシステムを提供する Cloudflare のサービス。
+homepage: https://developers.cloudflare.com/artifacts/
+en:
+  ipa: /ˈɑːrtɪfækts/
+  note: 英語 artifact（成果物）の複数形。
+ja:
+  - kana: アーティファクツ
+    primary: true
+  - kana: アーティファクト
+    note: 単数形で呼ぶ場合。
+confidence: medium
+needsSource: true
+tags: [cloudflare, storage, git, service]
+added: 2026-09-14
+updated: 2026-09-14

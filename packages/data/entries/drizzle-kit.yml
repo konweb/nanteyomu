@@ -1,0 +1,16 @@
+slug: drizzle-kit
+term: Drizzle Kit
+aliases: [drizzle-kit]
+category: cli
+summary: Drizzle ORM のマイグレーションを生成・適用する CLI ツール。
+homepage: https://orm.drizzle.team/docs/kit-overview
+en:
+  note: Drizzle ORM に付属する kit（道具一式）。
+ja:
+  - kana: ドリズルキット
+    primary: true
+confidence: medium
+needsSource: true
+tags: [typescript, database, orm, cli]
+added: 2026-09-14
+updated: 2026-09-14

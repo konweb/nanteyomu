@@ -1,0 +1,16 @@
+slug: dingo
+term: dingo
+category: language
+summary: Result 型・エラー伝播・パターンマッチを Go に足すメタ言語。Go のエコシステムとの互換を保つ。
+homepage: https://github.com/MadAppGang/dingo
+en:
+  ipa: /ˈdɪŋɡoʊ/
+  note: オーストラリアの野生犬ディンゴと同じ綴り。
+ja:
+  - kana: ディンゴ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [go, language, compiler]
+added: 2026-09-14
+updated: 2026-09-14

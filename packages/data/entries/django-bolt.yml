@@ -1,0 +1,16 @@
+slug: django-bolt
+term: Django-Bolt
+aliases: [django-bolt]
+category: framework
+summary: Django の上に Rust 製 HTTP サーバーを載せた Python の Web フレームワーク。
+homepage: https://bolt.farhana.li/
+en:
+  note: Django（ジャンゴ）と bolt（閂・稲妻）の合成。
+ja:
+  - kana: ジャンゴボルト
+    primary: true
+confidence: medium
+needsSource: true
+tags: [python, django, framework, rust]
+added: 2026-09-14
+updated: 2026-09-14
