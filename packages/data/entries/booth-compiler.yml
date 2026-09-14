@@ -1,0 +1,18 @@
+slug: booth-compiler
+term: Booth
+category: cli
+summary: CUDA・Triton・HIP を複数の GPU／CPU 向けにコンパイルするオープンソースのコンパイラ。
+homepage: https://github.com/Zaneham/Booth
+en:
+  ipa: /buːθ/
+  note: >-
+    世界初のアセンブリ言語を作った Kathleen Booth への献名であることを
+    README が明記している。英語の booth（小屋・ブース）と同じ読み。
+ja:
+  - kana: ブース
+    primary: true
+confidence: medium
+needsSource: true
+tags: [compiler, gpu, cuda, rust]
+added: 2026-09-14
+updated: 2026-09-14

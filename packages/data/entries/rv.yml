@@ -1,0 +1,23 @@
+slug: rv
+term: rv
+category: cli
+summary: Ruby のバージョンと gem を管理する高速なツール。
+homepage: https://github.com/spinel-coop/rv
+en:
+  respelling: arr vee
+  note: >-
+    README が「2 文字の名前をそのまま綴る」と明記している。
+    Python の uv に強く影響を受けた命名であることも README に書かれている。
+ja:
+  - kana: アールブイ
+    primary: true
+confidence: high
+sources:
+  - url: https://github.com/spinel-coop/rv
+    title: spinel-coop/rv - GitHub
+    kind: official
+    quote: >-
+      "arr vee", the names of the two letters, spelled out.
+tags: [ruby, version-manager, cli]
+added: 2026-09-14
+updated: 2026-09-14

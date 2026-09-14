@@ -1,0 +1,19 @@
+slug: resterm
+term: resterm
+category: cli
+summary: HTTP・GraphQL・gRPC を扱うターミナル上の API クライアント。リクエストを .http ファイルで管理する。
+homepage: https://github.com/unkn0wn-root/resterm
+en:
+  note: REST と terminal の合成と読める綴り。
+ja:
+  - kana: レスターム
+    primary: true
+  - kana: レストターム
+    note: REST をそのまま読む場合。
+  - kana: アールイーエスティーターム
+    note: REST を一字ずつ読む場合。
+confidence: disputed
+needsSource: true
+tags: [http, api, cli, terminal, go]
+added: 2026-09-14
+updated: 2026-09-14
