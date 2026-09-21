@@ -1,0 +1,15 @@
+slug: rue
+term: Rue
+category: language
+summary: GC なしのメモリ安全性を目指す実験的なシステムプログラミング言語。Rust で実装され、LLVM を介さずネイティブコードを直接出力する。
+homepage: https://github.com/rue-language/rue
+en:
+  note: 公式サイトと README のどちらにも読み方の記載が見つからなかった。英単語 rue（悔やむ）と同じ綴りだが、由来が同じかは確認できていない。
+ja:
+  - kana: ルー
+    primary: true
+confidence: low
+needsSource: true
+tags: [rust, compiler, systems-programming, programming-language]
+added: 2026-09-21
+updated: 2026-09-21
