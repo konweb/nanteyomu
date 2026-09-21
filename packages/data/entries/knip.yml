@@ -1,0 +1,22 @@
+slug: knip
+term: Knip
+category: cli
+summary: JavaScript / TypeScript プロジェクトから、使われていない依存・エクスポート・ファイルを見つけて取り除く CLI。
+homepage: https://github.com/webpro-nl/knip
+en:
+  ipa: /ˈknɪp/
+  respelling: k-NIP
+  note: オランダ語で「切る」の意。README が hard "K" だと明記しており、knife や knee のように k を黙字にはしない。
+ja:
+  - kana: クニップ
+    primary: true
+confidence: high
+sources:
+  - url: https://github.com/webpro-nl/knip
+    title: webpro-nl/knip - GitHub
+    kind: official
+    quote: >-
+      /'knɪp/ means "(to) cut" and is pronounced with a hard "K"
+tags: [javascript, typescript, dependencies, lint]
+added: 2026-09-21
+updated: 2026-09-21

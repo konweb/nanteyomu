@@ -1,0 +1,15 @@
+slug: lisette
+term: Lisette
+category: language
+summary: Rust に着想を得た小さな言語で、Go にコンパイルされる。代数的データ型とパターンマッチを持ち、Go のエコシステムと相互運用できる。
+homepage: https://github.com/ivov/lisette
+en:
+  note: 公式サイトと README のどちらにも読み方の記載が見つからなかった。フランス語圏の人名 Lisette と同じ綴り。
+ja:
+  - kana: リゼット
+    primary: true
+confidence: medium
+needsSource: true
+tags: [go, rust, compiler, programming-language]
+added: 2026-09-21
+updated: 2026-09-21
