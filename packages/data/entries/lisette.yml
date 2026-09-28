@@ -1,0 +1,18 @@
+slug: lisette
+term: Lisette
+category: language
+summary: Rust に似た構文を持ち、Go のコードにコンパイルされる小さな言語。Hindley-Milner 型システムと代数的データ型を備えつつ Go の生態系と相互運用できる。
+homepage: https://github.com/ivov/lisette
+en:
+  note: フランス語圏の女性名 Lisette と同じ綴り。リポジトリに読みの記載はない。
+ja:
+  - kana: リゼット
+    primary: true
+    note: 人名 Lisette の慣用的なカタカナ表記に合わせたもの。出典は未確認。
+  - kana: リゼッテ
+    note: 綴りを素直に読んだもの。
+confidence: low
+needsSource: true
+tags: [language, go, rust, compiler]
+added: 2026-09-28
+updated: 2026-09-28

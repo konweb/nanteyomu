@@ -1,0 +1,18 @@
+slug: rari
+term: rari
+category: framework
+expansion: Runtime Accelerated Rendering Infrastructure
+summary: Rust ランタイム上で動く React Server Components のフレームワーク。HTTP サーバと RSC のレンダラ、ルータを Rust で書き、V8 を埋め込んでいる。
+homepage: https://github.com/rari-build/rari
+en:
+  note: README は Runtime Accelerated Rendering Infrastructure の頭字語として掲げているが、読みは示していない。
+ja:
+  - kana: ラリ
+    primary: true
+  - kana: ラーリ
+    note: 綴りを伸ばして読んだもの。
+confidence: medium
+needsSource: true
+tags: [react, rust, rsc, framework]
+added: 2026-09-28
+updated: 2026-09-28
