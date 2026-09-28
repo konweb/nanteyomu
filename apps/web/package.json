@@ -17,7 +17,7 @@
     "solid-js": "^1.9.4"
   },
   "devDependencies": {
-    "satori": "^0.33.4",
+    "satori": "^0.33.5",
     "sharp": "^0.35.4"
   }
 }
