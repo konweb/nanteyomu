@@ -1,0 +1,24 @@
+slug: knip
+term: knip
+category: cli
+summary: TypeScript / JavaScript プロジェクトの使われていないファイル・依存・export を洗い出すツール。オランダ語の knip（切る）から名前を取っている。
+homepage: https://github.com/webpro-nl/knip
+en:
+  ipa: /'knɪp/
+  respelling: k-NIP
+  note: README が「語頭の K を発音する」と明記している。英語の knife のように K を黙字にはしない。
+ja:
+  - kana: クニップ
+    primary: true
+  - kana: ニップ
+    note: 誤り。英語の kn- を黙字と読んだもの。README は hard「K」と明記している。
+confidence: high
+sources:
+  - url: https://github.com/webpro-nl/knip
+    title: 'GitHub - webpro-nl/knip: Find unused files, dependencies and exports in your JavaScript and TypeScript projects'
+    kind: official
+    quote: >-
+      /'knɪp/ means "(to) cut" and is pronounced with a hard "K"
+tags: [typescript, javascript, lint, dependencies]
+added: 2026-09-28
+updated: 2026-09-28

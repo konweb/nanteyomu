@@ -1,0 +1,16 @@
+slug: dockflare
+term: DockFlare
+category: infra
+summary: Docker コンテナのラベルから Cloudflare Tunnel の設定を自動で組み立てるセルフホストのツール。ダッシュボードを手で触らずにコンテナを公開できる。
+homepage: https://github.com/ChrispyBacon-dev/DockFlare
+en:
+  respelling: DOCK-flare
+  note: Docker と Cloudflare を繋いだ造語。リポジトリに読みの記載はない。
+ja:
+  - kana: ドックフレア
+    primary: true
+confidence: medium
+needsSource: true
+tags: [cloudflare, docker, tunnel, self-hosted]
+added: 2026-09-28
+updated: 2026-09-28
