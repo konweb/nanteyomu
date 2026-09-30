@@ -30,16 +30,28 @@ const PER_TOPIC = 3;
  * AI 系トピックの合計上限。同じ理由で、辞典としての偏りを避ける。
  * MAX を変えても偏り方が変わらないよう、割合で決める。
  */
-const AI_CAP = Math.max(1, Math.round(MAX * 0.3));
+const AI_CAP = Math.max(1, Math.round(MAX * 0.5));
 const AI_TOPICS = new Set(['llm', 'ai-agents', 'agent']);
 /**
  * 出どころごとの枠。GitHub の星は桁が大きいので、素直に並べると
  * npm と Cloudflare が一件も入らない。先に席を取っておく。
  * 埋まらなかった席は他の出どころが使う。
  */
-const SOURCE_CAP = { github: 5, hn: 2, npm: 2, cloudflare: 2 };
+const SOURCE_CAP = { hn: 4, github: 3, huggingface: 2, npm: 1, cloudflare: 1 };
 /** GitHub 側の足切り。新しくてこの数を超えていれば話題になったとみなす。 */
 const MIN_STARS = 400;
+/** 直近で急に伸びたものを別枠で拾うときの窓と足切り。 */
+const HOT_DAYS = 90;
+const HOT_STARS = 100;
+
+/**
+ * 出どころをまたいで並べるための目盛り。
+ *
+ * 星の数・HN の点数・npm のスコア・Hugging Face のいいね・日付は
+ * そのままでは桁が全く違い、比べると日付が常に勝ってしまう。
+ * どれも「だいたい 100 が上限」になるよう揃えてから順位にする。
+ */
+const scale = (value, full) => Math.min(100, (value / full) * 100);
 /** 「新しく出た」の範囲。これより古い作成日は拾わない。 */
 const MONTHS = 18;
 
@@ -135,20 +147,28 @@ async function fromGitHub(since) {
     'compiler', 'programming-language',
     'build-tool', 'bundler', 'linter', 'testing',
   ];
-  const out = [];
+  const hotSince = iso(new Date(Date.now() - HOT_DAYS * 86400_000));
+  // 各トピックを 2 通りで引く。18 か月の窓は定着したもの、90 日の窓は
+  // まだ星は少ないが急に伸びているものを拾うため。
+  const queries = [];
   for (const topic of topics) {
-    const q = `topic:${topic} created:>${since} stars:>=${MIN_STARS}`;
+    queries.push({ topic, q: `topic:${topic} created:>${since} stars:>=${MIN_STARS}` });
+    queries.push({ topic, q: `topic:${topic} created:>${hotSince} stars:>=${HOT_STARS}`, hot: true });
+  }
+
+  const out = [];
+  for (const { topic, q, hot } of queries) {
     const url = `https://api.github.com/search/repositories?q=${encodeURIComponent(q)}&sort=stars&order=desc&per_page=20`;
     let data;
     try {
       data = await getJSON(url, headers);
     } catch (e) {
-      console.error(`  GitHub (${topic}) 取得失敗: ${e.message}`);
+      console.error(`  GitHub (${topic}${hot ? ' 新着' : ''}) 取得失敗: ${e.message}`);
       continue;
     }
     let taken = 0;
     for (const r of data.items ?? []) {
-      if (taken >= PER_TOPIC) break;
+      if (taken >= (hot ? 2 : PER_TOPIC)) break;
       if (!usableName(r.name) || !isTool(r.name) || !shortName(r.name)) continue;
       taken++;
       out.push({
@@ -159,8 +179,10 @@ async function fromGitHub(since) {
         desc: (r.description ?? '').trim(),
         created: r.created_at.slice(0, 10),
         metric: `${r.stargazers_count}★`,
-        rank: r.stargazers_count,
-        source: `GitHub topic:${topic}`,
+        // 総量ではなく 1 日あたりの伸びで並べる。1 年かけて 2 万の語より、
+        // 1 か月で 5 千の語の方が「いま出てきたもの」に近いため。
+        rank: scale(r.stargazers_count / Math.max(ageDays(r.created_at), 7), 100),
+        source: `GitHub topic:${topic}${hot ? '（新着）' : ''}`,
         topic,
         family: 'github',
       });
@@ -214,7 +236,7 @@ async function fromNpm() {
         url: repo || o.package.links?.npm || '',
         homepage: o.package.links?.homepage ?? null,
         metric: `npm ${o.score?.final != null ? o.score.final.toFixed(1) : '?'}`,
-        rank: (o.score?.final ?? 0) * 1000,
+        rank: scale(o.score?.final ?? 0, 100),
         desc: (o.package.description ?? '').trim(),
         created: (o.package.date ?? '').slice(0, 10),
         source: `npm keywords:${kw}`,
@@ -280,8 +302,8 @@ async function fromCloudflare(since) {
       url: v.link || 'https://developers.cloudflare.com/changelog/',
       homepage: null,
       metric: `初出 ${v.day}`,
-      // 新しいものほど上に来るように、日付を順位に使う
-      rank: new Date(v.day).getTime() / 1e6,
+      // 初出が近いものほど高く。90 日前で 0 になる
+      rank: Math.max(0, scale(90 - ageDays(v.day), 90)),
       desc: v.desc,
       created: v.day,
       source: 'Cloudflare changelog',
@@ -297,35 +319,127 @@ const STOPWORDS = new Set([
   'new', 'better', 'best', 'first', 'local', 'self', 'you', 'your', 'it', 'is',
 ]);
 
-/** Show HN。GitHub の星より早く話題が出るので、新しさの補完に使う。 */
+/**
+ * 題から製品名を取り出す。
+ *
+ * 「Foo – 説明」「Foo: 説明」「Introducing Foo」という 3 つの形で、
+ * 新しいツールやモデルの発表のほとんどを拾える。
+ * 文らしい題（動詞や助動詞が続くもの）は製品名ではないので捨てる。
+ */
+function namesFromTitle(title) {
+  const t = (title ?? '').replace(/^Show HN:\s*/i, '').trim();
+  const out = [];
+
+  // 発表ではなく「そのツールについての報道・議論」の題は製品名を拾っても
+  // 意味がない。論文（[pdf]）、問いかけ、続報の言い回しで落とす。
+  if (/\[pdf\]|\?\s*$|\b(no longer|has been|have been|is dead|shutting down|acquired by)\b/i.test(t)) {
+    return out;
+  }
+
+  const push = (raw) => {
+    const n = (raw ?? '').trim().replace(/[,.?!]+$/, '');
+    if (!n || n.length > 28) return;
+    // 「Foo 2.1」「Tcl/Tk」のように版番号やスラッシュを含む名前は残す
+    if (!/^[A-Za-z0-9][A-Za-z0-9._\/+-]*( [A-Za-z0-9][A-Za-z0-9._+-]*){0,2}$/.test(n)) return;
+    if (STOPWORDS.has(n.split(/\s+/)[0].toLowerCase())) return;
+    if (!out.includes(n)) out.push(n);
+  };
+
+  // Introducing Foo / Introducing Foo and Bar
+  const intro = t.match(/^Introducing\s+(.+)$/i);
+  if (intro) {
+    for (const part of intro[1].split(/\s+and\s+/i)) push(part);
+    if (out.length) return out.slice(0, 2);
+  }
+
+  // Foo – 説明 / Foo — 説明 / Foo: 説明
+  const split = t.match(/^([^–—:]{2,40})\s*[–—:]\s*\S/);
+  if (split) push(split[1]);
+
+  return out.slice(0, 2);
+}
+
+/**
+ * Hacker News。GitHub の星より早く話題が出るので、新しさの要になる出どころ。
+ *
+ * Show HN だけだと個人の発表しか拾えず、AI モデルの発表を丸ごと取り逃す。
+ * 一般の記事も高得点のものだけ見る（Jev や GPT の発表はこちらに出る）。
+ */
 async function fromHackerNews(sinceTs) {
-  const url = `https://hn.algolia.com/api/v1/search_by_date?tags=show_hn&numericFilters=points>=100,created_at_i>${sinceTs}&hitsPerPage=100`;
+  const runs = [
+    { tags: 'show_hn', min: 100, label: 'Show HN' },
+    { tags: 'story', min: 250, label: 'Hacker News' },
+  ];
+  const out = [];
+  for (const { tags, min, label } of runs) {
+    // search_by_date ではなく search を使う。日付順だと 1 ページ 100 件で
+    // 直近 1 週間分しか遡れず、期間の頭で起きた発表を丸ごと取り逃す
+    // （実際 Jev の発表がそれで落ちていた）。人気順なら 30 日を覆える。
+    const url =
+      `https://hn.algolia.com/api/v1/search?tags=${tags}` +
+      `&numericFilters=${encodeURIComponent(`points>=${min},created_at_i>${sinceTs}`)}&hitsPerPage=100`;
+    let data;
+    try {
+      data = await getJSON(url);
+    } catch (e) {
+      console.error(`  ${label} 取得失敗: ${e.message}`);
+      continue;
+    }
+    for (const h of data.hits ?? []) {
+      for (const name of namesFromTitle(h.title)) {
+        out.push({
+          name,
+          url: h.url || `https://news.ycombinator.com/item?id=${h.objectID}`,
+          homepage: h.url || null,
+          metric: `${h.points}pt`,
+          rank: scale(h.points, 2000),
+          desc: (h.title ?? '').replace(/^Show HN:\s*/i, '').trim(),
+          created: (h.created_at ?? '').slice(0, 10),
+          source: label,
+          family: 'hn',
+        });
+      }
+    }
+  }
+  return out;
+}
+
+/**
+ * Hugging Face。公開されている AI モデルはここに集まるので、
+ * 新しいモデルを拾うにはこの出どころが要る。
+ *
+ * 新着順は各自の実験用アップロードばかりになるので、注目度順で見る。
+ */
+async function fromHuggingFace() {
+  // 量子化・派生・個人の実験は製品名ではない
+  const NOISE = [
+    /gguf/i, /awq/i, /gptq/i, /-int[48]/i, /uncensored/i, /abliterated/i,
+    /-lora/i, /finetune/i, /fine[_-]?tuned/i, /test/i, /demo/i, /^my/i,
+    /merge/i, /-exl2/i, /^untitled/i,
+  ];
   let data;
   try {
-    data = await getJSON(url);
+    data = await getJSON('https://huggingface.co/api/models?sort=trendingScore&direction=-1&limit=40');
   } catch (e) {
-    console.error(`  Hacker News 取得失敗: ${e.message}`);
+    console.error(`  Hugging Face 取得失敗: ${e.message}`);
     return [];
   }
   const out = [];
-  for (const h of data.hits ?? []) {
-    // 「Show HN: Foo – 説明」から Foo を取り出す
-    const m = (h.title ?? '').match(/^Show HN:\s*([^–—\-:(]{2,40})/i);
-    if (!m) continue;
-    const name = m[1].trim().split(/\s+/)[0].replace(/[,.]$/, '');
-    // 「Show HN: The load-bearing vocabulary of Claude」のように
-    // 製品名から始まらない題もある。冠詞や一般語で始まったら諦める
-    if (!usableName(name) || STOPWORDS.has(name.toLowerCase())) continue;
+  for (const m of data ?? []) {
+    const id = m.id ?? '';
+    const name = id.split('/').pop() ?? '';
+    if (NOISE.some((re) => re.test(id))) continue;
+    if (!usableName(name) || !isTool(name) || !shortName(name)) continue;
     out.push({
       name,
-      url: h.url || `https://news.ycombinator.com/item?id=${h.objectID}`,
-      homepage: h.url || null,
-      metric: `${h.points}pt`,
-      rank: h.points,
-      desc: (h.title ?? '').replace(/^Show HN:\s*/i, '').trim(),
-      created: (h.created_at ?? '').slice(0, 10),
-      source: 'Show HN',
-      family: 'hn',
+      url: `https://huggingface.co/${id}`,
+      homepage: null,
+      metric: `HF ${m.likes ?? 0}♥`,
+      rank: scale(m.likes ?? 0, 5000),
+      desc: `${m.pipeline_tag ?? 'model'} — ${id}`,
+      created: (m.createdAt ?? '').slice(0, 10),
+      source: 'Hugging Face',
+      family: 'huggingface',
     });
   }
   return out;
@@ -393,6 +507,10 @@ function loadRegistered() {
 
 const iso = (d) => d.toISOString().slice(0, 10);
 
+/** 公開からの日数。伸びの速さを測るのに使う。 */
+const ageDays = (createdAt) =>
+  Math.max(1, (Date.now() - new Date(createdAt).getTime()) / 86400_000);
+
 async function main() {
   const now = new Date();
   const since = iso(new Date(now.getTime() - MONTHS * 30 * 86400_000));
@@ -408,6 +526,7 @@ async function main() {
     ...(await fromHackerNews(hnSince)),
     ...(await fromNpm()),
     ...(await fromCloudflare(since)),
+    ...(await fromHuggingFace()),
   ];
   console.error(`取得 ${found.length} 件`);
 
