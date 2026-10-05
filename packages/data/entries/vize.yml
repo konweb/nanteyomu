@@ -1,0 +1,24 @@
+slug: vize
+term: Vize
+category: framework
+summary: Rust で書かれた Vue.js 向けのツールチェイン。コンパイラ・リンタ・型チェッカ・フォーマッタ・LSP を1つにまとめている。
+homepage: https://github.com/ubugeeei-prod/vize
+en:
+  ipa: /viːz/
+  respelling: veez
+  note: Vizier + Visor + Advisor から作られた名前。公式 README が発音を明示している。
+ja:
+  - kana: ヴィーズ
+    primary: true
+  - kana: ビーズ
+    note: 同じ /viːz/ をカタカナで書いたもの。
+divergence: false
+confidence: high
+sources:
+  - url: https://github.com/ubugeeei-prod/vize
+    title: ubugeeei-prod/vize — GitHub
+    kind: official
+    quote: "/viːz/: Named after Vizier + Visor + Advisor, a wise tool that sees through your code."
+tags: [vue, rust, toolchain, frontend]
+added: 2026-10-05
+updated: 2026-10-05

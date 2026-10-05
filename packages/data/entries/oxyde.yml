@@ -1,0 +1,19 @@
+slug: oxyde
+term: Oxyde
+aliases: [Oxyde ORM]
+category: library
+summary: Python の非同期 ORM。Pydantic v2 のモデルを中心に据え、SQL の生成と実行を Rust のコアで行う。
+homepage: https://github.com/mr-fatalyst/oxyde
+en:
+  note: 公式は読みを明示していない。フランス語で「酸化物」を意味する oxyde と同じ綴り。
+ja:
+  - kana: オキシド
+    primary: true
+  - kana: オキサイド
+    note: 英語の oxide に寄せた読み。
+divergence: false
+confidence: low
+needsSource: true
+tags: [python, rust, orm, database]
+added: 2026-10-05
+updated: 2026-10-05

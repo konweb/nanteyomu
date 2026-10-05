@@ -1,0 +1,17 @@
+slug: droast
+term: droast
+aliases: [dockerfile-roast]
+category: cli
+summary: Rust 製の Dockerfile リンタ。悪い書き方を検出し、かなり遠慮のない文面で指摘する。
+homepage: https://github.com/immanuwell/dockerfile-roast
+en:
+  note: 公式は読みを明示していない。crates.io 上の名前は dockerfile-roast で、インストールされる実行ファイルが droast。
+ja:
+  - kana: ドロースト
+    primary: true
+divergence: false
+confidence: low
+needsSource: true
+tags: [docker, linter, rust]
+added: 2026-10-05
+updated: 2026-10-05

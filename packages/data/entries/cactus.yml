@@ -1,0 +1,20 @@
+slug: cactus
+term: Cactus
+category: library
+summary: スマートフォン・ウェアラブル向けのエッジ AI 推論エンジン。量子化、カーネル、計算グラフ、ランタイムまでを自前で持つ。
+homepage: https://github.com/cactus-compute/cactus
+en:
+  ipa: /ˈkæktəs/
+  respelling: KAK-tuhs
+  note: 英語の一般名詞「サボテン」と同じ綴り。公式が製品名としての読みを述べているわけではない。
+ja:
+  - kana: カクタス
+    primary: true
+  - kana: キャクタス
+    note: 英語の発音に寄せたもの。
+divergence: false
+confidence: medium
+needsSource: true
+tags: [ai, inference, edge, mobile]
+added: 2026-10-05
+updated: 2026-10-05
