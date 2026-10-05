@@ -2,7 +2,7 @@ slug: vize
 term: Vize
 category: framework
 summary: Rust で書かれた Vue.js 向けのツールチェイン。コンパイラ・リンタ・型チェッカ・フォーマッタ・LSP を1つにまとめている。
-homepage: https://github.com/ubugeeei-prod/vize
+homepage: https://vizejs.dev/
 en:
   ipa: /viːz/
   respelling: veez

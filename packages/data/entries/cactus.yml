@@ -2,7 +2,7 @@ slug: cactus
 term: Cactus
 category: library
 summary: スマートフォン・ウェアラブル向けのエッジ AI 推論エンジン。量子化、カーネル、計算グラフ、ランタイムまでを自前で持つ。
-homepage: https://github.com/cactus-compute/cactus
+homepage: https://cactuscompute.com/
 en:
   ipa: /ˈkæktəs/
   respelling: KAK-tuhs

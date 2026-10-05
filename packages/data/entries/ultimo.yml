@@ -2,7 +2,7 @@ slug: ultimo
 term: Ultimo
 category: framework
 summary: Rust 製の Web フレームワーク。Rust で定義した API から TypeScript のクライアントを自動生成する。REST と JSON-RPC を1つのアプリで扱える。
-homepage: https://github.com/ultimo-rs/ultimo
+homepage: https://ultimo.dev/
 en:
   note: 公式は読みを明示していない。イタリア語・ラテン語で「最後の」を意味する語と同じ綴り。
 ja:
