@@ -73,11 +73,13 @@ jobs:
           COUNT: ${{ steps.run.outputs.count }}
         run: |
           body="$RUNNER_TEMP/candidates.md"
+          week=$(date -u +%Y-%m-%d)
           {
             echo
             echo "---"
             echo
-            echo "🤖 \`.github/workflows/discover.yml\` が毎週更新します。対応が済んだら閉じてください。"
+            echo "🤖 \`.github/workflows/discover.yml\` が毎週この Issue を立てます。"
+            echo "**本文は後から書き換わりません。** 対応が済んだら閉じてください。"
           } >> "$body"
 
           # 実行ページにも残しておく。Issue を消しても後から辿れる
@@ -85,14 +87,23 @@ jobs:
 
           gh label create discovery --color BFD4F2 --description "語の候補" --force >/dev/null 2>&1 || true
 
-          title="語の候補 ${COUNT} 件"
-          num=$(gh issue list --label discovery --state open --limit 1 --json number --jq '.[0].number // empty')
-          if [ -n "$num" ]; then
-            gh issue edit "$num" --title "$title" --body-file "$body"
-            echo "Issue #$num を更新しました"
-          else
-            gh issue create --label discovery --title "$title" --body-file "$body"
-          fi
+          # 毎週あたらしく立てる。以前は開いている Issue の本文を上書きして
+          # いたが、それだと対応中の PR の根拠が消えてしまう（実際 #55 が
+          # 「Issue と無関係な語を登録している」ように見える状態になった）。
+          # 1 つの Issue を 1 週分の記録として固定し、Closes #N を意味のある
+          # ものにする。
+          url=$(gh issue create --label discovery \
+            --title "語の候補 ${COUNT} 件（${week}）" --body-file "$body")
+          new=${url##*/}
+          echo "Issue #$new を起票しました"
+
+          # 前の週までの分は閉じる。開きっぱなしが積み上がらないようにする。
+          # 未対応のまま閉じても、候補は seen.json に記録されていて翌週は
+          # 並ばないので、拾い直したいときはこの Issue を再オープンする。
+          for n in $(gh issue list --label discovery --state open --json number --jq '.[].number'); do
+            [ "$n" = "$new" ] && continue
+            gh issue close "$n" --comment "今週の候補を #$new に起票しました。こちらは古い候補なので閉じます。まだ拾いたい語があれば再オープンしてください。"
+          done
 
       # 次回に同じものを並べないよう、出した名前を記録して残す。
       # 候補が無かった週は seen.json も変わらないので、この手順ごと空振りする。
