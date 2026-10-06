@@ -1,0 +1,18 @@
+slug: minimax-h3
+term: MiniMax-H3
+aliases: [MiniMax H3]
+category: ai
+summary: MiniMax が公開した画像とテキストから動画を生成するモデル。
+homepage: https://huggingface.co/MiniMaxAI/MiniMax-H3
+en:
+  note: MiniMax は minimum と maximum の合成で、ゲーム理論のミニマックス法と同じ語。
+ja:
+  - kana: ミニマックスエイチスリー
+    primary: true
+  - kana: ミニマックスエイチサン
+    note: 数字を日本語で読む場合。
+confidence: medium
+needsSource: true
+tags: [ai, model, video, minimax]
+added: 2026-10-06
+updated: 2026-10-06

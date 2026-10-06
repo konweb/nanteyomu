@@ -1,0 +1,17 @@
+slug: laya
+term: Laya
+category: ai
+summary: 多言語に対応した非自己回帰の決定モデル。テキストを生成せず、型付きの答えを較正済みの確率とともに返す。Jev と同じ System One 系統のオープンソース実装。
+homepage: https://huggingface.co/convaiinnovations/laya
+en:
+  note: 読みは公式に明記されていない。サンスクリット由来の語と同じ綴り。
+ja:
+  - kana: ラヤ
+    primary: true
+  - kana: レイヤ
+    note: 英語読みに寄せた場合。
+confidence: low
+needsSource: true
+tags: [ai, model, system-one, classification, open-source]
+added: 2026-10-06
+updated: 2026-10-06

@@ -1,0 +1,17 @@
+slug: genoffice
+term: GenOffice
+category: service
+summary: 文書・表計算・スライド・PDF を扱えるオープンソースのオフィススイート。AI エージェントを内蔵する。
+homepage: https://genoffice.ai/
+en:
+  note: generative（生成）と office の合成。公式表記は GenOffice。
+ja:
+  - kana: ジェンオフィス
+    primary: true
+  - kana: ゲンオフィス
+    note: gen をローマ字風に読む場合。
+confidence: medium
+needsSource: true
+tags: [ai, office, open-source, editor]
+added: 2026-10-06
+updated: 2026-10-06

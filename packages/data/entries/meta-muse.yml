@@ -1,0 +1,17 @@
+slug: meta-muse
+term: Muse
+aliases: [Meta Muse]
+category: ai
+summary: Meta が個人向けに出した AI エージェント。
+homepage: https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/
+en:
+  ipa: /mjuːz/
+  note: 英語で「ミューズ（詩神）」。
+ja:
+  - kana: ミューズ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [ai, agent, meta]
+added: 2026-10-06
+updated: 2026-10-06

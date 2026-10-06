@@ -1,0 +1,19 @@
+slug: hister
+term: Hister
+category: cli
+summary: 閲覧したページと手元のファイルを全文索引して検索できるようにする、自分専用の検索エンジン。
+homepage: https://hister.org/
+en:
+  note: 読みは公式に明記されていない。history（履歴）を縮めた綴りと読める。
+ja:
+  - kana: ヒスター
+    primary: true
+  - kana: ハイスター
+    note: hi を英語風に読む場合。
+  - kana: ヒストル
+    note: history に寄せて読む場合。
+confidence: disputed
+needsSource: true
+tags: [search, cli, self-hosted, mcp]
+added: 2026-10-06
+updated: 2026-10-06

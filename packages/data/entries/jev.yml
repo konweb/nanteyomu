@@ -1,0 +1,19 @@
+slug: jev
+term: Jev
+category: ai
+summary: テキストを生成せず、型付きの値を較正済みの確率とともに返す TypeSafe AI のモデル。System One モデルと呼ばれる系統の最初の製品。
+homepage: https://typesafe.ai/
+en:
+  note: 読みは公式に明記されていない。英語の綴りからは /dʒɛv/ と読める。
+ja:
+  - kana: ジェブ
+    primary: true
+  - kana: ジェヴ
+    note: v を「ヴ」で書く場合。
+  - kana: イェブ
+    note: J を英語以外の言語風に読む場合。
+confidence: low
+needsSource: true
+tags: [ai, model, typesafe, system-one]
+added: 2026-10-06
+updated: 2026-10-06
