@@ -1,0 +1,19 @@
+slug: openai-dots
+term: dots
+aliases: [OpenAI dots, Dots]
+category: ai
+summary: OpenAI の常駐型エージェント。利用者に代わって継続的に動き続けることを前提に作られている。
+homepage: https://openai.com/index/introducing-dots/
+en:
+  ipa: /dɑts/
+  note: 公式表記は小文字の dots。英語の dot（点）の複数形と同じ読み。
+ja:
+  - kana: ドッツ
+    primary: true
+  - kana: ドット
+    note: 単数形で呼ぶ場合。
+confidence: medium
+needsSource: true
+tags: [ai, agent, openai]
+added: 2026-10-06
+updated: 2026-10-06

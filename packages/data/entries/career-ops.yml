@@ -1,0 +1,17 @@
+slug: career-ops
+term: career-ops
+category: cli
+summary: 求人サイトを巡回し、職務経歴書と照らして求人を採点するオープンソースの AI エージェント。
+homepage: https://career-ops.org/
+en:
+  note: career と ops（operations）の合成。DevOps などと同じ -ops の付け方。
+ja:
+  - kana: キャリアオプス
+    primary: true
+  - kana: キャリアオップス
+    note: ops を促音で書く場合。
+confidence: medium
+needsSource: true
+tags: [ai, agent, cli, open-source]
+added: 2026-10-06
+updated: 2026-10-06
