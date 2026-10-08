@@ -1,0 +1,26 @@
+slug: ieee
+term: IEEE
+category: acronym
+expansion: Institute of Electrical and Electronics Engineers
+summary: 電気・電子分野の学会。IEEE 802.11 や IEEE 754 のように、標準規格の名前としても日常的に出てくる。
+homepage: https://standards.ieee.org/
+en:
+  respelling: Eye-triple-E
+  note: 4 文字を順に読まず、E が 3 つ続くことを triple でまとめる。公式がこの読みを明記している。
+ja:
+  - kana: アイトリプルイー
+    primary: true
+  - kana: アイイーイーイー
+    note: E を 1 つずつ読む場合。公式の表記とは異なる。
+divergence: false
+confidence: high
+sources:
+  - url: https://site.ieee.org/ieeeap/about-ieee/
+    title: About IEEE – IEEE Asia Pacific
+    kind: official
+    quote: >-
+      IEEE, pronounced "Eye-triple-E," stands for the Institute of Electrical
+      and Electronics Engineers.
+tags: [standard, organization, network]
+added: 2026-10-08
+updated: 2026-10-08

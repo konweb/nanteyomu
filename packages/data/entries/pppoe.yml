@@ -1,0 +1,17 @@
+slug: pppoe
+term: PPPoE
+category: protocol
+expansion: Point-to-Point Protocol over Ethernet
+summary: PPP の通信を Ethernet の上で運ぶためのプロトコル。日本では光回線やADSLの接続認証で広く使われる。
+en:
+  note: PPP と Ethernet の間の over は o 一文字で表記する。RFC 2516 で定義されている。
+ja:
+  - kana: ピーピーピーオーイー
+    primary: true
+  - kana: ピーピーピーオーバーイーサネット
+    note: 展開して読む場合。
+confidence: medium
+needsSource: true
+tags: [network, protocol, ethernet, isp]
+added: 2026-10-08
+updated: 2026-10-08
