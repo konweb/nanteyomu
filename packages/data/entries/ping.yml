@@ -1,0 +1,27 @@
+slug: ping
+term: ping
+category: cli
+summary: 相手に ICMP の要求を送って応答が返るかを確かめるコマンド。疎通確認の基本。
+homepage: https://ftp.arl.army.mil/~mike/ping.html
+en:
+  ipa: /pɪŋ/
+  note: >-
+    作者の Mike Muuss がソナーの音にちなんで名付けたと書いている。
+    画像形式の PNG も仕様で ping と読むと定められており、読みが重なる。
+ja:
+  - kana: ピング
+    primary: true
+  - kana: ピン
+    note: 語末を伸ばさない場合。
+divergence: false
+confidence: high
+sources:
+  - url: https://ftp.arl.army.mil/~mike/ping.html
+    title: The Story of the PING Program
+    kind: author
+    quote: >-
+      I named it after the sound that a sonar makes, inspired by the whole
+      principle of echo-location.
+tags: [network, cli, icmp, diagnostics]
+added: 2026-10-08
+updated: 2026-10-08
