@@ -1,0 +1,21 @@
+slug: magpie
+term: magpie
+category: infra
+summary: >-
+  エージェントとモデルの組み合わせを一箇所で切り替えるローカルゲートウェイ。
+  Claude Code や Codex の接続先モデルをメニューバーから差し替える。
+homepage: https://github.com/yetone/magpie
+en:
+  ipa: /ˈmæɡpaɪ/
+  respelling: MAG-pie
+  note: 英語で鳥のカササギ。
+ja:
+  - kana: マグパイ
+    primary: true
+  - kana: マグピー
+    note: 誤り。pie を綴りから「ピー」と読んだもの。
+confidence: medium
+needsSource: true
+tags: [ai, llm, gateway, agent]
+added: 2026-10-12
+updated: 2026-10-12

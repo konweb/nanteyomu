@@ -1,0 +1,22 @@
+slug: sam3
+term: SAM 3
+aliases: [SAM3, Segment Anything Model 3]
+category: ai
+expansion: Segment Anything Model 3
+summary: >-
+  Meta が公開した画像・動画向けのセグメンテーションモデル。テキストや点・矩形の
+  プロンプトで対象を検出・分割・追跡する。
+homepage: https://github.com/facebookresearch/sam3
+en:
+  respelling: sam three
+  note: SAM は Segment Anything Model の頭字語。
+ja:
+  - kana: サムスリー
+    primary: true
+  - kana: エスエーエムスリー
+    note: 頭字語として1文字ずつ読んだもの。
+confidence: medium
+needsSource: true
+tags: [ai, vision, segmentation, meta, open-model]
+added: 2026-10-12
+updated: 2026-10-12
