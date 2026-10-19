@@ -4,7 +4,7 @@ category: library
 expansion: Another JSON Schema Validator
 summary: >-
   JSON Schema と JSON Type Definition でデータを検証する JavaScript ライブラリ。
-homepage: https://ajv.js.org/
+homepage: https://github.com/ajv-validator/ajv
 en:
   respelling: A-J-V
   note: >-
