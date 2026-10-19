@@ -1,0 +1,20 @@
+slug: reladraw
+term: reladraw
+category: cli
+summary: >-
+  配置を自分で決めて書く図の言語。位置を相対指定で書き、SVG に出力する。
+homepage: https://github.com/reladraw/reladraw
+en:
+  respelling: REL-uh-draw
+  note: >-
+    relative（相対配置）を縮めた綴りと解釈した場合の読み。公式に読みの記述は無く未確認。
+ja:
+  - kana: レラドロー
+    primary: true
+  - kana: リレドロー
+    note: relative を「リレイティブ」寄りに読んだ場合。どちらが通るかは未確認。
+confidence: low
+needsSource: true
+tags: [cli, diagram]
+added: 2026-10-19
+updated: 2026-10-19
