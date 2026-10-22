@@ -6,7 +6,7 @@ expansion: Reverse Engineer Anything
 summary: >-
   エージェントにバイナリやアプリを解析させるリバースエンジニアリング用の
   MCP サーバ兼 CLI。Hopper・Ghidra・IDA と繋いで手元で解析する。
-homepage: https://github.com/morluto/rea
+homepage: https://rea.tools
 en:
   note: >-
     Reverse Engineer Anything の頭字語。公式リポジトリの README（英語版・日本語版）に

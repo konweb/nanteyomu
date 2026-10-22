@@ -4,7 +4,7 @@ category: infra
 summary: >-
   エージェントとモデルの組み合わせを一箇所で切り替えるローカルゲートウェイ。
   Claude Code や Codex の接続先モデルをメニューバーから差し替える。
-homepage: https://github.com/yetone/magpie
+homepage: https://usemagpie.ai
 en:
   ipa: /ˈmæɡpaɪ/
   respelling: MAG-pie
