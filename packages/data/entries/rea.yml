@@ -1,0 +1,24 @@
+slug: rea
+term: REA
+aliases: [rea, rea-agents]
+category: cli
+expansion: Reverse Engineer Anything
+summary: >-
+  エージェントにバイナリやアプリを解析させるリバースエンジニアリング用の
+  MCP サーバ兼 CLI。Hopper・Ghidra・IDA と繋いで手元で解析する。
+homepage: https://rea.tools
+en:
+  note: >-
+    Reverse Engineer Anything の頭字語。公式リポジトリの README（英語版・日本語版）に
+    読みの記述はなく、どう読むかは確認できていない。
+ja:
+  - kana: レア
+    primary: true
+    note: 綴りを一語として読んだもの。公式の明記はない。
+  - kana: アールイーエー
+    note: 頭字語として1文字ずつ読んだもの。公式の明記はない。
+confidence: low
+needsSource: true
+tags: [reverse-engineering, mcp, security, cli]
+added: 2026-10-12
+updated: 2026-10-12
