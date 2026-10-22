@@ -1,0 +1,20 @@
+slug: ajv
+term: Ajv
+category: library
+expansion: Another JSON Schema Validator
+summary: >-
+  JSON Schema と JSON Type Definition でデータを検証する JavaScript ライブラリ。
+homepage: https://ajv.js.org
+en:
+  respelling: A-J-V
+  note: >-
+    公式サイトと README に読みの記述は見つからなかった。自称が
+    "Another JSON Schema Validator" なので、頭字語として綴りを読む形と解釈したもの。未確認。
+ja:
+  - kana: エージェイブイ
+    primary: true
+confidence: medium
+needsSource: true
+tags: [javascript, validation, json-schema]
+added: 2026-10-19
+updated: 2026-10-19
