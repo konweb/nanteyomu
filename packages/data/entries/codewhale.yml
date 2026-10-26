@@ -1,0 +1,23 @@
+slug: codewhale
+term: Codewhale
+aliases: [CodeWhale]
+category: ai
+summary: >-
+  ターミナルで動く Rust 製のオープンソースのコーディングエージェント。
+  40 以上のプロバイダーのモデルと、手元で動かすモデルを使える。
+homepage: https://github.com/codewhale-hq/Codewhale
+en:
+  respelling: CODE-whale
+  note: >-
+    code + whale（クジラ）。公式サイト・README・18 言語の翻訳 README にも
+    読みの記述は見つからなかった。
+ja:
+  - kana: コードホエール
+    primary: true
+  - kana: コードウェール
+    note: whale を英語の発音に寄せて読んだ形。
+confidence: low
+needsSource: true
+tags: [ai, coding-agent, cli, rust, open-source]
+added: 2026-10-26
+updated: 2026-10-26

@@ -1,0 +1,19 @@
+slug: deepinfer
+term: DeepInfer
+category: framework
+summary: >-
+  DeepSeek が自社の大規模サービスで使っている推論フレームワークを
+  オープンソースにしたもの。DeepSeek-V4.1-Flash のオフライン推論に対応する。
+homepage: https://github.com/deepseek-ai/DeepInfer
+en:
+  respelling: deep-IN-fur
+  note: >-
+    DeepSeek の deep + infer（推論する）。README に読みの記述は見つからなかった。
+ja:
+  - kana: ディープインファー
+    primary: true
+confidence: medium
+needsSource: true
+tags: [ai, llm, inference, deepseek]
+added: 2026-10-26
+updated: 2026-10-26

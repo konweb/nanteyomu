@@ -1,0 +1,24 @@
+slug: monid
+term: Monid
+aliases: [monid]
+category: service
+summary: >-
+  エージェントが使う外部ツールの API を1つのエンドポイントと1つのキーに束ね、
+  呼び出しごとに課金する中継サービス。公式は「エージェント向けツールの OpenRouter」と名乗る。
+homepage: https://github.com/monid-ai/monid
+en:
+  respelling: MON-id
+  note: >-
+    公式サイト・README・公式ドキュメントに読みの記述は見つからなかった。
+    造語で何の略かも書かれていないため、-id で終わる英単語（solid, valid）と
+    同じ形に読んだものを仮に置いている。未確認。
+ja:
+  - kana: モニッド
+    primary: true
+  - kana: モニド
+    note: 綴りをローマ字のまま読んだ形。
+confidence: low
+needsSource: true
+tags: [ai, agent, api, tool-calling]
+added: 2026-10-26
+updated: 2026-10-26
