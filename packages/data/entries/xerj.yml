@@ -1,0 +1,22 @@
+slug: xerj
+term: XERJ
+aliases: [xerj]
+category: infra
+summary: コードやドキュメント、ログをローカルでインデックスして全文検索・ベクトル検索・ハイブリッド検索を返す Rust 製の検索エンジン。Elasticsearch 互換 API と MCP サーバを備え、AI エージェントの検索やメモリ用途に使う。
+homepage: https://github.com/xerj-org/xerj
+en:
+  note: >-
+    読みは公式に明記されていない。公式の日本語 README でも「XERJ」とラテン文字のまま書かれており、カタカナは示されていない。
+ja:
+  - kana: ゼルジ
+    primary: true
+  - kana: ザージ
+    note: 語頭の X を z とし、surge と同じ母音で読んだ場合。
+  - kana: エックスイーアールジェー
+    note: アルファベットを1文字ずつ読む場合。
+divergence: false
+confidence: low
+needsSource: true
+tags: [search, mcp, rust, ai-agents]
+added: 2026-11-02
+updated: 2026-11-02
