@@ -1,0 +1,22 @@
+slug: openidea
+term: OpenIDEA
+aliases: [openidea]
+category: service
+summary: IntelliJ IDEA のキーマップやツールウィンドウ、検索の操作感を Rust 製のネイティブアプリで作り直した統合開発環境。60 以上の言語に対応し、JetBrains とは無関係のプロジェクト。
+homepage: https://github.com/l0ng-ai/openidea
+en:
+  note: >-
+    読みは公式に明記されていない。IntelliJ IDEA の名前に由来し、公式のワードマークも IDEA の部分を大文字で書いている。
+ja:
+  - kana: オープンアイデア
+    primary: true
+  - kana: オープンアイディア
+    note: IDEA を「アイディア」と書く場合。
+  - kana: オープンアイディーイーエー
+    note: IDEA を1文字ずつ読む場合。IntelliJ IDEA でも同じ読みがある。
+divergence: false
+confidence: medium
+needsSource: true
+tags: [ide, rust, jetbrains]
+added: 2026-11-02
+updated: 2026-11-02
