@@ -5,7 +5,7 @@ category: service
 summary: >-
   エージェントが使う外部ツールの API を1つのエンドポイントと1つのキーに束ね、
   呼び出しごとに課金する中継サービス。公式は「エージェント向けツールの OpenRouter」と名乗る。
-homepage: https://github.com/monid-ai/monid
+homepage: https://monid.ai/
 en:
   respelling: MON-id
   note: >-

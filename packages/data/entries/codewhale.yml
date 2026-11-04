@@ -5,7 +5,7 @@ category: ai
 summary: >-
   ターミナルで動く Rust 製のオープンソースのコーディングエージェント。
   40 以上のプロバイダーのモデルと、手元で動かすモデルを使える。
-homepage: https://github.com/codewhale-hq/Codewhale
+homepage: https://codewhale.net/
 en:
   respelling: CODE-whale
   note: >-
