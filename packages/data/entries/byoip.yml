@@ -1,0 +1,23 @@
+slug: byoip
+term: BYOIP
+category: acronym
+expansion: Bring Your Own IP
+summary: 自分で保有する IP アドレスの範囲を CDN やクラウドの事業者に広告してもらう仕組み。Cloudflare などが提供する。
+homepage: https://developers.cloudflare.com/byoip/
+en:
+  note: >-
+    BYOD（Bring Your Own Device）と同じ Bring Your Own ... の形。
+    公式ドキュメントは展開形を示すだけで、読みには触れていない。
+ja:
+  - kana: ビーワイオーアイピー
+    primary: true
+  - kana: バイオアイピー
+    note: BYO をひとまとまりで読む場合。
+  - kana: ビーワイオーアイピーアドレス
+    note: IP をアドレスまで言う場合。
+divergence: false
+confidence: medium
+needsSource: true
+tags: [network, cloudflare, ip, cdn]
+added: 2026-11-04
+updated: 2026-11-04
