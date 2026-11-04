@@ -18,6 +18,13 @@ updates:
           - "@astrojs/solid-js"
       dev-dependencies:
         dependency-type: development
+    # satori は 0.47 以降 OG 画像のレイアウトが変わり、マスコットが右端で
+    # 見切れてフッターの一行が消える。CI はビルド成功で通ってしまい
+    # 画像を見ないと分からないため、テンプレート側を直すまで上げない。
+    # 直したら この ignore を外す。
+    ignore:
+      - dependency-name: satori
+        versions: [">=0.47.0"]
 
   # GitHub Actions。放置すると runner 側の Node 非推奨警告が溜まるため。
   - package-ecosystem: github-actions
