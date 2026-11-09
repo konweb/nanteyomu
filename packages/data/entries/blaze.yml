@@ -1,0 +1,19 @@
+slug: blaze
+term: blaze
+category: cli
+summary: Rust のインクリメンタルビルドを高速化するビルドツール。cargo と同じ位置で `blaze` と打って使う。
+homepage: https://github.com/indexable-inc/blaze
+en:
+  ipa: /bleɪz/
+  respelling: BLAYZ
+  note: 英単語 blaze（炎）と同じ。README の "Blazingly fast Rust, literally." はこれを踏まえた言い回し。
+ja:
+  - kana: ブレイズ
+    primary: true
+  - kana: ブレーズ
+    note: 長音で伸ばす表記。英単語としては同じ語。
+confidence: medium
+needsSource: true
+tags: [build-tool, rust]
+added: 2026-11-09
+updated: 2026-11-09

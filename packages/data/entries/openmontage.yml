@@ -1,0 +1,20 @@
+slug: openmontage
+term: OpenMontage
+category: ai
+summary: >-
+  AI コーディングエージェントを動画制作スタジオとして使うオープンソースの
+  エージェント型動画制作システム。調査・脚本・素材生成・編集・最終合成まで扱う。
+homepage: https://github.com/OpenMontageInc/OpenMontage
+en:
+  respelling: OH-pun mon-TAHZH
+  note: montage は英語では末尾を /ʒ/ で発音する。
+ja:
+  - kana: オープンモンタージュ
+    primary: true
+  - kana: オープンモンタージ
+    note: 英語発音に寄せた表記。日本語では「モンタージュ」が定着している。
+confidence: medium
+needsSource: true
+tags: [ai, agent, video]
+added: 2026-11-09
+updated: 2026-11-09
