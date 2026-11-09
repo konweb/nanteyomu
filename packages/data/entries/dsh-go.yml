@@ -1,0 +1,19 @@
+slug: dsh-go
+term: DSH Go
+aliases: [dsh-go, dsh-Go]
+category: ai
+expansion: DeepSeek Harness
+summary: >-
+  DeepSeek Harness（DSH）の Android クライアント。端末上で DSH を直接動かすか、
+  手元の PC で動く DSH を遠隔操作する。
+homepage: https://github.com/ccch1mneyyy/dsh-Go
+en:
+  respelling: D-S-H go
+ja:
+  - kana: ディーエスエイチゴー
+    primary: true
+confidence: low
+needsSource: true
+tags: [ai, agent, android]
+added: 2026-11-09
+updated: 2026-11-09

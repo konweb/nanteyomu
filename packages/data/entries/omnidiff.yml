@@ -1,0 +1,20 @@
+slug: omnidiff
+term: OmniDiff
+aliases: [omnidiff]
+category: cli
+summary: >-
+  Rust 製の差分表示ツール。コード・画像・フォント・PDF などを中身の種類に応じた
+  アルゴリズムで差分表示する。
+homepage: https://github.com/ivankovic/omnidiff
+en:
+  respelling: OM-nee-dif
+ja:
+  - kana: オムニディフ
+    primary: true
+  - kana: オムニディッフ
+    note: diff を促音で読む表記。
+confidence: medium
+needsSource: true
+tags: [diff, rust, git]
+added: 2026-11-09
+updated: 2026-11-09

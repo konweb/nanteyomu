@@ -1,0 +1,20 @@
+slug: connectic
+term: connectic
+aliases: [Connectic]
+category: library
+summary: >-
+  マイクロフロントエンドやコンポーネント間の通信を担う JavaScript ライブラリ。
+  pub/sub、リクエスト／レスポンス、状態共有を1つの API でまとめる。
+homepage: https://github.com/spiderocious/connectic
+en:
+  respelling: kuh-NEK-tik
+ja:
+  - kana: コネクティック
+    primary: true
+  - kana: コネクティク
+    note: 末尾を促音なしで読む表記。
+confidence: low
+needsSource: true
+tags: [javascript, microfrontend, pubsub]
+added: 2026-11-09
+updated: 2026-11-09
