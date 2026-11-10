@@ -13,7 +13,7 @@
     "@astrojs/sitemap": "^3.7.4",
     "@astrojs/solid-js": "^7.1.2",
     "@nanteyomu/data": "workspace:*",
-    "astro": "^7.4.2",
+    "astro": "^7.4.7",
     "solid-js": "^1.9.18"
   },
   "devDependencies": {
