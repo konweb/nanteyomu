@@ -1,0 +1,22 @@
+slug: tokeneconomizer
+term: TokenEconomizer
+aliases: [Token Economizer]
+category: ai
+summary: >-
+  コーディングエージェントのトークン消費を抑えるプラグイン。同じリポジトリで過去に走った
+  セッションから学び、事実の再発見・未使用ツールの読み込み・失敗ループという無駄を削る。
+  Microsoft Research と UC Berkeley による。
+homepage: https://github.com/microsoft/TokenEconomizer
+en:
+  respelling: TOH-kun ih-KON-uh-my-zer
+  note: economizer は「節約装置」を意味する英単語で、強勢は第2音節 con に置く。
+ja:
+  - kana: トークンエコノマイザー
+    primary: true
+  - kana: トークンエコノマイザ
+    note: 末尾の長音を落とす表記。工学分野の「エコノマイザ」の慣用に沿ったもの。
+confidence: medium
+needsSource: true
+tags: [coding-agent, llm, cost, microsoft]
+added: 2026-11-16
+updated: 2026-11-16
