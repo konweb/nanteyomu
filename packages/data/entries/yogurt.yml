@@ -1,0 +1,18 @@
+slug: yogurt
+term: Yogurt
+category: ai
+summary: >-
+  通話を録音して文字起こしと要約を行うデスクトップアプリ。処理を手元の計算機で完結させる
+  のが特徴で、Granola のオープンソース代替として Frigade が公開している。
+homepage: https://github.com/FrigadeHQ/yogurt
+en:
+  respelling: YOH-gurt
+  note: 英単語 yogurt そのもの。英語では「ヨウガート」に近く、日本語の「ヨーグルト」とは母音が違う。
+ja:
+  - kana: ヨーグルト
+    primary: true
+confidence: medium
+needsSource: true
+tags: [meeting, transcription, local-first, granola]
+added: 2026-11-16
+updated: 2026-11-16
