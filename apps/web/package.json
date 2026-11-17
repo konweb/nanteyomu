@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
-    "@astrojs/solid-js": "^7.1.2",
+    "@astrojs/solid-js": "^7.1.6",
     "@nanteyomu/data": "workspace:*",
     "astro": "^7.4.2",
-    "solid-js": "^1.9.18"
+    "solid-js": "^1.9.19"
   },
   "devDependencies": {
     "satori": "^0.41.0",
