@@ -1,0 +1,19 @@
+slug: devextreme
+term: DevExtreme
+category: library
+summary: >-
+  DevExpress が提供する Angular・React・Vue・jQuery 向けの UI コンポーネント集。
+  データグリッド、ピボットテーブル、チャート、各種エディタなどを含む商用製品。
+homepage: https://github.com/DevExpress/DevExtreme
+en:
+  respelling: DEV-extreme
+  note: Dev は開発元 DevExpress と同じく development の略。
+ja:
+  - kana: デブエクストリーム
+    primary: true
+  - kana: デヴエクストリーム
+confidence: medium
+needsSource: true
+tags: [ui, javascript, typescript, components, devexpress]
+added: 2026-11-23
+updated: 2026-11-23

@@ -1,0 +1,26 @@
+slug: kiri
+term: Kiri
+category: infra
+summary: >-
+  macOS・Windows・Linux で動く軽量なコンテナランタイム。Rust 製で、Docker Desktop の置き換えを狙う。
+  docker CLI・Compose・buildx をそのまま使え、単一ノードの Kubernetes も起動できる。
+homepage: https://github.com/libracoder/kiri
+en:
+  note: >-
+    名前は Igbo 語で「小さい」を意味する ntakịrị に由来すると README に書かれている。
+    日本語の「桐」や「霧」とは関係がない。
+ja:
+  - kana: キリ
+    primary: true
+  - kana: カイリ
+    note: 綴りの i を英語読みにした場合。由来からは離れる。
+divergence: false
+confidence: medium
+sources:
+  - url: https://github.com/libracoder/kiri
+    title: 'GitHub - libracoder/kiri: A small, fast container runtime for macOS, Windows and Linux'
+    kind: official
+    quote: The name comes from the Igbo word ntakịrị, "small".
+tags: [container, docker, kubernetes, rust]
+added: 2026-11-23
+updated: 2026-11-23
